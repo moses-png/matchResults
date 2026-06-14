@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 import json
 
-html = requests.get('m.net')
+html = requests.get("https://www.livescore.cz/?d=-1", timeout=30)
+html.raise_for_status()
 
 soup = BeautifulSoup(html.text, "html.parser")
 
@@ -36,9 +37,9 @@ for a in soup.select("a.fin, a.sched, a.live"):
         "result": a.get_text(strip=True)
     })
 
-
-dt = datetime.now()
-date = dt.strftime('%a_%d_%b')
+date = datetime.now().strftime("%a_%d_%b")
 
 with open(f"{date}.json", "w", encoding="utf-8") as f:
-    json.dump(matches, f, indent=4)
+    json.dump(matches, f, indent=4, ensure_ascii=False)
+
+print(f"Saved {len(matches)} matches")
