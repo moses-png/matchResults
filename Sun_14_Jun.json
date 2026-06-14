@@ -867,7 +867,7 @@
         "match_id": "2ZvgFsh5",
         "home_team": "Mazagao",
         "away_team": "Santana EC",
-        "result": "-"
+        "result": "1-3"
     },
     {
         "match_id": "hhLDfWhn",
@@ -915,7 +915,7 @@
         "match_id": "QPq24L6l",
         "home_team": "Urumajo",
         "away_team": "Paragominas",
-        "result": "-"
+        "result": "0-0 (Pen: 5-3)"
     },
     {
         "match_id": "vR8WbMZh",
@@ -945,7 +945,7 @@
         "match_id": "IeIhg9J0",
         "home_team": "Araguaia U20",
         "away_team": "Uniao Carmolandense U20",
-        "result": "-"
+        "result": "1-1"
     },
     {
         "match_id": "hWVo8SL5",
@@ -1042,12 +1042,6 @@
         "home_team": "Vila Nova FC U20",
         "away_team": "Atletico GO U20",
         "result": "1-4"
-    },
-    {
-        "match_id": "Sfsn2reD",
-        "home_team": "Sorriso EC U20",
-        "away_team": "Sport Sinop U20",
-        "result": "-"
     },
     {
         "match_id": "lC2AdWXr",
@@ -2775,7 +2769,7 @@
         "match_id": "nH1G6Cdk",
         "home_team": "Flamengo FBC W",
         "away_team": "Killas W",
-        "result": "-"
+        "result": "3-2"
     },
     {
         "match_id": "fs5O4jR1",
@@ -3435,7 +3429,7 @@
         "match_id": "tAkEFA0U",
         "home_team": "FC Asgabat",
         "away_team": "Arkadag",
-        "result": "-"
+        "result": "1-7"
     },
     {
         "match_id": "Yqn6HWVH",
@@ -3453,7 +3447,7 @@
         "match_id": "dMPNZDon",
         "home_team": "Nebitci",
         "away_team": "Ahal",
-        "result": "-"
+        "result": "0-4"
     },
     {
         "match_id": "A1un38gc",
@@ -3471,7 +3465,7 @@
         "match_id": "fkfbTI33",
         "home_team": "Portland Hearts of Pine",
         "away_team": "Chattanooga Red Wolves",
-        "result": "1-1"
+        "result": "1-2"
     },
     {
         "match_id": "Kf1hPCb3",
@@ -3501,7 +3495,7 @@
         "match_id": "UmgvG8Lk",
         "home_team": "Dothan United",
         "away_team": "East Atlanta",
-        "result": "-"
+        "result": "4-1"
     },
     {
         "match_id": "Ec65JsSs",
@@ -3513,7 +3507,7 @@
         "match_id": "fy8LFaR6",
         "home_team": "Steel City",
         "away_team": "Erie Sports Center",
-        "result": "-"
+        "result": "4-0"
     },
     {
         "match_id": "IBzvPOLH",
@@ -3543,25 +3537,25 @@
         "match_id": "EkIEyslQ",
         "home_team": "Brooke House",
         "away_team": "Shark Coast",
-        "result": "-"
+        "result": "5-3"
     },
     {
         "match_id": "Io7hUbt0",
         "home_team": "Buffalo",
         "away_team": "Cleveland Force",
-        "result": "-"
+        "result": "4-2"
     },
     {
         "match_id": "QBA0SxBC",
         "home_team": "AC Connecticut",
         "away_team": "Seacoast Utd Phantoms",
-        "result": "-"
+        "result": "3-4"
     },
     {
         "match_id": "MN9DHLdf",
         "home_team": "AMSG FC",
         "away_team": "Tucson",
-        "result": "-"
+        "result": "1-1"
     },
     {
         "match_id": "U7qYyjr9",
@@ -3579,7 +3573,7 @@
         "match_id": "xYYNS6Mh",
         "home_team": "Port City",
         "away_team": "Tobacco Road",
-        "result": "-"
+        "result": "1-4"
     },
     {
         "match_id": "IPZfyU6D",
