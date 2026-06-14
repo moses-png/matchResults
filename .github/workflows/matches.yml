@@ -1,0 +1,37 @@
+name: Run Main Daily
+
+on:
+  schedule:
+    - cron: '30 21 * * *'   # 00:30 Uganda time
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run script
+        run: |
+          python main.py
+
+      - name: Commit JSON files
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add *.json
+          git commit -m "Update match results" || echo "No changes"
+          git push
