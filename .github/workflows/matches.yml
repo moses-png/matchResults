@@ -2,9 +2,11 @@ name: Run Main Daily
 
 on:
   schedule:
-    - cron: '30 21 * * *'   # 00:30 Uganda time
+    - cron: '30 21 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
 jobs:
   run:
     runs-on: ubuntu-latest
