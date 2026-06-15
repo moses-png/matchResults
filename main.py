@@ -36,7 +36,7 @@ for a in soup.select("a.fin, a.sched, a.live"):
         "away_team": away_team,
         "result": a.get_text(strip=True)
     })
-
+# the date is set to date now becasue the time is in utc by that time the  time  in the server will be behind
 date = datetime.now().strftime("%a_%d_%b")
 
 with open(f"{date}.json", "w", encoding="utf-8") as f:
