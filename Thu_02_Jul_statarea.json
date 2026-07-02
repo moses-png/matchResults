@@ -1,0 +1,149 @@
+[
+    {
+        "homeTeam": "Portugal",
+        "awayTeam": "Croatia",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Spain",
+        "awayTeam": "Austria",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "USA",
+        "awayTeam": "Bosnia and Herzegovina",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Renaissance Berkane",
+        "awayTeam": "Wydad Casablanca",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Raja Casablanca",
+        "awayTeam": "Hassania Agadir",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Renaissance Zemamra",
+        "awayTeam": "FUS Rabat",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Kawkab A.C. Marrakech",
+        "awayTeam": "Maghreb Fes",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Olympique Dcheira",
+        "awayTeam": "Olympique Safi",
+        "tip": "X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "U. De Chile",
+        "awayTeam": "Union La Calera",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Cuiaba",
+        "awayTeam": "America Mineiro",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "FC Minsk",
+        "awayTeam": "Dinamo Minsk",
+        "tip": "2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Bate Borisov",
+        "awayTeam": "FC Gomel",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "NK Brinje Grosuplje",
+        "awayTeam": "NK Dinamo Zagreb",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Cove Rangers",
+        "awayTeam": "Turriff Utd",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Lyn",
+        "awayTeam": "Asane",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Croatia (u19)",
+        "awayTeam": "Italy (u19)",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Serbia (u19)",
+        "awayTeam": "Ukraine (u19)",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Union Omaha",
+        "awayTeam": "Av Alta",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Ppj",
+        "awayTeam": "FC Kiffen",
+        "tip": "X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Vikingur Reykjavik",
+        "awayTeam": "KA Akureyri",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Thor Akureyri",
+        "awayTeam": "KR Reykjavik",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    }
+]

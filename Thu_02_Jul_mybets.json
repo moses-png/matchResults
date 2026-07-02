@@ -1,0 +1,405 @@
+{
+    "Bate Borisov vs FC Gomel": {
+        "homeTeam": "Bate Borisov",
+        "awayTeam": "FC Gomel",
+        "date": "Thu 02/07 16:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2"
+        }
+    },
+    "FC Minsk vs Dinamo Minsk": {
+        "homeTeam": "FC Minsk",
+        "awayTeam": "Dinamo Minsk",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:2"
+        }
+    },
+    "Universidad de Chile vs Union La Calera": {
+        "homeTeam": "Universidad de Chile",
+        "awayTeam": "Union La Calera",
+        "date": "Thu 02/07 01:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Huachipato vs Deportes Concepcion": {
+        "homeTeam": "Huachipato",
+        "awayTeam": "Deportes Concepcion",
+        "date": "Thu 02/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Cumbayá vs 22 de Julio": {
+        "homeTeam": "Cumbayá",
+        "awayTeam": "22 de Julio",
+        "date": "Thu 02/07 21:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 8.5"
+        }
+    },
+    "Kuressaare vs Flora Tallinn": {
+        "homeTeam": "Kuressaare",
+        "awayTeam": "Flora Tallinn",
+        "date": "Thu 02/07 17:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4"
+        }
+    },
+    "Tartu Welco vs Viimsi": {
+        "homeTeam": "Tartu Welco",
+        "awayTeam": "Viimsi",
+        "date": "Thu 02/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2"
+        }
+    },
+    "Croatia U19 vs Italy U19": {
+        "homeTeam": "Croatia U19",
+        "awayTeam": "Italy U19",
+        "date": "Thu 02/07 14:00",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "2:2"
+        }
+    },
+    "Serbia U19 vs Ukraine U19": {
+        "homeTeam": "Serbia U19",
+        "awayTeam": "Ukraine U19",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2"
+        }
+    },
+    "FC Jazz vs KPV": {
+        "homeTeam": "FC Jazz",
+        "awayTeam": "KPV",
+        "date": "Thu 02/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Thor Akureyri vs KR Reykjavik": {
+        "homeTeam": "Thor Akureyri",
+        "awayTeam": "KR Reykjavik",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4"
+        }
+    },
+    "Vikingur Reykjavik vs KA Akureyri": {
+        "homeTeam": "Vikingur Reykjavik",
+        "awayTeam": "KA Akureyri",
+        "date": "Thu 02/07 20:15",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Žalgiris II vs Hegelmann II": {
+        "homeTeam": "Žalgiris II",
+        "awayTeam": "Hegelmann II",
+        "date": "Thu 02/07 16:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "BFA vs Ekranas": {
+        "homeTeam": "BFA",
+        "awayTeam": "Ekranas",
+        "date": "Thu 02/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1"
+        }
+    },
+    "Raja Casablanca vs HUSA Agadir": {
+        "homeTeam": "Raja Casablanca",
+        "awayTeam": "HUSA Agadir",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "CODM Meknes vs FAR Rabat": {
+        "homeTeam": "CODM Meknes",
+        "awayTeam": "FAR Rabat",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "0:1",
+            "handicap": "A -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "Olympique Dcheira vs OC Safi": {
+        "homeTeam": "Olympique Dcheira",
+        "awayTeam": "OC Safi",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "RSB Berkane vs WAC Casablanca": {
+        "homeTeam": "RSB Berkane",
+        "awayTeam": "WAC Casablanca",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 7.5"
+        }
+    },
+    "UTS Rabat vs Ittihad Tanger": {
+        "homeTeam": "UTS Rabat",
+        "awayTeam": "Ittihad Tanger",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 7.5"
+        }
+    },
+    "Renaissance Zemamra vs FUS Rabat": {
+        "homeTeam": "Renaissance Zemamra",
+        "awayTeam": "FUS Rabat",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "Kawkab Marrakech vs MAS Fes": {
+        "homeTeam": "Kawkab Marrakech",
+        "awayTeam": "MAS Fes",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "0:1",
+            "handicap": "A -0.5",
+            "corners": "- 7.5"
+        }
+    },
+    "US Yacoub El Mansour vs Difaa El Jadida": {
+        "homeTeam": "US Yacoub El Mansour",
+        "awayTeam": "Difaa El Jadida",
+        "date": "Thu 02/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0"
+        }
+    },
+    "Lyn 1896 vs Asane": {
+        "homeTeam": "Lyn 1896",
+        "awayTeam": "Asane",
+        "date": "Thu 02/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 10.5"
+        }
+    },
+    "Chattanooga Red Wolves vs Westchester SC": {
+        "homeTeam": "Chattanooga Red Wolves",
+        "awayTeam": "Westchester SC",
+        "date": "Thu 02/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 8"
+        }
+    },
+    "Spokane Velocity vs Forward Madison": {
+        "homeTeam": "Spokane Velocity",
+        "awayTeam": "Forward Madison",
+        "date": "Thu 02/07 02:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Union Omaha vs Alta": {
+        "homeTeam": "Union Omaha",
+        "awayTeam": "Alta",
+        "date": "Thu 02/07 03:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Denton Diablos vs West Texas": {
+        "homeTeam": "Denton Diablos",
+        "awayTeam": "West Texas",
+        "date": "Thu 02/07 01:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "USA vs Bosnia-Herzegovina": {
+        "homeTeam": "USA",
+        "awayTeam": "Bosnia-Herzegovina",
+        "date": "Thu 02/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Spain vs Austria": {
+        "homeTeam": "Spain",
+        "awayTeam": "Austria",
+        "date": "Thu 02/07 20:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    }
+}
