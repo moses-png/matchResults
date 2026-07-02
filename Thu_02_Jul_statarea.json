@@ -98,6 +98,13 @@
         "btts": "Yes"
     },
     {
+        "homeTeam": "Huachipato",
+        "awayTeam": "Deportes Concepcion",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
         "homeTeam": "Lyn",
         "awayTeam": "Asane",
         "tip": "1",
@@ -105,16 +112,16 @@
         "btts": "Yes"
     },
     {
-        "homeTeam": "Croatia (u19)",
-        "awayTeam": "Italy (u19)",
-        "tip": "2",
+        "homeTeam": "Serbia (u19)",
+        "awayTeam": "Ukraine (u19)",
+        "tip": "X2",
         "over_under": "over",
         "btts": "Yes"
     },
     {
-        "homeTeam": "Serbia (u19)",
-        "awayTeam": "Ukraine (u19)",
-        "tip": "X2",
+        "homeTeam": "Croatia (u19)",
+        "awayTeam": "Italy (u19)",
+        "tip": "2",
         "over_under": "over",
         "btts": "Yes"
     },
