@@ -28,7 +28,7 @@ jobs:
 
       - name: Run script
         run: |
-          python .py
+          python.py
 
       - name: Commit JSON files
         run: |
