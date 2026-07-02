@@ -30,4 +30,4 @@ def correct_score(fixture_date =datetime.now().strftime('%A'), status=True):
                     
                 })
                 
-    return data
+    return true
