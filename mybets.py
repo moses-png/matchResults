@@ -70,10 +70,12 @@ def mybets():
     # Save to file (equivalent to SharedPreferences)
     with open("mybets.json", "w", encoding="utf-8") as f:
         json.dump(data_, f, indent=4, ensure_ascii=False)
+    
+    date = datetime.now().strftime("%a_%d_%b")
 
-    print(f"Saved {len(data_)} matches")
+    with open(f"{date_mybets}.json", "w", encoding="utf-8") as f:
+        json.dump(matches, f, indent=4, ensure_ascii=False)
 
-    return data_
 
 
 print(mybets())
