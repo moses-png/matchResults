@@ -1,0 +1,406 @@
+{
+    "Nautico vs Juventude": {
+        "homeTeam": "Nautico",
+        "awayTeam": "Juventude",
+        "date": "Mon 06/07 00:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Botafogo SP vs Avai": {
+        "homeTeam": "Botafogo SP",
+        "awayTeam": "Avai",
+        "date": "Mon 06/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 10.5"
+        }
+    },
+    "Vila Nova vs Sao Bernardo": {
+        "homeTeam": "Vila Nova",
+        "awayTeam": "Sao Bernardo",
+        "date": "Mon 06/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Anápolis vs Botafogo PB": {
+        "homeTeam": "Anápolis",
+        "awayTeam": "Botafogo PB",
+        "date": "Mon 06/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 8"
+        }
+    },
+    "Brusque vs Figueirense": {
+        "homeTeam": "Brusque",
+        "awayTeam": "Figueirense",
+        "date": "Mon 06/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Deportes Limache vs San Marcos De Arica": {
+        "homeTeam": "Deportes Limache",
+        "awayTeam": "San Marcos De Arica",
+        "date": "Mon 06/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:0"
+        }
+    },
+    "Universidad Catolica del Ecuador vs Mushuc Runa": {
+        "homeTeam": "Universidad Catolica del Ecuador",
+        "awayTeam": "Mushuc Runa",
+        "date": "Mon 06/07 22:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Keflavik vs Fram Reykjavik": {
+        "homeTeam": "Keflavik",
+        "awayTeam": "Fram Reykjavik",
+        "date": "Mon 06/07 20:15",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "2:4",
+            "handicap": "A -1.25",
+            "corners": "+ 8"
+        }
+    },
+    "Super Nova vs Ogre United": {
+        "homeTeam": "Super Nova",
+        "awayTeam": "Ogre United",
+        "date": "Mon 06/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1"
+        }
+    },
+    "Suduva Marijampole vs TransINVEST Vilnius": {
+        "homeTeam": "Suduva Marijampole",
+        "awayTeam": "TransINVEST Vilnius",
+        "date": "Mon 06/07 16:45",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Ulaanbaatar vs Deren": {
+        "homeTeam": "Ulaanbaatar",
+        "awayTeam": "Deren",
+        "date": "Mon 06/07 05:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 9.5"
+        }
+    },
+    "Khangarid vs Central Stallions": {
+        "homeTeam": "Khangarid",
+        "awayTeam": "Central Stallions",
+        "date": "Mon 06/07 08:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2"
+        }
+    },
+    "Encarnación vs Guairena FC": {
+        "homeTeam": "Encarnación",
+        "awayTeam": "Guairena FC",
+        "date": "Mon 06/07 20:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 8"
+        }
+    },
+    "Benjamín Aceval vs Deportivo Capiata": {
+        "homeTeam": "Benjamín Aceval",
+        "awayTeam": "Deportivo Capiata",
+        "date": "Mon 06/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 9.5"
+        }
+    },
+    "Brommapojkarna vs GAIS": {
+        "homeTeam": "Brommapojkarna",
+        "awayTeam": "GAIS",
+        "date": "Mon 06/07 18:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 10.5"
+        }
+    },
+    "BK Hacken vs Djurgarden": {
+        "homeTeam": "BK Hacken",
+        "awayTeam": "Djurgarden",
+        "date": "Mon 06/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 10.5"
+        }
+    },
+    "Colón vs Uruguay Montevideo": {
+        "homeTeam": "Colón",
+        "awayTeam": "Uruguay Montevideo",
+        "date": "Mon 06/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 8"
+        }
+    },
+    "Miramar vs Atenas": {
+        "homeTeam": "Miramar",
+        "awayTeam": "Atenas",
+        "date": "Mon 06/07 22:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Miami FC vs Birmingham Legion": {
+        "homeTeam": "Miami FC",
+        "awayTeam": "Birmingham Legion",
+        "date": "Mon 06/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 8"
+        }
+    },
+    "Crown Legacy vs Orlando City II": {
+        "homeTeam": "Crown Legacy",
+        "awayTeam": "Orlando City II",
+        "date": "Mon 06/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Huntsville City vs Chicago Fire II": {
+        "homeTeam": "Huntsville City",
+        "awayTeam": "Chicago Fire II",
+        "date": "Mon 06/07 01:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "2:4",
+            "handicap": "A -1.25",
+            "corners": "+ 9.5"
+        }
+    },
+    "Austin II vs Colorado Rapids II": {
+        "homeTeam": "Austin II",
+        "awayTeam": "Colorado Rapids II",
+        "date": "Mon 06/07 01:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 8.5"
+        }
+    },
+    "Los Angeles FC II vs Real Monarchs": {
+        "homeTeam": "Los Angeles FC II",
+        "awayTeam": "Real Monarchs",
+        "date": "Mon 06/07 02:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 8"
+        }
+    },
+    "Tacoma Defiance vs Portland Timbers II": {
+        "homeTeam": "Tacoma Defiance",
+        "awayTeam": "Portland Timbers II",
+        "date": "Mon 06/07 03:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 9.5"
+        }
+    },
+    "Westchester SC vs Boise": {
+        "homeTeam": "Westchester SC",
+        "awayTeam": "Boise",
+        "date": "Mon 06/07 00:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2"
+        }
+    },
+    "Alta vs Charlotte Independence": {
+        "homeTeam": "Alta",
+        "awayTeam": "Charlotte Independence",
+        "date": "Mon 06/07 04:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:3",
+            "handicap": "A -1",
+            "corners": "+ 8"
+        }
+    },
+    "Mexico vs England": {
+        "homeTeam": "Mexico",
+        "awayTeam": "England",
+        "date": "Mon 06/07 01:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "0:1",
+            "handicap": "A -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "Portugal vs Spain": {
+        "homeTeam": "Portugal",
+        "awayTeam": "Spain",
+        "date": "Mon 06/07 20:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 9.5"
+        }
+    }
+}

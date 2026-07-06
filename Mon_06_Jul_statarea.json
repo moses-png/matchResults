@@ -1,0 +1,65 @@
+[
+    {
+        "homeTeam": "Portugal",
+        "awayTeam": "Spain",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "USA",
+        "awayTeam": "Belgium",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Hacken",
+        "awayTeam": "Djurgarden",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "IF Brommapojkarna",
+        "awayTeam": "GAIS",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Botafogo SP",
+        "awayTeam": "Avai",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Vila Nova",
+        "awayTeam": "Sao Bernardo",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Centro Espanol",
+        "awayTeam": "Mercedes",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Keflavik",
+        "awayTeam": "Fram Reykjavik",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "SK Super Nova",
+        "awayTeam": "Ogre United",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    }
+]
