@@ -1,0 +1,350 @@
+{
+    "GV San Jose vs Real Tomayapo": {
+        "homeTeam": "GV San Jose",
+        "awayTeam": "Real Tomayapo",
+        "date": "Wed 08/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Real Oruro vs Universitario De Vinto": {
+        "homeTeam": "Real Oruro",
+        "awayTeam": "Universitario De Vinto",
+        "date": "Wed 08/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 9.5"
+        }
+    },
+    "Athletic Club MG vs Operario PR": {
+        "homeTeam": "Athletic Club MG",
+        "awayTeam": "Operario PR",
+        "date": "Wed 08/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Xian Ronghai vs Dalian Kewei": {
+        "homeTeam": "Xian Ronghai",
+        "awayTeam": "Dalian Kewei",
+        "date": "Wed 08/07 09:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 8.5"
+        }
+    },
+    "Langfang Glory City vs Jiangxi Liansheng": {
+        "homeTeam": "Langfang Glory City",
+        "awayTeam": "Jiangxi Liansheng",
+        "date": "Wed 08/07 12:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 7.5"
+        }
+    },
+    "SD Aucas vs Guayaquil City": {
+        "homeTeam": "SD Aucas",
+        "awayTeam": "Guayaquil City",
+        "date": "Wed 08/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "Denmark U19 vs Italy U19": {
+        "homeTeam": "Denmark U19",
+        "awayTeam": "Italy U19",
+        "date": "Wed 08/07 14:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Spain U19 vs Croatia U19": {
+        "homeTeam": "Spain U19",
+        "awayTeam": "Croatia U19",
+        "date": "Wed 08/07 16:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:0",
+            "handicap": "H -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Ukraine U19 vs Germany U19": {
+        "homeTeam": "Ukraine U19",
+        "awayTeam": "Germany U19",
+        "date": "Wed 08/07 19:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:3",
+            "handicap": "A -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "FAR Rabat vs Stade Marocain": {
+        "homeTeam": "FAR Rabat",
+        "awayTeam": "Stade Marocain",
+        "date": "Wed 08/07 20:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 8.5"
+        }
+    },
+    "Kairat Almaty vs Sutjeska Niksic": {
+        "homeTeam": "Kairat Almaty",
+        "awayTeam": "Sutjeska Niksic",
+        "date": "Wed 08/07 16:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "FC Flora Tallinn vs FC Iberia 1999": {
+        "homeTeam": "FC Flora Tallinn",
+        "awayTeam": "FC Iberia 1999",
+        "date": "Wed 08/07 17:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "CS Petrocub vs KF Egnatia": {
+        "homeTeam": "CS Petrocub",
+        "awayTeam": "KF Egnatia",
+        "date": "Wed 08/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "FC ML Vitebsk vs CS U Craiova": {
+        "homeTeam": "FC ML Vitebsk",
+        "awayTeam": "CS U Craiova",
+        "date": "Wed 08/07 18:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "0:1",
+            "handicap": "A -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Zira IK vs Torpedo Kutaisi": {
+        "homeTeam": "Zira IK",
+        "awayTeam": "Torpedo Kutaisi",
+        "date": "Wed 08/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "Connahs Quay vs KF Ballkani": {
+        "homeTeam": "Connahs Quay",
+        "awayTeam": "KF Ballkani",
+        "date": "Wed 08/07 18:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "0:2",
+            "handicap": "A -1.25",
+            "corners": "- 9.5"
+        }
+    },
+    "FC 03 Differdange vs FC Ilves": {
+        "homeTeam": "FC 03 Differdange",
+        "awayTeam": "FC Ilves",
+        "date": "Wed 08/07 18:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Vancouver Whitecaps II vs Ventura County": {
+        "homeTeam": "Vancouver Whitecaps II",
+        "awayTeam": "Ventura County",
+        "date": "Wed 08/07 02:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 9.5"
+        }
+    },
+    "The Town vs Sporting KC II": {
+        "homeTeam": "The Town",
+        "awayTeam": "Sporting KC II",
+        "date": "Wed 08/07 03:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "AC Connecticut vs Western Mass Pioneers": {
+        "homeTeam": "AC Connecticut",
+        "awayTeam": "Western Mass Pioneers",
+        "date": "Wed 08/07 00:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4"
+        }
+    },
+    "Union Macomb vs AFC Ann Arbor": {
+        "homeTeam": "Union Macomb",
+        "awayTeam": "AFC Ann Arbor",
+        "date": "Wed 08/07 00:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "2:4"
+        }
+    },
+    "Vermont Green vs Connecticut Rush": {
+        "homeTeam": "Vermont Green",
+        "awayTeam": "Connecticut Rush",
+        "date": "Wed 08/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Texoma vs Denton Diablos": {
+        "homeTeam": "Texoma",
+        "awayTeam": "Denton Diablos",
+        "date": "Wed 08/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2"
+        }
+    },
+    "Tacoma Stars vs Midlakes United": {
+        "homeTeam": "Tacoma Stars",
+        "awayTeam": "Midlakes United",
+        "date": "Wed 08/07 03:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "4:2"
+        }
+    }
+}
