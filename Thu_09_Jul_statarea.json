@@ -1,0 +1,170 @@
+[
+    {
+        "homeTeam": "CSKA Sofia",
+        "awayTeam": "Derry City",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Dinamo Kiev",
+        "awayTeam": "Universitatea Cluj",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Vojvodina",
+        "awayTeam": "Ferencvarosi TC",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "HNK Hajduk Split",
+        "awayTeam": "MSK Zilina",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Sheriff Tiraspol",
+        "awayTeam": "Aluminij",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Qarabag",
+        "awayTeam": "Vestri",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Kalju Nomme",
+        "awayTeam": "Linfield",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Dinamo Minsk",
+        "awayTeam": "FK Sileks",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Glentoran FC",
+        "awayTeam": "Rigas Futbola Skola",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Hegelmann Litauen",
+        "awayTeam": "Paide Lm",
+        "tip": "X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Dinamo Tirana",
+        "awayTeam": "FC Astana",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Alashkert",
+        "awayTeam": "Spartak Semey",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "US Mondorf-les-Bains",
+        "awayTeam": "Dinamo Tbilisi",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Penybont FC",
+        "awayTeam": "FC Santa Coloma",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Atletic Club dEscaldes",
+        "awayTeam": "Mornar",
+        "tip": "2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Vllaznia",
+        "awayTeam": "Malisheva",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "NSI Runavik",
+        "awayTeam": "Hamrun Spartans",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Marsaxlokk",
+        "awayTeam": "Pyunik Yerevan",
+        "tip": "2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Rennes",
+        "awayTeam": "Caen",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Korona Kielce",
+        "awayTeam": "Omonia",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Atletico Grau",
+        "awayTeam": "C.A. Mannucci",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "France",
+        "awayTeam": "Morocco",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Nacional Potosi",
+        "awayTeam": "Aurora",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "MuSa",
+        "awayTeam": "GrIFK",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    }
+]
