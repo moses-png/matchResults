@@ -1,0 +1,107 @@
+[
+    {
+        "homeTeam": "Cerro Largo",
+        "awayTeam": "Defensor Sporting",
+        "tip": "2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Ural",
+        "awayTeam": "FC Torpedo Moscow",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Arsenal Tula",
+        "awayTeam": "Tekstilshtik Ivanovo",
+        "tip": "12",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FC Chelyabinsk",
+        "awayTeam": "SKA-Energiya",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Djurgarden",
+        "awayTeam": "Halmstad",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Independiente F.B.C.",
+        "awayTeam": "Tacuary",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Deportivo Capiata",
+        "awayTeam": "Atletico Tembetary",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Honka",
+        "awayTeam": "HJS Akatemia",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "America Mineiro",
+        "awayTeam": "Londrina",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Figueirense",
+        "awayTeam": "Volta Redonda",
+        "tip": "12",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "AO Itabaiana",
+        "awayTeam": "Brusque",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "La Luz",
+        "awayTeam": "Tacuarembo",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Maardu Linnameeskond",
+        "awayTeam": "Tartu Welco Elekter",
+        "tip": "2",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Vestri",
+        "awayTeam": "Fylkir",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Breidablik",
+        "awayTeam": "Keflavik",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    }
+]

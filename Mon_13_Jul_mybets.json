@@ -1,0 +1,329 @@
+{
+    "Real Tomayapo vs Independiente Petrolero": {
+        "homeTeam": "Real Tomayapo",
+        "awayTeam": "Independiente Petrolero",
+        "date": "Mon 13/07 00:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 9.5"
+        }
+    },
+    "America MG vs Londrina": {
+        "homeTeam": "America MG",
+        "awayTeam": "Londrina",
+        "date": "Mon 13/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 9.5"
+        }
+    },
+    "AO Itabaiana vs Brusque": {
+        "homeTeam": "AO Itabaiana",
+        "awayTeam": "Brusque",
+        "date": "Mon 13/07 23:30",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "2:2"
+        }
+    },
+    "CF Montreal vs Vancouver FC": {
+        "homeTeam": "CF Montreal",
+        "awayTeam": "Vancouver FC",
+        "date": "Mon 13/07 00:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 8"
+        }
+    },
+    "Ningbo Professional vs Dongguan United": {
+        "homeTeam": "Ningbo Professional",
+        "awayTeam": "Dongguan United",
+        "date": "Mon 13/07 12:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 8"
+        }
+    },
+    "Emelec vs Barcelona Guayaquil": {
+        "homeTeam": "Emelec",
+        "awayTeam": "Barcelona Guayaquil",
+        "date": "Mon 13/07 00:10",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Maardu vs Tartu Welco": {
+        "homeTeam": "Maardu",
+        "awayTeam": "Tartu Welco",
+        "date": "Mon 13/07 17:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4"
+        }
+    },
+    "Vestri vs Fylkir": {
+        "homeTeam": "Vestri",
+        "awayTeam": "Fylkir",
+        "date": "Mon 13/07 21:15",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "2:4"
+        }
+    },
+    "Breidablik vs Keflavik": {
+        "homeTeam": "Breidablik",
+        "awayTeam": "Keflavik",
+        "date": "Mon 13/07 20:15",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 8"
+        }
+    },
+    "Independiente F.b.c. vs Tacuary": {
+        "homeTeam": "Independiente F.b.c.",
+        "awayTeam": "Tacuary",
+        "date": "Mon 13/07 21:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Deportivo Capiata vs Atlético Tembetary": {
+        "homeTeam": "Deportivo Capiata",
+        "awayTeam": "Atlético Tembetary",
+        "date": "Mon 13/07 23:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Chelyabinsk vs Ska-khabarovsk": {
+        "homeTeam": "Chelyabinsk",
+        "awayTeam": "Ska-khabarovsk",
+        "date": "Mon 13/07 15:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 8"
+        }
+    },
+    "Ural vs Torpedo Moskva": {
+        "homeTeam": "Ural",
+        "awayTeam": "Torpedo Moskva",
+        "date": "Mon 13/07 15:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 8"
+        }
+    },
+    "Arsenal Tula vs Tekstilshchik": {
+        "homeTeam": "Arsenal Tula",
+        "awayTeam": "Tekstilshchik",
+        "date": "Mon 13/07 17:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Djurgarden vs Halmstad": {
+        "homeTeam": "Djurgarden",
+        "awayTeam": "Halmstad",
+        "date": "Mon 13/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:0",
+            "handicap": "H -1",
+            "corners": "+ 10.5"
+        }
+    },
+    "Cerro Largo vs Defensor Sporting": {
+        "homeTeam": "Cerro Largo",
+        "awayTeam": "Defensor Sporting",
+        "date": "Mon 13/07 23:00",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "0:0",
+            "handicap": "A +0.25",
+            "corners": "+ 7.5"
+        }
+    },
+    "La Luz vs Tacuarembo": {
+        "homeTeam": "La Luz",
+        "awayTeam": "Tacuarembo",
+        "date": "Mon 13/07 19:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 9"
+        }
+    },
+    "Paysandu vs Fenix": {
+        "homeTeam": "Paysandu",
+        "awayTeam": "Fenix",
+        "date": "Mon 13/07 23:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "The Town vs Tacoma Defiance": {
+        "homeTeam": "The Town",
+        "awayTeam": "Tacoma Defiance",
+        "date": "Mon 13/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Austin II vs Minnesota United II": {
+        "homeTeam": "Austin II",
+        "awayTeam": "Minnesota United II",
+        "date": "Mon 13/07 01:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 8.5"
+        }
+    },
+    "RKC vs River Light": {
+        "homeTeam": "RKC",
+        "awayTeam": "River Light",
+        "date": "Mon 13/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2"
+        }
+    },
+    "The Villages vs Shark Coast": {
+        "homeTeam": "The Villages",
+        "awayTeam": "Shark Coast",
+        "date": "Mon 13/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Ballard vs Snohomish United": {
+        "homeTeam": "Ballard",
+        "awayTeam": "Snohomish United",
+        "date": "Mon 13/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2"
+        }
+    }
+}
