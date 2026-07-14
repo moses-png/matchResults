@@ -1,0 +1,317 @@
+[
+    {
+        "homeTeam": "Sporting CP",
+        "awayTeam": "Celtic",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Lask Linz",
+        "awayTeam": "Fenerbahce",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Lokomotiv Moscow",
+        "awayTeam": "CSKA Moscow",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Fortuna Dusseldorf",
+        "awayTeam": "MFK Ruzomberok",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Cork City",
+        "awayTeam": "Cardiff",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Polissya Zhytomyr",
+        "awayTeam": "Shimizu",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Bristol Rovers",
+        "awayTeam": "Leicester",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Woking",
+        "awayTeam": "Portsmouth",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Randers FC",
+        "awayTeam": "Notts County",
+        "tip": "12",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Tonbridge Angels",
+        "awayTeam": "Sutton Utd",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Matlock Town",
+        "awayTeam": "Quorn",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Evesham United",
+        "awayTeam": "Worcester",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Hebburn Town",
+        "awayTeam": "Gateshead",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FC Utd Of Manchester",
+        "awayTeam": "Rochdale",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "SR Donaufeld",
+        "awayTeam": "Rapid Vienna II",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Slough Town",
+        "awayTeam": "Basingstoke",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Kingstonian",
+        "awayTeam": "Wingate and Finchley",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Plymouth Parkway",
+        "awayTeam": "Torquay",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Merthyr",
+        "awayTeam": "Yeovil",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Redcar Athletic",
+        "awayTeam": "Hartlepool",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Alfreton",
+        "awayTeam": "Boston Utd",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Hitchin",
+        "awayTeam": "Dagenham and Redbridge",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "France",
+        "awayTeam": "Spain",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Levski Sofia",
+        "awayTeam": "FK Borac Banja Luka",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "KuPS",
+        "awayTeam": "Vardar Skopje",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Larne",
+        "awayTeam": "Tre Fiori",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Inter Club dEscaldes",
+        "awayTeam": "Lincoln Red Imps FC",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Brora Rangers",
+        "awayTeam": "Aberdeen",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Kelty Hearts",
+        "awayTeam": "Queens Park",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Brechin",
+        "awayTeam": "Livingston",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Forfar Athletic",
+        "awayTeam": "Partick",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Linlithgow Rose",
+        "awayTeam": "St Johnstone",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "East Fife",
+        "awayTeam": "Morton",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Montrose",
+        "awayTeam": "Dundee Utd",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Spartans",
+        "awayTeam": "Stirling Albion",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Kilmarnock",
+        "awayTeam": "Raith Rovers",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Elgin City",
+        "awayTeam": "Peterhead",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Falkirk",
+        "awayTeam": "Ayr Utd",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Edinburgh City",
+        "awayTeam": "Alloa Athletic",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Dunfermline",
+        "awayTeam": "Dumbarton",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Cove Rangers",
+        "awayTeam": "East Kilbride",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Annan Athletic",
+        "awayTeam": "Dundee",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Clyde",
+        "awayTeam": "Airdrieonians",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Grotta",
+        "awayTeam": "Grindavik",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "HK Kopavogur",
+        "awayTeam": "IR",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    }
+]
