@@ -1,0 +1,519 @@
+{
+    "Marlin Coast Rangers vs Brunswick Juventus": {
+        "homeTeam": "Marlin Coast Rangers",
+        "awayTeam": "Brunswick Juventus",
+        "date": "Wed 15/07 10:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4"
+        }
+    },
+    "White City FK Beograd vs North Sunshine Eagles": {
+        "homeTeam": "White City FK Beograd",
+        "awayTeam": "North Sunshine Eagles",
+        "date": "Wed 15/07 10:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Kahibah FC vs Maitland FC": {
+        "homeTeam": "Kahibah FC",
+        "awayTeam": "Maitland FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4"
+        }
+    },
+    "Blooming vs GV San Jose": {
+        "homeTeam": "Blooming",
+        "awayTeam": "GV San Jose",
+        "date": "Wed 15/07 01:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Real Potosi vs San Antonio Bulo Bulo": {
+        "homeTeam": "Real Potosi",
+        "awayTeam": "San Antonio Bulo Bulo",
+        "date": "Wed 15/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Cuniburo vs El Nacional": {
+        "homeTeam": "Cuniburo",
+        "awayTeam": "El Nacional",
+        "date": "Wed 15/07 20:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "Manta FC vs Delfin SC": {
+        "homeTeam": "Manta FC",
+        "awayTeam": "Delfin SC",
+        "date": "Wed 15/07 01:00",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "0:0",
+            "handicap": "A +0.25",
+            "corners": "+ 8.5"
+        }
+    },
+    "Libertad FC vs Tecnico Universitario": {
+        "homeTeam": "Libertad FC",
+        "awayTeam": "Tecnico Universitario",
+        "date": "Wed 15/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 9.5"
+        }
+    },
+    "Leones FC vs Deportivo Cuenca": {
+        "homeTeam": "Leones FC",
+        "awayTeam": "Deportivo Cuenca",
+        "date": "Wed 15/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Universidad Catolica del Ecuador vs LDU Quito": {
+        "homeTeam": "Universidad Catolica del Ecuador",
+        "awayTeam": "LDU Quito",
+        "date": "Wed 15/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 9.5"
+        }
+    },
+    "JIPPO vs MP": {
+        "homeTeam": "JIPPO",
+        "awayTeam": "MP",
+        "date": "Wed 15/07 16:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Seongnam FC vs Pocheon Citizen FC": {
+        "homeTeam": "Seongnam FC",
+        "awayTeam": "Pocheon Citizen FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 8.5"
+        }
+    },
+    "Namyangju FC vs Gimpo FC": {
+        "homeTeam": "Namyangju FC",
+        "awayTeam": "Gimpo FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "0:2",
+            "handicap": "A -1.25",
+            "corners": "- 9.5"
+        }
+    },
+    "Busan I Park vs Geoje Citizen FC": {
+        "homeTeam": "Busan I Park",
+        "awayTeam": "Geoje Citizen FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 8.5"
+        }
+    },
+    "Suwon FC vs Pyeongchang United": {
+        "homeTeam": "Suwon FC",
+        "awayTeam": "Pyeongchang United",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:0",
+            "handicap": "H -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Changwon FC vs Gimhae FC 2008": {
+        "homeTeam": "Changwon FC",
+        "awayTeam": "Gimhae FC 2008",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:3",
+            "handicap": "A -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Yongin FC vs Dangjin Citizen FC": {
+        "homeTeam": "Yongin FC",
+        "awayTeam": "Dangjin Citizen FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "Ulsan Citizen FC vs Seoul E-Land FC": {
+        "homeTeam": "Ulsan Citizen FC",
+        "awayTeam": "Seoul E-Land FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:3",
+            "handicap": "A -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "Busan Trans Corp vs Suwon Bluewings": {
+        "homeTeam": "Busan Trans Corp",
+        "awayTeam": "Suwon Bluewings",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4",
+            "handicap": "A -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Ansan Greeners FC vs Jinju Citizen FC": {
+        "homeTeam": "Ansan Greeners FC",
+        "awayTeam": "Jinju Citizen FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 8.5"
+        }
+    },
+    "Paju Frontier FC vs Gangneung City": {
+        "homeTeam": "Paju Frontier FC",
+        "awayTeam": "Gangneung City",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "Hwaseong FC vs Yangpyeong FC": {
+        "homeTeam": "Hwaseong FC",
+        "awayTeam": "Yangpyeong FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:0",
+            "handicap": "H -1",
+            "corners": "- 8.5"
+        }
+    },
+    "Chungbuk Cheongju vs Gyeongju HNP": {
+        "homeTeam": "Chungbuk Cheongju",
+        "awayTeam": "Gyeongju HNP",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "Daegu FC vs Siheung City AC": {
+        "homeTeam": "Daegu FC",
+        "awayTeam": "Siheung City AC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "Jeonnam Dragons vs Chungnam Asan FC": {
+        "homeTeam": "Jeonnam Dragons",
+        "awayTeam": "Chungnam Asan FC",
+        "date": "Wed 15/07 11:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 8.5"
+        }
+    },
+    "Cheonan City vs Mokpo City FC": {
+        "homeTeam": "Cheonan City",
+        "awayTeam": "Mokpo City FC",
+        "date": "Wed 15/07 11:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:0",
+            "handicap": "H -1",
+            "corners": "- 8.5"
+        }
+    },
+    "Gyeongnam FC vs Yeoju": {
+        "homeTeam": "Gyeongnam FC",
+        "awayTeam": "Yeoju",
+        "date": "Wed 15/07 11:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "CS U Craiova vs FC ML Vitebsk": {
+        "homeTeam": "CS U Craiova",
+        "awayTeam": "FC ML Vitebsk",
+        "date": "Wed 15/07 18:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:0",
+            "handicap": "H -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "Atert Bissen vs KI Klaksvik": {
+        "homeTeam": "Atert Bissen",
+        "awayTeam": "KI Klaksvik",
+        "date": "Wed 15/07 19:15",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "1:3",
+            "handicap": "A -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "KF Egnatia vs CS Petrocub": {
+        "homeTeam": "KF Egnatia",
+        "awayTeam": "CS Petrocub",
+        "date": "Wed 15/07 20:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Sutjeska Niksic vs Kairat Almaty": {
+        "homeTeam": "Sutjeska Niksic",
+        "awayTeam": "Kairat Almaty",
+        "date": "Wed 15/07 20:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:3",
+            "handicap": "A -1",
+            "corners": "+ 8.5"
+        }
+    },
+    "KF Malisheva vs Vllaznia Shkoder": {
+        "homeTeam": "KF Malisheva",
+        "awayTeam": "Vllaznia Shkoder",
+        "date": "Wed 15/07 15:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 9.5"
+        }
+    },
+    "FK Decic Tuzi vs FK Liepaja": {
+        "homeTeam": "FK Decic Tuzi",
+        "awayTeam": "FK Liepaja",
+        "date": "Wed 15/07 19:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "One Knoxville vs Fort Wayne": {
+        "homeTeam": "One Knoxville",
+        "awayTeam": "Fort Wayne",
+        "date": "Wed 15/07 23:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "England vs Argentina": {
+        "homeTeam": "England",
+        "awayTeam": "Argentina",
+        "date": "Wed 15/07 20:00",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "0:0",
+            "handicap": "A +0.25",
+            "corners": "+ 7.5"
+        }
+    }
+}
