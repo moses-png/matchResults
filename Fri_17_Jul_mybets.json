@@ -1,0 +1,963 @@
+{
+    "Sarmiento Junin vs Boca Juniors": {
+        "homeTeam": "Sarmiento Junin",
+        "awayTeam": "Boca Juniors",
+        "date": "Fri 17/07 01:45",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:2"
+        }
+    },
+    "San Lorenzo vs Deportivo Riestra": {
+        "homeTeam": "San Lorenzo",
+        "awayTeam": "Deportivo Riestra",
+        "date": "Fri 17/07 22:45",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Deportivo Maipu vs San Martin de Tucuman": {
+        "homeTeam": "Deportivo Maipu",
+        "awayTeam": "San Martin de Tucuman",
+        "date": "Fri 17/07 19:00",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "0:0"
+        }
+    },
+    "Almirante Brown vs CA Estudiantes Caseros": {
+        "homeTeam": "Almirante Brown",
+        "awayTeam": "CA Estudiantes Caseros",
+        "date": "Fri 17/07 19:00",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "0:0"
+        }
+    },
+    "Club Atletico Mitre vs Racing de Cordoba": {
+        "homeTeam": "Club Atletico Mitre",
+        "awayTeam": "Racing de Cordoba",
+        "date": "Fri 17/07 20:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "Nueva Chicago vs Agropecuario": {
+        "homeTeam": "Nueva Chicago",
+        "awayTeam": "Agropecuario",
+        "date": "Fri 17/07 22:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0"
+        }
+    },
+    "Sydney FC U23 vs Manly United": {
+        "homeTeam": "Sydney FC U23",
+        "awayTeam": "Manly United",
+        "date": "Fri 17/07 10:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "1:3",
+            "handicap": "A -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Campbelltown City vs Adelaide Comets": {
+        "homeTeam": "Campbelltown City",
+        "awayTeam": "Adelaide Comets",
+        "date": "Fri 17/07 10:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "West Torrens Birkalla vs Para Hills Knights": {
+        "homeTeam": "West Torrens Birkalla",
+        "awayTeam": "Para Hills Knights",
+        "date": "Fri 17/07 11:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Green Gully vs Dandenong Thunder": {
+        "homeTeam": "Green Gully",
+        "awayTeam": "Dandenong Thunder",
+        "date": "Fri 17/07 10:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:2"
+        }
+    },
+    "Bentleigh Greens vs Dandenong City": {
+        "homeTeam": "Bentleigh Greens",
+        "awayTeam": "Dandenong City",
+        "date": "Fri 17/07 10:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:3"
+        }
+    },
+    "Perth vs Western Knights": {
+        "homeTeam": "Perth",
+        "awayTeam": "Western Knights",
+        "date": "Fri 17/07 12:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Bahia vs Chapecoense": {
+        "homeTeam": "Bahia",
+        "awayTeam": "Chapecoense",
+        "date": "Fri 17/07 23:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 10.5"
+        }
+    },
+    "CRB vs Nautico": {
+        "homeTeam": "CRB",
+        "awayTeam": "Nautico",
+        "date": "Fri 17/07 00:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 10.5"
+        }
+    },
+    "Juventude vs Cuiaba": {
+        "homeTeam": "Juventude",
+        "awayTeam": "Cuiaba",
+        "date": "Fri 17/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Sao Bernardo vs Avai": {
+        "homeTeam": "Sao Bernardo",
+        "awayTeam": "Avai",
+        "date": "Fri 17/07 23:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 10.5"
+        }
+    },
+    "America MG vs Ceara": {
+        "homeTeam": "America MG",
+        "awayTeam": "Ceara",
+        "date": "Fri 17/07 23:00",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "0:0",
+            "handicap": "A +0.25",
+            "corners": "+ 8.5"
+        }
+    },
+    "Spartak Varna vs CSKA 1948 Sofia": {
+        "homeTeam": "Spartak Varna",
+        "awayTeam": "CSKA 1948 Sofia",
+        "date": "Fri 17/07 17:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "0:1"
+        }
+    },
+    "Levski Sofia vs Dunav Ruse": {
+        "homeTeam": "Levski Sofia",
+        "awayTeam": "Dunav Ruse",
+        "date": "Fri 17/07 19:15",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:0"
+        }
+    },
+    "Forge vs Pacific FC": {
+        "homeTeam": "Forge",
+        "awayTeam": "Pacific FC",
+        "date": "Fri 17/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 8.5"
+        }
+    },
+    "Qingdao West Coast vs Chengdu Rongcheng": {
+        "homeTeam": "Qingdao West Coast",
+        "awayTeam": "Chengdu Rongcheng",
+        "date": "Fri 17/07 12:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4",
+            "handicap": "A -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Beijing Guoan vs Liaoning Ironman": {
+        "homeTeam": "Beijing Guoan",
+        "awayTeam": "Liaoning Ironman",
+        "date": "Fri 17/07 12:35",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Henan vs Qingdao Hainiu": {
+        "homeTeam": "Henan",
+        "awayTeam": "Qingdao Hainiu",
+        "date": "Fri 17/07 12:35",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Yunnan Yukun vs Shanghai Port": {
+        "homeTeam": "Yunnan Yukun",
+        "awayTeam": "Shanghai Port",
+        "date": "Fri 17/07 13:00",
+        "predictions": {
+            "fulltime": "X",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/X",
+            "correct_s": "2:2",
+            "handicap": "A +0.25",
+            "corners": "+ 8.5"
+        }
+    },
+    "Changchun Yatai vs Wuxi Wugou": {
+        "homeTeam": "Changchun Yatai",
+        "awayTeam": "Wuxi Wugou",
+        "date": "Fri 17/07 12:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Suzhou Dongwu vs Shenzhen Juniors": {
+        "homeTeam": "Suzhou Dongwu",
+        "awayTeam": "Shenzhen Juniors",
+        "date": "Fri 17/07 12:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2"
+        }
+    },
+    "Dongguan United vs Nantong Zhiyun": {
+        "homeTeam": "Dongguan United",
+        "awayTeam": "Nantong Zhiyun",
+        "date": "Fri 17/07 12:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2"
+        }
+    },
+    "Hebei Kungfu vs Yanbian Longding": {
+        "homeTeam": "Hebei Kungfu",
+        "awayTeam": "Yanbian Longding",
+        "date": "Fri 17/07 12:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2"
+        }
+    },
+    "Santo Domingo vs Deportivo Cuenca Juniors": {
+        "homeTeam": "Santo Domingo",
+        "awayTeam": "Deportivo Cuenca Juniors",
+        "date": "Fri 17/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Orense vs Emelec": {
+        "homeTeam": "Orense",
+        "awayTeam": "Emelec",
+        "date": "Fri 17/07 01:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "Flora Tallinn vs Nõmme United": {
+        "homeTeam": "Flora Tallinn",
+        "awayTeam": "Nõmme United",
+        "date": "Fri 17/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "KäPa vs SJK Akatemia": {
+        "homeTeam": "KäPa",
+        "awayTeam": "SJK Akatemia",
+        "date": "Fri 17/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Klubi-04 vs Haka": {
+        "homeTeam": "Klubi-04",
+        "awayTeam": "Haka",
+        "date": "Fri 17/07 17:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4"
+        }
+    },
+    "Fylkir vs Njardvik": {
+        "homeTeam": "Fylkir",
+        "awayTeam": "Njardvik",
+        "date": "Fri 17/07 20:15",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2"
+        }
+    },
+    "Haukar vs Thróttur Vogar": {
+        "homeTeam": "Haukar",
+        "awayTeam": "Thróttur Vogar",
+        "date": "Fri 17/07 20:15",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "KFG vs Kári": {
+        "homeTeam": "KFG",
+        "awayTeam": "Kári",
+        "date": "Fri 17/07 20:15",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4",
+            "handicap": "A -1.5",
+            "corners": "+ 11"
+        }
+    },
+    "Necaxa vs Atlante": {
+        "homeTeam": "Necaxa",
+        "awayTeam": "Atlante",
+        "date": "Fri 17/07 02:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Tijuana vs Tigres UANL": {
+        "homeTeam": "Tijuana",
+        "awayTeam": "Tigres UANL",
+        "date": "Fri 17/07 04:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "X/2",
+            "correct_s": "1:2",
+            "handicap": "A -0.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Bodo/Glimt vs Fredrikstad": {
+        "homeTeam": "Bodo/Glimt",
+        "awayTeam": "Fredrikstad",
+        "date": "Fri 17/07 18:15",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "12 de Junio VH vs General Caballero": {
+        "homeTeam": "12 de Junio VH",
+        "awayTeam": "General Caballero",
+        "date": "Fri 17/07 23:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1"
+        }
+    },
+    "FC Cajamarca vs Juan Pablo II College": {
+        "homeTeam": "FC Cajamarca",
+        "awayTeam": "Juan Pablo II College",
+        "date": "Fri 17/07 19:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 9.5"
+        }
+    },
+    "Sporting Cristal vs Deportivo Garcilaso": {
+        "homeTeam": "Sporting Cristal",
+        "awayTeam": "Deportivo Garcilaso",
+        "date": "Fri 17/07 21:15",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:0",
+            "handicap": "H -1",
+            "corners": "- 12.5"
+        }
+    },
+    "Finn Harps vs Bray Wanderers": {
+        "homeTeam": "Finn Harps",
+        "awayTeam": "Bray Wanderers",
+        "date": "Fri 17/07 19:45",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "2:4"
+        }
+    },
+    "Athlone Town vs Midleton": {
+        "homeTeam": "Athlone Town",
+        "awayTeam": "Midleton",
+        "date": "Fri 17/07 19:45",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Galway United vs Crumlin United": {
+        "homeTeam": "Galway United",
+        "awayTeam": "Crumlin United",
+        "date": "Fri 17/07 19:45",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Kerry vs Shelbourne": {
+        "homeTeam": "Kerry",
+        "awayTeam": "Shelbourne",
+        "date": "Fri 17/07 19:45",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:3",
+            "handicap": "A -1",
+            "corners": "+ 9"
+        }
+    },
+    "Shamrock Rovers vs Cork City": {
+        "homeTeam": "Shamrock Rovers",
+        "awayTeam": "Cork City",
+        "date": "Fri 17/07 19:45",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "St Patricks Athl. vs Wexford": {
+        "homeTeam": "St Patricks Athl.",
+        "awayTeam": "Wexford",
+        "date": "Fri 17/07 19:45",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Treaty United vs UCD": {
+        "homeTeam": "Treaty United",
+        "awayTeam": "UCD",
+        "date": "Fri 17/07 19:45",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:2"
+        }
+    },
+    "Waterford vs Cobh Ramblers": {
+        "homeTeam": "Waterford",
+        "awayTeam": "Cobh Ramblers",
+        "date": "Fri 17/07 19:45",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1"
+        }
+    },
+    "FC Voluntari vs FC Botosani": {
+        "homeTeam": "FC Voluntari",
+        "awayTeam": "FC Botosani",
+        "date": "Fri 17/07 16:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 8.5"
+        }
+    },
+    "FCSB vs FC Arges Pitesti": {
+        "homeTeam": "FCSB",
+        "awayTeam": "FC Arges Pitesti",
+        "date": "Fri 17/07 19:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "FK Crvena Zvezda vs Macva": {
+        "homeTeam": "FK Crvena Zvezda",
+        "awayTeam": "Macva",
+        "date": "Fri 17/07 19:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Železničar Pančevo vs Radnicki NIS": {
+        "homeTeam": "Železničar Pančevo",
+        "awayTeam": "Radnicki NIS",
+        "date": "Fri 17/07 19:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Nafta vs Koper": {
+        "homeTeam": "Nafta",
+        "awayTeam": "Koper",
+        "date": "Fri 17/07 17:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:4"
+        }
+    },
+    "Celje vs Mura": {
+        "homeTeam": "Celje",
+        "awayTeam": "Mura",
+        "date": "Fri 17/07 19:15",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "IFK Goteborg vs Brommapojkarna": {
+        "homeTeam": "IFK Goteborg",
+        "awayTeam": "Brommapojkarna",
+        "date": "Fri 17/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 10.5"
+        }
+    },
+    "Mjällby AIF vs Västerås SK FK": {
+        "homeTeam": "Mjällby AIF",
+        "awayTeam": "Västerås SK FK",
+        "date": "Fri 17/07 18:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "3:1",
+            "handicap": "H -1",
+            "corners": "+ 10.5"
+        }
+    },
+    "Albion FC vs Juventud De Las Piedras": {
+        "homeTeam": "Albion FC",
+        "awayTeam": "Juventud De Las Piedras",
+        "date": "Fri 17/07 19:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "2:1",
+            "handicap": "H -0.75",
+            "corners": "+ 9.5"
+        }
+    },
+    "Nacional De Football vs Montevideo Wanderers": {
+        "homeTeam": "Nacional De Football",
+        "awayTeam": "Montevideo Wanderers",
+        "date": "Fri 17/07 23:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Under",
+            "btts": "No",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "1:0",
+            "handicap": "H -0.5",
+            "corners": "- 9.5"
+        }
+    },
+    "CF Montreal vs Toronto FC": {
+        "homeTeam": "CF Montreal",
+        "awayTeam": "Toronto FC",
+        "date": "Fri 17/07 00:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2",
+            "handicap": "H -1.25",
+            "corners": "+ 9.5"
+        }
+    },
+    "Chicago Fire vs Vancouver Whitecaps": {
+        "homeTeam": "Chicago Fire",
+        "awayTeam": "Vancouver Whitecaps",
+        "date": "Fri 17/07 01:30",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "12",
+            "ht_ft": "X/2",
+            "correct_s": "2:4",
+            "handicap": "A -1.25",
+            "corners": "+ 9.5"
+        }
+    },
+    "St. Louis City SC vs Kansas City": {
+        "homeTeam": "St. Louis City SC",
+        "awayTeam": "Kansas City",
+        "date": "Fri 17/07 01:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 10.5"
+        }
+    },
+    "Seattle Sounders vs Portland Timbers": {
+        "homeTeam": "Seattle Sounders",
+        "awayTeam": "Portland Timbers",
+        "date": "Fri 17/07 03:30",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1",
+            "handicap": "H -1.5",
+            "corners": "+ 9.5"
+        }
+    },
+    "Charlotte Independence 2 vs Appalachian": {
+        "homeTeam": "Charlotte Independence 2",
+        "awayTeam": "Appalachian",
+        "date": "Fri 17/07 17:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "X/1",
+            "correct_s": "4:2"
+        }
+    },
+    "Steel City vs Northern Indiana": {
+        "homeTeam": "Steel City",
+        "awayTeam": "Northern Indiana",
+        "date": "Fri 17/07 21:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "4:1"
+        }
+    },
+    "Mashal vs Kokand-1912": {
+        "homeTeam": "Mashal",
+        "awayTeam": "Kokand-1912",
+        "date": "Fri 17/07 16:00",
+        "predictions": {
+            "fulltime": "2",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "X2",
+            "ht_ft": "2/2",
+            "correct_s": "1:2"
+        }
+    },
+    "Navbahor vs Olmaliq": {
+        "homeTeam": "Navbahor",
+        "awayTeam": "Olmaliq",
+        "date": "Fri 17/07 16:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1"
+        }
+    },
+    "Pakhtakor vs Lokomotiv": {
+        "homeTeam": "Pakhtakor",
+        "awayTeam": "Lokomotiv",
+        "date": "Fri 17/07 16:00",
+        "predictions": {
+            "fulltime": "1",
+            "over_under": "Over",
+            "btts": "Yes",
+            "dc": "1X",
+            "ht_ft": "1/1",
+            "correct_s": "2:1"
+        }
+    }
+}
