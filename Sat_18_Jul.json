@@ -1,0 +1,5114 @@
+[
+    {
+        "match_id": "b9l0F3Bj",
+        "home_team": "France",
+        "away_team": "England",
+        "result": "2-4"
+    },
+    {
+        "match_id": "dtFlx3Qa",
+        "home_team": "Nueva Chicago",
+        "away_team": "Agropecuario",
+        "result": "1-1"
+    },
+    {
+        "match_id": "6BdIJFGq",
+        "home_team": "Ferro",
+        "away_team": "Colon Santa Fe",
+        "result": "2-0"
+    },
+    {
+        "match_id": "QyNhL7zi",
+        "home_team": "Ciudad Bolivar",
+        "away_team": "All Boys",
+        "result": "0-0"
+    },
+    {
+        "match_id": "lGBtvPem",
+        "home_team": "Temperley",
+        "away_team": "Atl. Rafaela",
+        "result": "2-0"
+    },
+    {
+        "match_id": "fwx4F123",
+        "home_team": "Villa San Carlos",
+        "away_team": "Deportivo Camioneros",
+        "result": "0-2"
+    },
+    {
+        "match_id": "AgSAps3T",
+        "home_team": "Argentino de Merlo",
+        "away_team": "Deportivo Armenio",
+        "result": "2-2"
+    },
+    {
+        "match_id": "Uw9suLQj",
+        "home_team": "Arsenal Sarandi",
+        "away_team": "Flandria",
+        "result": "1-0"
+    },
+    {
+        "match_id": "MXeT2OIc",
+        "home_team": "Excursionistas",
+        "away_team": "Argentino de Quilmes",
+        "result": "0-0"
+    },
+    {
+        "match_id": "tbfHibAd",
+        "home_team": "Liniers",
+        "away_team": "Dep. Merlo",
+        "result": "1-1"
+    },
+    {
+        "match_id": "YXj9gKup",
+        "home_team": "Real Pilar",
+        "away_team": "Dock Sud",
+        "result": "0-1"
+    },
+    {
+        "match_id": "SjzCDuXF",
+        "home_team": "San Martin Burzaco",
+        "away_team": "Sportivo Italiano",
+        "result": "1-2"
+    },
+    {
+        "match_id": "l0FxatIM",
+        "home_team": "UAI Urquiza",
+        "away_team": "Comunicaciones",
+        "result": "0-2"
+    },
+    {
+        "match_id": "tzCU02mA",
+        "home_team": "Villa Dalmine",
+        "away_team": "Defensores Unidos",
+        "result": "0-0"
+    },
+    {
+        "match_id": "IHpC5vE4",
+        "home_team": "Canuelas",
+        "away_team": "Leandro N. Alem",
+        "result": "1-0"
+    },
+    {
+        "match_id": "Mki370qh",
+        "home_team": "Justo Jose de Urquiza",
+        "away_team": "Deportivo Muniz",
+        "result": "3-0"
+    },
+    {
+        "match_id": "zaxnrpGt",
+        "home_team": "Mercedes",
+        "away_team": "El Porvenir",
+        "result": "2-0"
+    },
+    {
+        "match_id": "CYJlnxJ8",
+        "home_team": "Academia Control Orientado",
+        "away_team": "Las Mandarinas",
+        "result": "0-2"
+    },
+    {
+        "match_id": "4MHiRjx1",
+        "home_team": "San Lorenzo",
+        "away_team": "Dep. Riestra",
+        "result": "1-1 (Pen: 4-5)"
+    },
+    {
+        "match_id": "E75QaBrQ",
+        "home_team": "River Plate",
+        "away_team": "Aldosivi",
+        "result": "1-3"
+    },
+    {
+        "match_id": "QPojV8FU",
+        "home_team": "Britannia",
+        "away_team": "Sporting",
+        "result": "3-1"
+    },
+    {
+        "match_id": "I5bqHkFD",
+        "home_team": "Cooks Hill United",
+        "away_team": "Broadmeadow",
+        "result": "-"
+    },
+    {
+        "match_id": "UqS1ZWUs",
+        "home_team": "Weston Bears",
+        "away_team": "Kahibah",
+        "result": "5-2"
+    },
+    {
+        "match_id": "pCjVvg7K",
+        "home_team": "Lambton J.",
+        "away_team": "Maitland",
+        "result": "0-1"
+    },
+    {
+        "match_id": "r7Q7ymCU",
+        "home_team": "WS Wanderers U21",
+        "away_team": "APIA Leichhardt",
+        "result": "3-5"
+    },
+    {
+        "match_id": "W25Hejcn",
+        "home_team": "UNSW",
+        "away_team": "NWS Spirit",
+        "result": "3-1"
+    },
+    {
+        "match_id": "hIgQgURb",
+        "home_team": "Sutherland Sharks",
+        "away_team": "Sydney Olympic",
+        "result": "1-1"
+    },
+    {
+        "match_id": "0rcYi8dB",
+        "home_team": "St George Saints",
+        "away_team": "Rockdale Ilinden",
+        "result": "1-6"
+    },
+    {
+        "match_id": "EsivxUuT",
+        "home_team": "Gold Coast Utd",
+        "away_team": "Queensland Lions",
+        "result": "0-1"
+    },
+    {
+        "match_id": "WbXAW73j",
+        "home_team": "Gold Coast Knights",
+        "away_team": "Wynnum Wolves",
+        "result": "1-2"
+    },
+    {
+        "match_id": "6HmWwjBG",
+        "home_team": "Moreton City Excelsior",
+        "away_team": "Peninsula",
+        "result": "2-2"
+    },
+    {
+        "match_id": "OhKdfBec",
+        "home_team": "Rochedale",
+        "away_team": "Brisbane City",
+        "result": "2-3"
+    },
+    {
+        "match_id": "KKD5hkQ9",
+        "home_team": "Eastern Suburbs",
+        "away_team": "Magic United",
+        "result": "1-4"
+    },
+    {
+        "match_id": "bwZmbond",
+        "home_team": "Playford Patriots",
+        "away_team": "NE Metrostars",
+        "result": "1-0"
+    },
+    {
+        "match_id": "nLKLq0u1",
+        "home_team": "Devonport",
+        "away_team": "South Hobart",
+        "result": "1-3"
+    },
+    {
+        "match_id": "rmEUsvAD",
+        "home_team": "Riverside Olympic",
+        "away_team": "Clarence Zebras",
+        "result": "2-4"
+    },
+    {
+        "match_id": "fyLF5s2K",
+        "home_team": "Launceston",
+        "away_team": "Kingborough Lions",
+        "result": "1-3"
+    },
+    {
+        "match_id": "QHEXyWcm",
+        "home_team": "Hume City",
+        "away_team": "Oakleigh Cannons",
+        "result": "0-1"
+    },
+    {
+        "match_id": "4rrtYmcC",
+        "home_team": "Altona Magic",
+        "away_team": "Heidelberg Utd",
+        "result": "0-0"
+    },
+    {
+        "match_id": "GMBbjVCt",
+        "home_team": "South Melbourne",
+        "away_team": "Preston Lions",
+        "result": "0-0"
+    },
+    {
+        "match_id": "C8olWRRO",
+        "home_team": "George Cross",
+        "away_team": "Melbourne City U21",
+        "result": "1-0"
+    },
+    {
+        "match_id": "8v8cS40e",
+        "home_team": "Balcatta",
+        "away_team": "Stirling Macedonia",
+        "result": "2-0"
+    },
+    {
+        "match_id": "G4B5QrV7",
+        "home_team": "Perth Glory U23",
+        "away_team": "Armadale",
+        "result": "2-2"
+    },
+    {
+        "match_id": "0E4kUQVr",
+        "home_team": "Perth RedStar",
+        "away_team": "Fremantle City",
+        "result": "0-3"
+    },
+    {
+        "match_id": "8bbilnNE",
+        "home_team": "Dianella White Eagle",
+        "away_team": "Olympic Kingsway",
+        "result": "0-3"
+    },
+    {
+        "match_id": "GxbIkW6E",
+        "home_team": "Lake Macquarie",
+        "away_team": "Singleton Strikers",
+        "result": "-"
+    },
+    {
+        "match_id": "C4iRmAyR",
+        "home_team": "Cessnock City Hornets",
+        "away_team": "West Wallsend",
+        "result": "3-2"
+    },
+    {
+        "match_id": "d4DFyiZP",
+        "home_team": "Canterbury Bankstown",
+        "away_team": "Blacktown Spartans",
+        "result": "1-2"
+    },
+    {
+        "match_id": "txknWUdm",
+        "home_team": "Hills United",
+        "away_team": "Hakoah Sydney",
+        "result": "2-1"
+    },
+    {
+        "match_id": "r1o3SndC",
+        "home_team": "Inter Lions",
+        "away_team": "Rydalmere Lions",
+        "result": "0-4"
+    },
+    {
+        "match_id": "Em8zAvto",
+        "home_team": "Western City Rangers",
+        "away_team": "Newcastle Jets U23",
+        "result": "3-2"
+    },
+    {
+        "match_id": "l2hfU8Ra",
+        "home_team": "Bulls Academy",
+        "away_team": "Bankstown City Lions",
+        "result": "0-5"
+    },
+    {
+        "match_id": "O8byuhdD",
+        "home_team": "Ipswich",
+        "away_team": "North Star",
+        "result": "3-2"
+    },
+    {
+        "match_id": "44yO2elK",
+        "home_team": "Brisbane Strikers",
+        "away_team": "Broadbeach Utd.",
+        "result": "2-1"
+    },
+    {
+        "match_id": "WEL2eDtf",
+        "home_team": "St. George Willawong",
+        "away_team": "Caboolture",
+        "result": "1-0"
+    },
+    {
+        "match_id": "zmSgcZBs",
+        "home_team": "Logan Lightning",
+        "away_team": "Sunshine Coast Wanderers",
+        "result": "2-2"
+    },
+    {
+        "match_id": "rs7znL3N",
+        "home_team": "Adelaide Atletico",
+        "away_team": "Adelaide Olympic",
+        "result": "0-1"
+    },
+    {
+        "match_id": "4GwSk34b",
+        "home_team": "Adelaide Croatia Raiders",
+        "away_team": "Eastern United",
+        "result": "3-0"
+    },
+    {
+        "match_id": "EPc6taRp",
+        "home_team": "Blue Eagles",
+        "away_team": "Adelaide Cobras",
+        "result": "0-0"
+    },
+    {
+        "match_id": "xUyzlsZA",
+        "home_team": "Salisbury Utd.",
+        "away_team": "Modbury Jets",
+        "result": "2-3"
+    },
+    {
+        "match_id": "fLzg42Ji",
+        "home_team": "South Adelaide",
+        "away_team": "Cove FC",
+        "result": "2-2"
+    },
+    {
+        "match_id": "MwkxSd44",
+        "home_team": "Launceston U21",
+        "away_team": "Ulverstone U21",
+        "result": "0-1"
+    },
+    {
+        "match_id": "ri4jYI8m",
+        "home_team": "Northern Rangers",
+        "away_team": "Riverside Olympic U21",
+        "result": "13-0"
+    },
+    {
+        "match_id": "46haWdw0",
+        "home_team": "Burnie Utd.",
+        "away_team": "Devonport U21",
+        "result": "0-9"
+    },
+    {
+        "match_id": "C8DKwuoQ",
+        "home_team": "Somerset",
+        "away_team": "Launceston United U21",
+        "result": "8-2"
+    },
+    {
+        "match_id": "GrySo3VI",
+        "home_team": "Taroona",
+        "away_team": "Olympia Warriors",
+        "result": "3-2"
+    },
+    {
+        "match_id": "WjJE96NP",
+        "home_team": "South Hobart U21",
+        "away_team": "University of Tasmania",
+        "result": "5-0"
+    },
+    {
+        "match_id": "8WCh2OFa",
+        "home_team": "Hobart City",
+        "away_team": "Clarence Zebras U21",
+        "result": "4-0"
+    },
+    {
+        "match_id": "nHOq4pom",
+        "home_team": "New Town",
+        "away_team": "Glenorchy Knights U21",
+        "result": "9-0"
+    },
+    {
+        "match_id": "lp33NvRb",
+        "home_team": "Langwarrin",
+        "away_team": "Brunswick Juventus",
+        "result": "0-1"
+    },
+    {
+        "match_id": "Mc1BLIeB",
+        "home_team": "North Sunshine Eagles",
+        "away_team": "Eltham Redbacks",
+        "result": "1-1"
+    },
+    {
+        "match_id": "IPfKJdQN",
+        "home_team": "North Geelong",
+        "away_team": "Melbourne Victory U21",
+        "result": "0-2"
+    },
+    {
+        "match_id": "0jxPEiH5",
+        "home_team": "Werribee City",
+        "away_team": "Keilor Park",
+        "result": "1-3"
+    },
+    {
+        "match_id": "Y3zXCVoI",
+        "home_team": "Malvern",
+        "away_team": "Moreland City",
+        "result": "5-0"
+    },
+    {
+        "match_id": "6VmvB9GU",
+        "home_team": "Kingston City",
+        "away_team": "Goulburn Valley Suns",
+        "result": "2-3"
+    },
+    {
+        "match_id": "WrpsJRln",
+        "home_team": "Cockburn City",
+        "away_team": "Gwelup Croatia",
+        "result": "0-2"
+    },
+    {
+        "match_id": "866P0pZH",
+        "home_team": "Curtin Univ",
+        "away_team": "Mandurah City",
+        "result": "3-4"
+    },
+    {
+        "match_id": "v9mkH5Jb",
+        "home_team": "Floreat Athena",
+        "away_team": "Quinns",
+        "result": "2-1"
+    },
+    {
+        "match_id": "tK4XbO3U",
+        "home_team": "Inglewood Utd",
+        "away_team": "Nedlands",
+        "result": "3-1"
+    },
+    {
+        "match_id": "bwp5DNIN",
+        "home_team": "Joondalup",
+        "away_team": "Murdoch Melville",
+        "result": "3-2"
+    },
+    {
+        "match_id": "CMocFqlB",
+        "home_team": "Subiaco",
+        "away_team": "Kingsley Westside",
+        "result": "2-1"
+    },
+    {
+        "match_id": "0f2X46dd",
+        "home_team": "Olympic FC W",
+        "away_team": "Gold Coast W",
+        "result": "0-0"
+    },
+    {
+        "match_id": "hlkJS9l3",
+        "home_team": "Queensland Lions W",
+        "away_team": "Brisbane City W",
+        "result": "1-0"
+    },
+    {
+        "match_id": "rBNkO4rK",
+        "home_team": "Avondale FC W",
+        "away_team": "Preston W",
+        "result": "3-0"
+    },
+    {
+        "match_id": "vs9LIr6s",
+        "home_team": "Alamein FC W",
+        "away_team": "South Melbourne W",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Qc7TGMzf",
+        "home_team": "Keilor Park W",
+        "away_team": "Bentleigh Greens W",
+        "result": "1-1"
+    },
+    {
+        "match_id": "YNAyF056",
+        "home_team": "Melbourne City U20 W",
+        "away_team": "Essendon Royals SC W",
+        "result": "1-3"
+    },
+    {
+        "match_id": "6y9qDvzJ",
+        "home_team": "Bulleen Lions W",
+        "away_team": "Heidelberg Utd W",
+        "result": "1-1"
+    },
+    {
+        "match_id": "nHazoJJM",
+        "home_team": "Wollongong Wolves U20",
+        "away_team": "SD Raiders U20",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Iaj6ucsp",
+        "home_team": "St George Saints U20",
+        "away_team": "Rockdale Ilinden U20",
+        "result": "3-0"
+    },
+    {
+        "match_id": "jDlEwyCd",
+        "home_team": "WS Wanderers U20",
+        "away_team": "APIA Leichhardt U20",
+        "result": "0-4"
+    },
+    {
+        "match_id": "dAy01v43",
+        "home_team": "UNSW U20",
+        "away_team": "NWS Spirit U20",
+        "result": "3-2"
+    },
+    {
+        "match_id": "4zu8aIYF",
+        "home_team": "Sutherland Sharks U20",
+        "away_team": "Sydney Olympic U20",
+        "result": "3-1"
+    },
+    {
+        "match_id": "EV36nXxh",
+        "home_team": "Moreton City Excelsior U23",
+        "away_team": "Peninsula U23",
+        "result": "3-0"
+    },
+    {
+        "match_id": "nPBKOTpo",
+        "home_team": "Gold Coast U23",
+        "away_team": "Queensland Lions U23",
+        "result": "1-0"
+    },
+    {
+        "match_id": "nq2EpB74",
+        "home_team": "Gold Coast Knights U23",
+        "away_team": "Wynnum Wolves U23",
+        "result": "2-1"
+    },
+    {
+        "match_id": "Ya0MrkxH",
+        "home_team": "Rochedale U23",
+        "away_team": "Brisbane City U23",
+        "result": "2-0"
+    },
+    {
+        "match_id": "tQ3UtT6T",
+        "home_team": "Eastern Suburbs U23",
+        "away_team": "Magic United U23",
+        "result": "0-1"
+    },
+    {
+        "match_id": "6JF2bvDa",
+        "home_team": "Fiji U16",
+        "away_team": "Papua New Guinea U16",
+        "result": "3-0"
+    },
+    {
+        "match_id": "Y5Hf00rm",
+        "home_team": "Samoa U16",
+        "away_team": "New Caledonia U16",
+        "result": "1-1"
+    },
+    {
+        "match_id": "OWH3wHlK",
+        "home_team": "FC Slonim",
+        "away_team": "Isloch",
+        "result": "0-1"
+    },
+    {
+        "match_id": "OWcMwQr3",
+        "home_team": "Niva Dolbizno",
+        "away_team": "FC Gomel",
+        "result": "2-3aet"
+    },
+    {
+        "match_id": "8n2cN4bM",
+        "home_team": "Smorgon",
+        "away_team": "FC Minsk",
+        "result": "3-4"
+    },
+    {
+        "match_id": "vVhTHrMq",
+        "home_team": "Lida",
+        "away_team": "Zhodino",
+        "result": "0-4"
+    },
+    {
+        "match_id": "xdT1Jecl",
+        "home_team": "Ostrovets",
+        "away_team": "Vitebsk",
+        "result": "2-3aet"
+    },
+    {
+        "match_id": "A9R9HZR0",
+        "home_team": "BumProm Gomel",
+        "away_team": "Arsenal Dzerzhinsk",
+        "result": "0-0 (Pen: 5-6)"
+    },
+    {
+        "match_id": "S80sRnac",
+        "home_team": "Uni X Labs",
+        "away_team": "Baranovici",
+        "result": "1-4"
+    },
+    {
+        "match_id": "t6HRtLcJ",
+        "home_team": "Dyussh-Polesgu W",
+        "away_team": "Din. Minsk W",
+        "result": "0-6"
+    },
+    {
+        "match_id": "Y1FzYpWo",
+        "home_team": "Dnepr Mogilev W",
+        "away_team": "Dynamo Brest W",
+        "result": "2-3"
+    },
+    {
+        "match_id": "2H1f47tB",
+        "home_team": "Transport United",
+        "away_team": "Ugyen Academy",
+        "result": "0-0"
+    },
+    {
+        "match_id": "jeijhKIU",
+        "home_team": "Bolivar",
+        "away_team": "Guabira",
+        "result": "4-0"
+    },
+    {
+        "match_id": "2inScOlg",
+        "home_team": "Always Ready",
+        "away_team": "Universitario de Vinto",
+        "result": "4-0"
+    },
+    {
+        "match_id": "8lKX5FW9",
+        "home_team": "Bahia",
+        "away_team": "Chapecoense-SC",
+        "result": "2-0"
+    },
+    {
+        "match_id": "SO3EXUCa",
+        "home_team": "Mirassol",
+        "away_team": "Gremio",
+        "result": "2-1"
+    },
+    {
+        "match_id": "WCN2EpTH",
+        "home_team": "America MG",
+        "away_team": "Ceara",
+        "result": "1-1"
+    },
+    {
+        "match_id": "hMK1WIl3",
+        "home_team": "Juventude",
+        "away_team": "Cuiaba",
+        "result": "2-0"
+    },
+    {
+        "match_id": "OnKfG6b5",
+        "home_team": "Sao Bernardo",
+        "away_team": "Avai",
+        "result": "1-1"
+    },
+    {
+        "match_id": "SxxMJu5c",
+        "home_team": "Fortaleza",
+        "away_team": "Novorizontino",
+        "result": "1-0"
+    },
+    {
+        "match_id": "zqkzdxDj",
+        "home_team": "Londrina",
+        "away_team": "Botafogo SP",
+        "result": "0-0"
+    },
+    {
+        "match_id": "rTrxGc4M",
+        "home_team": "Criciuma",
+        "away_team": "Vila Nova FC",
+        "result": "2-0"
+    },
+    {
+        "match_id": "jZLnISTh",
+        "home_team": "Ponte Preta",
+        "away_team": "Goias",
+        "result": "1-2"
+    },
+    {
+        "match_id": "vaU7AySq",
+        "home_team": "Sport Recife",
+        "away_team": "Operario-PR",
+        "result": "2-2"
+    },
+    {
+        "match_id": "z3uUHJZ9",
+        "home_team": "Atletico GO",
+        "away_team": "Athletic Club",
+        "result": "0-0"
+    },
+    {
+        "match_id": "zkGPMHI8",
+        "home_team": "Cianorte",
+        "away_team": "ASA",
+        "result": "0-1"
+    },
+    {
+        "match_id": "h8BJBiA7",
+        "home_team": "EC Sao Jose",
+        "away_team": "Treze PB",
+        "result": "2-1"
+    },
+    {
+        "match_id": "v3nvy8wJ",
+        "home_team": "Nacional-AM",
+        "away_team": "Iguatu",
+        "result": "1-1"
+    },
+    {
+        "match_id": "bPpOvjvf",
+        "home_team": "Goiatuba",
+        "away_team": "Ferroviario",
+        "result": "1-0"
+    },
+    {
+        "match_id": "xI43FZAr",
+        "home_team": "Luverdense",
+        "away_team": "ABC",
+        "result": "0-0"
+    },
+    {
+        "match_id": "ru5uppLF",
+        "home_team": "Tupy",
+        "away_team": "Rive",
+        "result": "0-2"
+    },
+    {
+        "match_id": "IwHejssp",
+        "home_team": "Marica",
+        "away_team": "Resende",
+        "result": "1-1"
+    },
+    {
+        "match_id": "KhWyn81t",
+        "home_team": "Metropolitano",
+        "away_team": "Jaragua-SC",
+        "result": "6-1"
+    },
+    {
+        "match_id": "SIZqpnWh",
+        "home_team": "Nacao",
+        "away_team": "Caravaggio",
+        "result": "2-2"
+    },
+    {
+        "match_id": "jVa9bVNH",
+        "home_team": "Araioses",
+        "away_team": "Timon EC",
+        "result": "-"
+    },
+    {
+        "match_id": "Aibg2DOh",
+        "home_team": "Pinheiro",
+        "away_team": "Lago Verde",
+        "result": "-"
+    },
+    {
+        "match_id": "QwyE8aS1",
+        "home_team": "Aymores",
+        "away_team": "Boa",
+        "result": "2-0"
+    },
+    {
+        "match_id": "QcR7UtkL",
+        "home_team": "Villa Nova MG",
+        "away_team": "Valeriodoce",
+        "result": "1-1"
+    },
+    {
+        "match_id": "llzoNbse",
+        "home_team": "Mamore",
+        "away_team": "Uberaba",
+        "result": "2-1"
+    },
+    {
+        "match_id": "E58A2edc",
+        "home_team": "Flamengo SP",
+        "away_team": "Matonense",
+        "result": "3-1"
+    },
+    {
+        "match_id": "fqAQbDeM",
+        "home_team": "Itaqua",
+        "away_team": "Uniao Mogi",
+        "result": "1-0"
+    },
+    {
+        "match_id": "lO2Mgqrh",
+        "home_team": "Picos U20",
+        "away_team": "Oeirense U20",
+        "result": "3-1"
+    },
+    {
+        "match_id": "dEZFnmhM",
+        "home_team": "Tiradentes-PI U20",
+        "away_team": "River-PI U20",
+        "result": "1-1"
+    },
+    {
+        "match_id": "CvuosRFq",
+        "home_team": "Fluminense Piaui U20",
+        "away_team": "Atletico-PI U20",
+        "result": "0-3"
+    },
+    {
+        "match_id": "hQWrS7ZG",
+        "home_team": "Taveiropolis",
+        "away_team": "7 de Setembro",
+        "result": "0-3"
+    },
+    {
+        "match_id": "ptws8nro",
+        "home_team": "Uniao",
+        "away_team": "Misto",
+        "result": "-"
+    },
+    {
+        "match_id": "E5Y8Gv8F",
+        "home_team": "Marilia",
+        "away_team": "Gremio Prudente",
+        "result": "1-0"
+    },
+    {
+        "match_id": "dC8tVwN8",
+        "home_team": "Paulista",
+        "away_team": "Primavera",
+        "result": "1-0"
+    },
+    {
+        "match_id": "4ILf7zV1",
+        "home_team": "Comercial",
+        "away_team": "Noroeste",
+        "result": "2-0"
+    },
+    {
+        "match_id": "2BzECV6s",
+        "home_team": "Bandeirante",
+        "away_team": "Linense",
+        "result": "0-0"
+    },
+    {
+        "match_id": "Iw5LfRvQ",
+        "home_team": "Santa Cruz U20",
+        "away_team": "Independencia U20",
+        "result": "-"
+    },
+    {
+        "match_id": "4d2dGNb4",
+        "home_team": "ASA U20",
+        "away_team": "Inter Arabia U20",
+        "result": "1-0"
+    },
+    {
+        "match_id": "EPOG3pFb",
+        "home_team": "CSA U20",
+        "away_team": "Ponte Preta AL U20",
+        "result": "5-0"
+    },
+    {
+        "match_id": "4xC2ftxo",
+        "home_team": "Desportiva Alianca U20",
+        "away_team": "Murici U20",
+        "result": "-"
+    },
+    {
+        "match_id": "f3QWa2EN",
+        "home_team": "Guarani de Paripueira U20",
+        "away_team": "Canoense U20",
+        "result": "1-0"
+    },
+    {
+        "match_id": "6aL856pn",
+        "home_team": "Jacioba U20",
+        "away_team": "Ind. Atalaia U20",
+        "result": "-"
+    },
+    {
+        "match_id": "hWJfEiTk",
+        "home_team": "Bahia U20",
+        "away_team": "Camacariense U20",
+        "result": "7-0"
+    },
+    {
+        "match_id": "fJdnKsH8",
+        "home_team": "Vitoria U20",
+        "away_team": "Fluminense de Feira U20",
+        "result": "-"
+    },
+    {
+        "match_id": "vsuuihcf",
+        "home_team": "Cruzeiro DF U20",
+        "away_team": "Santa Maria U20",
+        "result": "2-2"
+    },
+    {
+        "match_id": "MNa7xgr1",
+        "home_team": "Gama U20",
+        "away_team": "Sobradinho U20",
+        "result": "0-0"
+    },
+    {
+        "match_id": "pvzSdNTF",
+        "home_team": "Samambaia U20",
+        "away_team": "Samambaense U20",
+        "result": "8-0"
+    },
+    {
+        "match_id": "hQtXhESs",
+        "home_team": "Canaa U20",
+        "away_team": "Brasilia U20",
+        "result": "5-0"
+    },
+    {
+        "match_id": "KKtemAdJ",
+        "home_team": "Ceilandia U20",
+        "away_team": "Ceilandense U20",
+        "result": "-"
+    },
+    {
+        "match_id": "dfe1bz5K",
+        "home_team": "Legiao U20",
+        "away_team": "Brasiliense U20",
+        "result": "1-2"
+    },
+    {
+        "match_id": "n7rmkWR6",
+        "home_team": "Luziania U20",
+        "away_team": "Real Brasilia U20",
+        "result": "-"
+    },
+    {
+        "match_id": "AgXwEM26",
+        "home_team": "Alianca U20",
+        "away_team": "Vila Real U20",
+        "result": "3-2"
+    },
+    {
+        "match_id": "xtZVFrYg",
+        "home_team": "Atletico-CE U20",
+        "away_team": "Anjos do Ceu U20",
+        "result": "-"
+    },
+    {
+        "match_id": "IJznC0XI",
+        "home_team": "Ceara U20",
+        "away_team": "Quixada U20",
+        "result": "3-0"
+    },
+    {
+        "match_id": "UFVNH43s",
+        "home_team": "Floresta EC U20",
+        "away_team": "Caucaia U20",
+        "result": "1-0"
+    },
+    {
+        "match_id": "hWL4C9R1",
+        "home_team": "Horizonte U20",
+        "away_team": "Ferroviario U20",
+        "result": "0-1"
+    },
+    {
+        "match_id": "U7sXZ3PP",
+        "home_team": "Juazeiro CE U20",
+        "away_team": "Tiangua EC U20",
+        "result": "-"
+    },
+    {
+        "match_id": "vgaqLFjB",
+        "home_team": "Cuiaba U20",
+        "away_team": "Luverdense U20",
+        "result": "-"
+    },
+    {
+        "match_id": "bFcTOcin",
+        "home_team": "Uirapuru U20",
+        "away_team": "Santa Cruz MT U20",
+        "result": "-"
+    },
+    {
+        "match_id": "naxfNpGs",
+        "home_team": "Cacerense U20",
+        "away_team": "Uniao Rondonopolis U20",
+        "result": "-"
+    },
+    {
+        "match_id": "SxvAJ2F6",
+        "home_team": "Sport Sinop U20",
+        "away_team": "Paulistano FC U20",
+        "result": "-"
+    },
+    {
+        "match_id": "MVimwLz8",
+        "home_team": "Villa Real U20",
+        "away_team": "Uberabinha U20",
+        "result": "2-1"
+    },
+    {
+        "match_id": "KUR3GGvR",
+        "home_team": "RB Bragantino U20",
+        "away_team": "Porto Football U20",
+        "result": "3-1"
+    },
+    {
+        "match_id": "dzmUxAj5",
+        "home_team": "Sao Bento U20",
+        "away_team": "Mirassol U20",
+        "result": "2-2"
+    },
+    {
+        "match_id": "dM7sJa8s",
+        "home_team": "Corinthians W",
+        "away_team": "Ferroviaria W",
+        "result": "1-0"
+    },
+    {
+        "match_id": "4nBkHwwf",
+        "home_team": "Palmeiras W",
+        "away_team": "Sao Paulo W",
+        "result": "1-0"
+    },
+    {
+        "match_id": "YwsHe2Pc",
+        "home_team": "Septemvri Sofia",
+        "away_team": "Arda",
+        "result": "1-1"
+    },
+    {
+        "match_id": "6XlVXbXj",
+        "home_team": "Ludogorets",
+        "away_team": "Lok. Plovdiv",
+        "result": "1-0"
+    },
+    {
+        "match_id": "WEUC3SeL",
+        "home_team": "Atl. Ottawa",
+        "away_team": "Inter Toronto",
+        "result": "1-1"
+    },
+    {
+        "match_id": "zPYkdple",
+        "home_team": "Cavalry",
+        "away_team": "HFX Wanderers",
+        "result": "1-1"
+    },
+    {
+        "match_id": "GlmyFo3m",
+        "home_team": "Calgary Wild W",
+        "away_team": "Montreal Roses W",
+        "result": "0-2"
+    },
+    {
+        "match_id": "OEjqDPXa",
+        "home_team": "AFC Toronto W",
+        "away_team": "Vancouver Rise W",
+        "result": "0-3"
+    },
+    {
+        "match_id": "CzKnGECd",
+        "home_team": "Copiapo",
+        "away_team": "D. Puerto Montt",
+        "result": "-"
+    },
+    {
+        "match_id": "v54Z8c5T",
+        "home_team": "San Felipe",
+        "away_team": "Deportes Iquique",
+        "result": "-"
+    },
+    {
+        "match_id": "zyj53yTj",
+        "home_team": "Deportes Temuco",
+        "away_team": "Cobreloa",
+        "result": "-"
+    },
+    {
+        "match_id": "G8QwIzrp",
+        "home_team": "Recoleta",
+        "away_team": "S. Wanderers",
+        "result": "-"
+    },
+    {
+        "match_id": "riHkm68s",
+        "home_team": "Coquimbo",
+        "away_team": "O'Higgins",
+        "result": "-"
+    },
+    {
+        "match_id": "Qmbl6Qm7",
+        "home_team": "Palestino W",
+        "away_team": "U. De Concepcion W",
+        "result": "-"
+    },
+    {
+        "match_id": "Q7lrS7AQ",
+        "home_team": "Recoleta W",
+        "away_team": "U. Espanola W",
+        "result": "-"
+    },
+    {
+        "match_id": "INft8nJf",
+        "home_team": "Colo-Colo W",
+        "away_team": "Deportes Iquique W",
+        "result": "-"
+    },
+    {
+        "match_id": "OUGO3ZjK",
+        "home_team": "Chongqing Tonglianglong",
+        "away_team": "Zhejiang Professional",
+        "result": "1-1"
+    },
+    {
+        "match_id": "2wB2diqf",
+        "home_team": "Dalian Yingbo",
+        "away_team": "Shandong Taishan",
+        "result": "3-1"
+    },
+    {
+        "match_id": "fD7fbDEs",
+        "home_team": "Shanghai Shenhua",
+        "away_team": "Tianjin Jinmen Tiger",
+        "result": "0-2"
+    },
+    {
+        "match_id": "QLNPPA06",
+        "home_team": "Guangxi Hengchen",
+        "away_team": "Shaanxi Union",
+        "result": "3-0"
+    },
+    {
+        "match_id": "bZLXNlVI",
+        "home_team": "Meizhou Hakka",
+        "away_team": "Dalian K'un City",
+        "result": "2-0"
+    },
+    {
+        "match_id": "OExqV5xn",
+        "home_team": "Nanjing City",
+        "away_team": "Guangdong GZ-Power",
+        "result": "0-1"
+    },
+    {
+        "match_id": "UBuiTq7b",
+        "home_team": "Dingnan Ganlian",
+        "away_team": "Ningbo Professional",
+        "result": "0-1"
+    },
+    {
+        "match_id": "YVfTPHNi",
+        "home_team": "Changchun Xidu",
+        "away_team": "Shanghai Port B",
+        "result": "0-2"
+    },
+    {
+        "match_id": "SY7s2EVp",
+        "home_team": "Shanghai Second",
+        "away_team": "Shandong Taishan B",
+        "result": "1-2"
+    },
+    {
+        "match_id": "tdbyOeh4",
+        "home_team": "Beijing Technology",
+        "away_team": "Dalian Kewei",
+        "result": "0-1"
+    },
+    {
+        "match_id": "MZaiKDiT",
+        "home_team": "Shenzhen",
+        "away_team": "Guangzhou Dandelion",
+        "result": "3-1"
+    },
+    {
+        "match_id": "E9dqMZMG",
+        "home_team": "Wenzhou Professional",
+        "away_team": "Hubei Istar",
+        "result": "1-2"
+    },
+    {
+        "match_id": "W2MB7z8N",
+        "home_team": "Xiamen Feilu",
+        "away_team": "Ganzhou Ruishi",
+        "result": "0-0"
+    },
+    {
+        "match_id": "IiCWfBdS",
+        "home_team": "Delfin",
+        "away_team": "Macara",
+        "result": "2-1"
+    },
+    {
+        "match_id": "AR8OdXRF",
+        "home_team": "Dep. Cuenca",
+        "away_team": "U. Catolica",
+        "result": "0-2"
+    },
+    {
+        "match_id": "n722kkKk",
+        "home_team": "LDU Quito",
+        "away_team": "Leones del Norte",
+        "result": "0-1"
+    },
+    {
+        "match_id": "lhI7JlEf",
+        "home_team": "LDU Portoviejo",
+        "away_team": "Ind. Juniors",
+        "result": "0-1"
+    },
+    {
+        "match_id": "lQN0uWzE",
+        "home_team": "Gualaceo",
+        "away_team": "22 de Julio",
+        "result": "-"
+    },
+    {
+        "match_id": "Sn0TqEkl",
+        "home_team": "Narva",
+        "away_team": "Parnu JK Vaprus",
+        "result": "3-1"
+    },
+    {
+        "match_id": "rR1wUqcd",
+        "home_team": "Flora U21",
+        "away_team": "Maardu",
+        "result": "1-3"
+    },
+    {
+        "match_id": "AXgPimk3",
+        "home_team": "Nomme Kalju U21",
+        "away_team": "Levadia U21",
+        "result": "0-2"
+    },
+    {
+        "match_id": "AD3VV5Sq",
+        "home_team": "Tallinna Kalev",
+        "away_team": "Nomme Utd U21",
+        "result": "3-1"
+    },
+    {
+        "match_id": "4EyblErB",
+        "home_team": "Tartu Welco",
+        "away_team": "FC Tallinn",
+        "result": "0-2"
+    },
+    {
+        "match_id": "jVN5Max0",
+        "home_team": "Legion",
+        "away_team": "Tabasalu",
+        "result": "2-0"
+    },
+    {
+        "match_id": "tvB8kLce",
+        "home_team": "Harju JK Laagri W",
+        "away_team": "Elva W",
+        "result": "6-2"
+    },
+    {
+        "match_id": "l4EGmaS7",
+        "home_team": "Viimsi JK W",
+        "away_team": "Saku Sporting W",
+        "result": "4-1"
+    },
+    {
+        "match_id": "xhZZt6cn",
+        "home_team": "Labasa",
+        "away_team": "Suva",
+        "result": "2-2"
+    },
+    {
+        "match_id": "n9x6qcwp",
+        "home_team": "HJK",
+        "away_team": "VPS",
+        "result": "2-1"
+    },
+    {
+        "match_id": "fZuEsy8d",
+        "home_team": "SJK",
+        "away_team": "KuPS",
+        "result": "0-2"
+    },
+    {
+        "match_id": "fgKjcjoR",
+        "home_team": "Ekenas",
+        "away_team": "JaPS",
+        "result": "0-1"
+    },
+    {
+        "match_id": "Ew1NiU8l",
+        "home_team": "KTP",
+        "away_team": "PK-35",
+        "result": "0-1"
+    },
+    {
+        "match_id": "EHrvG5CD",
+        "home_team": "Keski-Uusimaa",
+        "away_team": "OLS Oulu",
+        "result": "1-1"
+    },
+    {
+        "match_id": "6iuWHRs1",
+        "home_team": "TPV",
+        "away_team": "KuPS Akatemia",
+        "result": "3-1"
+    },
+    {
+        "match_id": "6BVPw94K",
+        "home_team": "VJS",
+        "away_team": "Tampere Utd",
+        "result": "0-1"
+    },
+    {
+        "match_id": "riP3WQdf",
+        "home_team": "JJK Jyvaskyla",
+        "away_team": "Jazz Pori",
+        "result": "1-3"
+    },
+    {
+        "match_id": "xlkjq1Lr",
+        "home_team": "Union Plaani",
+        "away_team": "Atlantis",
+        "result": "3-6"
+    },
+    {
+        "match_id": "UFci3MCE",
+        "home_team": "HPS",
+        "away_team": "MyPa",
+        "result": "5-2"
+    },
+    {
+        "match_id": "pEhbsuje",
+        "home_team": "Kiffen",
+        "away_team": "PEPO",
+        "result": "2-0"
+    },
+    {
+        "match_id": "xMA5uJK7",
+        "home_team": "PuiU",
+        "away_team": "Lahden Reipas",
+        "result": "4-1"
+    },
+    {
+        "match_id": "I7xmnDUg",
+        "home_team": "EPS",
+        "away_team": "NJS",
+        "result": "2-1"
+    },
+    {
+        "match_id": "EBm9gexK",
+        "home_team": "HJS",
+        "away_team": "MuSa",
+        "result": "2-1"
+    },
+    {
+        "match_id": "QXuepia6",
+        "home_team": "Ilves 2",
+        "away_team": "Honka",
+        "result": "2-2"
+    },
+    {
+        "match_id": "6HG1PvaD",
+        "home_team": "Hercules",
+        "away_team": "JBK",
+        "result": "5-3"
+    },
+    {
+        "match_id": "YN8mmriK",
+        "home_team": "Jaro 2",
+        "away_team": "TP-47",
+        "result": "2-0"
+    },
+    {
+        "match_id": "vusdwl7N",
+        "home_team": "Ilves W",
+        "away_team": "Gnistan W",
+        "result": "2-2"
+    },
+    {
+        "match_id": "OCISXRUp",
+        "home_team": "KuPS W",
+        "away_team": "Aland Utd W",
+        "result": "1-3"
+    },
+    {
+        "match_id": "YXy2lik2",
+        "home_team": "EBK W",
+        "away_team": "Lahti W",
+        "result": "1-0"
+    },
+    {
+        "match_id": "CltTUjUi",
+        "home_team": "Cham",
+        "away_team": "Bayern Hof",
+        "result": "3-0"
+    },
+    {
+        "match_id": "p2vyTUb4",
+        "home_team": "Ingolstadt II",
+        "away_team": "Stadeln",
+        "result": "4-4"
+    },
+    {
+        "match_id": "hSsqR8TG",
+        "home_team": "Wurzburger FV",
+        "away_team": "Regensburg II",
+        "result": "3-3"
+    },
+    {
+        "match_id": "0hoiPnbT",
+        "home_team": "Nordlingen",
+        "away_team": "Gebenbach",
+        "result": "0-2"
+    },
+    {
+        "match_id": "f5ssaIrg",
+        "home_team": "Kirchanschoring",
+        "away_team": "Landshut",
+        "result": "1-2"
+    },
+    {
+        "match_id": "bZyEDHcn",
+        "home_team": "Gundelfingen",
+        "away_team": "Deisenhofen",
+        "result": "0-2"
+    },
+    {
+        "match_id": "bogT2utm",
+        "home_team": "Thor Akureyri",
+        "away_team": "Vikingur Reykjavik",
+        "result": "2-1"
+    },
+    {
+        "match_id": "rPZL6diC",
+        "home_team": "Grindavik",
+        "away_team": "IR Reykjavik",
+        "result": "0-0"
+    },
+    {
+        "match_id": "f33vPw7t",
+        "home_team": "Grotta",
+        "away_team": "Aegir",
+        "result": "6-1"
+    },
+    {
+        "match_id": "MFfeLe65",
+        "home_team": "Throttur",
+        "away_team": "Volsungur",
+        "result": "1-0"
+    },
+    {
+        "match_id": "CMJqtAOr",
+        "home_team": "KFA",
+        "away_team": "Selfoss",
+        "result": "0-1"
+    },
+    {
+        "match_id": "2a5SrfCc",
+        "home_team": "Magni",
+        "away_team": "Fjolnir",
+        "result": "5-2"
+    },
+    {
+        "match_id": "A5ItLjKj",
+        "home_team": "Kormakur/Hvot",
+        "away_team": "Dalvik/Reynir",
+        "result": "3-1"
+    },
+    {
+        "match_id": "nevzU4Y8",
+        "home_team": "East Bengal",
+        "away_team": "Railway",
+        "result": "1-0"
+    },
+    {
+        "match_id": "6wnbCHhC",
+        "home_team": "Bangor Celtic",
+        "away_team": "College Corinthians",
+        "result": "4-5"
+    },
+    {
+        "match_id": "zwEid52E",
+        "home_team": "Douglas Hall",
+        "away_team": "Castlebar Celtic",
+        "result": "0-1"
+    },
+    {
+        "match_id": "pW5wm1P0",
+        "home_team": "Janesboro",
+        "away_team": "Sligo Rovers",
+        "result": "0-4"
+    },
+    {
+        "match_id": "AFlJav96",
+        "home_team": "Baldoyle Utd.",
+        "away_team": "Longford",
+        "result": "0-8"
+    },
+    {
+        "match_id": "8CUBe8dL",
+        "home_team": "Shamrock Rovers W",
+        "away_team": "Treaty Utd W",
+        "result": "1-0"
+    },
+    {
+        "match_id": "KjlHZQZ1",
+        "home_team": "Waterford W",
+        "away_team": "Peamount W",
+        "result": "3-5"
+    },
+    {
+        "match_id": "Cpy3cUR8",
+        "home_team": "Shelbourne W",
+        "away_team": "Cork City W",
+        "result": "-"
+    },
+    {
+        "match_id": "xSKsjnKr",
+        "home_team": "Sligo Rovers W",
+        "away_team": "DLR Waves W",
+        "result": "3-1"
+    },
+    {
+        "match_id": "67Cbn4J7",
+        "home_team": "Athlone WFC W",
+        "away_team": "Bohemians WFC W",
+        "result": "3-0"
+    },
+    {
+        "match_id": "bs9jlQle",
+        "home_team": "Wexford W",
+        "away_team": "Galway United W",
+        "result": "-"
+    },
+    {
+        "match_id": "neGSsvin",
+        "home_team": "Beitar Jerusalem",
+        "away_team": "Hapoel Tel Aviv",
+        "result": "2-2 (Pen: 3-5)"
+    },
+    {
+        "match_id": "p0k2fqvK",
+        "home_team": "Zhenis",
+        "away_team": "Ulytau",
+        "result": "1-1"
+    },
+    {
+        "match_id": "QeOD10om",
+        "home_team": "Atyrau",
+        "away_team": "Kairat Almaty",
+        "result": "1-3"
+    },
+    {
+        "match_id": "hCe19ujf",
+        "home_team": "Riga FC",
+        "away_team": "Tukums 2000",
+        "result": "3-1"
+    },
+    {
+        "match_id": "rqetiPLj",
+        "home_team": "Leevon PPK",
+        "away_team": "Riga Mariners",
+        "result": "2-1"
+    },
+    {
+        "match_id": "AkmSESDc",
+        "home_team": "Marupe",
+        "away_team": "Metta",
+        "result": "0-4"
+    },
+    {
+        "match_id": "r3ozD6rA",
+        "home_team": "JFK Ventspils",
+        "away_team": "Alberts JDFS",
+        "result": "1-3"
+    },
+    {
+        "match_id": "UJqrBpDM",
+        "home_team": "Skanste",
+        "away_team": "Valmiera",
+        "result": "0-3"
+    },
+    {
+        "match_id": "GlHxvFNt",
+        "home_team": "Kauno Zalgiris",
+        "away_team": "FA Siauliai",
+        "result": "4-0"
+    },
+    {
+        "match_id": "hpueteh3",
+        "home_team": "FK Minija",
+        "away_team": "Jonava",
+        "result": "2-1"
+    },
+    {
+        "match_id": "M5l3sDyB",
+        "home_team": "Cheng Fung",
+        "away_team": "Shao Jiang",
+        "result": "0-4"
+    },
+    {
+        "match_id": "UViBui6N",
+        "home_team": "Artilheiros",
+        "away_team": "Hang Sai",
+        "result": "4-4"
+    },
+    {
+        "match_id": "8peJkCx1",
+        "home_team": "Civo Utd",
+        "away_team": "Mighty Wanderers",
+        "result": "0-2"
+    },
+    {
+        "match_id": "jiVj4Bif",
+        "home_team": "MAFCO",
+        "away_team": "Red Lions",
+        "result": "2-0"
+    },
+    {
+        "match_id": "Uy1ucfpR",
+        "home_team": "Moyale Barracks",
+        "away_team": "Masters FC",
+        "result": "2-2"
+    },
+    {
+        "match_id": "tA1usSjo",
+        "home_team": "Atl. San Luis",
+        "away_team": "Cruz Azul",
+        "result": "2-3"
+    },
+    {
+        "match_id": "x6bclveB",
+        "home_team": "Guadalajara Chivas U21",
+        "away_team": "Toluca U21",
+        "result": "2-2"
+    },
+    {
+        "match_id": "pW15nIPN",
+        "home_team": "Monterrey U21",
+        "away_team": "Santos Laguna U21",
+        "result": "1-2"
+    },
+    {
+        "match_id": "YF435MlQ",
+        "home_team": "Dacia Buiucani",
+        "away_team": "Politehnica UTM",
+        "result": "1-5"
+    },
+    {
+        "match_id": "CObsbvs0",
+        "home_team": "Zimbru Chisinau",
+        "away_team": "Real Sireti",
+        "result": "1-1"
+    },
+    {
+        "match_id": "SEykx5yS",
+        "home_team": "AS Mansouria",
+        "away_team": "KAC Kenitra",
+        "result": "-"
+    },
+    {
+        "match_id": "WAQSUMT1",
+        "home_team": "Rapide Oued Zem",
+        "away_team": "US Boujaad",
+        "result": "-"
+    },
+    {
+        "match_id": "YckfnEdD",
+        "home_team": "Baia de Pemba",
+        "away_team": "Sofala",
+        "result": "-"
+    },
+    {
+        "match_id": "0pinlzS0",
+        "home_team": "Ferroviario Maputo",
+        "away_team": "Ferroviario Lichinga",
+        "result": "-"
+    },
+    {
+        "match_id": "2JGDnNjd",
+        "home_team": "Ferroviario Nampula",
+        "away_team": "UD Songo",
+        "result": "-"
+    },
+    {
+        "match_id": "xUbxqBQQ",
+        "home_team": "Diriangen",
+        "away_team": "San Marcos",
+        "result": "1-1"
+    },
+    {
+        "match_id": "8Ck8wkll",
+        "home_team": "Esteli",
+        "away_team": "UNAN-Managua",
+        "result": "1-1"
+    },
+    {
+        "match_id": "nNjOZ6mD",
+        "home_team": "Jalapa",
+        "away_team": "Ferretti",
+        "result": "0-0"
+    },
+    {
+        "match_id": "Usgty5Kq",
+        "home_team": "HamKam",
+        "away_team": "Tromso",
+        "result": "1-4"
+    },
+    {
+        "match_id": "2eilZrkd",
+        "home_team": "Kristiansund",
+        "away_team": "Sarpsborg 08",
+        "result": "0-0"
+    },
+    {
+        "match_id": "I3Zzcns3",
+        "home_team": "Lillestrom",
+        "away_team": "KFUM Oslo",
+        "result": "2-1"
+    },
+    {
+        "match_id": "nqRig4tS",
+        "home_team": "Start",
+        "away_team": "Rosenborg",
+        "result": "0-3"
+    },
+    {
+        "match_id": "QTxqeQBF",
+        "home_team": "Molde",
+        "away_team": "Brann",
+        "result": "1-2"
+    },
+    {
+        "match_id": "dICNmr4k",
+        "home_team": "Viking",
+        "away_team": "Sandefjord",
+        "result": "2-1"
+    },
+    {
+        "match_id": "hIzPRsd2",
+        "home_team": "12 de Junio",
+        "away_team": "General Caballero JLM",
+        "result": "1-0"
+    },
+    {
+        "match_id": "6ZT7ZgF8",
+        "home_team": "Paraguari AC",
+        "away_team": "Independiente FBC",
+        "result": "3-2"
+    },
+    {
+        "match_id": "O2A8unKj",
+        "home_team": "Moquegua",
+        "away_team": "Comerciantes Unidos",
+        "result": "2-2"
+    },
+    {
+        "match_id": "AuOkzirB",
+        "home_team": "Grau",
+        "away_team": "Cajamarca",
+        "result": "2-1"
+    },
+    {
+        "match_id": "r9ITLcs0",
+        "home_team": "Alianza Huanuco",
+        "away_team": "Ayacucho",
+        "result": "3-2"
+    },
+    {
+        "match_id": "jZLyKyCC",
+        "home_team": "Sport Huancayo 2",
+        "away_team": "Comerciantes",
+        "result": "1-1"
+    },
+    {
+        "match_id": "tfFPlTNE",
+        "home_team": "U. de Deportes W",
+        "away_team": "Sporting Cristal W",
+        "result": "3-1"
+    },
+    {
+        "match_id": "QZMKxCKN",
+        "home_team": "Otelul",
+        "away_team": "CFR Cluj",
+        "result": "2-1"
+    },
+    {
+        "match_id": "OO5xegzh",
+        "home_team": "Univ. Craiova",
+        "away_team": "UTA Arad",
+        "result": "4-0"
+    },
+    {
+        "match_id": "plJK2tIi",
+        "home_team": "Zenit 2",
+        "away_team": "Dynamo Stavropol",
+        "result": "3-0"
+    },
+    {
+        "match_id": "viWYvwQp",
+        "home_team": "Miass",
+        "away_team": "Dynamo Moscow 2",
+        "result": "0-2"
+    },
+    {
+        "match_id": "hEMS0Kn4",
+        "home_team": "Omsk",
+        "away_team": "Amkar",
+        "result": "0-3"
+    },
+    {
+        "match_id": "G6Gx7Ya4",
+        "home_team": "Zenit",
+        "away_team": "Spartak Moscow",
+        "result": "1-1 (Pen: 4-2)"
+    },
+    {
+        "match_id": "dMogCH75",
+        "home_team": "Zvezda 2005 W",
+        "away_team": "Zenit W",
+        "result": "1-3"
+    },
+    {
+        "match_id": "Sn5TedNO",
+        "home_team": "FK Krylya Sovetov Samara W",
+        "away_team": "Chertanovo M. W",
+        "result": "1-1"
+    },
+    {
+        "match_id": "IBpwGa8t",
+        "home_team": "Ryazan W",
+        "away_team": "Krasnodar W",
+        "result": "0-0"
+    },
+    {
+        "match_id": "AoHYimMj",
+        "home_team": "Spartak Moscow W",
+        "away_team": "FK Yenisey W",
+        "result": "5-0"
+    },
+    {
+        "match_id": "vocmRONN",
+        "home_team": "Airdrieonians",
+        "away_team": "Annan",
+        "result": "3-0"
+    },
+    {
+        "match_id": "Gl1N04QH",
+        "home_team": "Alloa",
+        "away_team": "Stranraer",
+        "result": "2-2 (Pen: 4-3)"
+    },
+    {
+        "match_id": "Mo4VbreU",
+        "home_team": "Ayr",
+        "away_team": "Edinburgh City",
+        "result": "2-0"
+    },
+    {
+        "match_id": "x0BWnupp",
+        "home_team": "Brechin",
+        "away_team": "Stenhousemuir",
+        "result": "1-2"
+    },
+    {
+        "match_id": "4fXgO16j",
+        "home_team": "Brora Rangers",
+        "away_team": "Queen of South",
+        "result": "0-3"
+    },
+    {
+        "match_id": "4WpREfY0",
+        "home_team": "Cove Rangers",
+        "away_team": "St. Mirren",
+        "result": "0-4"
+    },
+    {
+        "match_id": "jmqZCY2D",
+        "home_team": "East Kilbride",
+        "away_team": "Dumbarton",
+        "result": "5-3"
+    },
+    {
+        "match_id": "6F3F7Cw2",
+        "home_team": "Hamilton",
+        "away_team": "Raith",
+        "result": "1-1 (Pen: 5-4)"
+    },
+    {
+        "match_id": "fsL2ylc6",
+        "home_team": "Linlithgow Rose",
+        "away_team": "Inverness",
+        "result": "0-2"
+    },
+    {
+        "match_id": "AD9voJEd",
+        "home_team": "Livingston",
+        "away_team": "Partick Thistle",
+        "result": "1-1 (Pen: 2-3)"
+    },
+    {
+        "match_id": "ATmJL2oo",
+        "home_team": "Ross County",
+        "away_team": "Clyde",
+        "result": "3-1"
+    },
+    {
+        "match_id": "jk8EmIZ1",
+        "home_team": "Stirling",
+        "away_team": "Montrose",
+        "result": "0-2"
+    },
+    {
+        "match_id": "27OAZRRI",
+        "home_team": "St Johnstone",
+        "away_team": "Morton",
+        "result": "3-0"
+    },
+    {
+        "match_id": "be5MtAMH",
+        "home_team": "Aberdeen",
+        "away_team": "Queen's Park",
+        "result": "2-1"
+    },
+    {
+        "match_id": "IyA6kv5k",
+        "home_team": "Dundee Utd",
+        "away_team": "Arbroath",
+        "result": "3-0"
+    },
+    {
+        "match_id": "hvpfILDU",
+        "home_team": "Novi Pazar",
+        "away_team": "Radnicki 1923",
+        "result": "1-0"
+    },
+    {
+        "match_id": "QqpWNPqg",
+        "home_team": "Zemun",
+        "away_team": "Partizan",
+        "result": "2-2"
+    },
+    {
+        "match_id": "r17DAPRI",
+        "home_team": "Bai Bureh Warriors",
+        "away_team": "Diamond Stars",
+        "result": "2-3"
+    },
+    {
+        "match_id": "0xvvRpCa",
+        "home_team": "Bo Rangers",
+        "away_team": "Mighty Blackpool",
+        "result": "0-1"
+    },
+    {
+        "match_id": "MiSnPOtC",
+        "home_team": "Kallon",
+        "away_team": "Abacha City",
+        "result": "0-5"
+    },
+    {
+        "match_id": "nZD4Coc6",
+        "home_team": "Old Edwardians",
+        "away_team": "SLIFA",
+        "result": "0-0"
+    },
+    {
+        "match_id": "0IFdE7Sg",
+        "home_team": "Star Sport Academy",
+        "away_team": "Wusum Stars",
+        "result": "1-1"
+    },
+    {
+        "match_id": "bJwzAaX9",
+        "home_team": "Radomlje",
+        "away_team": "Grosuplje",
+        "result": "0-2"
+    },
+    {
+        "match_id": "bamtlIAj",
+        "home_team": "O. Ljubljana",
+        "away_team": "Bravo",
+        "result": "0-2"
+    },
+    {
+        "match_id": "bmq77Zzo",
+        "home_team": "Jazeera",
+        "away_team": "Gantaalaha Afgooye",
+        "result": "9-1"
+    },
+    {
+        "match_id": "0jSTiRuQ",
+        "home_team": "Mogadishu City",
+        "away_team": "Horseed",
+        "result": "1-1"
+    },
+    {
+        "match_id": "bqGxSSSr",
+        "home_team": "Daejeon",
+        "away_team": "Ulsan HD",
+        "result": "2-2"
+    },
+    {
+        "match_id": "SO7gOpS7",
+        "home_team": "Incheon",
+        "away_team": "Jeonbuk",
+        "result": "1-0"
+    },
+    {
+        "match_id": "S6vQaa4e",
+        "home_team": "Gimpo FC",
+        "away_team": "Daegu",
+        "result": "1-1"
+    },
+    {
+        "match_id": "fJFKLtRE",
+        "home_team": "Seongnam",
+        "away_team": "Busan",
+        "result": "1-0"
+    },
+    {
+        "match_id": "lMSYcwZ7",
+        "home_team": "Suwon FC",
+        "away_team": "Seoul E-Land",
+        "result": "2-2"
+    },
+    {
+        "match_id": "Sd21eRpp",
+        "home_team": "Gyeongju W",
+        "away_team": "Sejong Sportstoto W",
+        "result": "0-0"
+    },
+    {
+        "match_id": "0A09g5Fd",
+        "home_team": "Incheon Hyundai Steel W",
+        "away_team": "Seoul W",
+        "result": "0-2"
+    },
+    {
+        "match_id": "Uqug1HY2",
+        "home_team": "Mungyeong Sangmu W",
+        "away_team": "Gangjin Swans W",
+        "result": "0-1"
+    },
+    {
+        "match_id": "EqmIpxcE",
+        "home_team": "Renown",
+        "away_team": "Ratnam",
+        "result": "3-0"
+    },
+    {
+        "match_id": "KOupPFo4",
+        "home_team": "AIK",
+        "away_team": "GAIS",
+        "result": "2-0"
+    },
+    {
+        "match_id": "lAhh2RrT",
+        "home_team": "Oddevold",
+        "away_team": "Varberg",
+        "result": "2-4"
+    },
+    {
+        "match_id": "YsUOd56j",
+        "home_team": "Ostersund",
+        "away_team": "Landskrona",
+        "result": "2-0"
+    },
+    {
+        "match_id": "2og6fDPc",
+        "home_team": "Ladomir W",
+        "away_team": "SeaSters Odesa W",
+        "result": "0-4"
+    },
+    {
+        "match_id": "zaiEhifA",
+        "home_team": "Panthers FC Uman W",
+        "away_team": "Kryvbas W",
+        "result": "0-0"
+    },
+    {
+        "match_id": "CpU7Mj7k",
+        "home_team": "Penarol",
+        "away_team": "Boston River",
+        "result": "3-0"
+    },
+    {
+        "match_id": "CvwIKacT",
+        "home_team": "Uruguay Montevideo",
+        "away_team": "River Plate",
+        "result": "1-1"
+    },
+    {
+        "match_id": "8AOmFwLj",
+        "home_team": "Rentistas",
+        "away_team": "Cerrito",
+        "result": "0-0"
+    },
+    {
+        "match_id": "zHGZxsDc",
+        "home_team": "Oriental",
+        "away_team": "Huracan FC",
+        "result": "-"
+    },
+    {
+        "match_id": "S0oPl1rT",
+        "home_team": "Nashville SC",
+        "away_team": "Atlanta Utd",
+        "result": "1-0"
+    },
+    {
+        "match_id": "ALllqu6j",
+        "home_team": "Los Angeles Galaxy",
+        "away_team": "Los Angeles FC",
+        "result": "0-3"
+    },
+    {
+        "match_id": "0ObhkLPh",
+        "home_team": "Pittsburgh",
+        "away_team": "Louisville City",
+        "result": "3-1"
+    },
+    {
+        "match_id": "fTromAaU",
+        "home_team": "Toronto FC II",
+        "away_team": "Cincinnati 2",
+        "result": "3-1"
+    },
+    {
+        "match_id": "tW7Xrf9c",
+        "home_team": "Crown Legacy",
+        "away_team": "Chicago Fire II",
+        "result": "2-1"
+    },
+    {
+        "match_id": "xb1tsYwA",
+        "home_team": "Columbus Crew 2",
+        "away_team": "Philadelphia Union II",
+        "result": "-"
+    },
+    {
+        "match_id": "KUr9LqOF",
+        "home_team": "Boise",
+        "away_team": "Portland Hearts of Pine",
+        "result": "2-1"
+    },
+    {
+        "match_id": "0MvMjFYF",
+        "home_team": "Colorado Storm",
+        "away_team": "Snohomish United",
+        "result": "2-1"
+    },
+    {
+        "match_id": "zaFYv1h2",
+        "home_team": "Vermont Green",
+        "away_team": "Ironbound SC",
+        "result": "4-0"
+    },
+    {
+        "match_id": "SYBQtNNk",
+        "home_team": "Lionsbridge",
+        "away_team": "Asheville City",
+        "result": "2-3aet"
+    },
+    {
+        "match_id": "hdyEhy43",
+        "home_team": "Ventura",
+        "away_team": "Project 51O",
+        "result": "1-0"
+    },
+    {
+        "match_id": "8nrUlg3S",
+        "home_team": "Ballard",
+        "away_team": "Utah United",
+        "result": "1-1 (Pen: 4-3)"
+    },
+    {
+        "match_id": "4ITaqXQk",
+        "home_team": "San Francisco City",
+        "away_team": "Tucson",
+        "result": "1-0"
+    },
+    {
+        "match_id": "hnmako0t",
+        "home_team": "Kansas City Current W",
+        "away_team": "San Diego Wave W",
+        "result": "2-2"
+    },
+    {
+        "match_id": "E1y8mPUh",
+        "home_team": "Gotham W",
+        "away_team": "Seattle Reign W",
+        "result": "3-2"
+    },
+    {
+        "match_id": "0IZFo3a5",
+        "home_team": "Denver Summit W",
+        "away_team": "Portland Thorns W",
+        "result": "2-1"
+    },
+    {
+        "match_id": "dpTOqsUH",
+        "home_team": "Bay FC W",
+        "away_team": "North Carolina Courage W",
+        "result": "3-0"
+    },
+    {
+        "match_id": "UcRWsLbU",
+        "home_team": "Chicago W",
+        "away_team": "Angel City W",
+        "result": "-"
+    },
+    {
+        "match_id": "dQsDI8R0",
+        "home_team": "Andijan",
+        "away_team": "Termez Surkhon",
+        "result": "1-2"
+    },
+    {
+        "match_id": "pSDWIHLq",
+        "home_team": "Qizilqum",
+        "away_team": "Din. Samarkand",
+        "result": "1-2"
+    },
+    {
+        "match_id": "zF9bDC0k",
+        "home_team": "Olimpik-Mobiuz",
+        "away_team": "Lochin",
+        "result": "2-3"
+    },
+    {
+        "match_id": "bwfR9AYg",
+        "home_team": "Flamengo RJ (Bra)",
+        "away_team": "Olimpia Asuncion (Par)",
+        "result": "4-2"
+    },
+    {
+        "match_id": "IBpBTP0K",
+        "home_team": "Atl. Nacional (Col)",
+        "away_team": "Dep. Tachira (Ven)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "I7rTENcs",
+        "home_team": "Vissel Kobe (Jpn)",
+        "away_team": "Hokkaido Consadole Sapporo (Jpn)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "GhNZwb1D",
+        "home_team": "Ujpest II (Hun)",
+        "away_team": "Budaorsi SC (Hun)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "MXpkdZdE",
+        "home_team": "Beroe (Bul)",
+        "away_team": "Zagorets (Bul)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "SK0xpW8O",
+        "home_team": "Ludogorets II (Bul)",
+        "away_team": "Lok. Gorna (Bul)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "dE9vdN3F",
+        "home_team": "Uniao Lamas (Por)",
+        "away_team": "Sao Joao Ver (Por)",
+        "result": "-"
+    },
+    {
+        "match_id": "dK4MA4x1",
+        "home_team": "Unirea Slobozia (Rou)",
+        "away_team": "Tunari (Rou)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "8dcEMpOO",
+        "home_team": "Vihren (Bul)",
+        "away_team": "Marek (Bul)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "K4j5y4Y7",
+        "home_team": "Machida (Jpn)",
+        "away_team": "Fujieda MYFC (Jpn)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "Uii6ejo3",
+        "home_team": "Ajka (Hun)",
+        "away_team": "Csakvari (Hun)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "UwrmtesH",
+        "home_team": "Akron Togliatti (Rus)",
+        "away_team": "Dynamo Moscow (Rus)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "pGiqptaD",
+        "home_team": "Beltinci (Slo)",
+        "away_team": "Podvinci (Slo)",
+        "result": "5-2"
+    },
+    {
+        "match_id": "rmeojm06",
+        "home_team": "Dukla Prague B (Cze)",
+        "away_team": "Brozany (Cze)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "dUXcHPb5",
+        "home_team": "FK Kozlovice (Cze)",
+        "away_team": "Blansko (Cze)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "06G7abxJ",
+        "home_team": "FS Trebic (Cze)",
+        "away_team": "Artis Brno B (Cze)",
+        "result": "1-6"
+    },
+    {
+        "match_id": "Sdd4AgfK",
+        "home_team": "Hostoun (Cze)",
+        "away_team": "Zapy (Cze)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "bLjzoOM0",
+        "home_team": "I. Bratislava (Svk)",
+        "away_team": "Galanta (Svk)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "UXzP6nk4",
+        "home_team": "Lokomotiv Moscow (Rus)",
+        "away_team": "Rubin Kazan (Rus)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "44jwlTT1",
+        "home_team": "Mlawa (Pol)",
+        "away_team": "Ostroda (Pol)",
+        "result": "4-0"
+    },
+    {
+        "match_id": "xSs9cFNM",
+        "home_team": "Popesti Leordeni (Rou)",
+        "away_team": "Targu Secuiesc (Rou)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "WlBQ4K1U",
+        "home_team": "Puchov (Svk)",
+        "away_team": "Banik Prievidza (Svk)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "jgpD5LD6",
+        "home_team": "Ramnicu Valcea (Rou)",
+        "away_team": "Steaua Bucuresti (Rou)",
+        "result": "4-0"
+    },
+    {
+        "match_id": "bNFDH90e",
+        "home_team": "Segesta (Cro)",
+        "away_team": "Karlovac (Cro)",
+        "result": "4-0"
+    },
+    {
+        "match_id": "n59dt0Q8",
+        "home_team": "Stammersdorf (Aut)",
+        "away_team": "SV Donau (Aut)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "nVtgqgwg",
+        "home_team": "Unicov (Cze)",
+        "away_team": "Usti nad Orlici (Cze)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "25ma0V9s",
+        "home_team": "Vasas (Hun)",
+        "away_team": "Soroksar (Hun)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "xlNi37QP",
+        "home_team": "Vitoria Guimaraes (Por)",
+        "away_team": "Penafiel (Por)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "GIW9so2E",
+        "home_team": "Wisloka Debica (Pol)",
+        "away_team": "Kolbuszowa Dolna (Pol)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "x6Ma5lv9",
+        "home_team": "Yokohama FC (Jpn)",
+        "away_team": "Giravanz Kitakyushu (Jpn)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "2oRqpFY8",
+        "home_team": "Neratovice (Cze)",
+        "away_team": "Kraluv Dvur (Cze)",
+        "result": "4-2"
+    },
+    {
+        "match_id": "jDbglRUI",
+        "home_team": "Pisek (Cze)",
+        "away_team": "Pribram B (Cze)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "ldfBp41n",
+        "home_team": "Povltavska FA (Cze)",
+        "away_team": "Turnov (Cze)",
+        "result": "3-3"
+    },
+    {
+        "match_id": "6N9NXpqn",
+        "home_team": "Vratimov (Cze)",
+        "away_team": "Hlubina (Cze)",
+        "result": "3-4"
+    },
+    {
+        "match_id": "pKJDWX9j",
+        "home_team": "Essingen (Ger)",
+        "away_team": "Aalen (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "zLbO0c1e",
+        "home_team": "Hodonin (Cze)",
+        "away_team": "Malzenice (Svk)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "KUmQ2QqC",
+        "home_team": "Jablonec B (Cze)",
+        "away_team": "Teplice B (Cze)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "QNUBQAuh",
+        "home_team": "Mladost Zdralovi (Cro)",
+        "away_team": "Jarun (Cro)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "6kQKccx0",
+        "home_team": "Monaco (Fra)",
+        "away_team": "Saint Priest (Fra)",
+        "result": "5-2"
+    },
+    {
+        "match_id": "nZIui5ve",
+        "home_team": "Obolon (Ukr)",
+        "away_team": "Kolos Kovalivka 2 (Ukr)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "8AExzqtC",
+        "home_team": "Piestany (Svk)",
+        "away_team": "Sala (Svk)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "fLXGErLF",
+        "home_team": "Podbrezova (Svk)",
+        "away_team": "L. Mikulas (Svk)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "vinA68pm",
+        "home_team": "Prepere (Cze)",
+        "away_team": "Varnsdorf (Cze)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "fan4N9TG",
+        "home_team": "Rajecko (Cze)",
+        "away_team": "Kurim (Cze)",
+        "result": "3-3"
+    },
+    {
+        "match_id": "2JKSGvnd",
+        "home_team": "Sulow (Pol)",
+        "away_team": "Slask Wroclaw II (Pol)",
+        "result": "-"
+    },
+    {
+        "match_id": "hGsriP94",
+        "home_team": "Zambrow (Pol)",
+        "away_team": "Troszyn (Pol)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "ruPRuKW0",
+        "home_team": "Zdirec n. D. (Cze)",
+        "away_team": "Hlinsko (Cze)",
+        "result": "-"
+    },
+    {
+        "match_id": "rqRNq8UN",
+        "home_team": "Zdirec n. D. (Cze)",
+        "away_team": "Chrudim U19 (Cze)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "0pXabxy2",
+        "home_team": "Goczalkowice Zdroj (Pol)",
+        "away_team": "Bielsko-Biala (Pol)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "Yg3aaiwK",
+        "home_team": "Admira Prague (Cze)",
+        "away_team": "Hradec Kralove B (Cze)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "dvJ5W5Sh",
+        "home_team": "Andorra (And)",
+        "away_team": "Stevenage (Eng)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "hhaRMBLO",
+        "home_team": "Arka Gdynia (Pol)",
+        "away_team": "Luzino (Pol)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "Ia2HIMXq",
+        "home_team": "ASK Voitsberg (Aut)",
+        "away_team": "NK Bistrica (Slo)",
+        "result": "5-4"
+    },
+    {
+        "match_id": "GWaTuAHs",
+        "home_team": "BKS Sparta Katowice (Pol)",
+        "away_team": "Havirov (Cze)",
+        "result": "4-2"
+    },
+    {
+        "match_id": "t6DAXpGb",
+        "home_team": "Bron Radom (Pol)",
+        "away_team": "Arka Pawlow (Pol)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "dOd9ji0C",
+        "home_team": "Brzeg (Pol)",
+        "away_team": "Starowice Dolne (Pol)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "UZLLwPy3",
+        "home_team": "Busko-Zdroj (Pol)",
+        "away_team": "Naprzod Jedrzejow (Pol)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "G2GgmcMM",
+        "home_team": "Chelmianka Chelm (Pol)",
+        "away_team": "Hetman Zamosc (Pol)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "vuxhMF3B",
+        "home_team": "Chenois (Sui)",
+        "away_team": "Azzurri (Sui)",
+        "result": "1-4"
+    },
+    {
+        "match_id": "4zgjM0V1",
+        "home_team": "Domazlice (Cze)",
+        "away_team": "Vlasim (Cze)",
+        "result": "5-3"
+    },
+    {
+        "match_id": "pKXShdxA",
+        "home_team": "DVTK II (Hun)",
+        "away_team": "Cigand SE (Hun)",
+        "result": "2-5"
+    },
+    {
+        "match_id": "h0B2W58O",
+        "home_team": "Eltersdorf (Ger)",
+        "away_team": "Neumarkt (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "tOWnjXFd",
+        "home_team": "Francs Borains (Bel)",
+        "away_team": "Gent U23 (Bel)",
+        "result": "2-3"
+    },
+    {
+        "match_id": "pjbHhxo9",
+        "home_team": "Gedania Gdansk (Pol)",
+        "away_team": "Jaguar Gdansk (Pol)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "jmoF9ej5",
+        "home_team": "Graficar Beograd (Srb)",
+        "away_team": "Vrsac (Srb)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "lh26LfJP",
+        "home_team": "Grom Nowy Staw (Pol)",
+        "away_team": "Concordia Elblag (Pol)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "W6A60KnT",
+        "home_team": "Hamburger SV II (Ger)",
+        "away_team": "Hobro (Den)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "6mTHx1iI",
+        "home_team": "Hutnik Krakow (Pol)",
+        "away_team": "Wislanie Skawina (Pol)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "0dPxfvUi",
+        "home_team": "Kisvarda (Hun)",
+        "away_team": "Michalovce (Svk)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "I1aN0Ch2",
+        "home_team": "Kotwica Kornik (Pol)",
+        "away_team": "Gornik Konin (Pol)",
+        "result": "6-1"
+    },
+    {
+        "match_id": "MglbgDYb",
+        "home_team": "Leuven (Bel)",
+        "away_team": "K. Lierse S.K. (Bel)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "lf1ECQ7l",
+        "home_team": "Lok. Kosice (Svk)",
+        "away_team": "Kechnec (Svk)",
+        "result": "6-0"
+    },
+    {
+        "match_id": "zFwYyXGq",
+        "home_team": "Middelfart (Den)",
+        "away_team": "VSK Aarhus (Den)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "O2jlrRK5",
+        "home_team": "Odra Opole (Pol)",
+        "away_team": "Ostrava B (Cze)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "MXr7G33k",
+        "home_team": "Old Boys (Sui)",
+        "away_team": "Basel II (Sui)",
+        "result": "2-3"
+    },
+    {
+        "match_id": "MLUJtpKb",
+        "home_team": "Orleans (Fra)",
+        "away_team": "Paris 13 Atl. (Fra)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "fVd6BNRP",
+        "home_team": "Pelikan (Pol)",
+        "away_team": "MKS Piaseczno (Pol)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "M7ZlMsgf",
+        "home_team": "Plock II (Pol)",
+        "away_team": "Wisla Dobrzyn (Pol)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "vJA4xODD",
+        "home_team": "Plzen B (Cze)",
+        "away_team": "Pardubice B (Cze)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "4xU1H63n",
+        "home_team": "Polonia Warszawa (Pol)",
+        "away_team": "Zawisza (Pol)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "jc4jyAJO",
+        "home_team": "Povazska Bystrica (Svk)",
+        "away_team": "Kromeriz (Cze)",
+        "result": "-"
+    },
+    {
+        "match_id": "z7TNvM1b",
+        "home_team": "Radomsko (Pol)",
+        "away_team": "Victoria Czestochowa (Pol)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "CEcP5M8D",
+        "home_team": "Sanjoanense (Por)",
+        "away_team": "AD Fafe (Por)",
+        "result": "-"
+    },
+    {
+        "match_id": "jHbDyw03",
+        "home_team": "Scinawa (Pol)",
+        "away_team": "Zaglebie U19 (Pol)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "IZnPCX3m",
+        "home_team": "Skierniewice (Pol)",
+        "away_team": "Legia II (Pol)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "Cze6s13e",
+        "home_team": "Slavia Prague B (Cze)",
+        "away_team": "Puskas Academy II (Hun)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "pfjGfVRI",
+        "home_team": "Spisska Nova Ves (Svk)",
+        "away_team": "Rimavska Sobota (Svk)",
+        "result": "3-5"
+    },
+    {
+        "match_id": "ULrgybt1",
+        "home_team": "Sroda (Pol)",
+        "away_team": "Ol. Grudziadz (Pol)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "hdPo1zln",
+        "home_team": "Star Starachowice (Pol)",
+        "away_team": "Mazovia Minsk Mazowiecki (Pol)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "8CgI1T1k",
+        "home_team": "SV Worgl (Aut)",
+        "away_team": "Kufstein (Aut)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "x8XhXMAM",
+        "home_team": "S. Wola (Pol)",
+        "away_team": "Widzew Lodz II (Pol)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "lrByfFO9",
+        "home_team": "Vanlose (Den)",
+        "away_team": "BK Frem (Den)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "GM8Rp6wh",
+        "home_team": "Warta Poznan (Pol)",
+        "away_team": "Zielona Gora (Pol)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "v36Ef3Wj",
+        "home_team": "Wisla (Pol)",
+        "away_team": "Artis Brno (Cze)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "MqiADddJ",
+        "home_team": "Benfica B (Por)",
+        "away_team": "Torreense (Por)",
+        "result": "-"
+    },
+    {
+        "match_id": "QRQ2P2tS",
+        "home_team": "Bytom Odrzanski (Pol)",
+        "away_team": "Lipno Steszew (Pol)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "QajXABYa",
+        "home_team": "Lechia Gdansk (Pol)",
+        "away_team": "Randers FC (Den)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "OCiOkbzQ",
+        "home_team": "Moreirense (Por)",
+        "away_team": "AFS (Por)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "WUjKJC2e",
+        "home_team": "Nacional (Por)",
+        "away_team": "Leixoes (Por)",
+        "result": "3-3"
+    },
+    {
+        "match_id": "jw4cj2re",
+        "home_team": "Nowa Ruda (Pol)",
+        "away_team": "Police nad Metuji (Cze)",
+        "result": "6-1"
+    },
+    {
+        "match_id": "dGIineXp",
+        "home_team": "Vizela (Por)",
+        "away_team": "Chaves (Por)",
+        "result": "-"
+    },
+    {
+        "match_id": "ruopueNj",
+        "home_team": "Westerlo (Bel)",
+        "away_team": "Beerschot VA (Bel)",
+        "result": "-"
+    },
+    {
+        "match_id": "4l8JaWdk",
+        "home_team": "Wieczysta Krakow (Pol)",
+        "away_team": "Netanya (Isr)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "AeUGEJKs",
+        "home_team": "Zaglebie Sosnowiec (Pol)",
+        "away_team": "Podhale Nowy Targ (Pol)",
+        "result": "1-4"
+    },
+    {
+        "match_id": "lK0bHNEk",
+        "home_team": "Berliner AK 07 (Ger)",
+        "away_team": "Altludersdorf (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "pdXNaH9k",
+        "home_team": "FA 2000 (Den)",
+        "away_team": "FC Copenhagen U19 (Den)",
+        "result": "-"
+    },
+    {
+        "match_id": "Gxonn0cn",
+        "home_team": "Hellerup (Den)",
+        "away_team": "Holbaek (Den)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "UoYRvOlB",
+        "home_team": "Karlskrona (Swe)",
+        "away_team": "Hassleholms IF (Swe)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "rFXHQzKb",
+        "home_team": "Kortrijk (Bel)",
+        "away_team": "Valenciennes (Fra)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Uk0LjgeM",
+        "home_team": "Lens (Fra)",
+        "away_team": "Boulogne (Fra)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "buaV2UtH",
+        "home_team": "Magdeburg II (Ger)",
+        "away_team": "TSV Havelse (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "hKw0peIk",
+        "home_team": "Naesby (Den)",
+        "away_team": "Skive (Den)",
+        "result": "4-2"
+    },
+    {
+        "match_id": "dt0tZrpp",
+        "home_team": "Phonix Lubeck (Ger)",
+        "away_team": "Greifswald (Ger)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "ARMU3Ei2",
+        "home_team": "Radomiak Radom (Pol)",
+        "away_team": "Pogon Siedlce (Pol)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "v1310VlS",
+        "home_team": "Ringsted (Den)",
+        "away_team": "Horsholm-Usserod (Den)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "8SqGSZyH",
+        "home_team": "Ruzomberok (Svk)",
+        "away_team": "Teplice (Cze)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "8U6z4yzI",
+        "home_team": "Santa Clara (Por)",
+        "away_team": "Paredes (Por)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "ShtMUwlD",
+        "home_team": "Schott Jena (Ger)",
+        "away_team": "Einheit Rudolstadt (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "IsoY4HmA",
+        "home_team": "Sundby (Den)",
+        "away_team": "Nykobing (Den)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "p8NvKWmo",
+        "home_team": "Tenerife (Esp)",
+        "away_team": "Tenerife B (Esp)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "8btuyohI",
+        "home_team": "Termalica B-B. (Pol)",
+        "away_team": "Podbeskidzie (Pol)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "GdyFgae3",
+        "home_team": "Thisted FC (Den)",
+        "away_team": "Holstebro (Den)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "OpF4Sbrp",
+        "home_team": "Veres-Rivne (Ukr)",
+        "away_team": "Zhytomyr 2 (Ukr)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "6mJLFmV7",
+        "home_team": "Wda Swiecie (Pol)",
+        "away_team": "Olimpia Elblag (Pol)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "vDLDVn1b",
+        "home_team": "Wikielec (Pol)",
+        "away_team": "Chemik Bydgoszcz (Pol)",
+        "result": "0-7"
+    },
+    {
+        "match_id": "IySZ5aSG",
+        "home_team": "PSV (Ned)",
+        "away_team": "Royale Union SG (Bel)",
+        "result": "7-3"
+    },
+    {
+        "match_id": "ll0gcC7C",
+        "home_team": "Siegen (Ger)",
+        "away_team": "Eintracht Frankfurt II (Ger)",
+        "result": "5-1"
+    },
+    {
+        "match_id": "rXfumIdK",
+        "home_team": "Bronshoj (Den)",
+        "away_team": "AB Copenhagen (Den)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "IgP4wzOr",
+        "home_team": "Chatham (Eng)",
+        "away_team": "Margate (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "ncT0ED8t",
+        "home_team": "Chesterfield (Eng)",
+        "away_team": "Boston Utd (Eng)",
+        "result": "-"
+    },
+    {
+        "match_id": "GOcSjk7M",
+        "home_team": "Dassendorf (Ger)",
+        "away_team": "SC Weiche-08 (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "4hQ2SRGb",
+        "home_team": "Esbjerg (Den)",
+        "away_team": "Fredericia (Den)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "nHeM6YQN",
+        "home_team": "FK Zorya Luhansk (Ukr)",
+        "away_team": "Grimsby (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "tpQgflB6",
+        "home_team": "GKS Belchatow (Pol)",
+        "away_team": "Tluchowo (Pol)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "Qu8i2OW7",
+        "home_team": "Hannover II (Ger)",
+        "away_team": "Wiedenbruck (Ger)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "b14EeNiA",
+        "home_team": "Hillerod (Den)",
+        "away_team": "Lyngby (Den)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "KC6MTitB",
+        "home_team": "Kisvarda (Hun)",
+        "away_team": "Michalovce (Svk)",
+        "result": "4-6"
+    },
+    {
+        "match_id": "IgP6Yhyn",
+        "home_team": "Legia (Pol)",
+        "away_team": "Grodzisk M. (Pol)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "OOVSu4dE",
+        "home_team": "Lichtenberg (Ger)",
+        "away_team": "Dresden II (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "E7HH1vjI",
+        "home_team": "Lommel SK (Bel)",
+        "away_team": "G.A. Eagles (Ned)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "x6rAsc2b",
+        "home_team": "Meppen (Ger)",
+        "away_team": "Sparta Rotterdam (Ned)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "Cfy0nKHl",
+        "home_team": "Naestved (Den)",
+        "away_team": "Koge (Den)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "IVMRh57N",
+        "home_team": "Polonia Slubice (Pol)",
+        "away_team": "Furstenwalde (Ger)",
+        "result": "7-1"
+    },
+    {
+        "match_id": "E7FuHEK6",
+        "home_team": "Rathenow (Ger)",
+        "away_team": "Ludwigsfelde (Ger)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "QyvVqxwI",
+        "home_team": "South Shields (Eng)",
+        "away_team": "Sunderland U21 (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "nTcuIRhD",
+        "home_team": "Stenungsunds (Swe)",
+        "away_team": "Utsikten (Swe)",
+        "result": "-"
+    },
+    {
+        "match_id": "nm4tNwoA",
+        "home_team": "Swit Mazowiecki (Pol)",
+        "away_team": "Pruszkow (Pol)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "GCLL12GO",
+        "home_team": "Tasmania Berlin (Ger)",
+        "away_team": "Schoneiche (Ger)",
+        "result": "4-3"
+    },
+    {
+        "match_id": "xUYmXcVI",
+        "home_team": "Twente (Ned)",
+        "away_team": "Gent (Bel)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "YH1KP9Fd",
+        "home_team": "Venlo (Ned)",
+        "away_team": "Leuven B (Bel)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "Iq6VUYh2",
+        "home_team": "Wisla (Pol)",
+        "away_team": "Artis Brno (Cze)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "25Bqrmle",
+        "home_team": "KV Mechelen (Bel)",
+        "away_team": "Den Haag (Ned)",
+        "result": "2-3"
+    },
+    {
+        "match_id": "tILxyXvf",
+        "home_team": "Skierniewice (Pol)",
+        "away_team": "KKS Kalisz (Pol)",
+        "result": "4-0"
+    },
+    {
+        "match_id": "zD2hdGWQ",
+        "home_team": "Crystal Palace (Eng)",
+        "away_team": "Swindon (Eng)",
+        "result": "5-1"
+    },
+    {
+        "match_id": "G6UBPPT7",
+        "home_team": "Oss (Ned)",
+        "away_team": "SG Wattenscheid (Ger)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "h6Yddy4L",
+        "home_team": "Altglienicke (Ger)",
+        "away_team": "RB Leipzig (Ger)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "ETtXscmS",
+        "home_team": "Avia Swidnik (Pol)",
+        "away_team": "Ostrowiec Swietokrzyski (Pol)",
+        "result": "-"
+    },
+    {
+        "match_id": "27tN4WjA",
+        "home_team": "Barnet (Eng)",
+        "away_team": "Luton (Eng)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "WQtst9Wj",
+        "home_team": "Basford (Eng)",
+        "away_team": "Gainsborough (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "nereDErK",
+        "home_team": "Bonner (Ger)",
+        "away_team": "Duisburg (Ger)",
+        "result": "1-4"
+    },
+    {
+        "match_id": "6HEpgs0U",
+        "home_team": "Braunschweig U23 (Ger)",
+        "away_team": "Babelsberg (Ger)",
+        "result": "1-5"
+    },
+    {
+        "match_id": "jRNt3pnp",
+        "home_team": "Burton (Eng)",
+        "away_team": "Leicester (Eng)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "04shjieB",
+        "home_team": "Chemnitzer (Ger)",
+        "away_team": "Furth II (Ger)",
+        "result": "1-4"
+    },
+    {
+        "match_id": "0Qv2PDOM",
+        "home_team": "Ch. Odesa (Ukr)",
+        "away_team": "Nyva Vinnytsya (Ukr)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "ADJZkZOH",
+        "home_team": "Chrudim (Cze)",
+        "away_team": "FK Ceska Lipa (Cze)",
+        "result": "-"
+    },
+    {
+        "match_id": "vide4brh",
+        "home_team": "Clydebank FC (Sco)",
+        "away_team": "Irvine Meadow (Sco)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "favPoB1s",
+        "home_team": "Dudelange (Lux)",
+        "away_team": "Hostert (Lux)",
+        "result": "5-1"
+    },
+    {
+        "match_id": "YN8lQ3cJ",
+        "home_team": "Elana Torun (Pol)",
+        "away_team": "Czarni Pruszcz Gdansk (Pol)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "8psgxCvf",
+        "home_team": "Emden (Ger)",
+        "away_team": "Rodinghausen (Ger)",
+        "result": "1-4"
+    },
+    {
+        "match_id": "Sxd2lqPq",
+        "home_team": "Estrela (Por)",
+        "away_team": "Casa Pia (Por)",
+        "result": "-"
+    },
+    {
+        "match_id": "lhCtjNAT",
+        "home_team": "Etar (Bul)",
+        "away_team": "Yantra Gabrovo (Bul)",
+        "result": "-"
+    },
+    {
+        "match_id": "fN82gYkd",
+        "home_team": "Famalicao (Por)",
+        "away_team": "Penafiel (Por)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "Y5JnSiyP",
+        "home_team": "FC Gutersloh (Ger)",
+        "away_team": "VfB Oldenburg (Ger)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "d4xnH0Bc",
+        "home_team": "Feirense (Por)",
+        "away_team": "Arouca (Por)",
+        "result": "-"
+    },
+    {
+        "match_id": "Gvr8UAS9",
+        "home_team": "Fortuna Koln (Ger)",
+        "away_team": "B. Monchengladbach II (Ger)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "z52PPls2",
+        "home_team": "Gil Vicente (Por)",
+        "away_team": "Felgueiras (Por)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "AJK73S8L",
+        "home_team": "Groningen (Ned)",
+        "away_team": "AEK Athens (Gre)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "8t77pWd3",
+        "home_team": "Grossaspach (Ger)",
+        "away_team": "Hoffenheim II (Ger)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "4x6N8Z0c",
+        "home_team": "Hapoel Afula (Isr)",
+        "away_team": "Dobrudzha (Bul)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "pE6nuQG8",
+        "home_team": "Hapoel Haifa (Isr)",
+        "away_team": "Arkadag (Tkm)",
+        "result": "-"
+    },
+    {
+        "match_id": "dpEGCT1C",
+        "home_team": "Hibernian (Sco)",
+        "away_team": "Brondby (Den)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "Q3AtFPLk",
+        "home_team": "Hvidovre IF (Den)",
+        "away_team": "Naestved (Den)",
+        "result": "-"
+    },
+    {
+        "match_id": "bsltdaS0",
+        "home_team": "Hvidovre IF (Den)",
+        "away_team": "Vejle (Den)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "MDEewW1S",
+        "home_team": "Jaroslaw (Pol)",
+        "away_team": "Tomasovia T. L. (Pol)",
+        "result": "-"
+    },
+    {
+        "match_id": "4zBepvqo",
+        "home_team": "Koln II (Ger)",
+        "away_team": "Dender (Bel)",
+        "result": "-"
+    },
+    {
+        "match_id": "M1jK2U6L",
+        "home_team": "KS Wieczysta Krakow II (Pol)",
+        "away_team": "Wisla II (Pol)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "lWpuDz3U",
+        "home_team": "Lech Poznan II (Pol)",
+        "away_team": "Zaglebie II (Pol)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "d0EstMlf",
+        "home_team": "Liefering (Aut)",
+        "away_team": "Wehen (Ger)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "Ys1qzu7D",
+        "home_team": "Livyi Bereg (Ukr)",
+        "away_team": "SC Poltava (Ukr)",
+        "result": "-"
+    },
+    {
+        "match_id": "zLMAwYhC",
+        "home_team": "Lubaczow (Pol)",
+        "away_team": "S. Rzeszow (Pol)",
+        "result": "-"
+    },
+    {
+        "match_id": "bc0SeF8t",
+        "home_team": "Lubaczow (Pol)",
+        "away_team": "Cos. Nowotaniec (Pol)",
+        "result": "-"
+    },
+    {
+        "match_id": "I5crnpVi",
+        "home_team": "Lusitania FC (Por)",
+        "away_team": "Braga B (Por)",
+        "result": "-"
+    },
+    {
+        "match_id": "pEYS9uIk",
+        "home_team": "Memmingen (Ger)",
+        "away_team": "Ravensburg (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "ngcAsC1S",
+        "home_team": "Mlada Boleslav (Cze)",
+        "away_team": "Ried (Aut)",
+        "result": "4-0"
+    },
+    {
+        "match_id": "dbwPBWL8",
+        "home_team": "Mlawa (Pol)",
+        "away_team": "Dobre Miasto (Pol)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "WvhoutkT",
+        "home_team": "Newcastle (Eng)",
+        "away_team": "Darlington (Eng)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "0fAhWgft",
+        "home_team": "Niendorfer TSV (Ger)",
+        "away_team": "Eimsbutteler (Ger)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "xUMGeuKi",
+        "home_team": "Nijmegen (Ned)",
+        "away_team": "Al Fayha (Sau)",
+        "result": "7-0"
+    },
+    {
+        "match_id": "pfrp8rcM",
+        "home_team": "Normannia Gmund (Ger)",
+        "away_team": "Stuttgart II (Ger)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "824Hr42M",
+        "home_team": "Paderborn II (Ger)",
+        "away_team": "Drochtersen/Assel (Ger)",
+        "result": "0-5"
+    },
+    {
+        "match_id": "xQjRdojd",
+        "home_team": "Polonia Bytom (Pol)",
+        "away_team": "Slask Wroclaw II (Pol)",
+        "result": "-"
+    },
+    {
+        "match_id": "Iws692q3",
+        "home_team": "Polonia Sroda Slaska (Pol)",
+        "away_team": "Sleza Wroclaw (Pol)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "40rIzYIG",
+        "home_team": "Poprad (Svk)",
+        "away_team": "Lok. Kosice (Svk)",
+        "result": "-"
+    },
+    {
+        "match_id": "Mi9a02wg",
+        "home_team": "Sandhausen (Ger)",
+        "away_team": "Saarbrucken (Ger)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "WxmFcVum",
+        "home_team": "Schalke II (Ger)",
+        "away_team": "Steinbach Haiger (Ger)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "rJmRDp13",
+        "home_team": "Schermbeck 2020 (Ger)",
+        "away_team": "Bocholt (Ger)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "djPXWMOh",
+        "home_team": "Schoningen (Ger)",
+        "away_team": "Magdeburg (Ger)",
+        "result": "0-4"
+    },
+    {
+        "match_id": "SvNnW0o4",
+        "home_team": "Sheffield Wed (Eng)",
+        "away_team": "Preston (Eng)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "YkXWa6mg",
+        "home_team": "Siarka Tarnobrzeg (Pol)",
+        "away_team": "R. Rzeszow (Pol)",
+        "result": "3-4"
+    },
+    {
+        "match_id": "KAR8Ciwg",
+        "home_team": "SK Kladno (Cze)",
+        "away_team": "Chomutov (Cze)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "j9d3ifWA",
+        "home_team": "Stirling University (Sco)",
+        "away_team": "Nairn County (Sco)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "vsR8HghA",
+        "home_team": "Sulow (Pol)",
+        "away_team": "LKS Lodz II (Pol)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "lSGZBH5U",
+        "home_team": "Trelleborg (Swe)",
+        "away_team": "Al Diriyah (Sau)",
+        "result": "1-4"
+    },
+    {
+        "match_id": "AuWEcZ0B",
+        "home_team": "Vendsyssel (Den)",
+        "away_team": "Horsens (Den)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "MRskC4WQ",
+        "home_team": "Waalwijk (Ned)",
+        "away_team": "Alemannia Aachen (Ger)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "dS8ytERG",
+        "home_team": "Werder Bremen II (Ger)",
+        "away_team": "Lotte (Ger)",
+        "result": "6-2"
+    },
+    {
+        "match_id": "tINX7GDj",
+        "home_team": "Westfalia Rhynern (Ger)",
+        "away_team": "Schonnebeck (Ger)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "dWn1yQog",
+        "home_team": "Wigan (Eng)",
+        "away_team": "Port Vale (Eng)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "YRYvmZH5",
+        "home_team": "Wil (Sui)",
+        "away_team": "Bruhl (Sui)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "0GZLDIg4",
+        "home_team": "Wolfsburg (Ger)",
+        "away_team": "Verl (Ger)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "URNlu27T",
+        "home_team": "Wuppertal (Ger)",
+        "away_team": "B. Monchengladbach (Ger)",
+        "result": "0-6"
+    },
+    {
+        "match_id": "xbGOjGFL",
+        "home_team": "Yeovil (Eng)",
+        "away_team": "Cardiff U21 (Wal)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "rLf0GdRp",
+        "home_team": "Zurich (Sui)",
+        "away_team": "Greuther Furth (Ger)",
+        "result": "2-3"
+    },
+    {
+        "match_id": "jaTRSWBa",
+        "home_team": "Zaglebie (Pol)",
+        "away_team": "Chrobry Glogow (Pol)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "n5cTnv3B",
+        "home_team": "Ballymacash (Nir)",
+        "away_team": "Greystones United (Irl)",
+        "result": "2-3"
+    },
+    {
+        "match_id": "UBZSKKid",
+        "home_team": "Dordrecht (Ned)",
+        "away_team": "Lusail (Qat)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "xjGei2Ps",
+        "home_team": "Karlsruher SC (Ger)",
+        "away_team": "Shimizu S-Pulse (Jpn)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "dOle99XQ",
+        "home_team": "Kolos Kovalivka (Ukr)",
+        "away_team": "Oleksandriya (Ukr)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "EkC6qmAd",
+        "home_team": "Luzern (Sui)",
+        "away_team": "St. Truiden (Bel)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "2aWZx2JN",
+        "home_team": "Cardiff Metropolitan (Wal)",
+        "away_team": "Brackley Town (Eng)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "YwZo4Ed3",
+        "home_team": "Cliftonville (Nir)",
+        "away_team": "Newington (Nir)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "WArfCEOF",
+        "home_team": "Cottbus (Ger)",
+        "away_team": "Salzburg (Aut)",
+        "result": "0-5"
+    },
+    {
+        "match_id": "lAgsqc7e",
+        "home_team": "Crusaders (Nir)",
+        "away_team": "Ballinamallard (Nir)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "UeufPZI6",
+        "home_team": "Culter (Sco)",
+        "away_team": "Huntly (Sco)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "CzRmOz9m",
+        "home_team": "Dijon (Fra)",
+        "away_team": "Niedercorn (Lux)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "YJb6mxRN",
+        "home_team": "Dundee FC (Sco)",
+        "away_team": "Everton (Eng)",
+        "result": "0-4"
+    },
+    {
+        "match_id": "zFZmmJMt",
+        "home_team": "Dundela (Nir)",
+        "away_team": "Ballymena (Nir)",
+        "result": "2-3"
+    },
+    {
+        "match_id": "4pbJabhS",
+        "home_team": "Falkirk (Sco)",
+        "away_team": "Genk (Bel)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "v5DFDqUN",
+        "home_team": "Fulda-Lehnerz (Ger)",
+        "away_team": "RW Walldorf (Ger)",
+        "result": "4-2"
+    },
+    {
+        "match_id": "2ZQQvmXP",
+        "home_team": "H&W Welders (Nir)",
+        "away_team": "Carrick Rangers (Nir)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "APB9uAx8",
+        "home_team": "Jong PSV (Ned)",
+        "away_team": "Genk U23 (Bel)",
+        "result": "-"
+    },
+    {
+        "match_id": "MZ942J2e",
+        "home_team": "Kaiserslautern II (Ger)",
+        "away_team": "Mechtersheim (Ger)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "YNr6gQT7",
+        "home_team": "Lugano II (Sui)",
+        "away_team": "YF Juventus (Sui)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "nXXDWz0t",
+        "home_team": "Luneburger Hansa (Ger)",
+        "away_team": "Stendal (Ger)",
+        "result": "4-0"
+    },
+    {
+        "match_id": "4AFJhY7D",
+        "home_team": "Morpeth (Eng)",
+        "away_team": "Hebburn Town (Eng)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "lKdP6JIF",
+        "home_team": "NAC Breda (Ned)",
+        "away_team": "Excelsior (Ned)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "WnrllA4s",
+        "home_team": "Northampton (Eng)",
+        "away_team": "Coventry (Eng)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "8SXeocig",
+        "home_team": "Queens Univ. (Nir)",
+        "away_team": "Ballymena (Nir)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "2sN8Re7s",
+        "home_team": "Slovacko (Cze)",
+        "away_team": "Skalica (Svk)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "8UUQbJ2B",
+        "home_team": "Sochaux (Fra)",
+        "away_team": "Grenoble (Fra)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "2cqD9xK5",
+        "home_team": "Spakenburg (Ned)",
+        "away_team": "Jong Sparta Rotterdam (Ned)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "rThnmqog",
+        "home_team": "Strabane Athletic (Nir)",
+        "away_team": "Dungannon (Nir)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "YBAJVJ5c",
+        "home_team": "Todesfelde (Ger)",
+        "away_team": "Lubeck II (Ger)",
+        "result": "-"
+    },
+    {
+        "match_id": "UH8njU6K",
+        "home_team": "Tychy (Pol)",
+        "away_team": "Povazska Bystrica (Svk)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "lWli0aZ1",
+        "home_team": "Verden (Ger)",
+        "away_team": "Werder Bremen (Ger)",
+        "result": "2-6"
+    },
+    {
+        "match_id": "jHSC15G7",
+        "home_team": "Yeovil (Eng)",
+        "away_team": "Bristol Rovers (Eng)",
+        "result": "-"
+    },
+    {
+        "match_id": "fBrrjHqp",
+        "home_team": "Zwolle (Ned)",
+        "away_team": "Cercle Brugge KSV (Bel)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "W4cHy3MU",
+        "home_team": "Kosice (Svk)",
+        "away_team": "DVTK (Hun)",
+        "result": "2-7"
+    },
+    {
+        "match_id": "Q1PhZLPE",
+        "home_team": "Llandudno (Wal)",
+        "away_team": "Bootle (Eng)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "j3DC54gl",
+        "home_team": "Ajax (Ned)",
+        "away_team": "Olympiacos Piraeus (Gre)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "vk5pKFD6",
+        "home_team": "Baumberg (Ger)",
+        "away_team": "Bayer Leverkusen (Ger)",
+        "result": "0-7"
+    },
+    {
+        "match_id": "xAlrlN5j",
+        "home_team": "Freiberg (Ger)",
+        "away_team": "Hoffenheim (Ger)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "MmLkD9jK",
+        "home_team": "Hartberg (Aut)",
+        "away_team": "First Vienna (Aut)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "tIuPKLtS",
+        "home_team": "LASK (Aut)",
+        "away_team": "Dusseldorf (Ger)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "jVXwtZEk",
+        "home_team": "Lotte (Ger)",
+        "away_team": "Betis (Esp)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "IVbU3bge",
+        "home_team": "MTK Budapest (Hun)",
+        "away_team": "Kozarmisleny SE (Hun)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "Qkeo2IUh",
+        "home_team": "Twente (Ned)",
+        "away_team": "Gent (Bel)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "EDzq8pQs",
+        "home_team": "Young Boys (Sui)",
+        "away_team": "Etoile-Carouge (Sui)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "SbPz0m4k",
+        "home_team": "Aarau (Sui)",
+        "away_team": "Union Berlin (Ger)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "QJvJuzkf",
+        "home_team": "AB Copenhagen (Den)",
+        "away_team": "B.93 (Den)",
+        "result": "3-3"
+    },
+    {
+        "match_id": "6kEMNSbm",
+        "home_team": "AFC Fylde (Eng)",
+        "away_team": "Huddersfield (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "zwAKNnRk",
+        "home_team": "Akron Togliatti (Rus)",
+        "away_team": "Krylya Sovetov (Rus)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "dWrl2lzJ",
+        "home_team": "Aldershot (Eng)",
+        "away_team": "Farnborough (Eng)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "6RZWDaTj",
+        "home_team": "Aveley (Eng)",
+        "away_team": "Braintree (Eng)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "hYtZ2VxK",
+        "home_team": "Avro (Eng)",
+        "away_team": "FC Halifax (Eng)",
+        "result": "4-3"
+    },
+    {
+        "match_id": "IibJDkuf",
+        "home_team": "Ballyclare (Nir)",
+        "away_team": "Loughgall (Nir)",
+        "result": "1-4"
+    },
+    {
+        "match_id": "Sns7SCrQ",
+        "home_team": "Bamber Bridge (Eng)",
+        "away_team": "Morecambe (Eng)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "rP0YA7MO",
+        "home_team": "Barrow (Eng)",
+        "away_team": "Mansfield (Eng)",
+        "result": "4-3"
+    },
+    {
+        "match_id": "2XZ5mbLs",
+        "home_team": "Bath (Eng)",
+        "away_team": "Plymouth (Eng)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "KQ95Vyz1",
+        "home_team": "Bedford (Eng)",
+        "away_team": "Walton & Hersham (Eng)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "0WHYf1tn",
+        "home_team": "Bedworth United (Eng)",
+        "away_team": "Quorn (Eng)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "t6FdP4dR",
+        "home_team": "Bolnisi (Geo)",
+        "away_team": "BKMA (Arm)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "4YHdXIWQ",
+        "home_team": "Bristol Rovers (Eng)",
+        "away_team": "Portsmouth (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "fsyV77UG",
+        "home_team": "Celtic (Sco)",
+        "away_team": "Middlesbrough (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Ig9U87RQ",
+        "home_team": "Clachnacuddin (Sco)",
+        "away_team": "Bridge of Don Thistle (Sco)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "S4vpRKT0",
+        "home_team": "Cleethorpes (Eng)",
+        "away_team": "Harrogate (Eng)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "GfYYdcXN",
+        "home_team": "Coleraine (Nir)",
+        "away_team": "Portadown (Nir)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "t6sp4Bpn",
+        "home_team": "Colwyn Bay (Wal)",
+        "away_team": "Wrexham U21 (Wal)",
+        "result": "-"
+    },
+    {
+        "match_id": "4ChsNk0L",
+        "home_team": "Crewe (Eng)",
+        "away_team": "Stoke (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "lSCDZZid",
+        "home_team": "Daisy Hill (Eng)",
+        "away_team": "Bolton B (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "lQefoNF5",
+        "home_team": "Dergview (Nir)",
+        "away_team": "Dungannon (Nir)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "0rEJ5iZI",
+        "home_team": "Dover (Eng)",
+        "away_team": "Eastbourne Boro (Eng)",
+        "result": "-"
+    },
+    {
+        "match_id": "vBlgggil",
+        "home_team": "Erfurt (Ger)",
+        "away_team": "Kassel (Ger)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "tK62p25e",
+        "home_team": "Evesham (Eng)",
+        "away_team": "Cheltenham (Eng)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "MBeySu0n",
+        "home_team": "FC United (Eng)",
+        "away_team": "Salford (Eng)",
+        "result": "1-4"
+    },
+    {
+        "match_id": "WIj3PXrp",
+        "home_team": "Flenu (Bel)",
+        "away_team": "Francs Borains (Bel)",
+        "result": "-"
+    },
+    {
+        "match_id": "C6exKoQO",
+        "home_team": "Folkestone (Eng)",
+        "away_team": "Charlton U21 (Eng)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "j3gaL6Tb",
+        "home_team": "Freiburg II (Ger)",
+        "away_team": "Schaffhausen (Sui)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Q114yYCd",
+        "home_team": "Frome (Eng)",
+        "away_team": "Worthing (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "rX63Sddn",
+        "home_team": "Gala Fairydean (Sco)",
+        "away_team": "Hibernian B (Sco)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "ClAFEONM",
+        "home_team": "Gillingham (Eng)",
+        "away_team": "Charlton (Eng)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "CYH5Xuso",
+        "home_team": "Gloucester (Eng)",
+        "away_team": "Haverfordwest (Wal)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "2yjtjZmn",
+        "home_team": "Grazer AK (Aut)",
+        "away_team": "SG Dynamo Dresden (Ger)",
+        "result": "0-5"
+    },
+    {
+        "match_id": "Cpbe2Eif",
+        "home_team": "Halesowen (Eng)",
+        "away_team": "Kidderminster (Eng)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "Yqdq9ghf",
+        "home_team": "Hanworth (Eng)",
+        "away_team": "Carshalton (Eng)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "M1YZiZu2",
+        "home_team": "Harlow (Eng)",
+        "away_team": "Colchester (Eng)",
+        "result": "0-5"
+    },
+    {
+        "match_id": "SnDY1xoR",
+        "home_team": "Hashtag (Eng)",
+        "away_team": "Dag & Red (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "IRpqcZMh",
+        "home_team": "Hednesford (Eng)",
+        "away_team": "Solihull Moors (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "hCuPDyt1",
+        "home_team": "Hornchurch (Eng)",
+        "away_team": "Norwich U21 (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "86rwnXiL",
+        "home_team": "Horsham FC (Eng)",
+        "away_team": "Eastbourne (Eng)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "0bCaeKhg",
+        "home_team": "Ingolstadt (Ger)",
+        "away_team": "Palermo (Ita)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "tbLKsvwB",
+        "home_team": "Inverurie (Sco)",
+        "away_team": "East Craigie (Sco)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "S40gjOet",
+        "home_team": "Jihlava (Cze)",
+        "away_team": "FK Pardubice (Cze)",
+        "result": "0-5"
+    },
+    {
+        "match_id": "YeQEBUPO",
+        "home_team": "Karpaty Lviv (Ukr)",
+        "away_team": "Zeljeznicar (Bih)",
+        "result": "4-0"
+    },
+    {
+        "match_id": "r7PQtDme",
+        "home_team": "Karvina (Cze)",
+        "away_team": "Ruch Chorzow (Pol)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "SCfHFGOr",
+        "home_team": "Kingstonian (Eng)",
+        "away_team": "Tooting & Mitcham (Eng)",
+        "result": "7-2"
+    },
+    {
+        "match_id": "QgFFpz2c",
+        "home_team": "Lausanne (Sui)",
+        "away_team": "Yverdon (Sui)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "6TKtguBb",
+        "home_team": "Lewes (Eng)",
+        "away_team": "Hastings (Eng)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "O6EmrjbC",
+        "home_team": "Limavady (Nir)",
+        "away_team": "Institute (Nir)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "2oTbHOft",
+        "home_team": "Linfield (Nir)",
+        "away_team": "Doncaster (Eng)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "0hoewiBm",
+        "home_team": "Livyi Bereg (Ukr)",
+        "away_team": "FC Chernihiv (Ukr)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "xbvX4QJG",
+        "home_team": "Lokomotiv Moscow (Rus)",
+        "away_team": "Rubin Kazan (Rus)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "Em7cDWG5",
+        "home_team": "Longridge Town (Eng)",
+        "away_team": "Blackburn U18 (Eng)",
+        "result": "0-4"
+    },
+    {
+        "match_id": "G8un9Ti2",
+        "home_team": "Macclesfield (Eng)",
+        "away_team": "Wolves U21 (Eng)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "6yNr7lMG",
+        "home_team": "Maidenhead (Eng)",
+        "away_team": "Southampton U21 (Eng)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "jBevNtKD",
+        "home_team": "Marlow (Eng)",
+        "away_team": "Ashford Town (Eng)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "dtffDpon",
+        "home_team": "Matlock (Eng)",
+        "away_team": "Rotherham (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "ngydgggT",
+        "home_team": "Merthyr Town (Wal)",
+        "away_team": "Forest Green (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "6VTCc3Fj",
+        "home_team": "Moyola (Nir)",
+        "away_team": "Bangor FC (Nir)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "xfvY80Ij",
+        "home_team": "Notts Co (Eng)",
+        "away_team": "Nottingham (Eng)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "fRdeoTeB",
+        "home_team": "Nurnberg (Ger)",
+        "away_team": "Mannheim (Ger)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "lOvkBmPi",
+        "home_team": "Opava (Cze)",
+        "away_team": "Petrzalka (Svk)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "lEHrGto4",
+        "home_team": "Paris FC (Fra)",
+        "away_team": "Reims (Fra)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "pAljuGB4",
+        "home_team": "Piast Gliwice (Pol)",
+        "away_team": "Odra Opole (Pol)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "6TAczzRs",
+        "home_team": "Pollok (Sco)",
+        "away_team": "East Stirlingshire (Sco)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "ld6NBceA",
+        "home_team": "Pribram (Cze)",
+        "away_team": "FSV Frankfurt (Ger)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "SOxpbScS",
+        "home_team": "Ramsgate (Eng)",
+        "away_team": "Maidstone (Eng)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "6s6EdFM5",
+        "home_team": "Salzburg (Aut)",
+        "away_team": "Mamelodi Sundowns (Rsa)",
+        "result": "-"
+    },
+    {
+        "match_id": "tfy79bkL",
+        "home_team": "Sholing (Eng)",
+        "away_team": "Bognor Regis (Eng)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "8QtTXK2e",
+        "home_team": "Southend (Eng)",
+        "away_team": "West Ham (Eng)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Obz6XmGd",
+        "home_team": "Southport (Eng)",
+        "away_team": "Fleetwood (Eng)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "nLJ3JrUp",
+        "home_team": "Spalding United (Eng)",
+        "away_team": "Scunthorpe (Eng)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "OMILKZyP",
+        "home_team": "Spennymoor (Eng)",
+        "away_team": "Hartlepool (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "nTo6Uxdt",
+        "home_team": "Stutt. Kickers (Ger)",
+        "away_team": "Villingen (Ger)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "KdIdcqAd",
+        "home_team": "Sutton (Eng)",
+        "away_team": "AFC Wimbledon (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "ADe5psBT",
+        "home_team": "Tamworth (Eng)",
+        "away_team": "Stoke City U21 (Eng)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "phRRMSvH",
+        "home_team": "Tiverton (Eng)",
+        "away_team": "Brixham (Eng)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "xlcspnO6",
+        "home_team": "Trafford (Eng)",
+        "away_team": "Warrington Rylands (Eng)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "8fn5WzX7",
+        "home_team": "Tranmere (Eng)",
+        "away_team": "Blackpool (Eng)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "OOi8DrR1",
+        "home_team": "Trencin (Svk)",
+        "away_team": "Ostrava (Cze)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "lzJHddKk",
+        "home_team": "Truro (Eng)",
+        "away_team": "Exeter (Eng)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "IV85bB5c",
+        "home_team": "Vitesse (Ned)",
+        "away_team": "Al Jazira (Uae)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "Wdq9wB1E",
+        "home_team": "Warrington (Eng)",
+        "away_team": "Chester (Eng)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "GYvplBd2",
+        "home_team": "Wealdstone (Eng)",
+        "away_team": "Hemel Hempstead (Eng)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "8t1lviUO",
+        "home_team": "Westerlo (Bel)",
+        "away_team": "Eupen (Bel)",
+        "result": "-"
+    },
+    {
+        "match_id": "WSgR4ayo",
+        "home_team": "Weston-super-Mare (Eng)",
+        "away_team": "Torquay (Eng)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "tOWkpllQ",
+        "home_team": "Weymouth (Eng)",
+        "away_team": "Barry (Wal)",
+        "result": "2-3"
+    },
+    {
+        "match_id": "UNXTvS0b",
+        "home_team": "Wimborne (Eng)",
+        "away_team": "Salisbury (Eng)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "0Upo1lwf",
+        "home_team": "York City (Eng)",
+        "away_team": "Sunderland (Eng)",
+        "result": "1-5"
+    },
+    {
+        "match_id": "61pZ4Xwm",
+        "home_team": "Altach (Aut)",
+        "away_team": "Grasshoppers (Sui)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "pGJ3ktff",
+        "home_team": "Karlsruher SC (Ger)",
+        "away_team": "Shimizu S-Pulse (Jpn)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "jkOX1Gy9",
+        "home_team": "Swansea (Wal)",
+        "away_team": "Holstein Kiel (Ger)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "vok14edL",
+        "home_team": "Swit Szczecin (Pol)",
+        "away_team": "Warta Gorzow (Pol)",
+        "result": "-"
+    },
+    {
+        "match_id": "vyn2AhgS",
+        "home_team": "Veres-Rivne (Ukr)",
+        "away_team": "Nyva Ternopil (Ukr)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "l82Mq5xn",
+        "home_team": "Wacker Innsbruck (Aut)",
+        "away_team": "Chemie Leipzig (Ger)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "xGodYfgd",
+        "home_team": "Amiens (Fra)",
+        "away_team": "Quevilly Rouen (Fra)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "O8XNtl9t",
+        "home_team": "Bavois (Sui)",
+        "away_team": "Meyrin (Sui)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "na0DlB3s",
+        "home_team": "Belasica (Mkd)",
+        "away_team": "Septemvri Simitli (Bul)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "C2qhLUTa",
+        "home_team": "Biel (Sui)",
+        "away_team": "Kriens (Sui)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "noNKOvGc",
+        "home_team": "Bissen (Lux)",
+        "away_team": "Virton (Bel)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "8Oc23lxo",
+        "home_team": "Bzenec (Cze)",
+        "away_team": "Znojmo (Cze)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "bqsqcMuI",
+        "home_team": "Caen (Fra)",
+        "away_team": "Laval (Fra)",
+        "result": "4-2"
+    },
+    {
+        "match_id": "4dW8Oq2T",
+        "home_team": "Clermont (Fra)",
+        "away_team": "Andrezieux (Fra)",
+        "result": "4-1"
+    },
+    {
+        "match_id": "lSblfSaE",
+        "home_team": "Cracovia II (Pol)",
+        "away_team": "Z. Moravce-Vrable (Svk)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "CpYkOHek",
+        "home_team": "Eindhoven FC (Ned)",
+        "away_team": "Den Bosch (Ned)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "2JWDOf4s",
+        "home_team": "Giessen (Ger)",
+        "away_team": "Eintracht Frankfurt (Ger)",
+        "result": "1-7"
+    },
+    {
+        "match_id": "I9ufZN7U",
+        "home_team": "Gyirmot (Hun)",
+        "away_team": "Sopron (Hun)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "tCEJQ9Ua",
+        "home_team": "Jeunesse Esch (Lux)",
+        "away_team": "US Feulen (Lux)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "C21QZOhg",
+        "home_team": "Kasimpasa (Tur)",
+        "away_team": "Batman Petrolspor (Tur)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "dfD6KGIP",
+        "home_team": "Legia (Pol)",
+        "away_team": "Aris (Cyp)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "IXHYDcb5",
+        "home_team": "Legnica (Pol)",
+        "away_team": "Chojniczanka (Pol)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "EHjvQH5m",
+        "home_team": "Lille (Fra)",
+        "away_team": "RAAL La Louviere (Bel)",
+        "result": "3-0"
+    },
+    {
+        "match_id": "297o79rT",
+        "home_team": "Lorient (Fra)",
+        "away_team": "Nantes (Fra)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "hCFE6DEk",
+        "home_team": "Manchester Utd (Eng)",
+        "away_team": "Wrexham (Wal)",
+        "result": "0-1"
+    },
+    {
+        "match_id": "CdvmsZjA",
+        "home_team": "Nyiregyhaza (Hun)",
+        "away_team": "Bukovyna (Ukr)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "I706Udke",
+        "home_team": "Oberhausen (Ger)",
+        "away_team": "Dortmund (Ger)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "ptHYIvL7",
+        "home_team": "Pitomaca (Cro)",
+        "away_team": "Bjelovar (Cro)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "W4oxozn1",
+        "home_team": "Sampdoria (Ita)",
+        "away_team": "Taverne (Sui)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "8tTU4w9e",
+        "home_team": "Taborsko (Cze)",
+        "away_team": "Hertha Wels (Aut)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "0jIvS4df",
+        "home_team": "Troyes (Fra)",
+        "away_team": "Red Star (Fra)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "d6LRIwQ8",
+        "home_team": "Vasas (Hun)",
+        "away_team": "Videoton (Hun)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "Iws21mI8",
+        "home_team": "Waalwijk (Ned)",
+        "away_team": "FC Volendam (Ned)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "hAMnzlDs",
+        "home_team": "Chrobry Glogow (Pol)",
+        "away_team": "Sleza Wroclaw (Pol)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "A7xPzbeU",
+        "home_team": "Etar (Bul)",
+        "away_team": "Sevlievo (Bul)",
+        "result": "8-0"
+    },
+    {
+        "match_id": "rsrfkOeE",
+        "home_team": "Hapoel Haifa (Isr)",
+        "away_team": "Vora (Alb)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "IJ6L7mEs",
+        "home_team": "Hartberg (Aut)",
+        "away_team": "ASK Voitsberg (Aut)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "ENuB2DdT",
+        "home_team": "Konyaspor (Tur)",
+        "away_team": "Zalaegerszegi (Hun)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "Q3pY7rWN",
+        "home_team": "Montana (Bul)",
+        "away_team": "Spartak Pleven (Bul)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "tlETfWTP",
+        "home_team": "Ohrid (Mkd)",
+        "away_team": "Novaci (Mkd)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "AREe4saC",
+        "home_team": "Slavicin (Cze)",
+        "away_team": "Vsetin (Cze)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "vg187ovp",
+        "home_team": "Tychy (Pol)",
+        "away_team": "Trinec (Cze)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Y5kXZH7T",
+        "home_team": "Ujpest (Hun)",
+        "away_team": "Radnik Bijeljina (Bih)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "llfU5LOF",
+        "home_team": "Auxerre (Fra)",
+        "away_team": "Lusitanos (Fra)",
+        "result": "5-2"
+    },
+    {
+        "match_id": "fTNtHEd5",
+        "home_team": "Banska Bystrica (Svk)",
+        "away_team": "Pohronie (Svk)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "f7xFbow0",
+        "home_team": "Besa Kavaje (Alb)",
+        "away_team": "Partizani (Alb)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "CfTYLjV0",
+        "home_team": "Bregenz (Aut)",
+        "away_team": "SC Imst (Aut)",
+        "result": "-"
+    },
+    {
+        "match_id": "AFbFMiVG",
+        "home_team": "Brest (Fra)",
+        "away_team": "Concarneau (Fra)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "vqACQ3em",
+        "home_team": "BW Linz (Aut)",
+        "away_team": "Braunschweig (Ger)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "tp0eUBOk",
+        "home_team": "Dynamo Moscow (Rus)",
+        "away_team": "CSKA Moscow (Rus)",
+        "result": "5-2"
+    },
+    {
+        "match_id": "lt249V1K",
+        "home_team": "Hap. Ramat Gan (Isr)",
+        "away_team": "TSC (Srb)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "GUSOapQa",
+        "home_team": "Kosice (Svk)",
+        "away_team": "DVTK (Hun)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "IBbwjimA",
+        "home_team": "KRC Harelbeke (Bel)",
+        "away_team": "Kortrijk (Bel)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "E1Wb1kSI",
+        "home_team": "Le Mans (Fra)",
+        "away_team": "La Roche (Fra)",
+        "result": "2-3"
+    },
+    {
+        "match_id": "jRiBqn3U",
+        "home_team": "Maastricht (Ned)",
+        "away_team": "Racing Luxembourg (Lux)",
+        "result": "-"
+    },
+    {
+        "match_id": "OjKcKBPH",
+        "home_team": "Marisca Mersch (Lux)",
+        "away_team": "Ettelbruck (Lux)",
+        "result": "-"
+    },
+    {
+        "match_id": "0YljcwW8",
+        "home_team": "Monza (Ita)",
+        "away_team": "Pro Vercelli (Ita)",
+        "result": "4-3"
+    },
+    {
+        "match_id": "zaqvpG1t",
+        "home_team": "MTK Budapest (Hun)",
+        "away_team": "Komarno (Svk)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "vsHDWO0M",
+        "home_team": "Nice (Fra)",
+        "away_team": "Nimes (Fra)",
+        "result": "4-0"
+    },
+    {
+        "match_id": "KGpTxwVN",
+        "home_team": "Opatija (Cro)",
+        "away_team": "A. Salzburg (Aut)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Y5RwXaXO",
+        "home_team": "Real Sociedad (Esp)",
+        "away_team": "Racing Santander (Esp)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "hrftu4bJ",
+        "home_team": "Retz (Aut)",
+        "away_team": "Lac Inter (Aut)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "xpFT1146",
+        "home_team": "Schwaz (Aut)",
+        "away_team": "Innsbrucker AC (Aut)",
+        "result": "-"
+    },
+    {
+        "match_id": "GzbwngwC",
+        "home_team": "Servette (Sui)",
+        "away_team": "St Etienne (Fra)",
+        "result": "1-0"
+    },
+    {
+        "match_id": "p0skgXtI",
+        "home_team": "SK Kladno (Cze)",
+        "away_team": "H. Ironi Rishon (Isr)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "ObSjX16T",
+        "home_team": "Strzegom (Pol)",
+        "away_team": "Nysa (Pol)",
+        "result": "0-0"
+    },
+    {
+        "match_id": "OWP3V0jt",
+        "home_team": "Thionville (Fra)",
+        "away_team": "Nancy (Fra)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "C86FPGan",
+        "home_team": "Udinese (Ita)",
+        "away_team": "Istra 1961 (Cro)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "UsKNJ8sn",
+        "home_team": "Vorwarts Steyr (Aut)",
+        "away_team": "Leoben (Aut)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "SUy7aXV0",
+        "home_team": "Wiener Viktoria (Aut)",
+        "away_team": "Stockerau (Aut)",
+        "result": "-"
+    },
+    {
+        "match_id": "zeiqzanK",
+        "home_team": "Zielona Gora (Pol)",
+        "away_team": "Legnica II (Pol)",
+        "result": "0-2"
+    },
+    {
+        "match_id": "8ASRQDw9",
+        "home_team": "Zvijezda 09 (Bih)",
+        "away_team": "Gradacac (Bih)",
+        "result": "0-6"
+    },
+    {
+        "match_id": "jDd0UwAD",
+        "home_team": "Young Boys (Sui)",
+        "away_team": "Etoile-Carouge (Sui)",
+        "result": "-"
+    },
+    {
+        "match_id": "EFiKG8en",
+        "home_team": "Petro Atletico (Ang)",
+        "away_team": "Valencia (Esp)",
+        "result": "3-1"
+    },
+    {
+        "match_id": "d2N1t2Rh",
+        "home_team": "Teleoptik (Srb)",
+        "away_team": "Sloga Meridian (Bih)",
+        "result": "-"
+    },
+    {
+        "match_id": "2RAEq1WO",
+        "home_team": "Vitoria Guimaraes (Por)",
+        "away_team": "Academica (Por)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "EohkXCo9",
+        "home_team": "Cadiz CF (Esp)",
+        "away_team": "Orlando Pirates (Rsa)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "GfzCG7Gi",
+        "home_team": "Alaves (Esp)",
+        "away_team": "Eibar (Esp)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "bsj0kzbS",
+        "home_team": "Burgos CF (Esp)",
+        "away_team": "Real Sociedad B (Esp)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "MXAeDVdR",
+        "home_team": "Castellon (Esp)",
+        "away_team": "Sabadell (Esp)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "2DeQXs9r",
+        "home_team": "Elche (Esp)",
+        "away_team": "Kaizer Chiefs (Rsa)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "WYzWvSwg",
+        "home_team": "Gyirmot (Hun)",
+        "away_team": "Gabcikovo (Svk)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "4WGL3NZg",
+        "home_team": "Leobendorf (Aut)",
+        "away_team": "Laktasi (Bih)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "fmvpVScM",
+        "home_team": "Marino de Luanco (Esp)",
+        "away_team": "Gijon (Esp)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "0vloQAY1",
+        "home_team": "Osijek (Cro)",
+        "away_team": "Honved (Hun)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "4Qm7mAhn",
+        "home_team": "SK Rapid (Aut)",
+        "away_team": "Hamburger SV (Ger)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "v9DBxSIs",
+        "home_team": "Slavia Prague (Cze)",
+        "away_team": "Lyon (Fra)",
+        "result": "2-0"
+    },
+    {
+        "match_id": "ADwmXQn3",
+        "home_team": "Leioa (Esp)",
+        "away_team": "Ath Bilbao (Esp)",
+        "result": "0-11"
+    },
+    {
+        "match_id": "E16CV1Kl",
+        "home_team": "Compostela (Esp)",
+        "away_team": "Dep. A Coruna (Esp)",
+        "result": "0-4"
+    },
+    {
+        "match_id": "h8NMbhK5",
+        "home_team": "Olot (Esp)",
+        "away_team": "Espanyol (Esp)",
+        "result": "0-3"
+    },
+    {
+        "match_id": "I5ZRVwCm",
+        "home_team": "SC Farense (Por)",
+        "away_team": "Sporting CP B (Por)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "dhUxZY97",
+        "home_team": "Waregem (Bel)",
+        "away_team": "AZ Alkmaar (Ned)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "WhXGCRCL",
+        "home_team": "Birkirkara (Mlt)",
+        "away_team": "Zabbar (Mlt)",
+        "result": "2-1"
+    },
+    {
+        "match_id": "df14vvIk",
+        "home_team": "Braga (Por)",
+        "away_team": "Celta Vigo (Esp)",
+        "result": "2-2"
+    },
+    {
+        "match_id": "4UmGQDRs",
+        "home_team": "Granada CF (Esp)",
+        "away_team": "Torremolinos (Esp)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "z3w5LcAF",
+        "home_team": "Eastleigh (Eng)",
+        "away_team": "Southampton (Eng)",
+        "result": "1-3"
+    },
+    {
+        "match_id": "E3seLFwo",
+        "home_team": "Excelsior W (Ned)",
+        "away_team": "De Graafschap W (Ned)",
+        "result": "-"
+    },
+    {
+        "match_id": "UX2FYGIc",
+        "home_team": "Mainz W (Ger)",
+        "away_team": "Stuttgart W (Ger)",
+        "result": "1-2"
+    },
+    {
+        "match_id": "zThwN5cm",
+        "home_team": "Rosengard W (Swe)",
+        "away_team": "FC Copenhagen W (Den)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "lM5N9dZ7",
+        "home_team": "Hamburger SV W (Ger)",
+        "away_team": "Odense Q W (Den)",
+        "result": "5-1"
+    },
+    {
+        "match_id": "jHWwfxit",
+        "home_team": "Malmo FF W (Swe)",
+        "away_team": "Brondby W (Den)",
+        "result": "1-1"
+    },
+    {
+        "match_id": "Q5XdSVin",
+        "home_team": "Slask Wroclaw W (Pol)",
+        "away_team": "Czarni Sosnowiec W (Pol)",
+        "result": "2-5"
+    },
+    {
+        "match_id": "r7TKrA3T",
+        "home_team": "Bayer Leverkusen W (Ger)",
+        "away_team": "Liberec W (Cze)",
+        "result": "6-0"
+    },
+    {
+        "match_id": "lfgXotB4",
+        "home_team": "Goteborg W (Swe)",
+        "away_team": "Kristianstad W (Swe)",
+        "result": "1-6"
+    },
+    {
+        "match_id": "Q7YI10Gd",
+        "home_team": "Hoffenheim W (Ger)",
+        "away_team": "Young Boys W (Sui)",
+        "result": "5-0"
+    },
+    {
+        "match_id": "lp4yY44s",
+        "home_team": "Vittsjo W (Swe)",
+        "away_team": "Trelleborg W (Swe)",
+        "result": "3-2"
+    },
+    {
+        "match_id": "hIxCGv4k",
+        "home_team": "Luzern W (Sui)",
+        "away_team": "Freiburg W (Ger)",
+        "result": "1-5"
+    },
+    {
+        "match_id": "UH0VRtlT",
+        "home_team": "Al Wahda",
+        "away_team": "Al Sadd",
+        "result": "0-0"
+    },
+    {
+        "match_id": "fH9hBD0c",
+        "home_team": "Bulawayo Chiefs",
+        "away_team": "Platinum",
+        "result": "0-1"
+    },
+    {
+        "match_id": "v5Fo0mhd",
+        "home_team": "Hunters",
+        "away_team": "Chicken Inn",
+        "result": "0-1"
+    },
+    {
+        "match_id": "z9Q77VaM",
+        "home_team": "Manica",
+        "away_team": "CAPS Utd",
+        "result": "0-2"
+    },
+    {
+        "match_id": "WvCw29Nq",
+        "home_team": "MWOS",
+        "away_team": "Agama",
+        "result": "1-0"
+    },
+    {
+        "match_id": "SrNa9iV9",
+        "home_team": "Ngezi Platinum",
+        "away_team": "Herentals",
+        "result": "1-0"
+    },
+    {
+        "match_id": "2NM6mA8j",
+        "home_team": "TelOne",
+        "away_team": "ZPC Kariba",
+        "result": "0-1"
+    }
+]
