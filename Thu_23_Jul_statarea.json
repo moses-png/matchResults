@@ -1,0 +1,100 @@
+[
+    {
+        "homeTeam": "Botafogo",
+        "awayTeam": "Vitoria",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Corinthians",
+        "awayTeam": "Remo",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Bolivar",
+        "awayTeam": "Gremio",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Qarabag",
+        "awayTeam": "CSKA Sofia",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "HNK Hajduk Split",
+        "awayTeam": "Pafos FC",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Hammarby",
+        "awayTeam": "Anderlecht",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Tromso",
+        "awayTeam": "Hradec Kralove",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Cordoba",
+        "awayTeam": "Sevilla",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Unione Venezia",
+        "awayTeam": "Vis Pesaro",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "A. E. Kition Larnaca",
+        "awayTeam": "Beitar Jerusalem",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FC Dila Gori",
+        "awayTeam": "Apollon Limassol",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Alashkert",
+        "awayTeam": "CFR 1907 Cluj",
+        "tip": "2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Rakow Czestochowa",
+        "awayTeam": "Valletta FC",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Navbahor Namangan",
+        "awayTeam": "Qizilqum Zarafshon",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    }
+]
