@@ -1,0 +1,541 @@
+[
+    {
+        "homeTeam": "VfL Wolfsburg",
+        "awayTeam": "Lyon",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Bournemouth",
+        "awayTeam": "FC St. Pauli",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Galatasaray",
+        "awayTeam": "Monza",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Rosenborg",
+        "awayTeam": "Manchester Utd",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Swansea",
+        "awayTeam": "Udinese",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Osasuna",
+        "awayTeam": "Racing Santander",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Emmen",
+        "awayTeam": "Twente",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Amiens",
+        "awayTeam": "Boulogne",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Elche",
+        "awayTeam": "Johor Darul Takzim",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Cremonese",
+        "awayTeam": "GIANA Erminio",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Lommel United",
+        "awayTeam": "ADO Den Haag",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Cacereno",
+        "awayTeam": "Real Jaen",
+        "tip": "X",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Rushden and Diamonds",
+        "awayTeam": "Banbury United",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Preston",
+        "awayTeam": "Cambridge United",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Ebbsfleet United",
+        "awayTeam": "Cardiff Metropolitan",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Enfield Town",
+        "awayTeam": "Worthing",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Southport",
+        "awayTeam": "FC Utd Of Manchester",
+        "tip": "12",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Racing Club",
+        "awayTeam": "Gimnasia L.P.",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Huracan",
+        "awayTeam": "Banfield",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Gimnasia Mendoza",
+        "awayTeam": "Central Cordoba",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Atlante",
+        "awayTeam": "Club America",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Club Tijuana",
+        "awayTeam": "Leon",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "St. Patricks Athletic",
+        "awayTeam": "Dundalk",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Pogon Szczecin",
+        "awayTeam": "Legia Warszawa",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Radomiak Radom",
+        "awayTeam": "Wieczysta Krakow",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Deportivo Cali",
+        "awayTeam": "Jaguares",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Llaneros",
+        "awayTeam": "Pereira",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Deportivo Saprissa",
+        "awayTeam": "Perez Zeledon",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Cerro Porteno",
+        "awayTeam": "Sportivo Trinidense",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "2 De Mayo",
+        "awayTeam": "Rubio Nu",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "CSD Municipal",
+        "awayTeam": "Deportivo Mixco",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Antigua GFC",
+        "awayTeam": "Deportivo Marquense",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Iquique",
+        "awayTeam": "Deportes Temuco",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FC Arges Pitesti",
+        "awayTeam": "Petrolul Ploiesti",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "UTA Arad",
+        "awayTeam": "Otelul Galati",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "FF Jaro",
+        "awayTeam": "SJK",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Viborg",
+        "awayTeam": "Odense",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FAS",
+        "awayTeam": "Municipal Limeno",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Vysocina Jihlava",
+        "awayTeam": "Viktoria Zizkov",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Usti Nad Labem",
+        "awayTeam": "Kladno",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Kromeriz",
+        "awayTeam": "Taborsko",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Prostejov",
+        "awayTeam": "Trinec",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Tigres FC",
+        "awayTeam": "Leones FC",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Nyiregyhaza",
+        "awayTeam": "Ujpest",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "UCD",
+        "awayTeam": "Cork City",
+        "tip": "2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Treaty United",
+        "awayTeam": "Athlone Town",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Cobh Ramblers",
+        "awayTeam": "Bray Wanderers",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Colo Colo",
+        "awayTeam": "Deportes Limache",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Polonia Bytom",
+        "awayTeam": "Warta Poznan",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Odra Opole",
+        "awayTeam": "Arka Gdynia",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "CSKA Moscow",
+        "awayTeam": "Baltika",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Montevideo City Torque",
+        "awayTeam": "Danubio",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Aalborg",
+        "awayTeam": "Hillerod Fodbold",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Vejle",
+        "awayTeam": "AB Gladsaxe",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Tampere United",
+        "awayTeam": "Inter Turku 2",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Neuchatel Xamax FC",
+        "awayTeam": "SC Kriens",
+        "tip": "12",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Etoile-Carouge FC",
+        "awayTeam": "FC Aarau",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FC Stade LS Ouchy",
+        "awayTeam": "Stade Nyonnais",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Rapperswil",
+        "awayTeam": "FC Wil 1900",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FC Winterthur",
+        "awayTeam": "Yverdon-Sport FC",
+        "tip": "X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Deportivo Santani",
+        "awayTeam": "Paraguari Ac",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Vaesteraas IK",
+        "awayTeam": "Orgryte",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Portland Thorns (w)",
+        "awayTeam": "Gotham FC (w)",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Orlando Pride (w)",
+        "awayTeam": "Chicago Red Stars (w)",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Houston Dash (w)",
+        "awayTeam": "Bay FC (w)",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FC Oleksandriya",
+        "awayTeam": "Nyva Ternopil",
+        "tip": "1",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Vancouver FC",
+        "awayTeam": "Cavalry FC",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Volsungur",
+        "awayTeam": "Grindavik",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Njardvik",
+        "awayTeam": "HK Kopavogur",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Fjolnir",
+        "awayTeam": "Haukar",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Gimhae City",
+        "awayTeam": "Cheongju FC",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Seoul E-Land FC",
+        "awayTeam": "Cheonan City",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Znicz Pruszkow",
+        "awayTeam": "Resovia Rzeszow",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Vikingur Reykjavik",
+        "awayTeam": "Keflavik",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Ppj",
+        "awayTeam": "Union Plaani",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Mineros de Zacatecas",
+        "awayTeam": "Correcaminos UAT",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "New York Red Bulls 2",
+        "awayTeam": "Crown Legacy",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    }
+]
