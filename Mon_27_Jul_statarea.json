@@ -1,0 +1,170 @@
+[
+    {
+        "homeTeam": "Galatasaray",
+        "awayTeam": "Unione Venezia",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Hacken",
+        "awayTeam": "AIK Stockholm",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "CFR 1907 Cluj",
+        "awayTeam": "FC Voluntari",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "FC Botosani",
+        "awayTeam": "Rapid Bucuresti",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Zaglebie Lubin",
+        "awayTeam": "Piast Gliwice",
+        "tip": "X2",
+        "over_under": "under",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Hegelmann Litauen",
+        "awayTeam": "FK Zalgiris Vilnius",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Rosenborg",
+        "awayTeam": "Fredrikstad",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Lokomotiv Tashkent",
+        "awayTeam": "Sogdiana Jizzakh",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "AGMK",
+        "awayTeam": "Mash al Mubarek",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FK Andijan",
+        "awayTeam": "FK Buxoro",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FK Tukums 2000",
+        "awayTeam": "Rigas Futbola Skola",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Grobina",
+        "awayTeam": "Ogre United",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Randers FC",
+        "awayTeam": "Silkeborg",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Osters IF",
+        "awayTeam": "Varbergs BoIS FC",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Orebro",
+        "awayTeam": "IK Oddevold",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Miedz Legnica",
+        "awayTeam": "Podbeskidzie",
+        "tip": "2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Opava",
+        "awayTeam": "Karvina",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Benjamin Aceval",
+        "awayTeam": "Guairena FC",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Kamaz Chelny",
+        "awayTeam": "Rotor Volgograd",
+        "tip": "X",
+        "over_under": "under",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Stabaek",
+        "awayTeam": "Hodd",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "KA Akureyri",
+        "awayTeam": "Thor Akureyri",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Breidablik",
+        "awayTeam": "IBV Vestmannaeyjar",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Orenburg 2",
+        "awayTeam": "Krylya Sovetov 2",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "STK 1914 Samorin",
+        "awayTeam": "OFK Malzenice",
+        "tip": "1X",
+        "over_under": "under",
+        "btts": "Yes"
+    }
+]
