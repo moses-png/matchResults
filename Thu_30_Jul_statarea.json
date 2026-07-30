@@ -1,0 +1,79 @@
+[
+    {
+        "homeTeam": "Gremio",
+        "awayTeam": "Bolivar",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Maccabi Tel Aviv",
+        "awayTeam": "Sheriff Tiraspol",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Ferencvarosi TC",
+        "awayTeam": "Twente",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "CSKA Sofia",
+        "awayTeam": "Qarabag",
+        "tip": "X2",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Pafos FC",
+        "awayTeam": "HNK Hajduk Split",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Anderlecht",
+        "awayTeam": "Hammarby",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Hradec Kralove",
+        "awayTeam": "Tromso",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Libertad",
+        "awayTeam": "Recoleta",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "Parma",
+        "awayTeam": "Arezzo",
+        "tip": "12",
+        "over_under": "over",
+        "btts": "No"
+    },
+    {
+        "homeTeam": "Alebrijes De Oaxaca",
+        "awayTeam": "Dorados",
+        "tip": "1X",
+        "over_under": "over",
+        "btts": "Yes"
+    },
+    {
+        "homeTeam": "FK Karlskrona",
+        "awayTeam": "Nosaby IF",
+        "tip": "1",
+        "over_under": "over",
+        "btts": "Yes"
+    }
+]
