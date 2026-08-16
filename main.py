@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import json
 
 html = requests.get("https://www.livescore.cz/?d=-1", timeout=30)
@@ -37,7 +38,11 @@ for a in soup.select("a.fin, a.sched, a.live"):
         "result": a.get_text(strip=True)
     })
 # the date is set to date now becasue the time is in utc by that time the  time  in the server will be behind
-date = datetime.now().strftime("%a_%d_%b")
+
+
+uganda_now = datetime.now(ZoneInfo("Africa/Kampala"))
+
+date = uganda_now.strftime("%a_%d_%b")
 
 with open(f"{date}.json", "w", encoding="utf-8") as f:
     json.dump(matches, f, indent=4, ensure_ascii=False)
