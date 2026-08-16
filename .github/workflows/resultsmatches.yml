@@ -2,7 +2,7 @@ name: Run Main Daily
 
 on:
   schedule:
-    - cron: '30 21 * * *'
+    - cron: '58 20 * * *'
   workflow_dispatch:
 
 permissions:
