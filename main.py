@@ -1,5 +1,5 @@
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 import json
@@ -9,26 +9,30 @@ import json
 # GET YESTERDAY'S MATCH RESULTS
 # ============================================================
 
-html = requests.get(
-    "https://www.livescore.cz/?d=-1",
+url = "https://www.livescore.cz/?d=-1"
+
+response = requests.get(
+    url,
     timeout=30
 )
 
-html.raise_for_status()
+response.raise_for_status()
 
 soup = BeautifulSoup(
-    html.text,
+    response.text,
     "html.parser"
 )
 
 
 # ============================================================
-# REMOVE UNNECESSARY TAGS
+# REMOVE ONLY UNNECESSARY TAGS
+#
+# IMPORTANT:
+# DO NOT REMOVE <img>
+# because some matches have an <img> before their <a>
 # ============================================================
 
-for tag in soup.find_all(
-    ["h4", "span", "img"]
-):
+for tag in soup.find_all(["h4", "span"]):
     tag.decompose()
 
 
@@ -38,16 +42,76 @@ for tag in soup.find_all(
 
 matches = []
 
-for a in soup.select(
-    "a.fin, a.sched, a.live"
-):
+for a in soup.select("a.fin, a.sched, a.live"):
 
-    teams = a.previous_sibling
+    teams = None
+
+    # --------------------------------------------------------
+    # LOOK BACKWARD THROUGH SIBLINGS
+    # --------------------------------------------------------
+    #
+    # This handles cases such as:
+    #
+    # "Team A - Team B"
+    # <img>
+    # <a></a>
+    #
+    # and also:
+    #
+    # "Team A - Team B"
+    # <a></a>
+    #
+    # --------------------------------------------------------
+
+    for sibling in reversed(list(a.previous_siblings)):
+
+        # Plain text
+        if isinstance(sibling, NavigableString):
+
+            text = sibling.strip()
+
+            if " - " in text:
+                teams = text
+                break
+
+        # Ignore tags such as img, br, etc.
+        else:
+
+            # If this is an img, don't discard the match.
+            if sibling.name == "img":
+                continue
+
+            # Sometimes the team text can be inside a tag.
+            text = sibling.get_text(
+                " ",
+                strip=True
+            )
+
+            if " - " in text:
+                teams = text
+                break
+
+
+    # --------------------------------------------------------
+    # IF TEAM TEXT WAS NOT FOUND
+    # --------------------------------------------------------
 
     if not teams:
         continue
 
-    teams = teams.strip()
+
+    # --------------------------------------------------------
+    # CLEAN TEAM TEXT
+    # --------------------------------------------------------
+
+    teams = " ".join(
+        teams.split()
+    )
+
+
+    # --------------------------------------------------------
+    # SPLIT HOME / AWAY
+    # --------------------------------------------------------
 
     if " - " not in teams:
         continue
@@ -57,10 +121,23 @@ for a in soup.select(
         1
     )
 
+    home_team = home_team.strip()
+    away_team = away_team.strip()
+
+
+    # --------------------------------------------------------
+    # GET MATCH URL
+    # --------------------------------------------------------
+
     href = a.get(
         "href",
         ""
     )
+
+
+    # --------------------------------------------------------
+    # GET MATCH ID
+    # --------------------------------------------------------
 
     parts = href.split("/")
 
@@ -70,13 +147,45 @@ for a in soup.select(
         else None
     )
 
+
+    # --------------------------------------------------------
+    # GET RESULT
+    # --------------------------------------------------------
+
+    result = a.get_text(
+        strip=True
+    )
+
+
+    # --------------------------------------------------------
+    # GET IMAGE INFORMATION IF PRESENT
+    # --------------------------------------------------------
+    #
+    # We don't use the image to ignore anything.
+    # This just records whether an image exists.
+    #
+    # --------------------------------------------------------
+
+    image = a.find_previous("img")
+
+    image_src = None
+
+    if image:
+        image_src = image.get(
+            "src"
+        )
+
+
+    # --------------------------------------------------------
+    # ADD MATCH
+    # --------------------------------------------------------
+
     matches.append({
         "match_id": match_id,
         "home_team": home_team,
         "away_team": away_team,
-        "result": a.get_text(
-            strip=True
-        )
+        "result": result,
+
     })
 
 
@@ -88,13 +197,14 @@ uganda_now = datetime.now(
     ZoneInfo("Africa/Kampala")
 )
 
-# Since ?d=-1 is yesterday,
-# save the file using yesterday's date.
+
+# ?d=-1 means yesterday
 
 yesterday = (
     uganda_now
     - timedelta(days=1)
 )
+
 
 date = yesterday.strftime(
     "%a_%d_%b"
@@ -119,3 +229,5 @@ with open(
         indent=4,
         ensure_ascii=False
     )
+
+
