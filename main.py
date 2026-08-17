@@ -269,7 +269,20 @@ def updateMatchesResults():
     if not firebase_admin._apps:
 
         cred = credentials.Certificate(
-            "privatekey.json"
+           {
+  "type": "service_account",
+  "project_id": "foxs-df2bc",
+  "private_key_id": "d450ad45a77bacc8707b6af428e174566d0c3cc8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDM6GfdERO7RVJ7\nm3kKvgKf0KPK1qgPnTKzwMXgHM8KVDEOU44+gfkYQTNHVZfb1e75wxemY0a4M0op\nPKGkBTa/+4o16G5kR/ecvkdqn2dgToXA/Uv0S6IWqIJHk1MYUo/tIdZuu3tL0ai3\ny+nHwEkrxLa76RrffUDGwVInw89U5liw6UGMtPF6IBdFJ+bI4ciw+VEosfGu6eJq\neFokEgmj4+WCPCUHIJbTlNgGob6SyyZo1VVN/U+f9RZED+mo2tCSTLTWJyIQcFC1\ntV5J5gQmmW7+RMnWY+Ee8yeP6q0fsDL4rSnI/qTVvOG51oPvadVdWXtD1d/2tSya\nvZR6f40bAgMBAAECggEAXt+cd3bYs/S85A5wVND1Vhm8PMZ2ugQG3cN72vB7zER/\nEisNyVNUii5mF7lBvr+nDm2OHbQJom/c/orcLJ1dZDaLH7qmojfQJfrUBkIYEzdI\nJrsg19PNEMCk0Y8dAj339cudBVg5FjnU7IS1kY8uUd2a3hZoIuJTg7Mu3sqCzMOm\nY//LgNVtoFWOMRUX81Ky5KwgL3BPbfo2Pg53MahulLdFppBtN8eGD6k+4LsKpI2+\nsRc5NxILpNwu27tdPz3SwO/ewnWBpXeV1reNqW+yvl64euM7FXyTFhY2D6XeQkzp\nBoAgwkbau8orX6OMjqrFUleLvqJCmsDegFMPxri1QQKBgQDm3h/Zued92CXlLTTr\nvEzoJ3efEIL1jMhPoOf1HYo0/AvEkmDcXPXVc3W2dvdH2ERjTbzRbzt+HJAcCeUk\nQOlql+JnobsT1T3gZ+IT9g0iDxn005X4TdDd+tApX/648/yq+lkR6/4Hv3pdruy0\n9/nuTQ8LVMVICmTkbHa0cY6k/QKBgQDjNtOInp9vQ7sI7zkqFoxSELPv0fylFQYR\neA+BtXmWc440QhQ3P/X+h+F0fjyOn90O17Am4SjKGSmNbfuV3oB3VZNoP+1nkQmT\n4xLmKPGva8i3b8OflTLDRUPCaBwpSTyDcVOPPNhpxSjgJ6yf58jTCurzfhlKIRBJ\nyl/Yuwzh9wKBgQDAhPy0eJV1WNkJCrC14DmV4subBo7eqz6jQIAN5EtLMd+yVYqW\nWKLcE8NWnFBLRiqJUNsjHwnSeYknCI1ftQ2wyOWRG8pAmLNXvelGUgnTnBo+Em9e\nN630XmJWDmoA292YytmZ21zkIyWsl+Fma9+se/AOt+snzxshbN10TbnxFQKBgQCF\n4jOJKDa4IEfgft3HQBwU60SrxqdBOv8lYgJ5Is7vaU3c2ycAW07/WV/u/cd/HxHq\nAgwJDNm1JFiIvsrlR4OZTbKbVjf0s9DZ9I6ZUnz/KdrOxCuYKBkOWQ0RS7l0VnQy\n258qIuc+g++PDbG5U6HRQXiqW55ZQNxRLs+FbMqthwKBgC6HarSfaG5uehJjpIWQ\nmJWcahbrq39h2p0yOVvsC9q1DV+TPMhM08OPF7eg+PWcTaPZm7H4JPP2h0CMFttz\nVIp9oBybCu3uefvSDkcVID9YXG0U7ABrP4BoQAp6nKsTkBcWE3o9HQFTYO4r4d8P\nPfHFx+7cJtUAR5x9NiLyYfqA\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-cekai@foxs-df2bc.iam.gserviceaccount.com",
+  "client_id": "102406593925280799099",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-cekai%40foxs-df2bc.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+
         )
 
         firebase_admin.initialize_app(cred)
