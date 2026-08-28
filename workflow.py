@@ -46,7 +46,7 @@ def extract_deluge_script(body):
 
                 if depth == 0:
                     script = body[popen + 1:i]
-                    return " ".join(script.split())
+                    return script.strip()
 
         if char == '\\' and not escaped:
             escaped = True
@@ -197,3 +197,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
