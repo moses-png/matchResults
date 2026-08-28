@@ -1,8 +1,4 @@
-/*
- * Author       : derrickmuwonge
- * Generated on : 27-Aug-2026 23:55:06
- * Version      : 1.0
- */
+
  application "Clean Sand Management"
  {
  	date format = "dd-MMM-yyyy"
