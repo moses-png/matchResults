@@ -1,4 +1,4 @@
-name: Generate Workflows JSON
+name: Generate Fields JSON
 
 on:
   push:
@@ -22,18 +22,18 @@ jobs:
 
       - name: Run fieldcreator.py
         run: |
-          python workflow.py
+          python fieldcreator.py
 
       - name: Commit generated JSON
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add workflows_with_form.json
+          git add fields.json
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update workflows_with_form.json"
+            git commit -m "Update fields.json"
             git push
           fi
