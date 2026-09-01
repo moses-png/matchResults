@@ -127,7 +127,7 @@ def main():
 
     ap.add_argument(
         "--input",
-        default="Clean_Sand_Management.ds",
+        default="fieldcreator.ds",
         help="Path to the input .ds file"
     )
 
