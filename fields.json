@@ -1,5 +1,69 @@
 [
     {
+        "form": "Application_Register",
+        "fields": [
+            "Application_ID",
+            "Application_Number",
+            "Application_Date",
+            "Applicant_Name",
+            "prefix",
+            "first_name",
+            "last_name",
+            "suffix",
+            "Tenant_Type",
+            "Full_Name_Company_Name",
+            "National_ID_Passport",
+            "Telephone",
+            "Email_Address",
+            "Business_Type",
+            "Description",
+            "Address",
+            "address_line_1",
+            "address_line_2",
+            "district_city",
+            "state_province",
+            "postal_Code",
+            "country",
+            "latitude",
+            "longitude",
+            "Asset",
+            "Display_Name_Asset",
+            "Shop_Name",
+            "Preferred_Move_in_Date",
+            "Preferred_Payment_Frequency",
+            "Proposed_Rent",
+            "Contact_Name",
+            "prefix",
+            "first_name",
+            "last_name",
+            "suffix",
+            "Phone_Number",
+            "Address2",
+            "address_line_1",
+            "address_line_2",
+            "district_city",
+            "state_province",
+            "postal_Code",
+            "country",
+            "latitude",
+            "longitude",
+            "Cancel_Application",
+            "Reason_Why_Cancelled",
+            "Status",
+            "Notes",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
         "form": "Asset_Issues",
         "fields": [
             "Employee_Voucher",
@@ -55,10 +119,13 @@
     {
         "form": "Bill",
         "fields": [
+            "Company",
+            "Display_Name_Company",
             "Bill_Date",
             "Bill_Type",
             "Vendor",
             "Employee_Vendor",
+            "Invoice",
             "Customer",
             "Sales_Voucher",
             "Display_Name_Vendor",
@@ -121,6 +188,7 @@
             "Source_Form",
             "Source_Record_ID",
             "Last_Synced_Group_Amount",
+            "Business_Division_Details",
             "Bill_Details_Status",
             "User_Name",
             "User_Email",
@@ -135,10 +203,27 @@
         ]
     },
     {
-        "form": "Brand",
+        "form": "Credit_Note",
         "fields": [
+            "Credit_Note_Number",
+            "Credit_Note_Date",
+            "Sales_Voucher",
+            "Display_Name_Sales_Voucher",
+            "Amount_Due",
+            "Customer",
+            "Display_Name_Customer",
+            "Payment_Receipt_Details",
+            "Credit_Limit",
+            "Current_Outstanding_Balance",
+            "Available_Credit",
+            "Credit_Amount",
+            "Credit_Days_Allowed",
+            "Due_Date",
+            "Balance_Due",
+            "Cancel_Credit_Note_Voucher",
+            "Reason_why_Cancelled",
+            "Credit_Note_Status",
             "Notes",
-            "Status",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -152,10 +237,19 @@
         ]
     },
     {
-        "form": "Code_Generator",
+        "form": "Customer_Deposit_Details",
         "fields": [
-            "Next_Number",
-            "Status",
+            "Customer_Deposit_Number",
+            "Customer_Deposit_Date",
+            "Customer",
+            "Display_Name_Customer",
+            "Payment_Receipt_Details",
+            "Customer_Allocations",
+            "Total_Amount_Received",
+            "Total_Charges",
+            "Total_Amount_Allocated",
+            "Total_Amount_Not_Allocated",
+            "Customer_Deposit_Status",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -169,12 +263,43 @@
         ]
     },
     {
-        "form": "Color",
+        "form": "Customer_Purchase_Order",
         "fields": [
-            "Notes",
-            "Status",
+            "Customer",
+            "Display_Name_Customer",
+            "Purchase_Order_Number",
+            "Purchase_Order_Date",
+            "Sand_Purchase_Order_Details",
             "User_Name",
-            "User_Email1",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Customer_Purchase_Order_Details",
+        "fields": [
+            "Display_Name_Customer",
+            "Customer_Purchase_Order",
+            "Display_Name_Purchase_Order",
+            "Line_Number",
+            "Item",
+            "Display_Name_Item",
+            "Quantity_Ordered",
+            "Unit_Of_Measure",
+            "Rate",
+            "Line_Total",
+            "Quantity_Ordered_to_CBM",
+            "Quantity_Delivered",
+            "Quantity_Remaining",
+            "User_Name",
+            "User_Email",
             "User_Role",
             "Created_By_Name",
             "Created_By_Email",
@@ -188,11 +313,25 @@
     {
         "form": "Customer_Register",
         "fields": [
+            "Customer_Type",
+            "Customer_Name",
             "Customer_Code",
-            "WhatsApp_Number",
+            "Customer",
+            "Display_Name_Customer",
+            "Customer_Status",
+            "Phone_Number",
             "Email",
-            "Location",
-            "Location_Details",
+            "Credit_Allowed",
+            "Credit_Limit",
+            "Credit_Days_Allowed",
+            "Current_Outstanding_Balance",
+            "Available_Credit",
+            "Credit_Status",
+            "Special_Pricing_Allowed",
+            "Delivery_Note_Required",
+            "Purchase_Order_Required",
+            "Tax_Invoice_Required",
+            "TIN_Number",
             "Total_Quotations",
             "Total_Sales_Orders",
             "Total_Revenue",
@@ -208,6 +347,7 @@
             "Updated_By_Name",
             "Updated_By_Email",
             "Updated_By_Time",
+            "Invoices",
             "submit"
         ]
     },
@@ -286,29 +426,110 @@
         ]
     },
     {
-        "form": "Item_Details",
+        "form": "Fuel_Receiving_Voucher",
         "fields": [
+            "Fuel_Receiving_Voucher",
+            "Fuel_Issuing_Time",
+            "Issued_By",
+            "Quantity",
+            "Rate",
+            "Total",
+            "Vendor",
+            "Store",
+            "Supplied_By",
+            "Display_Name_Store",
+            "Item_Issuing_Detail",
+            "Display_Name_Item_Issuing_Detail",
+            "Voucher",
+            "Display_Name_Voucher",
+            "Asset",
+            "Display_Name_Asset",
+            "Odometer",
+            "Fuel_Level_Before",
+            "Fuel_Level_After",
+            "Status",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Invoice",
+        "fields": [
+            "Company",
+            "Display_Name_Company",
+            "Invoice_Date",
+            "Invoice_Number",
+            "Customer",
+            "Display_Name_Customer",
+            "Details",
+            "Services",
+            "Sub_Total",
+            "Discount_Type",
+            "Discount_Percentage",
+            "Discount_Amount",
+            "Tax_Amount",
+            "Grand_Total",
+            "Amount_Paid",
+            "Balance_Due",
+            "Send_Invoice",
+            "Fiscal_Document_Number",
+            "Date_Sent",
+            "Cancel_Invoice",
+            "Reason_Why_Cancelled",
+            "Invoice_Status",
+            "Payment_Status",
+            "Payment_Received_Details",
+            "Bill",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Invoice_Details",
+        "fields": [
+            "Employee_Voucher",
+            "Display_Name_Employee_Voucher",
+            "Details_Date",
+            "Lease",
             "Sales_Voucher",
-            "Display_Name_Sales_Voucher",
-            "Display_Name_Site",
+            "Display_Name_Voucher",
+            "Invoice",
+            "Display_Name_Invoice",
             "Line_Number",
             "Item",
-            "Display_Name_Item",
-            "Store_Item_Stock",
-            "Store",
-            "Display_Name_Store",
-            "Quantity_Available",
-            "Unit_Of_Measure",
-            "Display_Name_Unit_Of_Measure",
-            "Quantity1",
-            "Quantity_in_Base_Unit_Of_Measure",
-            "Base_Unit_Of_Measure",
-            "Display_Name_Base_Unit_Of_Measure",
-            "Quantity_Issued_in_Base_Unit_Of_Measure",
-            "Quantity_Not_Issued_in_Base_Unit_Of_Measure",
-            "Issue_Status",
-            "Unit_Price",
+            "Details",
+            "Quantity",
+            "Rate",
             "Line_Total",
+            "Formula_Properties",
+            "Tax_Type",
+            "Tax_Amount",
+            "Site",
+            "Account",
+            "Group",
+            "Display_Name_Group",
+            "Source_Record_ID",
+            "Source_Form",
+            "Last_Synced_Group_Amount",
+            "Last_Synced_Group_ID",
+            "Invoice_Details_Status",
+            "Notes",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -335,6 +556,7 @@
             "Work_Order_Task",
             "Sales_Voucher",
             "Request_Voucher",
+            "Material_Request_Voucher",
             "Item",
             "Item_Taken",
             "Display_Name_Item",
@@ -361,8 +583,8 @@
             "Cancel_This_Line_Item",
             "Reason_Why_Cancelled",
             "User_Role",
-            "User_Email",
             "User_Name",
+            "User_Email",
             "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
@@ -383,9 +605,9 @@
             "Current_Site",
             "Issued_By",
             "Item_Issuing_Details",
+            "User_Role",
             "User_Name",
             "User_Email",
-            "User_Role",
             "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
@@ -396,71 +618,16 @@
         ]
     },
     {
-        "form": "Items_Needed",
-        "fields": [
-            "Service",
-            "Display_Name_Service",
-            "Item",
-            "Display_Name_Item",
-            "Unit_Of_Measure",
-            "Quantity_Needed",
-            "Rate",
-            "Line_Total",
-            "User_Name",
-            "User_Email",
-            "User_Role",
-            "Created_By_Name",
-            "Created_By_Email",
-            "Created_By_Time",
-            "Updated_By_Name",
-            "Updated_By_Email",
-            "Updated_By_Time",
-            "submit"
-        ]
-    },
-    {
-        "form": "Items_Used",
+        "form": "Kitchen_Voucher_Details",
         "fields": [
             "Voucher",
             "Display_Name_Voucher",
-            "Display_Name_Employee",
             "Line_Number",
-            "Item_Name",
-            "Quantity",
-            "Unit_Of_Measure",
-            "Unit_Cost",
-            "Line_Total",
-            "User_Name",
-            "User_Email",
-            "User_Role",
-            "Created_By_Name",
-            "Created_By_Email",
-            "Created_By_Time",
-            "Created_By_Name1",
-            "Updated_By_Email",
-            "Updated_By_Time",
-            "submit"
-        ]
-    },
-    {
-        "form": "Job_Card",
-        "fields": [
-            "Voucher",
-            "Display_Name_Voucher",
+            "Employee",
             "Display_Name_Employee",
-            "Electricity_Started",
-            "Time_Started",
-            "Electricity_Ended",
-            "Shoes_Worked_On",
-            "Time_Ended",
-            "Status",
-            "Item_Issuing_Voucher",
-            "Production_Details",
-            "Items_Used",
-            "Items_Total",
+            "User_Role",
             "User_Name",
             "User_Email",
-            "User_Role",
             "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
@@ -490,12 +657,99 @@
         ]
     },
     {
-        "form": "Location",
+        "form": "Lease_Register",
         "fields": [
-            "Location_Name",
+            "Lease_ID",
+            "Lease_Number",
+            "Lease_Date",
+            "Building",
+            "Display_Name_Building",
+            "Asset",
+            "Display_Name_Asset",
+            "Business_Name",
+            "Customer",
+            "Display_Name_Customer",
+            "Permitted_Use",
+            "Display_Name_Permitted_Use",
+            "Description",
+            "Shop_Handover",
+            "Shop_Take_Back",
+            "Lease_Start_Date",
+            "Lease_End_Date",
+            "Last_Invoice_Date",
+            "Payment_Frequency",
+            "Lease_Duration",
+            "Lease_Reminder",
+            "Lease_Late_Fee_Rule",
+            "Invoice_Details",
+            "Ideal_Monthly_Rent",
+            "Agreed_Monthly_Rent",
+            "Service_Charge",
+            "Security_Deposit",
+            "Late_Fee_Percentage",
+            "Late_Fee_Amount",
+            "Total_Late_Fee_Amount",
+            "Total_Lease_Amount",
+            "Total_Lease_Amount_Paid",
+            "Terminate_Lease",
+            "Reason_Why_Terminated",
+            "Lease_Status",
             "User_Name",
             "User_Email",
             "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Machine_Job",
+        "fields": [
+            "Job_ID",
+            "Job_No",
+            "Job_Name",
+            "Machine_Job_Status",
+            "Notes",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Machine_Start_Of_Day",
+        "fields": [
+            "Voucher",
+            "Display_Name_Voucher",
+            "Display_Name_Employee",
+            "Display_Name_Voucher_Type",
+            "Display_Name_Site",
+            "Display_Name_Asset_Type",
+            "Asset",
+            "Display_Name_Asset",
+            "Odometer_Start",
+            "Fuel_Start_Level",
+            "Odometer_Start_Image",
+            "Time_Started",
+            "Odometer_End",
+            "Fuel_End_Level",
+            "Odometer_End_Image",
+            "Time_Ended",
+            "Voucher_Status",
+            "Notes",
+            "User_Role",
+            "User_Name",
+            "User_Email",
             "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
@@ -522,15 +776,15 @@
             "Quantity_in_Base_Unit_Of_Measure",
             "Quantity_Issued",
             "Quantity_Issued_in_Base_Unit_Of_Measure",
-            "Quantity_Issued_in_Base_Unit_Of_Measure1",
+            "Quantity_Returned",
             "Quantity_Returned_in_Base_Unit_Of_Measure",
             "Status",
             "User_Name",
-            "User_Name1",
+            "User_Email",
+            "User_Role",
             "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
-            "Date_Time",
             "Updated_By_Name",
             "Updated_By_Email",
             "Updated_By_Time",
@@ -542,43 +796,119 @@
         "fields": [
             "Material_Request_Number",
             "Request_Date",
-            "Site",
-            "Display_Name_Site",
-            "Description",
-            "Work_Order",
-            "Display_Name_Work_Order",
+            "Asset",
+            "Display_Name_Asset",
             "Issue",
             "Display_Name_Issue",
             "Issue_Description",
+            "Work_Order",
+            "Display_Name_Work_Order",
             "Work_Order_Task",
             "Display_Name_Work_Order_Task",
+            "Task_Description",
+            "Scope_of_Work",
+            "Before_Work_Images",
             "Material_Request_Details",
-            "User",
-            "Display_Name_User",
             "Works_Coordinator",
             "Display_Name_Works_Coordinator",
+            "Material_User",
+            "Display_Name_Material_User",
             "Date_Time_Requested",
             "Requested_By_Email",
-            "Supply_Manager",
-            "Display_Name_Supply_Manager",
             "Date_Time_Approved",
             "Approved_By_Email",
             "Store_Manager",
             "Display_Name_Store_Manager",
             "Issued_By_Email",
             "Date_Time_Issued",
-            "Cancel_Voucher",
-            "Reason_Why_Cancelled",
-            "Document_Status",
+            "After_Work_Images",
             "Job_Done_Checklist",
             "Checked_By_Email",
             "Date_Time_Work_Checked",
+            "Cancel_Voucher",
+            "Reason_Why_Cancelled",
+            "Document_Status",
+            "User_Role",
             "User_Name",
             "User_Email",
-            "User_Role",
             "Created_By_Name",
-            "Created_By_Name1",
-            "Created_By_Name2",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Material_User",
+        "fields": [
+            "Material_User_ID",
+            "Material_User_Name",
+            "Phone_Number",
+            "Email",
+            "Status",
+            "Notes",
+            "User_Name",
+            "User_Role",
+            "User_Email",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Meter_Reading",
+        "fields": [
+            "Employee_Voucher",
+            "Display_Name_Voucher",
+            "Display_Name_Employee",
+            "Display_Name_Site",
+            "Meter_Type",
+            "Meter",
+            "Unit_Of_Measure",
+            "Location",
+            "Previous_Reading_Date",
+            "Previous_Reading",
+            "Meter_Image",
+            "Current_Reading",
+            "Current_Reading_Date",
+            "Consumption",
+            "Status",
+            "Account",
+            "Current_Site",
+            "Source_Form",
+            "Source_Record_ID",
+            "Source_Line_ID",
+            "User_Role",
+            "User_Name",
+            "User_Email",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Occurency_Report_Details",
+        "fields": [
+            "Voucher",
+            "Time",
+            "Incident_Type",
+            "Incident",
+            "User_Role",
+            "User_Name",
+            "User_Email",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
             "Updated_By_Name",
             "Updated_By_Email",
             "Updated_By_Time",
@@ -601,7 +931,7 @@
             "Unit_Cost",
             "Rate_In_Base_Unit",
             "Line_Total",
-            "bi",
+            "Bill_Details",
             "Item_Issuing_Detail",
             "Item_Status",
             "Source_Record_ID",
@@ -622,8 +952,8 @@
         "form": "Payment_Charges",
         "fields": [
             "Transaction_Type",
-            "Payment_Receipt_Voucher",
             "Payment_Made_Voucher",
+            "Payment_Receipt_Voucher",
             "Display_Name_Payment_Voucher",
             "Line_Number",
             "Charge_Type",
@@ -703,20 +1033,24 @@
     {
         "form": "Payment_Receipt_Details",
         "fields": [
+            "Payment_Type",
+            "Credit_Note_Voucher",
+            "Customer_Deposit_Voucher",
             "Payment_Receipt_Voucher",
             "Display_Name_Voucher",
-            "Display_Name_Customer",
             "Line_Number",
-            "Payment_Date",
-            "Posted_Customer_Intake",
+            "Payment_Document",
             "Sales_Voucher",
+            "Invoice",
+            "Customer_Deposit_Number",
             "Display_Name_Invoice_Voucher",
             "Customer",
             "Amount_Due",
             "Amount_Not_Allocated",
             "Amount_Allocated",
+            "Amount_Credited",
             "Balance_Due",
-            "Posted_Amount_Cleared",
+            "Business_Division_Details",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -734,18 +1068,17 @@
         "fields": [
             "Receiving_Account",
             "Display_Name_Receiving_Account",
-            "Account_Type",
             "Payment_Receipt_Number",
             "Payment_Receipt_Date",
             "Customer",
             "Display_Name_Customer",
-            "Payment_Receipt_Details",
-            "Charge_Details",
             "Total_Amount_Received",
             "Total_Charges",
             "Total_Amount_Allocated",
             "Total_Amount_Not_Allocated",
             "Payment_Receipt_Voucher_Status",
+            "Payment_Receipt_Details",
+            "Charge_Details",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -759,24 +1092,37 @@
         ]
     },
     {
-        "form": "Production_Details",
+        "form": "Permitted_Use",
         "fields": [
-            "Sales_Voucher",
-            "Tracking_Number",
-            "Line_Number",
-            "Tasks_To_Be_Done",
-            "Shoe_Type",
-            "Color",
-            "Brand",
-            "Service",
-            "Storage_Container",
-            "In_Store_Stage",
-            "Job_Card",
-            "Display_Name_Job_Card",
-            "Ready_Started_Photos",
-            "Ready_Started",
-            "Ready_Ended_Photos",
-            "Ready_Ended",
+            "Permitted_Use_ID",
+            "Permitted_Use_Code",
+            "Permitted_Use_Name",
+            "Status",
+            "Description",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Product_Price_Register",
+        "fields": [
+            "Item",
+            "Display_Name_Item",
+            "Unit_Of_Measure",
+            "Display_Name_Unit_Of_Measure",
+            "Unit_Price",
+            "Price_Type",
+            "Effective_From",
+            "Effective_To",
+            "Status",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -804,8 +1150,6 @@
             "PO_Total",
             "Bill_Status",
             "PO_Billed_Total",
-            "Close_Purchase_Order",
-            "Reason_Why_Closed",
             "Payment_Status",
             "PO_Total_Paid",
             "User_Name",
@@ -856,25 +1200,84 @@
         ]
     },
     {
+        "form": "Sales_Return",
+        "fields": [
+            "Sales_Return_Number",
+            "Sales_Return_Date",
+            "Sales_Voucher",
+            "Display_Name_Sales_Voucher",
+            "Customer",
+            "Sales_Type",
+            "Return_Type",
+            "Reason_Why_Returned",
+            "Sales_Return_Details",
+            "Sub_Total",
+            "Grand_Total",
+            "Amount_Paid",
+            "Sales_Return_Status",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Sales_Return_Details",
+        "fields": [
+            "Sales_Return_Number",
+            "Display_Name_Sales_Return_Number",
+            "Line_Number",
+            "Sales_Return_Detail_Number",
+            "Customer",
+            "Sales_Voucher_Detail",
+            "Display_Name_Sales_Voucher_Detail",
+            "Item",
+            "Display_Name_Item",
+            "Unit_Price",
+            "Quantity_Sold",
+            "Unit_Of_Measure",
+            "Display_Name_Unit_Of_Measure",
+            "Quantity_Sold_in_Base_Unit_Of_Measure",
+            "Quantity_To_Be_Returned",
+            "Quantity_To_Be_Returned_in_Base_Unit_Of_Measure",
+            "Quantity_Remaining",
+            "Quantity_Remaining_in_Base_Unit_Of_Measure",
+            "Line_Total",
+            "Status",
+            "Notes",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
         "form": "Sales_Voucher",
         "fields": [
             "Voucher",
-            "Display_Name_Site",
             "Display_Name_Voucher",
             "Display_Name_Employee",
+            "Display_Name_Site",
             "Sales_Voucher_Number",
             "Sales_Voucher_Date",
             "Customer",
             "Display_Name_Customer",
-            "Phone_Number",
-            "WhatsApp_Number",
+            "Card_Number",
             "Sales_Type",
-            "Shoe_Services",
-            "Item_Issuing_Details",
-            "Payment_Receipt_Details",
-            "Bill",
-            "Item_Details",
-            "Production_Details",
+            "Product_Details",
+            "Sales_Return_Details",
             "Sub_Total",
             "Tax_Amount",
             "Discount_Type",
@@ -882,11 +1285,17 @@
             "Discount_Amount",
             "Grand_Total",
             "Amount_Paid",
+            "Amount_Credited",
             "Balance_Due",
             "Payment_Status",
-            "Status",
             "Cancel_Voucher",
             "Reason_Why_Cancelled",
+            "Credit_Note",
+            "Invoice_Details",
+            "Services",
+            "Item_Issuing_Details",
+            "Payment_Receipt_Details",
+            "Bill",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -942,21 +1351,41 @@
         ]
     },
     {
-        "form": "Service",
+        "form": "Sequences",
         "fields": [
-            "Rate",
-            "Service_Items",
-            "Service_Tasks",
-            "Total_Cost",
+            "Sequence_Key",
+            "Next_Number",
+            "Max_Number",
+            "Is_Active",
             "User_Name",
             "User_Email",
             "User_Role",
             "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
-            "Updated_By_Time",
+            "Updated_By_Name",
             "Updated_By_Email",
-            "Updated_By_Time1",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Service",
+        "fields": [
+            "Service_Name_ID",
+            "Service_Name",
+            "Status",
+            "Description",
+            "Service_Details",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
             "submit"
         ]
     },
@@ -967,6 +1396,8 @@
             "Display_Name_Service",
             "Bill",
             "Display_Name_Bill",
+            "Invoice",
+            "Display_Name_Invoice",
             "Description",
             "Quantity",
             "Rate",
@@ -987,13 +1418,24 @@
         ]
     },
     {
-        "form": "Service1",
+        "form": "Shop_Handover_Details",
         "fields": [
-            "Service_Name_ID",
-            "Service_Name",
+            "Handover_Number",
+            "Handover_Date",
+            "Lease",
+            "Display_Name_Lease",
+            "Asset",
+            "Shop_Name",
+            "Tenant",
+            "Shop_Images",
+            "Handed_Over_By",
+            "Display_Name_Handed_Over_By",
+            "Received_By",
+            "Tenant_Remarks",
+            "Meter_Reading_Details",
+            "Condition_Checklist",
             "Status",
-            "Description",
-            "Service_Details",
+            "Notes",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -1007,31 +1449,29 @@
         ]
     },
     {
-        "form": "Shoe_Services",
+        "form": "Shop_Take_Back_Details",
         "fields": [
-            "Sales_Voucher",
-            "Display_Name_Sales_Voucher",
-            "Display_Name_Customer",
-            "Line_Number",
-            "Shoe_Type",
-            "Brand",
-            "Color",
-            "Shoe_Details",
-            "Condition_Level",
-            "Special_Notes",
-            "Shoe_Image",
-            "Service",
-            "Rate",
-            "Storage_Container",
-            "Payment_Status",
-            "In_Store_Stage",
-            "Picked",
-            "Pick_Up_Date",
-            "Production_Details",
+            "Shop_Take_ID",
+            "Take_Back_Number",
+            "Take_Back_Date",
+            "Lease",
+            "Display_Name_Lease",
+            "Asset",
+            "Shop_Name",
+            "Tenant",
+            "Reason",
+            "Shop_Images",
+            "Taken_Back_By",
+            "Display_Name_Taken_Back_By",
+            "Condition_Checklist",
+            "Cancel_Take_Back",
+            "Reason_Why_Cancelled",
+            "Status",
+            "Notes",
             "User_Name",
             "User_Email",
             "User_Role",
-            "Created_Name",
+            "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
             "Updated_By_Name",
@@ -1041,9 +1481,19 @@
         ]
     },
     {
-        "form": "Shoe_Type",
+        "form": "Special_Tasks_Details",
         "fields": [
+            "Voucher",
+            "Display_Name_Voucher",
+            "Line_Number",
+            "Site",
+            "Display_Name_Site",
+            "Management_Location",
+            "Display_Name_Management_Location",
+            "Task_Name",
+            "Display_Name_Task_Name",
             "Description",
+            "Status",
             "User_Name",
             "User_Email",
             "User_Role",
@@ -1124,14 +1574,36 @@
         ]
     },
     {
-        "form": "Storage_Container",
+        "form": "Tractor_Work_Report",
         "fields": [
-            "Container_Size",
+            "Voucher",
+            "Display_Name_Voucher",
+            "Display_Name_Employee",
+            "Display_Name_Site",
+            "Display_Name_Asset",
+            "Line_Number",
+            "Job",
+            "Location",
+            "Display_Name_Card",
+            "Work_Order_Task",
+            "Work_Done",
+            "Image_Before",
+            "Odometer_Start",
+            "Time_Start",
+            "Odometer_End",
+            "Time_End",
+            "Image_After",
+            "Cancel_Voucher",
+            "Reason_Why_Cancelled",
+            "Tractor_Work_Report_Status",
             "Notes",
-            "Status",
+            "Cost_Per_Odometer",
+            "Total_Cost",
+            "Line_Duration_Minutes",
+            "Line_Hours_Worked",
+            "User_Role",
             "User_Name",
             "User_Email",
-            "User_Role",
             "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
@@ -1142,41 +1614,57 @@
         ]
     },
     {
-        "form": "Tasks",
+        "form": "Truck_Movement_Voucher",
         "fields": [
-            "Task_ID",
-            "Description",
-            "Status",
+            "Voucher",
+            "Display_Name_Voucher",
+            "Display_Name_Employee",
+            "Display_Name_Site",
+            "Display_Name_Asset",
+            "Number_Plate_Truck_Register",
+            "Line_Number",
+            "Job",
+            "Display_Name_Job",
+            "Work_Order_Task",
+            "Task_Location",
+            "Small_Notes",
+            "Truck_Movement_Voucher",
+            "Work_Done",
+            "Tractor_Work_Report",
+            "Party_From",
+            "Display_Name_Party_From",
+            "Party_Location_From",
+            "Site_From",
+            "Display_Name_Site_From",
+            "Site_Location_From",
+            "Pick_Up_From",
+            "Pick_Up_Image",
+            "Odometer_Start",
+            "Time_Start",
+            "Party_To",
+            "Display_Name_Party_To",
+            "Party_Location_To",
+            "Site_To",
+            "Display_Name_Site_To",
+            "Site_Location_To",
+            "Delivery_To",
+            "Odometer_End",
+            "Time_End",
+            "Delivery_To_Image",
+            "Cancel_Voucher",
+            "Reason_Why_Cancelled",
+            "Truck_Movement_Voucher_Status",
             "Notes",
+            "Cost_Per_Odometer",
+            "Total_Cost",
+            "Line_Duration_Minutes",
+            "Line_Distance_Travelled",
+            "User_Role",
             "User_Name",
             "User_Email",
-            "User_Role",
             "Created_By_Name",
             "Created_By_Email",
             "Created_By_Time",
-            "Updated_By_Name",
-            "Updated_By_Email",
-            "Updated_By_Time",
-            "submit"
-        ]
-    },
-    {
-        "form": "Tasks_Needed",
-        "fields": [
-            "Service",
-            "Display_Name_Service",
-            "Order_Task",
-            "Task",
-            "Display_Name_Task",
-            "Description",
-            "Status",
-            "Notes",
-            "User_Name",
-            "User_Email",
-            "User_Role",
-            "Created_By_Time",
-            "Created_By_Email",
-            "Created_By_Time1",
             "Updated_By_Name",
             "Updated_By_Email",
             "Updated_By_Time",
@@ -1204,9 +1692,10 @@
             "Purchase_Order_Required",
             "Tax_Invoice_Required",
             "TIN_Number",
-            "Number",
+            "Lead_Time_Days",
             "Total_Purchase_Orders",
             "Total_Bills",
+            "Total_Bill_Amount",
             "Total_Payments_Made",
             "Outstanding_Payables",
             "Last_Bill_Date",
@@ -1293,17 +1782,35 @@
             "Hours_Worked",
             "Shift",
             "Voucher_Status",
+            "Employee_Issuing_Details",
+            "Employee_Receiving_Details",
+            "Fuel_Issuing_Details",
+            "Voucher_Issuing_Details",
+            "Voucher_Receiving_Details",
+            "Machine_Start_Of_Day_Details",
+            "Truck_Movement_Details",
+            "Incident_Details",
+            "Meter_Reading_Details",
+            "Invoice_Details",
+            "Special_Tasks_Details",
+            "Tractor_Work_Details",
+            "Kitchen_Voucher_Details",
             "Opening_Vouchers",
             "Vouchers_Issued",
             "Vouchers_Returned",
             "Outstanding_Vouchers",
-            "Voucher_Issuing_Details",
-            "Voucher_Receiving_Details",
-            "Sales_Vouchers",
-            "Employee_Receiving_Details",
-            "Employee_Issuing_Details",
+            "Management_Location",
+            "Asset",
+            "Machine_Start_of_Day",
+            "Start_Time",
+            "Odometer_Start",
+            "Fuel_Start_Level",
             "Employee_Cost",
             "Voucher_Cost",
+            "End_Time",
+            "Quantity_Created",
+            "Odometer_End",
+            "Fuel_End_Level",
             "Manager_Time",
             "Cancel_Voucher",
             "Cancellation_Reason",
@@ -1347,6 +1854,8 @@
             "Grand_Total",
             "Work_Order_Task_Status",
             "Parts_Consumables",
+            "Tractor_Work_Details",
+            "Truck_Movement_Details",
             "Cancel_This_Work_Order",
             "Notes_Why_Cancelled",
             "Odometer_Reading_Approved",
@@ -1373,6 +1882,10 @@
         ]
     },
     {
+        "form": "Application_Register",
+        "fields": []
+    },
+    {
         "form": "Asset_Issues",
         "fields": []
     },
@@ -1385,15 +1898,19 @@
         "fields": []
     },
     {
-        "form": "Brand",
+        "form": "Credit_Note",
         "fields": []
     },
     {
-        "form": "Code_Generator",
+        "form": "Customer_Deposit_Details",
         "fields": []
     },
     {
-        "form": "Color",
+        "form": "Customer_Purchase_Order",
+        "fields": []
+    },
+    {
+        "form": "Customer_Purchase_Order_Details",
         "fields": []
     },
     {
@@ -1413,7 +1930,15 @@
         "fields": []
     },
     {
-        "form": "Item_Details",
+        "form": "Fuel_Receiving_Voucher",
+        "fields": []
+    },
+    {
+        "form": "Invoice",
+        "fields": []
+    },
+    {
+        "form": "Invoice_Details",
         "fields": []
     },
     {
@@ -1425,15 +1950,7 @@
         "fields": []
     },
     {
-        "form": "Items_Needed",
-        "fields": []
-    },
-    {
-        "form": "Items_Used",
-        "fields": []
-    },
-    {
-        "form": "Job_Card",
+        "form": "Kitchen_Voucher_Details",
         "fields": []
     },
     {
@@ -1441,7 +1958,15 @@
         "fields": []
     },
     {
-        "form": "Location",
+        "form": "Lease_Register",
+        "fields": []
+    },
+    {
+        "form": "Machine_Job",
+        "fields": []
+    },
+    {
+        "form": "Machine_Start_Of_Day",
         "fields": []
     },
     {
@@ -1450,6 +1975,18 @@
     },
     {
         "form": "Material_Request_Voucher",
+        "fields": []
+    },
+    {
+        "form": "Material_User",
+        "fields": []
+    },
+    {
+        "form": "Meter_Reading",
+        "fields": []
+    },
+    {
+        "form": "Occurency_Report_Details",
         "fields": []
     },
     {
@@ -1477,7 +2014,11 @@
         "fields": []
     },
     {
-        "form": "Production_Details",
+        "form": "Permitted_Use",
+        "fields": []
+    },
+    {
+        "form": "Product_Price_Register",
         "fields": []
     },
     {
@@ -1489,11 +2030,23 @@
         "fields": []
     },
     {
+        "form": "Sales_Return",
+        "fields": []
+    },
+    {
+        "form": "Sales_Return_Details",
+        "fields": []
+    },
+    {
         "form": "Sales_Voucher",
         "fields": []
     },
     {
         "form": "Sales_Voucher_Details",
+        "fields": []
+    },
+    {
+        "form": "Sequences",
         "fields": []
     },
     {
@@ -1505,15 +2058,15 @@
         "fields": []
     },
     {
-        "form": "Service1",
+        "form": "Shop_Handover_Details",
         "fields": []
     },
     {
-        "form": "Shoe_Services",
+        "form": "Shop_Take_Back_Details",
         "fields": []
     },
     {
-        "form": "Shoe_Type",
+        "form": "Special_Tasks_Details",
         "fields": []
     },
     {
@@ -1525,15 +2078,11 @@
         "fields": []
     },
     {
-        "form": "Storage_Container",
+        "form": "Tractor_Work_Report",
         "fields": []
     },
     {
-        "form": "Tasks",
-        "fields": []
-    },
-    {
-        "form": "Tasks_Needed",
+        "form": "Truck_Movement_Voucher",
         "fields": []
     },
     {
@@ -1561,11 +2110,27 @@
         "fields": []
     },
     {
-        "form": "Job_Card",
+        "form": "Kitchen_Voucher_Details",
         "fields": []
     },
     {
-        "form": "Production_Details",
+        "form": "Machine_Start_Of_Day",
+        "fields": []
+    },
+    {
+        "form": "Tractor_Work_Report",
+        "fields": []
+    },
+    {
+        "form": "Employee_Issuing_Details",
+        "fields": []
+    },
+    {
+        "form": "Truck_Movement_Voucher",
+        "fields": []
+    },
+    {
+        "form": "Employee_Receiving_Details",
         "fields": []
     },
     {
@@ -1577,11 +2142,15 @@
         "fields": []
     },
     {
-        "form": "Employee_Issuing_Details",
+        "form": "Occurency_Report_Details",
         "fields": []
     },
     {
-        "form": "Employee_Receiving_Details",
+        "form": "Meter_Reading",
+        "fields": []
+    },
+    {
+        "form": "Special_Tasks_Details",
         "fields": []
     },
     {
@@ -1589,7 +2158,19 @@
         "fields": []
     },
     {
-        "form": "Location",
+        "form": "Customer_Purchase_Order",
+        "fields": []
+    },
+    {
+        "form": "Customer_Deposit_Details",
+        "fields": []
+    },
+    {
+        "form": "Customer_Purchase_Order_Details",
+        "fields": []
+    },
+    {
+        "form": "Credit_Note",
         "fields": []
     },
     {
@@ -1601,23 +2182,19 @@
         "fields": []
     },
     {
-        "form": "Item_Details",
+        "form": "Invoice",
         "fields": []
     },
     {
-        "form": "Shoe_Services",
+        "form": "Invoice_Details",
         "fields": []
     },
     {
-        "form": "Service",
+        "form": "Sales_Return",
         "fields": []
     },
     {
-        "form": "Purchase_Order",
-        "fields": []
-    },
-    {
-        "form": "Purchase_Order_Details",
+        "form": "Sales_Return_Details",
         "fields": []
     },
     {
@@ -1637,6 +2214,18 @@
         "fields": []
     },
     {
+        "form": "Material_User",
+        "fields": []
+    },
+    {
+        "form": "Purchase_Order",
+        "fields": []
+    },
+    {
+        "form": "Purchase_Order_Details",
+        "fields": []
+    },
+    {
         "form": "Stock_Receiving_Voucher",
         "fields": []
     },
@@ -1645,7 +2234,11 @@
         "fields": []
     },
     {
-        "form": "Service1",
+        "form": "Bill",
+        "fields": []
+    },
+    {
+        "form": "Bill_Details",
         "fields": []
     },
     {
@@ -1653,11 +2246,7 @@
         "fields": []
     },
     {
-        "form": "Bill",
-        "fields": []
-    },
-    {
-        "form": "Bill_Details",
+        "form": "Service",
         "fields": []
     },
     {
@@ -1697,39 +2286,31 @@
         "fields": []
     },
     {
-        "form": "Tasks",
+        "form": "Fuel_Receiving_Voucher",
         "fields": []
     },
     {
-        "form": "Tasks_Needed",
+        "form": "Permitted_Use",
         "fields": []
     },
     {
-        "form": "Items_Needed",
+        "form": "Application_Register",
         "fields": []
     },
     {
-        "form": "Shoe_Type",
+        "form": "Lease_Register",
         "fields": []
     },
     {
-        "form": "Color",
+        "form": "Shop_Handover_Details",
         "fields": []
     },
     {
-        "form": "Brand",
+        "form": "Shop_Take_Back_Details",
         "fields": []
     },
     {
-        "form": "Storage_Container",
-        "fields": []
-    },
-    {
-        "form": "Items_Used",
-        "fields": []
-    },
-    {
-        "form": "Code_Generator",
+        "form": "Document_Key",
         "fields": []
     },
     {
@@ -1737,7 +2318,19 @@
         "fields": []
     },
     {
-        "form": "Document_Key",
+        "form": "Machine_Job",
+        "fields": []
+    },
+    {
+        "form": "Sequences",
+        "fields": []
+    },
+    {
+        "form": "Product_Price_Register",
+        "fields": []
+    },
+    {
+        "form": "Application_Register",
         "fields": []
     },
     {
@@ -1753,15 +2346,19 @@
         "fields": []
     },
     {
-        "form": "Brand",
+        "form": "Credit_Note",
         "fields": []
     },
     {
-        "form": "Code_Generator",
+        "form": "Customer_Deposit_Details",
         "fields": []
     },
     {
-        "form": "Color",
+        "form": "Customer_Purchase_Order",
+        "fields": []
+    },
+    {
+        "form": "Customer_Purchase_Order_Details",
         "fields": []
     },
     {
@@ -1781,7 +2378,15 @@
         "fields": []
     },
     {
-        "form": "Item_Details",
+        "form": "Fuel_Receiving_Voucher",
+        "fields": []
+    },
+    {
+        "form": "Invoice",
+        "fields": []
+    },
+    {
+        "form": "Invoice_Details",
         "fields": []
     },
     {
@@ -1793,15 +2398,7 @@
         "fields": []
     },
     {
-        "form": "Items_Needed",
-        "fields": []
-    },
-    {
-        "form": "Items_Used",
-        "fields": []
-    },
-    {
-        "form": "Job_Card",
+        "form": "Kitchen_Voucher_Details",
         "fields": []
     },
     {
@@ -1809,7 +2406,15 @@
         "fields": []
     },
     {
-        "form": "Location",
+        "form": "Lease_Register",
+        "fields": []
+    },
+    {
+        "form": "Machine_Job",
+        "fields": []
+    },
+    {
+        "form": "Machine_Start_Of_Day",
         "fields": []
     },
     {
@@ -1818,6 +2423,18 @@
     },
     {
         "form": "Material_Request_Voucher",
+        "fields": []
+    },
+    {
+        "form": "Material_User",
+        "fields": []
+    },
+    {
+        "form": "Meter_Reading",
+        "fields": []
+    },
+    {
+        "form": "Occurency_Report_Details",
         "fields": []
     },
     {
@@ -1845,7 +2462,11 @@
         "fields": []
     },
     {
-        "form": "Production_Details",
+        "form": "Permitted_Use",
+        "fields": []
+    },
+    {
+        "form": "Product_Price_Register",
         "fields": []
     },
     {
@@ -1857,11 +2478,23 @@
         "fields": []
     },
     {
+        "form": "Sales_Return",
+        "fields": []
+    },
+    {
+        "form": "Sales_Return_Details",
+        "fields": []
+    },
+    {
         "form": "Sales_Voucher",
         "fields": []
     },
     {
         "form": "Sales_Voucher_Details",
+        "fields": []
+    },
+    {
+        "form": "Sequences",
         "fields": []
     },
     {
@@ -1873,15 +2506,15 @@
         "fields": []
     },
     {
-        "form": "Service1",
+        "form": "Shop_Handover_Details",
         "fields": []
     },
     {
-        "form": "Shoe_Services",
+        "form": "Shop_Take_Back_Details",
         "fields": []
     },
     {
-        "form": "Shoe_Type",
+        "form": "Special_Tasks_Details",
         "fields": []
     },
     {
@@ -1893,15 +2526,11 @@
         "fields": []
     },
     {
-        "form": "Storage_Container",
+        "form": "Tractor_Work_Report",
         "fields": []
     },
     {
-        "form": "Tasks",
-        "fields": []
-    },
-    {
-        "form": "Tasks_Needed",
+        "form": "Truck_Movement_Voucher",
         "fields": []
     },
     {
@@ -1925,6 +2554,10 @@
         "fields": []
     },
     {
+        "form": "Application_Register",
+        "fields": []
+    },
+    {
         "form": "Asset_Issues",
         "fields": []
     },
@@ -1937,15 +2570,19 @@
         "fields": []
     },
     {
-        "form": "Brand",
+        "form": "Credit_Note",
         "fields": []
     },
     {
-        "form": "Code_Generator",
+        "form": "Customer_Deposit_Details",
         "fields": []
     },
     {
-        "form": "Color",
+        "form": "Customer_Purchase_Order",
+        "fields": []
+    },
+    {
+        "form": "Customer_Purchase_Order_Details",
         "fields": []
     },
     {
@@ -1965,7 +2602,15 @@
         "fields": []
     },
     {
-        "form": "Item_Details",
+        "form": "Fuel_Receiving_Voucher",
+        "fields": []
+    },
+    {
+        "form": "Invoice",
+        "fields": []
+    },
+    {
+        "form": "Invoice_Details",
         "fields": []
     },
     {
@@ -1977,15 +2622,7 @@
         "fields": []
     },
     {
-        "form": "Items_Needed",
-        "fields": []
-    },
-    {
-        "form": "Items_Used",
-        "fields": []
-    },
-    {
-        "form": "Job_Card",
+        "form": "Kitchen_Voucher_Details",
         "fields": []
     },
     {
@@ -1993,7 +2630,15 @@
         "fields": []
     },
     {
-        "form": "Location",
+        "form": "Lease_Register",
+        "fields": []
+    },
+    {
+        "form": "Machine_Job",
+        "fields": []
+    },
+    {
+        "form": "Machine_Start_Of_Day",
         "fields": []
     },
     {
@@ -2002,6 +2647,18 @@
     },
     {
         "form": "Material_Request_Voucher",
+        "fields": []
+    },
+    {
+        "form": "Material_User",
+        "fields": []
+    },
+    {
+        "form": "Meter_Reading",
+        "fields": []
+    },
+    {
+        "form": "Occurency_Report_Details",
         "fields": []
     },
     {
@@ -2029,7 +2686,11 @@
         "fields": []
     },
     {
-        "form": "Production_Details",
+        "form": "Permitted_Use",
+        "fields": []
+    },
+    {
+        "form": "Product_Price_Register",
         "fields": []
     },
     {
@@ -2041,11 +2702,23 @@
         "fields": []
     },
     {
+        "form": "Sales_Return",
+        "fields": []
+    },
+    {
+        "form": "Sales_Return_Details",
+        "fields": []
+    },
+    {
         "form": "Sales_Voucher",
         "fields": []
     },
     {
         "form": "Sales_Voucher_Details",
+        "fields": []
+    },
+    {
+        "form": "Sequences",
         "fields": []
     },
     {
@@ -2057,15 +2730,15 @@
         "fields": []
     },
     {
-        "form": "Service1",
+        "form": "Shop_Handover_Details",
         "fields": []
     },
     {
-        "form": "Shoe_Services",
+        "form": "Shop_Take_Back_Details",
         "fields": []
     },
     {
-        "form": "Shoe_Type",
+        "form": "Special_Tasks_Details",
         "fields": []
     },
     {
@@ -2077,15 +2750,11 @@
         "fields": []
     },
     {
-        "form": "Storage_Container",
+        "form": "Tractor_Work_Report",
         "fields": []
     },
     {
-        "form": "Tasks",
-        "fields": []
-    },
-    {
-        "form": "Tasks_Needed",
+        "form": "Truck_Movement_Voucher",
         "fields": []
     },
     {
