@@ -127,7 +127,7 @@ def main():
 
     ap.add_argument(
         "--input",
-        default="fieldcreator.ds",
+        default="fields.ds",
         help="Path to the input .ds file"
     )
 
