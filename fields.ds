@@ -1,5 +1,4 @@
-
- application ""
+application ""
  {
  	date format = "dd-MMM-yyyy"
  	time zone = "Africa/Kampala"
