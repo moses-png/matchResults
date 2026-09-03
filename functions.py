@@ -3,7 +3,7 @@ import json
 import re
 
 INPUT_FILE = Path("fields.ds")
-OUTPUT_FILE = Path("script_functions.json")
+OUTPUT_FILE = Path("functions.json")
 
 
 def mask_non_code(text):
