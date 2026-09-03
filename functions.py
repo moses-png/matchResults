@@ -219,9 +219,9 @@ def extract_functions(source):
 
 def main():
     if not INPUT_FILE.exists():
-        print("ERROR: functions.ds was not found.")
-        print("Put this Python file in the same folder as functions.ds.")
-        return
+        raise SystemExit(
+            f"ERROR: {INPUT_FILE} was not found."
+        )
 
     source = INPUT_FILE.read_text(
         encoding="utf-8",
@@ -246,7 +246,7 @@ def main():
     )
 
     print(f"Extracted {len(functions)} functions")
-    print(f"Created: {OUTPUT_FILE}")
+    print(f"Created {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
