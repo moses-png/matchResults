@@ -1,6 +1,7 @@
 import re
 import json
 import os
+import sys
 from typing import Dict, List, Any, Optional
 from pathlib import Path
 
@@ -54,28 +55,19 @@ class DelugeFunctionExtractor:
         for param in param_parts:
             if param:
                 # Try to extract type and name
-                # Format: "type param_name" or "type param_name = default"
                 parts = param.split()
                 if len(parts) >= 2:
-                    # Check if there's a default value (contains '=')
                     has_default = '=' in param
                     
-                    # Find where the type ends and name begins
-                    # This handles complex types like "list map" or "map string"
-                    # We need to find the last word before the parameter name
-                    # Actually, the simplest approach: type is everything except the last word
                     type_parts = parts[:-1]
                     param_name = parts[-1]
                     
-                    # Remove any '=' from the param name
                     if '=' in param_name:
                         param_name = param_name.split('=')[0].strip()
                     
-                    # If the type is just a single word, use it directly
                     if len(type_parts) == 1:
                         param_type = type_parts[0]
                     else:
-                        # For complex types like "list map", join them
                         param_type = ' '.join(type_parts)
                     
                     params.append({
@@ -103,9 +95,7 @@ class DelugeFunctionExtractor:
     
     def clean_script(self, script: str) -> str:
         """Clean and format the script body."""
-        # Remove leading/trailing whitespace
         script = script.strip()
-        # Remove the outer braces if they're still there
         if script.startswith('{') and script.endswith('}'):
             script = script[1:-1].strip()
         return script
@@ -121,16 +111,10 @@ class DelugeFunctionExtractor:
                 params_text = match.group(2).strip()
                 script_body = match.group(3).strip()
                 
-                # Extract namespace and function name
                 namespace, func_name = self.extract_namespace(full_name)
-                
-                # Parse parameters
                 params = self.parse_parameters(params_text)
-                
-                # Clean script
                 script = self.clean_script(script_body)
                 
-                # Create function object
                 func_obj = {
                     'name': func_name,
                     'namespace': namespace,
@@ -156,11 +140,10 @@ class DelugeFunctionExtractor:
             # Find the functions section
             functions_start = content.find('functions')
             if functions_start == -1:
-                print("Warning: No 'functions' section found in file.")
-                return []
+                print("Warning: No 'functions' section found in file. Searching entire file...")
+                return self.extract_from_content(content)
             
             # Extract the functions section content
-            # Find the closing brace of the functions section
             brace_count = 0
             functions_end = functions_start
             for i, char in enumerate(content[functions_start:], start=functions_start):
@@ -178,11 +161,10 @@ class DelugeFunctionExtractor:
             functions = self.extract_from_content(functions_content)
             
             # Also search the rest of the file for standalone functions
-            # (some functions might be defined outside the functions block)
             rest_content = content[:functions_start] + content[functions_end:]
             standalone_functions = self.extract_from_content(rest_content)
             
-            # Merge and deduplicate (prefer functions found in the functions block)
+            # Merge and deduplicate
             all_functions = functions.copy()
             existing_names = {f['full_name'] for f in functions}
             
@@ -270,20 +252,101 @@ class DelugeFunctionExtractor:
         print("=" * 70)
 
 
+def get_input_file():
+    """Get input file path from command line or interactive input."""
+    # Check command line arguments
+    if len(sys.argv) > 1:
+        return sys.argv[1]
+    
+    # Check if running in non-interactive environment
+    if not sys.stdin.isatty():
+        # Try environment variable
+        file_path = os.environ.get('INPUT_FILE', 'fields.ds')
+        print(f"Using INPUT_FILE environment variable: {file_path}")
+        return file_path
+    
+    # Interactive mode
+    default_file = 'fields.ds'
+    try:
+        file_path = input(f"Enter the Deluge file path (default: {default_file}): ").strip()
+        return file_path if file_path else default_file
+    except (EOFError, KeyboardInterrupt):
+        print(f"\nUsing default file: {default_file}")
+        return default_file
+
+
+def get_output_file():
+    """Get output file path from command line or interactive input."""
+    # Check command line arguments
+    if len(sys.argv) > 2:
+        return sys.argv[2]
+    
+    # Check environment variable
+    output_file = os.environ.get('OUTPUT_FILE', 'crown_functions.json')
+    
+    # If in interactive mode, ask user
+    if sys.stdin.isatty():
+        try:
+            default_output = output_file
+            response = input(f"Enter output JSON file path (default: {default_output}): ").strip()
+            if response:
+                output_file = response
+        except (EOFError, KeyboardInterrupt):
+            print(f"\nUsing default output: {output_file}")
+    
+    return output_file
+
+
+def get_include_script():
+    """Get include_script flag from command line or interactive input."""
+    # Check command line arguments
+    if len(sys.argv) > 3:
+        return sys.argv[3].lower() != 'false'
+    
+    # Check environment variable
+    include_script_env = os.environ.get('INCLUDE_SCRIPT', 'true')
+    if include_script_env.lower() == 'false':
+        return False
+    
+    # If in interactive mode, ask user
+    if sys.stdin.isatty():
+        try:
+            response = input("Include script body in JSON? (y/n, default: y): ").strip().lower()
+            if response == 'n':
+                return False
+        except (EOFError, KeyboardInterrupt):
+            print("\nIncluding script body by default.")
+    
+    return True
+
+
 def main():
     """Main function to run the extractor."""
     extractor = DelugeFunctionExtractor()
     
-    # Get input file path
-    default_file = 'fields.ds'
-    input_file = input(f"Enter the Deluge file path (default: {default_file}): ").strip()
-    if not input_file:
-        input_file = default_file
+    # Get input file
+    input_file = get_input_file()
+    print(f"Input file: {input_file}")
     
     # Check if file exists
     if not os.path.exists(input_file):
         print(f"Error: File '{input_file}' not found.")
-        return
+        # Try alternative paths
+        if input_file == 'fields.ds' and os.path.exists('fields.txt'):
+            input_file = 'fields.txt'
+            print(f"Found fields.txt, using that instead.")
+        elif input_file == 'fields.ds' and os.path.exists('Crown_.txt'):
+            input_file = 'Crown_.txt'
+            print(f"Found Crown_.txt, using that instead.")
+        else:
+            # Try to find any .ds or .txt file
+            ds_files = list(Path('.').glob('*.ds')) + list(Path('.').glob('*.txt'))
+            if ds_files:
+                input_file = str(ds_files[0])
+                print(f"Found {input_file}, using that instead.")
+            else:
+                print("No suitable input file found.")
+                sys.exit(1)
     
     # Extract functions
     print(f"\nExtracting functions from '{input_file}'...")
@@ -291,17 +354,15 @@ def main():
     
     if not functions:
         print("No functions found in the file.")
-        return
+        sys.exit(0)
     
-    # Get output file path
-    default_output = 'functions.json'
-    output_file = input(f"Enter output JSON file path (default: {default_output}): ").strip()
-    if not output_file:
-        output_file = default_output
+    # Get output file
+    output_file = get_output_file()
+    print(f"Output file: {output_file}")
     
-    # Ask if script should be included
-    include_script_input = input("Include script body in JSON? (y/n, default: y): ").strip().lower()
-    include_script = include_script_input != 'n'
+    # Get include_script flag
+    include_script = get_include_script()
+    print(f"Include script: {include_script}")
     
     # Save to JSON
     extractor.save_to_json(functions, output_file, include_script)
