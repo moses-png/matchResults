@@ -282,7 +282,7 @@ def get_output_file():
         return sys.argv[2]
     
     # Check environment variable
-    output_file = os.environ.get('OUTPUT_FILE', 'crown_functions.json')
+    output_file = os.environ.get('OUTPUT_FILE', 'functions.json')
     
     # If in interactive mode, ask user
     if sys.stdin.isatty():
