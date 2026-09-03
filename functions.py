@@ -1,253 +1,370 @@
-from pathlib import Path
-import re
 import json
-from typing import Dict, List, Any
+import re
+from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parent
+
 INPUT_FILE = BASE_DIR / "fields.ds"
 OUTPUT_FILE = BASE_DIR / "functions.json"
 
 
+RETURN_TYPES = [
+    "void",
+    "map",
+    "string",
+    "int",
+    "float",
+    "boolean",
+    "list",
+    "date",
+    "datetime",
+    "number",
+    "time"
+]
+
+
 class DelugeFunctionExtractor:
 
-    def __init__(self):
-        self.patterns = {
-            "void": r"void\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "map": r"map\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "string": r"string\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "int": r"int\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "float": r"float\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "boolean": r"boolean\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "list": r"list\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "date": r"date\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "datetime": r"datetime\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "number": r"number\s+([.\w]+)\s*\(([^)]*)\s*\{([\s\S]*?)\n\s*\}",
-            "time": r"time\s+([.\w]+)\s*\(([^)]*)\s*\{([\s\S]*?)\n\s*\}",
-        }
+    def clean_function(self, function_text: str) -> str:
 
-    def parse_parameters(self, params_text: str) -> List[Dict[str, Any]]:
+        function_text = function_text.strip()
 
-        params = []
+        function_text = re.sub(
+            r"\r\n?",
+            "\n",
+            function_text
+        )
 
-        if not params_text.strip():
-            return params
+        return function_text
 
-        parts = []
-        current = []
+    def find_matching_brace(
+        self,
+        text: str,
+        opening_brace: int
+    ) -> int:
+
         depth = 0
+        in_string = False
+        string_char = None
+        escaped = False
 
-        for char in params_text:
+        for i in range(
+            opening_brace,
+            len(text)
+        ):
 
-            if char == "," and depth == 0:
-                parts.append("".join(current).strip())
-                current = []
+            char = text[i]
+
+            if escaped:
+
+                escaped = False
                 continue
 
-            if char in "({[":
+            if char == "\\" and in_string:
+
+                escaped = True
+                continue
+
+            if char in ['"', "'"]:
+
+                if in_string:
+
+                    if char == string_char:
+                        in_string = False
+                        string_char = None
+
+                else:
+
+                    in_string = True
+                    string_char = char
+
+                continue
+
+            if in_string:
+                continue
+
+            if char == "{":
+
                 depth += 1
-            elif char in ")}]":
+
+            elif char == "}":
+
                 depth -= 1
 
-            current.append(char)
+                if depth == 0:
 
-        if current:
-            parts.append("".join(current).strip())
+                    return i
 
-        for param in parts:
+        return -1
 
-            if not param:
-                continue
-
-            tokens = param.split()
-
-            if len(tokens) >= 2:
-
-                has_default = "=" in param
-                name = tokens[-1]
-
-                if "=" in name:
-                    name = name.split("=")[0].strip()
-
-                param_type = " ".join(tokens[:-1])
-
-                params.append({
-                    "type": param_type,
-                    "name": name,
-                    "has_default": has_default
-                })
-
-            else:
-
-                params.append({
-                    "type": "unknown",
-                    "name": param,
-                    "has_default": False
-                })
-
-        return params
-
-    def extract_namespace(self, full_name: str):
-
-        if "." in full_name:
-
-            parts = full_name.split(".")
-
-            return (
-                ".".join(parts[:-1]),
-                parts[-1]
-            )
-
-        return "thisapp", full_name
-
-    def clean_script(self, script: str) -> str:
-
-        script = script.strip()
-
-        if script.startswith("{") and script.endswith("}"):
-            script = script[1:-1].strip()
-
-        return script
-
-    def extract_from_content(
+    def extract_functions(
         self,
         content: str
-    ) -> List[Dict[str, Any]]:
+    ):
 
         functions = []
 
-        for return_type, pattern in self.patterns.items():
+        pattern = re.compile(
+            r"\b("
+            + "|".join(RETURN_TYPES)
+            + r")\s+"
+            r"([A-Za-z_][A-Za-z0-9_.]*)"
+            r"\s*\("
+        )
 
-            for match in re.finditer(
-                pattern,
-                content,
-                re.DOTALL
+        for match in pattern.finditer(content):
+
+            return_type = match.group(1)
+            function_name = match.group(2)
+
+            opening_paren = content.find(
+                "(",
+                match.start()
+            )
+
+            if opening_paren == -1:
+                continue
+
+            depth = 0
+            closing_paren = -1
+
+            for i in range(
+                opening_paren,
+                len(content)
             ):
 
-                full_name = match.group(1).strip()
-                params_text = match.group(2).strip()
-                script = match.group(3).strip()
+                char = content[i]
 
-                namespace, name = self.extract_namespace(
-                    full_name
-                )
+                if char == "(":
+                    depth += 1
 
-                script = self.clean_script(script)
+                elif char == ")":
 
-                functions.append({
-                    "name": name,
-                    "namespace": namespace,
-                    "return_type": return_type,
-                    "full_name": full_name,
-                    "params_text": params_text,
-                    "params": self.parse_parameters(
-                        params_text
-                    ),
-                    "script": script,
-                    "script_lines": len(
-                        script.splitlines()
-                    ),
-                    "has_script": bool(script)
-                })
+                    depth -= 1
 
-        return functions
+                    if depth == 0:
+
+                        closing_paren = i
+                        break
+
+            if closing_paren == -1:
+                continue
+
+            opening_brace = content.find(
+                "{",
+                closing_paren
+            )
+
+            if opening_brace == -1:
+                continue
+
+            between = content[
+                closing_paren + 1:
+                opening_brace
+            ]
+
+            if between.strip():
+                continue
+
+            closing_brace = self.find_matching_brace(
+                content,
+                opening_brace
+            )
+
+            if closing_brace == -1:
+                continue
+
+            function_text = content[
+                match.start():
+                closing_brace + 1
+            ]
+
+            function_text = self.clean_function(
+                function_text
+            )
+
+            functions.append({
+                "function": function_text
+            })
+
+        return self.remove_duplicates(
+            functions
+        )
+
+    def remove_duplicates(
+        self,
+        functions
+    ):
+
+        result = []
+        seen = set()
+
+        for function in functions:
+
+            script = function["function"]
+
+            if script in seen:
+                continue
+
+            seen.add(script)
+
+            result.append(function)
+
+        return result
 
     def extract_from_file(
         self,
-        file_path: Path
-    ) -> List[Dict[str, Any]]:
+        input_file: Path
+    ):
 
-        try:
+        if not input_file.exists():
 
-            content = file_path.read_text(
-                encoding="utf-8",
-                errors="ignore"
+            raise FileNotFoundError(
+                f"Input file not found: "
+                f"{input_file}"
             )
 
-            return self.extract_from_content(content)
+        content = input_file.read_text(
+            encoding="utf-8",
+            errors="ignore"
+        )
 
-        except Exception as error:
+        functions_start = re.search(
+            r"\bfunctions\s*\{",
+            content,
+            re.IGNORECASE
+        )
+
+        if not functions_start:
 
             print(
-                f"Error reading {file_path}: {error}"
+                "No functions section found."
             )
 
             return []
 
-    def save_to_json(
+        functions_opening_brace = (
+            content.find(
+                "{",
+                functions_start.start()
+            )
+        )
+
+        functions_closing_brace = (
+            self.find_matching_brace(
+                content,
+                functions_opening_brace
+            )
+        )
+
+        if functions_closing_brace == -1:
+
+            print(
+                "Could not find the end "
+                "of the functions section."
+            )
+
+            return []
+
+        functions_content = content[
+            functions_opening_brace:
+            functions_closing_brace + 1
+        ]
+
+        return self.extract_functions(
+            functions_content
+        )
+
+    def save_json(
         self,
-        functions: List[Dict[str, Any]],
+        functions,
         output_file: Path
     ):
 
-        try:
+        with output_file.open(
+            "w",
+            encoding="utf-8"
+        ) as file:
 
-            output_file.write_text(
-                json.dumps(
-                    functions,
-                    indent=2,
-                    ensure_ascii=False
-                ),
-                encoding="utf-8"
+            json.dump(
+                functions,
+                file,
+                indent=2,
+                ensure_ascii=False
             )
+
+    def run(self):
+
+        print("=" * 70)
+        print("DELUGE FUNCTION EXTRACTOR")
+        print("=" * 70)
+
+        print()
+        print(
+            f"Input : {INPUT_FILE}"
+        )
+
+        print(
+            f"Output: {OUTPUT_FILE}"
+        )
+
+        print()
+
+        functions = self.extract_from_file(
+            INPUT_FILE
+        )
+
+        if not functions:
 
             print(
-                f"Created {output_file.name}"
+                "No functions found."
             )
 
-            print(
-                f"Functions: {len(functions)}"
-            )
+            return
 
-        except Exception as error:
+        self.save_json(
+            functions,
+            OUTPUT_FILE
+        )
 
-            print(
-                f"Error creating JSON: {error}"
-            )
+        print(
+            f"Functions found: "
+            f"{len(functions)}"
+        )
+
+        print(
+            f"Created: "
+            f"{OUTPUT_FILE}"
+        )
+
+        print()
+        print("Extraction completed.")
 
 
 def main():
 
-    print("==========================================")
-    print("DELUGE FUNCTION EXTRACTOR")
-    print("==========================================")
-
-    print(f"Input : {INPUT_FILE}")
-    print(f"Output: {OUTPUT_FILE}")
-
-    if not INPUT_FILE.exists():
-
-        print()
-        print(
-            f"ERROR: {INPUT_FILE.name} was not found."
-        )
-
-        raise SystemExit(1)
-
     extractor = DelugeFunctionExtractor()
 
-    functions = extractor.extract_from_file(
-        INPUT_FILE
-    )
+    try:
 
-    if not functions:
+        extractor.run()
 
-        print()
+    except FileNotFoundError as error:
+
         print(
-            "ERROR: No functions were found."
+            f"ERROR: {error}"
         )
 
         raise SystemExit(1)
 
-    extractor.save_to_json(
-        functions,
-        OUTPUT_FILE
-    )
+    except Exception as error:
 
-    print()
-    print("==========================================")
-    print("DONE")
-    print("==========================================")
+        print(
+            f"ERROR: {error}"
+        )
+
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
