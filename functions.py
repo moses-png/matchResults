@@ -1,7 +1,12 @@
+from pathlib import Path
 import re
 import json
-import os
 from typing import Dict, List, Any
+
+
+BASE_DIR = Path(__file__).resolve().parent
+INPUT_FILE = BASE_DIR / "fields.ds"
+OUTPUT_FILE = BASE_DIR / "functions.json"
 
 
 class DelugeFunctionExtractor:
@@ -13,68 +18,62 @@ class DelugeFunctionExtractor:
             "string": r"string\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
             "int": r"int\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
             "float": r"float\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "boolean": r"boolean\s+([.\w]+)\s*\(([^)]*)\s*\{([\s\S]*?)\n\s*\}",
+            "boolean": r"boolean\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
             "list": r"list\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
             "date": r"date\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
             "datetime": r"datetime\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "number": r"number\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
-            "time": r"time\s+([.\w]+)\s*\(([^)]*)\)\s*\{([\s\S]*?)\n\s*\}",
+            "number": r"number\s+([.\w]+)\s*\(([^)]*)\s*\{([\s\S]*?)\n\s*\}",
+            "time": r"time\s+([.\w]+)\s*\(([^)]*)\s*\{([\s\S]*?)\n\s*\}",
         }
 
     def parse_parameters(self, params_text: str) -> List[Dict[str, Any]]:
 
         params = []
 
-        if not params_text or not params_text.strip():
+        if not params_text.strip():
             return params
 
-        param_parts = []
-        current_param = []
+        parts = []
+        current = []
         depth = 0
 
         for char in params_text:
 
             if char == "," and depth == 0:
-                param_parts.append(
-                    "".join(current_param).strip()
-                )
-                current_param = []
+                parts.append("".join(current).strip())
+                current = []
                 continue
 
             if char in "({[":
                 depth += 1
-
             elif char in ")}]":
                 depth -= 1
 
-            current_param.append(char)
+            current.append(char)
 
-        if current_param:
-            param_parts.append(
-                "".join(current_param).strip()
-            )
+        if current:
+            parts.append("".join(current).strip())
 
-        for param in param_parts:
+        for param in parts:
 
             if not param:
                 continue
 
-            parts = param.split()
+            tokens = param.split()
 
-            if len(parts) >= 2:
+            if len(tokens) >= 2:
 
                 has_default = "=" in param
+                name = tokens[-1]
 
-                param_name = parts[-1]
+                if "=" in name:
+                    name = name.split("=")[0].strip()
 
-                if "=" in param_name:
-                    param_name = param_name.split("=")[0].strip()
-
-                param_type = " ".join(parts[:-1])
+                param_type = " ".join(tokens[:-1])
 
                 params.append({
                     "type": param_type,
-                    "name": param_name,
+                    "name": name,
                     "has_default": has_default
                 })
 
@@ -94,10 +93,10 @@ class DelugeFunctionExtractor:
 
             parts = full_name.split(".")
 
-            namespace = ".".join(parts[:-1])
-            function_name = parts[-1]
-
-            return namespace, function_name
+            return (
+                ".".join(parts[:-1]),
+                parts[-1]
+            )
 
         return "thisapp", full_name
 
@@ -115,159 +114,62 @@ class DelugeFunctionExtractor:
         content: str
     ) -> List[Dict[str, Any]]:
 
-        all_functions = []
+        functions = []
 
         for return_type, pattern in self.patterns.items():
 
-            matches = re.finditer(
+            for match in re.finditer(
                 pattern,
                 content,
                 re.DOTALL
-            )
-
-            for match in matches:
+            ):
 
                 full_name = match.group(1).strip()
                 params_text = match.group(2).strip()
-                script_body = match.group(3).strip()
+                script = match.group(3).strip()
 
-                namespace, function_name = (
-                    self.extract_namespace(full_name)
+                namespace, name = self.extract_namespace(
+                    full_name
                 )
 
-                params = self.parse_parameters(
-                    params_text
-                )
+                script = self.clean_script(script)
 
-                script = self.clean_script(
-                    script_body
-                )
-
-                function_data = {
-                    "name": function_name,
+                functions.append({
+                    "name": name,
                     "namespace": namespace,
                     "return_type": return_type,
                     "full_name": full_name,
                     "params_text": params_text,
-                    "params": params,
+                    "params": self.parse_parameters(
+                        params_text
+                    ),
                     "script": script,
                     "script_lines": len(
-                        script.split("\n")
+                        script.splitlines()
                     ),
                     "has_script": bool(script)
-                }
+                })
 
-                all_functions.append(function_data)
-
-        return all_functions
+        return functions
 
     def extract_from_file(
         self,
-        file_path: str
+        file_path: Path
     ) -> List[Dict[str, Any]]:
 
         try:
 
-            with open(
-                file_path,
-                "r",
+            content = file_path.read_text(
                 encoding="utf-8",
                 errors="ignore"
-            ) as file:
-
-                content = file.read()
-
-            functions_start = content.find(
-                "functions"
             )
 
-            if functions_start == -1:
-
-                print(
-                    "No 'functions' section found."
-                )
-
-                print(
-                    "Searching entire file..."
-                )
-
-                return self.extract_from_content(
-                    content
-                )
-
-            brace_count = 0
-            functions_end = functions_start
-
-            for i, char in enumerate(
-                content[functions_start:],
-                start=functions_start
-            ):
-
-                if char == "{":
-                    brace_count += 1
-
-                elif char == "}":
-
-                    brace_count -= 1
-
-                    if brace_count == 0:
-
-                        functions_end = i + 1
-                        break
-
-            functions_content = content[
-                functions_start:functions_end
-            ]
-
-            functions = self.extract_from_content(
-                functions_content
-            )
-
-            rest_content = (
-                content[:functions_start]
-                +
-                content[functions_end:]
-            )
-
-            standalone_functions = (
-                self.extract_from_content(
-                    rest_content
-                )
-            )
-
-            all_functions = functions.copy()
-
-            existing_names = {
-                function["full_name"]
-                for function in functions
-            }
-
-            for function in standalone_functions:
-
-                if function["full_name"] not in existing_names:
-
-                    all_functions.append(
-                        function
-                    )
-
-                    existing_names.add(
-                        function["full_name"]
-                    )
-
-            return all_functions
-
-        except FileNotFoundError:
-
-            print(
-                f"Error: File '{file_path}' not found."
-            )
-
-            return []
+            return self.extract_from_content(content)
 
         except Exception as error:
 
             print(
-                f"Error processing file: {error}"
+                f"Error reading {file_path}: {error}"
             )
 
             return []
@@ -275,184 +177,77 @@ class DelugeFunctionExtractor:
     def save_to_json(
         self,
         functions: List[Dict[str, Any]],
-        output_file: str
+        output_file: Path
     ):
 
         try:
 
-            with open(
-                output_file,
-                "w",
-                encoding="utf-8"
-            ) as file:
-
-                json.dump(
+            output_file.write_text(
+                json.dumps(
                     functions,
-                    file,
                     indent=2,
                     ensure_ascii=False
-                )
+                ),
+                encoding="utf-8"
+            )
 
             print(
-                f"Successfully saved "
-                f"{len(functions)} functions "
-                f"to {output_file}"
+                f"Created {output_file.name}"
+            )
+
+            print(
+                f"Functions: {len(functions)}"
             )
 
         except Exception as error:
 
             print(
-                f"Error saving JSON: {error}"
+                f"Error creating JSON: {error}"
             )
-
-    def print_summary(
-        self,
-        functions: List[Dict[str, Any]]
-    ):
-
-        if not functions:
-
-            print("No functions found.")
-
-            return
-
-        print()
-        print("=" * 70)
-        print("FUNCTIONS EXTRACTION SUMMARY")
-        print("=" * 70)
-
-        print(
-            f"Total functions found: "
-            f"{len(functions)}"
-        )
-
-        namespace_count = {}
-        return_type_count = {}
-
-        for function in functions:
-
-            namespace = function["namespace"]
-            return_type = function["return_type"]
-
-            namespace_count[namespace] = (
-                namespace_count.get(namespace, 0) + 1
-            )
-
-            return_type_count[return_type] = (
-                return_type_count.get(return_type, 0) + 1
-            )
-
-        print()
-        print("By Namespace:")
-
-        for namespace, count in sorted(
-            namespace_count.items()
-        ):
-
-            print(
-                f"  {namespace}: {count}"
-            )
-
-        print()
-        print("By Return Type:")
-
-        for return_type, count in sorted(
-            return_type_count.items()
-        ):
-
-            print(
-                f"  {return_type}: {count}"
-            )
-
-        print()
-        print("Function List:")
-
-        for i, function in enumerate(
-            functions,
-            start=1
-        ):
-
-            params = function["params_text"]
-
-            print(
-                f"  {i}. "
-                f"{function['return_type']} "
-                f"{function['full_name']}"
-                f"({params})"
-            )
-
-        print("=" * 70)
 
 
 def main():
 
-    input_file = "fields.ds"
-    output_file = "functions.json"
-
-    print("=" * 70)
+    print("==========================================")
     print("DELUGE FUNCTION EXTRACTOR")
-    print("=" * 70)
+    print("==========================================")
 
-    print()
-    print(
-        f"Input file : {input_file}"
-    )
+    print(f"Input : {INPUT_FILE}")
+    print(f"Output: {OUTPUT_FILE}")
 
-    print(
-        f"Output file: {output_file}"
-    )
-
-    if not os.path.exists(input_file):
+    if not INPUT_FILE.exists():
 
         print()
         print(
-            f"ERROR: '{input_file}' "
-            f"does not exist."
+            f"ERROR: {INPUT_FILE.name} was not found."
         )
 
-        print()
-        print(
-            "Make sure fields.ds is in "
-            "the same folder as this Python file."
-        )
-
-        return
+        raise SystemExit(1)
 
     extractor = DelugeFunctionExtractor()
 
-    print()
-    print(
-        f"Extracting functions from "
-        f"'{input_file}'..."
-    )
-
     functions = extractor.extract_from_file(
-        input_file
+        INPUT_FILE
     )
 
     if not functions:
 
         print()
         print(
-            "No functions were found."
+            "ERROR: No functions were found."
         )
 
-        return
+        raise SystemExit(1)
 
     extractor.save_to_json(
         functions,
-        output_file
-    )
-
-    extractor.print_summary(
-        functions
+        OUTPUT_FILE
     )
 
     print()
-    print(
-        f"Done. '{output_file}' "
-        f"has been created."
-    )
+    print("==========================================")
+    print("DONE")
+    print("==========================================")
 
 
 if __name__ == "__main__":
