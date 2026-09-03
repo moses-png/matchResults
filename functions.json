@@ -1,0 +1,489 @@
+[
+  {
+    "name": "create_asset_issue_from_asset_management_payload",
+    "namespace": "thisapp",
+    "return_type": "void",
+    "full_name": "create_asset_issue_from_asset_management_payload",
+    "params_text": "map payload",
+    "params": [
+      {
+        "type": "map",
+        "name": "payload",
+        "has_default": false
+      }
+    ],
+    "script": "info \"Freedom payload received: \" + payload;\n                 \tsource_id = payload.get(\"Source_Record_ID\");\n                 \tif(source_id == null)\n                 \t{\n                 \t\tinfo \"Freedom sync stopped: Source_Record_ID is null\";\n                 \t\treturn;",
+    "script_lines": 6,
+    "has_script": true
+  },
+  {
+    "name": "fix_sales_vouchers_from_invoice",
+    "namespace": "thisapp",
+    "return_type": "void",
+    "full_name": "fix_sales_vouchers_from_invoice",
+    "params_text": "int invoice_id",
+    "params": [
+      {
+        "type": "int",
+        "name": "invoice_id",
+        "has_default": false
+      }
+    ],
+    "script": "inv = Invoice[ID == invoice_id];\n                 \tif(inv.ID == null)\n                 \t{\n                 \t\treturn;",
+    "script_lines": 4,
+    "has_script": true
+  },
+  {
+    "name": "recalculatePaymentVoucher",
+    "namespace": "thisapp",
+    "return_type": "void",
+    "full_name": "recalculatePaymentVoucher",
+    "params_text": "int voucherID",
+    "params": [
+      {
+        "type": "int",
+        "name": "voucherID",
+        "has_default": false
+      }
+    ],
+    "script": "voucher = Payment_Made_Voucher[ID == voucherID];\n                 \tif(voucher.ID == null)\n                 \t{\n                 \t\treturn;",
+    "script_lines": 4,
+    "has_script": true
+  },
+  {
+    "name": "recalculateVoucherMaterialsCost",
+    "namespace": "thisapp",
+    "return_type": "void",
+    "full_name": "recalculateVoucherMaterialsCost",
+    "params_text": "int voucher_id",
+    "params": [
+      {
+        "type": "int",
+        "name": "voucher_id",
+        "has_default": false
+      }
+    ],
+    "script": "if(voucher_id == null)\n                 \t{\n                 \t\treturn;",
+    "script_lines": 3,
+    "has_script": true
+  },
+  {
+    "name": "update_invoice_payment",
+    "namespace": "thisapp",
+    "return_type": "void",
+    "full_name": "update_invoice_payment",
+    "params_text": "int invoice_id",
+    "params": [
+      {
+        "type": "int",
+        "name": "invoice_id",
+        "has_default": false
+      }
+    ],
+    "script": "total_allocated = 0.0;\n                 \tfor each  rec in Payment_Receipt_Details[Invoice == invoice_id]\n                 \t{\n                 \t\ttotal_allocated = total_allocated + ifnull(rec.Amount_Allocated,0.0);",
+    "script_lines": 4,
+    "has_script": true
+  },
+  {
+    "name": "asset_issues_update_summary",
+    "namespace": "asset_issues",
+    "return_type": "void",
+    "full_name": "asset_issues.asset_issues_update_summary",
+    "params_text": "bigint issue_id",
+    "params": [
+      {
+        "type": "bigint",
+        "name": "issue_id",
+        "has_default": false
+      }
+    ],
+    "script": "if(issue_id == null)\n                 \t{\n                 \t\treturn;",
+    "script_lines": 3,
+    "has_script": true
+  },
+  {
+    "name": "update_customer_performance",
+    "namespace": "customer",
+    "return_type": "void",
+    "full_name": "customer.update_customer_performance",
+    "params_text": "int customer_id",
+    "params": [
+      {
+        "type": "int",
+        "name": "customer_id",
+        "has_default": false
+      }
+    ],
+    "script": "if(customer_id == null)\n                 \t{\n                 \t\treturn;",
+    "script_lines": 3,
+    "has_script": true
+  },
+  {
+    "name": "update_all_po_bill_status",
+    "namespace": "po",
+    "return_type": "void",
+    "full_name": "po.update_all_po_bill_status",
+    "params_text": "",
+    "params": [],
+    "script": "po_list = Purchase_Order[ID != null];\n                 \tfor each  po_rec in po_list\n                 \t{\n                 \t\tdet_list = Purchase_Order_Details[Purchase_Order == po_rec.ID];\n                 \t\thas_lines = false;\n                 \t\tpo_billed_total = 0.0;\n                 \t\tfor each  det in det_list\n                 \t\t{\n                 \t\t\thas_lines = true;\n                 \t\t\tbill_rows = Bill_Details[Item == det.ID];\n                 \t\t\tfor each  bd in bill_rows\n                 \t\t\t{\n                 \t\t\t\tpo_billed_total = po_billed_total + ifnull(bd.Line_Total,0.0);",
+    "script_lines": 13,
+    "has_script": true
+  },
+  {
+    "name": "update_po_receiving_status",
+    "namespace": "po",
+    "return_type": "void",
+    "full_name": "po.update_po_receiving_status",
+    "params_text": "int po_id",
+    "params": [
+      {
+        "type": "int",
+        "name": "po_id",
+        "has_default": false
+      }
+    ],
+    "script": "if(po_id == null)\n                 \t{\n                 \t\treturn;",
+    "script_lines": 3,
+    "has_script": true
+  },
+  {
+    "name": "update_vendor_performance",
+    "namespace": "vendor",
+    "return_type": "void",
+    "full_name": "vendor.update_vendor_performance",
+    "params_text": "int vendor_id",
+    "params": [
+      {
+        "type": "int",
+        "name": "vendor_id",
+        "has_default": false
+      }
+    ],
+    "script": "if(vendor_id == null)\n                 \t{\n                 \t\treturn;",
+    "script_lines": 3,
+    "has_script": true
+  },
+  {
+    "name": "update_supervisor_voucher_summary",
+    "namespace": "voucher",
+    "return_type": "void",
+    "full_name": "voucher.update_supervisor_voucher_summary",
+    "params_text": "int voucher_id",
+    "params": [
+      {
+        "type": "int",
+        "name": "voucher_id",
+        "has_default": false
+      }
+    ],
+    "script": "if(voucher_id != null && voucher_id > 0)\n                 \t{\n                 \t\tcurrent_voucher = Voucher_Register[ID == voucher_id];\n                 \t\tif(current_voucher.ID != null)\n                 \t\t{\n                 \t\t\tsupervisor_ids = List();\n                 \t\t\tcurrent_type = ifnull(current_voucher.Display_Name_Voucher_Type,\"\");\n                 \t\t\tif(current_type.contains(\"Supervisor Voucher\"))\n                 \t\t\t{\n                 \t\t\t\tsupervisor_ids.add(current_voucher.ID);",
+    "script_lines": 10,
+    "has_script": true
+  },
+  {
+    "name": "syncVoucherFromEmployee",
+    "namespace": "thisapp",
+    "return_type": "map",
+    "full_name": "syncVoucherFromEmployee",
+    "params_text": "map payload",
+    "params": [
+      {
+        "type": "map",
+        "name": "payload",
+        "has_default": false
+      }
+    ],
+    "script": "resp = Map();\n                 \tresp.put(\"ok\",false);\n                 \tif(payload == null)\n                 \t{\n                 \t\tresp.put(\"message\",\"Payload is null.\");\n                 \t\treturn resp;",
+    "script_lines": 6,
+    "has_script": true
+  },
+  {
+    "name": "updatePaymentMadeStatusFromPayment",
+    "namespace": "thisapp",
+    "return_type": "map",
+    "full_name": "updatePaymentMadeStatusFromPayment",
+    "params_text": "map payload",
+    "params": [
+      {
+        "type": "map",
+        "name": "payload",
+        "has_default": false
+      }
+    ],
+    "script": "resp = Map();\n                 \tresp.put(\"ok\",false);\n                 \tresp.put(\"message\",\"\");\n                 \tif(payload == null)\n                 \t{\n                 \t\tresp.put(\"message\",\"Payload is null.\");\n                 \t\treturn resp;",
+    "script_lines": 7,
+    "has_script": true
+  },
+  {
+    "name": "updatePaymentReceiptStatusFromPayment",
+    "namespace": "thisapp",
+    "return_type": "map",
+    "full_name": "updatePaymentReceiptStatusFromPayment",
+    "params_text": "map payload",
+    "params": [
+      {
+        "type": "map",
+        "name": "payload",
+        "has_default": false
+      }
+    ],
+    "script": "resp = Map();\n                 \tresp.put(\"ok\",false);\n                 \tvoucher_no = ifnull(payload.get(\"Voucher_Number\"),\"\");\n                 \trec = Payment_Receipt_Voucher[Payment_Receipt_Number == voucher_no];\n                 \tif(rec.ID == null)\n                 \t{\n                 \t\tresp.put(\"message\",\"Payment Receipt Voucher not found.\");\n                 \t\treturn resp;",
+    "script_lines": 8,
+    "has_script": true
+  },
+  {
+    "name": "getLoginAuditInfo",
+    "namespace": "audit",
+    "return_type": "map",
+    "full_name": "audit.getLoginAuditInfo",
+    "params_text": "",
+    "params": [],
+    "script": "info = Map();\n                 \tinfo.put(\"name\",zoho.loginuser);\n                 \tinfo.put(\"email\",zoho.loginuserid);\n                 \t// role is optional (in case you add it later)\n                 \ttry \n                 \t{\n                 \t\tinfo.put(\"role\",thisapp.permissions.roleForUser(zoho.loginuserid));",
+    "script_lines": 7,
+    "has_script": true
+  },
+  {
+    "name": "getEmployeeBillPeriod",
+    "namespace": "billing",
+    "return_type": "map",
+    "full_name": "billing.getEmployeeBillPeriod",
+    "params_text": "date work_date, string payment_type",
+    "params": [
+      {
+        "type": "date",
+        "name": "work_date",
+        "has_default": false
+      },
+      {
+        "type": "string",
+        "name": "payment_type",
+        "has_default": false
+      }
+    ],
+    "script": "result = Map();\n                 \tbillDate = null;\n                 \tbillNumber = \"\";\n                 \tif(payment_type == \"Weekly Payment\")\n                 \t{\n                 \t\tdayNum = work_date.getDayOfWeek();\n                 \t\tif(dayNum == 1)\n                 \t\t{\n                 \t\t\tdaysToMonday = -6;",
+    "script_lines": 9,
+    "has_script": true
+  },
+  {
+    "name": "recalculate_truck_movement_labour",
+    "namespace": "labour",
+    "return_type": "map",
+    "full_name": "labour.recalculate_truck_movement_labour",
+    "params_text": "int employee_id, string employee_display_name, date work_date",
+    "params": [
+      {
+        "type": "int",
+        "name": "employee_id",
+        "has_default": false
+      },
+      {
+        "type": "string",
+        "name": "employee_display_name",
+        "has_default": false
+      },
+      {
+        "type": "date",
+        "name": "work_date",
+        "has_default": false
+      }
+    ],
+    "script": "result = Map();\n                 \tresult.put(\"ok\",false);\n                 \tresult.put(\"message\",\"\");\n                 \tresult.put(\"employee_id\",employee_id);\n                 \tresult.put(\"employee\",employee_display_name);\n                 \tresult.put(\"monthly_salary\",0.0);\n                 \tresult.put(\"working_days\",0);\n                 \tresult.put(\"daily_labour\",0.0);\n                 \tresult.put(\"trip_lines_updated\",0);\n                 \tresult.put(\"calculated_labour_total\",0.0);\n                 \tif(employee_id == null)\n                 \t{\n                 \t\tresult.put(\"message\",\"Employee ID is required.\");\n                 \t\treturn result;",
+    "script_lines": 14,
+    "has_script": true
+  },
+  {
+    "name": "generateDueRentInvoices",
+    "namespace": "lease",
+    "return_type": "map",
+    "full_name": "lease.generateDueRentInvoices",
+    "params_text": "bigint lease_id",
+    "params": [
+      {
+        "type": "bigint",
+        "name": "lease_id",
+        "has_default": false
+      }
+    ],
+    "script": "// =====================================================\n                 \t// GENERATE DUE RENT INVOICES FOR ONE LEASE\n                 \t// =====================================================\n                 \tresponse = Map();\n                 \tresponse.put(\"ok\",false);\n                 \tresponse.put(\"message\",\"\");\n                 \tresponse.put(\"created_invoices\",0);\n                 \tresponse.put(\"updated_invoices\",0);\n                 \tresponse.put(\"created_details\",0);\n                 \tresponse.put(\"updated_details\",0);\n                 \tresponse.put(\"business_syncs\",0);\n                 \tresponse.put(\"asset_syncs\",0);\n                 \tresponse.put(\"skipped_count\",0);\n                 \tcreated_invoices = 0;\n                 \tupdated_invoices = 0;\n                 \tcreated_details = 0;\n                 \tupdated_details = 0;\n                 \tbusiness_syncs = 0;\n                 \tasset_syncs = 0;\n                 \tskipped_count = 0;\n                 \ttoday_date = zoho.currentdate;\n                 \tperiod_loop_text = leftpad(\"\",240);\n                 \tperiod_loop_text = period_loop_text.replaceAll(\" \",\",\");\n                 \tperiod_loop = period_loop_text.toList(\",\");\n                 \t// =====================================================\n                 \t// 1. FIND LEASE\n                 \t// =====================================================\n                 \tlease_rec = Lease_Register[ID == lease_id];\n                 \tif(lease_rec.ID == null)\n                 \t{\n                 \t\tresponse.put(\"message\",\"Lease record was not found for ID: \" + lease_id);\n                 \t\treturn response;",
+    "script_lines": 32,
+    "has_script": true
+  },
+  {
+    "name": "push_po_status_to_store",
+    "namespace": "po",
+    "return_type": "map",
+    "full_name": "po.push_po_status_to_store",
+    "params_text": "int po_id",
+    "params": [
+      {
+        "type": "int",
+        "name": "po_id",
+        "has_default": false
+      }
+    ],
+    "script": "result = Map();\n                 \tresult.put(\"ok\",false);\n                 \tresult.put(\"message\",\"\");\n                 \tif(po_id == null)\n                 \t{\n                 \t\tresult.put(\"message\",\"Purchase Order ID is required.\");\n                 \t\treturn result;",
+    "script_lines": 7,
+    "has_script": true
+  },
+  {
+    "name": "sync_po_status_from_store",
+    "namespace": "po",
+    "return_type": "map",
+    "full_name": "po.sync_po_status_from_store",
+    "params_text": "string source_record_id_text, string po_status",
+    "params": [
+      {
+        "type": "string",
+        "name": "source_record_id_text",
+        "has_default": false
+      },
+      {
+        "type": "string",
+        "name": "po_status",
+        "has_default": false
+      }
+    ],
+    "script": "result = Map();\n                 \tresult.put(\"ok\",false);\n                 \tresult.put(\"message\",\"\");\n                 \tsource_record_id_text = ifnull(source_record_id_text,\"\").trim();\n                 \tpo_status = ifnull(po_status,\"\").trim();\n                 \tif(source_record_id_text == \"\")\n                 \t{\n                 \t\tresult.put(\"message\",\"Source Record ID is required.\");\n                 \t\treturn result;",
+    "script_lines": 9,
+    "has_script": true
+  },
+  {
+    "name": "recalculate_weekly_weigh_bridge",
+    "namespace": "services",
+    "return_type": "map",
+    "full_name": "services.recalculate_weekly_weigh_bridge",
+    "params_text": "int employee_vendor_id, date work_date, string truck_plate",
+    "params": [
+      {
+        "type": "int",
+        "name": "employee_vendor_id",
+        "has_default": false
+      },
+      {
+        "type": "date",
+        "name": "work_date",
+        "has_default": false
+      },
+      {
+        "type": "string",
+        "name": "truck_plate",
+        "has_default": false
+      }
+    ],
+    "script": "result = Map();\n                 \tresult.put(\"ok\",false);\n                 \tresult.put(\"message\",\"\");\n                 \tresult.put(\"weekly_total\",1000000.0);\n                 \tresult.put(\"trip_count\",0);\n                 \tresult.put(\"rate_per_trip\",0.0);\n                 \tresult.put(\"lines_updated\",0);\n                 \tresult.put(\"bill_id\",null);\n                 \tresult.put(\"distributed_total\",0.0);\n                 \t// =====================================================\n                 \t// 1. VALIDATE PARAMETERS\n                 \t// =====================================================\n                 \tif(employee_vendor_id == null)\n                 \t{\n                 \t\tresult.put(\"message\",\"Hamid Ssenoga employee vendor ID is required.\");\n                 \t\treturn result;",
+    "script_lines": 16,
+    "has_script": true
+  },
+  {
+    "name": "Generate_Voucher_Number",
+    "namespace": "thisapp",
+    "return_type": "string",
+    "full_name": "Generate_Voucher_Number",
+    "params_text": "int documentKeyId",
+    "params": [
+      {
+        "type": "int",
+        "name": "documentKeyId",
+        "has_default": false
+      }
+    ],
+    "script": "dk = Document_Key[ID == documentKeyId];\n                 \tif(dk == null)\n                 \t{\n                 \t\treturn \"\";",
+    "script_lines": 4,
+    "has_script": true
+  },
+  {
+    "name": "asset_calc_grand_total",
+    "namespace": "asset_calc",
+    "return_type": "float",
+    "full_name": "asset_calc.asset_calc_grand_total",
+    "params_text": "float parts_total, float labour_total",
+    "params": [
+      {
+        "type": "float",
+        "name": "parts_total",
+        "has_default": false
+      },
+      {
+        "type": "float",
+        "name": "labour_total",
+        "has_default": false
+      }
+    ],
+    "script": "p = ifnull(parts_total,0.0);\n                 \tl = ifnull(labour_total,0.0);\n                 \treturn round(p + l,2);",
+    "script_lines": 3,
+    "has_script": true
+  },
+  {
+    "name": "asset_calc_labour_total",
+    "namespace": "asset_calc",
+    "return_type": "float",
+    "full_name": "asset_calc.asset_calc_labour_total",
+    "params_text": "list parts_rows",
+    "params": [
+      {
+        "type": "list",
+        "name": "parts_rows",
+        "has_default": false
+      }
+    ],
+    "script": "total = 0.0;\n                 \tfor each  rmap in parts_rows\n                 \t{\n                 \t\tqty = ifnull(rmap.get(\"Quantity\"),0.0);\n                 \t\trate = ifnull(rmap.get(\"Unit_Cost\"),0.0);\n                 \t\ttotal = total + qty * rate;",
+    "script_lines": 6,
+    "has_script": true
+  },
+  {
+    "name": "asset_calc_line_total",
+    "namespace": "asset_calc",
+    "return_type": "float",
+    "full_name": "asset_calc.asset_calc_line_total",
+    "params_text": "float qty, float rate",
+    "params": [
+      {
+        "type": "float",
+        "name": "qty",
+        "has_default": false
+      },
+      {
+        "type": "float",
+        "name": "rate",
+        "has_default": false
+      }
+    ],
+    "script": "q = ifnull(qty,0.0);\n                 \tr = ifnull(rate,0.0);\n                 \tif(q < 0)\n                 \t{\n                 \t\tq = 0;",
+    "script_lines": 5,
+    "has_script": true
+  },
+  {
+    "name": "asset_calc_parts_total",
+    "namespace": "asset_calc",
+    "return_type": "float",
+    "full_name": "asset_calc.asset_calc_parts_total",
+    "params_text": "list parts_rows",
+    "params": [
+      {
+        "type": "list",
+        "name": "parts_rows",
+        "has_default": false
+      }
+    ],
+    "script": "total = 0.0;\n                 \tfor each  rmap in parts_rows\n                 \t{\n                 \t\titem_val = rmap.get(\"Item\");\n                 \t\tqty_base = ifnull(rmap.get(\"Quantity In Base Unit\"),0.0);\n                 \t\tbase_rate = ifnull(rmap.get(\"Unit Cost\"),0.0);\n                 \t\tif(item_val != null && qty_base > 0 && base_rate >= 0)\n                 \t\t{\n                 \t\t\ttotal = total + qty_base * base_rate;",
+    "script_lines": 9,
+    "has_script": true
+  },
+  {
+    "name": "if",
+    "namespace": "thisapp",
+    "return_type": "date",
+    "full_name": "if",
+    "params_text": "input.Preferred_Move_in_Date < zoho.currentdate",
+    "params": [
+      {
+        "type": "input.Preferred_Move_in_Date <",
+        "name": "zoho.currentdate",
+        "has_default": false
+      }
+    ],
+    "script": "alert \"Preferred Move-in Date cannot be before today.\";\n\t\t\t\t\t\t\t\t\t\t\tcancel submit;",
+    "script_lines": 2,
+    "has_script": true
+  }
+]
