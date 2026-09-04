@@ -71,6 +71,7 @@ class DelugeFunctionExtractor:
                 if in_string:
 
                     if char == string_char:
+
                         in_string = False
                         string_char = None
 
@@ -107,7 +108,10 @@ class DelugeFunctionExtractor:
 
         pattern = re.compile(
             r"\b("
-            + "|".join(RETURN_TYPES)
+            + "|".join(
+                re.escape(return_type)
+                for return_type in RETURN_TYPES
+            )
             + r")\s+"
             r"([A-Za-z_][A-Za-z0-9_.]*)"
             r"\s*\("
@@ -129,6 +133,9 @@ class DelugeFunctionExtractor:
             depth = 0
             closing_paren = -1
 
+            in_string = False
+            escaped = False
+
             for i in range(
                 opening_paren,
                 len(content)
@@ -136,7 +143,22 @@ class DelugeFunctionExtractor:
 
                 char = content[i]
 
+                if char == "\\" and not escaped:
+
+                    escaped = True
+                    continue
+
+                if char == '"' and not escaped:
+
+                    in_string = not in_string
+
+                if in_string:
+
+                    escaped = False
+                    continue
+
                 if char == "(":
+
                     depth += 1
 
                 elif char == ")":
@@ -147,6 +169,8 @@ class DelugeFunctionExtractor:
 
                         closing_paren = i
                         break
+
+                escaped = False
 
             if closing_paren == -1:
                 continue
@@ -301,6 +325,7 @@ class DelugeFunctionExtractor:
         print("=" * 70)
 
         print()
+
         print(
             f"Input : {INPUT_FILE}"
         )
@@ -339,7 +364,10 @@ class DelugeFunctionExtractor:
         )
 
         print()
-        print("Extraction completed.")
+
+        print(
+            "Extraction completed."
+        )
 
 
 def main():
