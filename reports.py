@@ -1,34 +1,40 @@
+```python
 import re
 import json
-import argparse
 
-def match_delimiter(s, pos, opening="{", closing="}"):
+INPUT_FILE = "fields.ds"
+OUTPUT_FILE = "reports.json"
+
+
+def match_delimiter(text, position, opening="{", closing="}"):
     depth = 0
     in_string = False
     escaped = False
 
-    for i in range(pos, len(s)):
-        c = s[i]
+    for i in range(position, len(text)):
+        char = text[i]
 
         if in_string:
             if escaped:
                 escaped = False
-            elif c == "\\":
+            elif char == "\\":
                 escaped = True
-            elif c == '"':
+            elif char == '"':
                 in_string = False
             continue
 
-        if c == '"':
+        if char == '"':
             in_string = True
-        elif c == opening:
+        elif char == opening:
             depth += 1
-        elif c == closing:
+        elif char == closing:
             depth -= 1
+
             if depth == 0:
                 return i
 
     return -1
+
 
 def extract_fields(field_block):
     fields = []
@@ -39,29 +45,44 @@ def extract_fields(field_block):
         if not line:
             continue
 
-        m = re.match(
+        match = re.match(
             r'^([A-Za-z_][A-Za-z0-9_]*)\s*(?:as\s+"[^"]*")?\s*$',
             line
         )
 
-        if m:
-            fields.append(m.group(1))
+        if match:
+            fields.append(match.group(1))
 
     return fields
 
+
 def parse_ds(text):
-    reports_match = re.search(r'\breports\s*\{', text)
+    reports_match = re.search(
+        r'\breports\s*\{',
+        text
+    )
 
     if not reports_match:
-        raise ValueError("reports section not found")
+        raise ValueError("Reports section not found")
 
-    reports_open = text.find("{", reports_match.start())
-    reports_close = match_delimiter(text, reports_open)
+    reports_open = text.find(
+        "{",
+        reports_match.start()
+    )
+
+    reports_close = match_delimiter(
+        text,
+        reports_open
+    )
 
     if reports_close == -1:
         raise ValueError("Could not parse reports section")
 
-    reports_text = text[reports_open + 1:reports_close]
+    reports_text = text[
+        reports_open + 1:
+        reports_close
+    ]
+
     output = []
 
     for report_match in re.finditer(
@@ -70,13 +91,23 @@ def parse_ds(text):
     ):
         report_name = report_match.group(1)
 
-        report_open = reports_text.find("{", report_match.start())
-        report_close = match_delimiter(reports_text, report_open)
+        report_open = reports_text.find(
+            "{",
+            report_match.start()
+        )
+
+        report_close = match_delimiter(
+            reports_text,
+            report_open
+        )
 
         if report_close == -1:
             continue
 
-        report_block = reports_text[report_open + 1:report_close]
+        report_block = reports_text[
+            report_open + 1:
+            report_close
+        ]
 
         source_match = re.search(
             r'\bshow\s+all\s+rows\s+from\s+([A-Za-z_][A-Za-z0-9_]*)\s*\(',
@@ -88,7 +119,11 @@ def parse_ds(text):
 
         form_name = source_match.group(1)
 
-        fields_open = report_block.find("(", source_match.start())
+        fields_open = report_block.find(
+            "(",
+            source_match.start()
+        )
+
         fields_close = match_delimiter(
             report_block,
             fields_open,
@@ -99,9 +134,12 @@ def parse_ds(text):
         if fields_close == -1:
             continue
 
-        fields = extract_fields(
-            report_block[fields_open + 1:fields_close]
-        )
+        fields_block = report_block[
+            fields_open + 1:
+            fields_close
+        ]
+
+        fields = extract_fields(fields_block)
 
         output.append({
             "form": form_name,
@@ -111,49 +149,36 @@ def parse_ds(text):
 
     return output
 
+
 def main():
-    parser = argparse.ArgumentParser(
-        description="Extract Zoho Creator report/form/quick-view fields from a .ds file."
-    )
-
-    parser.add_argument(
-        "input_ds",
-        help="Path to the Zoho Creator .ds file"
-    )
-
-    parser.add_argument(
-        "-o",
-        "--output",
-        default="reports.json",
-        help="Output JSON filename"
-    )
-
-    args = parser.parse_args()
+    print(f"Reading: {INPUT_FILE}")
 
     with open(
-        args.input_ds,
+        INPUT_FILE,
         "r",
         encoding="utf-8",
         errors="ignore"
-    ) as f:
-        text = f.read()
+    ) as file:
+        text = file.read()
 
     data = parse_ds(text)
 
     with open(
-        args.output,
+        OUTPUT_FILE,
         "w",
         encoding="utf-8"
-    ) as f:
+    ) as file:
         json.dump(
             data,
-            f,
+            file,
             indent=4,
             ensure_ascii=False
         )
 
     print(f"Extracted {len(data)} reports")
-    print(f"Saved to: {args.output}")
+    print(f"Generated: {OUTPUT_FILE}")
+
 
 if __name__ == "__main__":
     main()
+```
