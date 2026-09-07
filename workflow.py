@@ -1,98 +1,244 @@
-
 import re
 import json
 import argparse
 
 
-def find_matching_brace(s, open_idx):
+def find_matching_brace(text, open_idx):
     depth = 0
+    in_string = False
+    escaped = False
+    in_line_comment = False
+    in_block_comment = False
 
-    for i in range(open_idx, len(s)):
-        if s[i] == '{':
+    i = open_idx
+
+    while i < len(text):
+        char = text[i]
+        next_char = text[i + 1] if i + 1 < len(text) else ""
+
+        if in_line_comment:
+            if char == "\n":
+                in_line_comment = False
+            i += 1
+            continue
+
+        if in_block_comment:
+            if char == "*" and next_char == "/":
+                in_block_comment = False
+                i += 2
+                continue
+            i += 1
+            continue
+
+        if in_string:
+            if char == "\\" and not escaped:
+                escaped = True
+            elif char == '"' and not escaped:
+                in_string = False
+            else:
+                escaped = False
+
+            i += 1
+            continue
+
+        if char == '"':
+            in_string = True
+            i += 1
+            continue
+
+        if char == "/" and next_char == "/":
+            in_line_comment = True
+            i += 2
+            continue
+
+        if char == "/" and next_char == "*":
+            in_block_comment = True
+            i += 2
+            continue
+
+        if char == "{":
             depth += 1
-        elif s[i] == '}':
+
+        elif char == "}":
             depth -= 1
 
             if depth == 0:
                 return i
 
+        i += 1
+
+    return -1
+
+
+def find_script_end(text, start):
+    depth = 1
+    in_string = False
+    escaped = False
+    in_line_comment = False
+    in_block_comment = False
+
+    i = start
+
+    while i < len(text):
+        char = text[i]
+        next_char = text[i + 1] if i + 1 < len(text) else ""
+
+        if in_line_comment:
+            if char == "\n":
+                in_line_comment = False
+            i += 1
+            continue
+
+        if in_block_comment:
+            if char == "*" and next_char == "/":
+                in_block_comment = False
+                i += 2
+                continue
+            i += 1
+            continue
+
+        if in_string:
+            if char == "\\" and not escaped:
+                escaped = True
+            elif char == '"' and not escaped:
+                in_string = False
+            else:
+                escaped = False
+
+            i += 1
+            continue
+
+        if char == '"':
+            in_string = True
+            i += 1
+            continue
+
+        if char == "/" and next_char == "/":
+            in_line_comment = True
+            i += 2
+            continue
+
+        if char == "/" and next_char == "*":
+            in_block_comment = True
+            i += 2
+            continue
+
+        if char == "(":
+            depth += 1
+
+        elif char == ")":
+            depth -= 1
+
+            if depth == 0:
+                return i
+
+        i += 1
+
     return -1
 
 
 def extract_deluge_script(body):
-    ds_match = re.search(r'custom deluge script\s*\(', body)
+    match = re.search(
+        r'custom\s+deluge\s+script\s*\(',
+        body,
+        re.IGNORECASE
+    )
 
-    if not ds_match:
+    if not match:
         return None
 
-    popen = body.index('(', ds_match.start())
+    open_idx = body.find("(", match.start())
 
-    depth = 0
-    in_string = False
-    escaped = False
+    if open_idx == -1:
+        return None
 
-    for i in range(popen, len(body)):
-        char = body[i]
+    script_start = open_idx + 1
 
-        if char == '"' and not escaped:
-            in_string = not in_string
+    script_end = find_script_end(
+        body,
+        script_start
+    )
 
-        if not in_string:
-            if char == '(':
-                depth += 1
+    if script_end == -1:
+        return None
 
-            elif char == ')':
-                depth -= 1
+    script = body[script_start:script_end]
 
-                if depth == 0:
-                    script = body[popen + 1:i]
-                    return script.strip()
-
-        if char == '\\' and not escaped:
-            escaped = True
-        else:
-            escaped = False
-
-    return None
+    return script.strip()
 
 
 def extract_workflows(text):
-    workflow_match = re.search(r'\bworkflow\s*\{', text)
+    workflow_match = re.search(
+        r'\bworkflow\s*\{',
+        text,
+        re.IGNORECASE
+    )
 
     if not workflow_match:
         raise ValueError("No 'workflow' block found in this file")
 
-    wf_open = text.index('{', workflow_match.start())
+    wf_open = text.find(
+        "{",
+        workflow_match.start()
+    )
 
-    wf_close = find_matching_brace(text, wf_open)
+    wf_close = find_matching_brace(
+        text,
+        wf_open
+    )
 
     if wf_close == -1:
-        raise ValueError("Could not find the closing brace of the workflow block")
+        raise ValueError(
+            "Could not find the closing brace of the workflow block"
+        )
 
-    workflow_body = text[wf_open + 1:wf_close]
+    workflow_body = text[
+        wf_open + 1:wf_close
+    ]
 
     entry_pattern = re.compile(
-        r'(\w+)\s+as\s+"([^"]*)"\s*\r?\n\s*\{'
+        r'(\w+)\s+as\s+"([^"]*)"\s*\r?\n\s*\{',
+        re.MULTILINE
     )
 
     results = []
 
     for em in entry_pattern.finditer(workflow_body):
+
         ident = em.group(1)
         display = em.group(2)
 
-        brace_idx = workflow_body.index('{', em.end() - 1)
+        brace_idx = workflow_body.find(
+            "{",
+            em.end() - 1
+        )
 
-        close_idx = find_matching_brace(workflow_body, brace_idx)
+        if brace_idx == -1:
+            continue
+
+        close_idx = find_matching_brace(
+            workflow_body,
+            brace_idx
+        )
 
         if close_idx == -1:
             continue
 
-        body = workflow_body[brace_idx + 1:close_idx]
+        body = workflow_body[
+            brace_idx + 1:close_idx
+        ]
 
         def field(pattern):
-            match = re.search(pattern, body, re.MULTILINE)
-            return match.group(1).strip() if match else None
+            match = re.search(
+                pattern,
+                body,
+                re.MULTILINE
+            )
+
+            if match:
+                return match.group(1).strip()
+
+            return None
 
         form_name = field(
             r'\bform\s*=\s*([A-Za-z0-9_]+)'
@@ -121,46 +267,61 @@ def extract_workflows(text):
 
 
 def main():
-    ap = argparse.ArgumentParser(
-        description="Extract workflows from a Zoho Creator .ds file"
+
+    parser = argparse.ArgumentParser(
+        description="Extract Zoho Creator workflows and complete Deluge scripts"
     )
 
-    ap.add_argument(
+    parser.add_argument(
         "--input",
         default="fields.ds",
-        help="Path to the input .ds file"
+        help="Path to the Zoho Creator .ds file"
     )
 
-    ap.add_argument(
+    parser.add_argument(
         "--output",
         default="workflows_with_form.json",
         help="Path to the output JSON file"
     )
 
-    args = ap.parse_args()
+    args = parser.parse_args()
 
     try:
-        with open(args.input, "r", encoding="utf-8") as f:
+        with open(
+            args.input,
+            "r",
+            encoding="utf-8"
+        ) as f:
             text = f.read()
 
     except FileNotFoundError:
-        print(f"Error: File not found: {args.input}")
-        print("Put the .ds file in the same folder as this Python script.")
+        print(
+            f"Error: File not found: {args.input}"
+        )
         return
 
     except Exception as e:
-        print(f"Error reading input file: {e}")
+        print(
+            f"Error reading input file: {e}"
+        )
         return
 
     try:
         results = extract_workflows(text)
 
     except Exception as e:
-        print(f"Error extracting workflows: {e}")
+        print(
+            f"Error extracting workflows: {e}"
+        )
         return
 
     try:
-        with open(args.output, "w", encoding="utf-8") as f:
+        with open(
+            args.output,
+            "w",
+            encoding="utf-8"
+        ) as f:
+
             json.dump(
                 results,
                 f,
@@ -169,32 +330,53 @@ def main():
             )
 
     except Exception as e:
-        print(f"Error writing output file: {e}")
+        print(
+            f"Error writing output file: {e}"
+        )
         return
 
-    missing = sum(
-        1 for workflow in results
+    missing_forms = sum(
+        1
+        for workflow in results
         if not workflow["form"]
     )
 
-    missing_script = sum(
-        1 for workflow in results
+    missing_scripts = sum(
+        1
+        for workflow in results
         if not workflow["deluge_script"]
     )
 
-    print(f"Wrote {len(results)} workflows -> {args.output}")
+    print()
+    print(
+        f"Wrote {len(results)} workflows -> {args.output}"
+    )
 
-    if missing:
-        print(
-            f"Warning: {missing} workflows had no 'form' value detected"
-        )
+    print(
+        f"Missing forms: {missing_forms}"
+    )
 
-    if missing_script:
-        print(
-            f"Warning: {missing_script} workflows had no Deluge script detected"
-        )
+    print(
+        f"Missing Deluge scripts: {missing_scripts}"
+    )
+
+    print()
+
+    for workflow in results:
+
+        script = workflow["deluge_script"]
+
+        if script:
+            print(
+                f"[OK] {workflow['display_name']}: "
+                f"{len(script)} characters"
+            )
+        else:
+            print(
+                f"[NO SCRIPT] "
+                f"{workflow['display_name']}"
+            )
 
 
 if __name__ == "__main__":
     main()
-
