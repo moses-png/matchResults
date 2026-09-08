@@ -24,8 +24,10 @@ def find_matching_delimiter(text, start, opening, closing):
 
         if char == '"':
             in_string = True
+
         elif char == opening:
             depth += 1
+
         elif char == closing:
             depth -= 1
 
@@ -35,8 +37,8 @@ def find_matching_delimiter(text, start, opening, closing):
     return -1
 
 
-def get_block(text, start, opening, closing):
-    open_pos = text.find(opening, start)
+def get_brace_block(text, start):
+    open_pos = text.find("{", start)
 
     if open_pos == -1:
         return None
@@ -44,8 +46,8 @@ def get_block(text, start, opening, closing):
     close_pos = find_matching_delimiter(
         text,
         open_pos,
-        opening,
-        closing
+        "{",
+        "}"
     )
 
     if close_pos == -1:
@@ -54,128 +56,27 @@ def get_block(text, start, opening, closing):
     return text[open_pos + 1:close_pos]
 
 
-def extract_default_list_forms(text):
-    report_forms = {}
+def get_parenthesis_block(text, start):
+    open_pos = text.find("(", start)
 
-    pattern = re.compile(
-        r'\bdefault\s+list\s+'
-        r'([A-Za-z_][A-Za-z0-9_]*)\s*\{',
-        re.IGNORECASE
+    if open_pos == -1:
+        return None
+
+    close_pos = find_matching_delimiter(
+        text,
+        open_pos,
+        "(",
+        ")"
     )
 
-    for match in pattern.finditer(text):
+    if close_pos == -1:
+        return None
 
-        report_name = match.group(1)
-
-        open_pos = text.find(
-            "{",
-            match.start()
-        )
-
-        close_pos = find_matching_delimiter(
-            text,
-            open_pos,
-            "{",
-            "}"
-        )
-
-        if close_pos == -1:
-            continue
-
-        block = text[
-            open_pos + 1:close_pos
-        ]
-
-        form_match = re.search(
-            r'\bshow\s+all\s+rows\s+from\s+'
-            r'([A-Za-z_][A-Za-z0-9_]*)',
-            block,
-            re.IGNORECASE
-        )
-
-        if form_match:
-            report_forms[report_name] = form_match.group(1)
-
-    return report_forms
+    return text[open_pos + 1:close_pos]
 
 
-def extract_menu_report_forms(text):
-    report_forms = {}
+def extract_fields_from_report(report_block):
 
-    menu_pattern = re.compile(
-        r'\bmenu\s*\{',
-        re.IGNORECASE
-    )
-
-    for menu_match in menu_pattern.finditer(text):
-
-        menu_open = text.find(
-            "{",
-            menu_match.start()
-        )
-
-        menu_end = find_matching_delimiter(
-            text,
-            menu_open,
-            "{",
-            "}"
-        )
-
-        if menu_end == -1:
-            continue
-
-        menu_block = text[
-            menu_open + 1:menu_end
-        ]
-
-        tokens = []
-
-        token_pattern = re.compile(
-            r'\bform\s+([A-Za-z_][A-Za-z0-9_]*)\s*\{'
-            r'|'
-            r'\breport\s+([A-Za-z_][A-Za-z0-9_]*)\s*\{',
-            re.IGNORECASE
-        )
-
-        for token in token_pattern.finditer(menu_block):
-
-            form_name = token.group(1)
-            report_name = token.group(2)
-
-            if form_name:
-                tokens.append(
-                    (
-                        token.start(),
-                        "form",
-                        form_name
-                    )
-                )
-
-            elif report_name:
-                tokens.append(
-                    (
-                        token.start(),
-                        "report",
-                        report_name
-                    )
-                )
-
-        current_form = None
-
-        for _, token_type, name in tokens:
-
-            if token_type == "form":
-                current_form = name
-
-            elif token_type == "report":
-
-                if current_form:
-                    report_forms[name] = current_form
-
-    return report_forms
-
-
-def extract_report_fields(report_block):
     quickview_match = re.search(
         r'\bquickview\s*\(',
         report_block,
@@ -185,24 +86,13 @@ def extract_report_fields(report_block):
     if not quickview_match:
         return []
 
-    quickview_open = report_block.find(
-        "(",
+    quickview_block = get_parenthesis_block(
+        report_block,
         quickview_match.start()
     )
 
-    quickview_end = find_matching_delimiter(
-        report_block,
-        quickview_open,
-        "(",
-        ")"
-    )
-
-    if quickview_end == -1:
+    if quickview_block is None:
         return []
-
-    quickview_block = report_block[
-        quickview_open + 1:quickview_end
-    ]
 
     layout_match = re.search(
         r'\blayout\s*\(',
@@ -213,24 +103,13 @@ def extract_report_fields(report_block):
     if not layout_match:
         return []
 
-    layout_open = quickview_block.find(
-        "(",
+    layout_block = get_parenthesis_block(
+        quickview_block,
         layout_match.start()
     )
 
-    layout_end = find_matching_delimiter(
-        quickview_block,
-        layout_open,
-        "(",
-        ")"
-    )
-
-    if layout_end == -1:
+    if layout_block is None:
         return []
-
-    layout_block = quickview_block[
-        layout_open + 1:layout_end
-    ]
 
     datablock_match = re.search(
         r'\bdatablock\d*\s*\(',
@@ -241,24 +120,13 @@ def extract_report_fields(report_block):
     if not datablock_match:
         return []
 
-    datablock_open = layout_block.find(
-        "(",
+    datablock_block = get_parenthesis_block(
+        layout_block,
         datablock_match.start()
     )
 
-    datablock_end = find_matching_delimiter(
-        layout_block,
-        datablock_open,
-        "(",
-        ")"
-    )
-
-    if datablock_end == -1:
+    if datablock_block is None:
         return []
-
-    datablock_block = layout_block[
-        datablock_open + 1:datablock_end
-    ]
 
     fields_match = re.search(
         r'\bfields\s*\(',
@@ -269,24 +137,13 @@ def extract_report_fields(report_block):
     if not fields_match:
         return []
 
-    fields_open = datablock_block.find(
-        "(",
+    fields_block = get_parenthesis_block(
+        datablock_block,
         fields_match.start()
     )
 
-    fields_end = find_matching_delimiter(
-        datablock_block,
-        fields_open,
-        "(",
-        ")"
-    )
-
-    if fields_end == -1:
+    if fields_block is None:
         return []
-
-    fields_block = datablock_block[
-        fields_open + 1:fields_end
-    ]
 
     fields = []
 
@@ -299,7 +156,8 @@ def extract_report_fields(report_block):
 
         match = re.match(
             r'^([A-Za-z_][A-Za-z0-9_]*)'
-            r'\s*(?:as\s+"[^"]*")?\s*$',
+            r'(?:\s+as\s+"[^"]*")?'
+            r'\s*$',
             line,
             re.IGNORECASE
         )
@@ -314,39 +172,63 @@ def extract_report_fields(report_block):
     return fields
 
 
-def extract_reports(text):
+def extract_report_definitions(text):
+
     reports = {}
 
-    report_pattern = re.compile(
-        r'\breport\s+'
-        r'([A-Za-z_][A-Za-z0-9_]*)\s*\{',
-        re.IGNORECASE
+    reports_matches = list(
+        re.finditer(
+            r'\breports\s*\{',
+            text,
+            re.IGNORECASE
+        )
     )
 
-    for match in report_pattern.finditer(text):
+    if not reports_matches:
+        return reports
 
-        report_name = match.group(1)
+    report_section = None
 
-        open_pos = text.find(
-            "{",
+    for match in reports_matches:
+
+        block = get_brace_block(
+            text,
             match.start()
         )
 
-        close_pos = find_matching_delimiter(
-            text,
-            open_pos,
-            "{",
-            "}"
-        )
-
-        if close_pos == -1:
+        if block is None:
             continue
 
-        report_block = text[
-            open_pos + 1:close_pos
-        ]
+        if re.search(
+            r'\breport\s+[A-Za-z_][A-Za-z0-9_]*\s*\{',
+            block,
+            re.IGNORECASE
+        ):
+            report_section = block
 
-        fields = extract_report_fields(
+    if report_section is None:
+        return reports
+
+    report_pattern = re.compile(
+        r'\breport\s+'
+        r'([A-Za-z_][A-Za-z0-9_]*)'
+        r'\s*\{',
+        re.IGNORECASE
+    )
+
+    for match in report_pattern.finditer(report_section):
+
+        report_name = match.group(1)
+
+        report_block = get_brace_block(
+            report_section,
+            match.start()
+        )
+
+        if report_block is None:
+            continue
+
+        fields = extract_fields_from_report(
             report_block
         )
 
@@ -361,7 +243,113 @@ def extract_reports(text):
     return reports
 
 
+def extract_menu_structure(text):
+
+    mappings = {}
+
+    menu_match = re.search(
+        r'\bmenu\s*\{',
+        text,
+        re.IGNORECASE
+    )
+
+    if not menu_match:
+        return mappings
+
+    menu_block = get_brace_block(
+        text,
+        menu_match.start()
+    )
+
+    if menu_block is None:
+        return mappings
+
+    section_pattern = re.compile(
+        r'\bsection\s+'
+        r'([A-Za-z_][A-Za-z0-9_]*)'
+        r'\s*\{',
+        re.IGNORECASE
+    )
+
+    section_matches = list(
+        section_pattern.finditer(menu_block)
+    )
+
+    for section_match in section_matches:
+
+        section_name = section_match.group(1)
+
+        section_block = get_brace_block(
+            menu_block,
+            section_match.start()
+        )
+
+        if section_block is None:
+            continue
+
+        form_pattern = re.compile(
+            r'\bform\s+'
+            r'([A-Za-z_][A-Za-z0-9_]*)'
+            r'\s*\{',
+            re.IGNORECASE
+        )
+
+        report_pattern = re.compile(
+            r'\breport\s+'
+            r'([A-Za-z_][A-Za-z0-9_]*)'
+            r'\s*\{',
+            re.IGNORECASE
+        )
+
+        elements = []
+
+        for match in form_pattern.finditer(
+            section_block
+        ):
+            elements.append(
+                (
+                    match.start(),
+                    "form",
+                    match.group(1)
+                )
+            )
+
+        for match in report_pattern.finditer(
+            section_block
+        ):
+            elements.append(
+                (
+                    match.start(),
+                    "report",
+                    match.group(1)
+                )
+            )
+
+        elements.sort(
+            key=lambda x: x[0]
+        )
+
+        current_form = ""
+
+        for _, element_type, name in elements:
+
+            if element_type == "form":
+
+                current_form = name
+
+            elif element_type == "report":
+
+                mappings[name] = {
+                    "section": section_name,
+                    "form": current_form
+                }
+
+    return mappings
+
+
 def main():
+
+    print("Reading:", INPUT_FILE)
 
     with open(
         INPUT_FILE,
@@ -370,49 +358,50 @@ def main():
     ) as file:
         text = file.read()
 
-    print("Reading:", INPUT_FILE)
-
-    default_forms = extract_default_list_forms(
-        text
-    )
-
     print(
-        "Forms found from default lists:",
-        len(default_forms)
+        "File size:",
+        len(text),
+        "characters"
     )
 
-    menu_forms = extract_menu_report_forms(
-        text
-    )
-
-    print(
-        "Report/form relationships found from menus:",
-        len(menu_forms)
-    )
-
-    reports = extract_reports(
+    report_definitions = extract_report_definitions(
         text
     )
 
     print(
         "Reports with quickview fields:",
-        len(reports)
+        len(report_definitions)
+    )
+
+    menu_mappings = extract_menu_structure(
+        text
+    )
+
+    print(
+        "Reports found in menu:",
+        len(menu_mappings)
     )
 
     output = []
 
-    for report_name, report_data in reports.items():
+    for report_name, report_data in report_definitions.items():
 
-        form_name = ""
+        section = ""
+        form = ""
 
-        if report_name in menu_forms:
-            form_name = menu_forms[report_name]
+        if report_name in menu_mappings:
 
-        elif report_name in default_forms:
-            form_name = default_forms[report_name]
+            section = menu_mappings[
+                report_name
+            ]["section"]
+
+            form = menu_mappings[
+                report_name
+            ]["form"]
 
         output.append({
-            "form": form_name,
+            "section": section,
+            "form": form,
             "report": report_name,
             "fields": report_data["fields"]
         })
@@ -430,27 +419,54 @@ def main():
             ensure_ascii=False
         )
 
-    missing_forms = [
+    missing_section = [
+        item["report"]
+        for item in output
+        if not item["section"]
+    ]
+
+    missing_form = [
         item["report"]
         for item in output
         if not item["form"]
     ]
 
     print()
-    print("================================")
-    print("Finished")
-    print("================================")
-    print("Reports:", len(output))
-    print("Missing forms:", len(missing_forms))
-    print("Output:", OUTPUT_FILE)
+    print("====================================")
+    print("EXTRACTION COMPLETE")
+    print("====================================")
+    print(
+        "Reports:",
+        len(output)
+    )
+    print(
+        "Missing sections:",
+        len(missing_section)
+    )
+    print(
+        "Missing forms:",
+        len(missing_form)
+    )
+    print(
+        "Output:",
+        OUTPUT_FILE
+    )
 
-    if missing_forms:
+    if missing_section:
 
         print()
-        print("Reports still missing form names:")
+        print("Reports missing sections:")
 
-        for report_name in missing_forms:
-            print(" -", report_name)
+        for report in missing_section:
+            print(" -", report)
+
+    if missing_form:
+
+        print()
+        print("Reports missing forms:")
+
+        for report in missing_form:
+            print(" -", report)
 
 
 if __name__ == "__main__":
