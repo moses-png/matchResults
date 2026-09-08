@@ -1,5 +1,6 @@
 [
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "All_Voucher_Register_Report",
     "fields": [
@@ -58,6 +59,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Asset_Issues",
     "report": "All_Asset_Issues",
     "fields": [
@@ -71,6 +73,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Work_Order_Tasks",
     "report": "All_Work_Order_Tasks",
     "fields": [
@@ -84,6 +87,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Parts_Consumables",
     "report": "All_Parts___Consumables",
     "fields": [
@@ -97,6 +101,7 @@
     ]
   },
   {
+    "section": "Support_Form_Section",
     "form": "Document_Key",
     "report": "All_Document_Keys",
     "fields": [
@@ -110,6 +115,7 @@
     ]
   },
   {
+    "section": "Support_Form_Section",
     "form": "Labour",
     "report": "All_Labour",
     "fields": [
@@ -123,6 +129,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Fuel_Receiving_Voucher",
     "report": "All_Fuel_Receiving_Vouchers",
     "fields": [
@@ -136,6 +143,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Machine_Start_Of_Day",
     "report": "All_Machine_Start_Of_Day",
     "fields": [
@@ -149,6 +157,7 @@
     ]
   },
   {
+    "section": "Support_Form_Section",
     "form": "Machine_Job",
     "report": "All_Machine_Jobs",
     "fields": [
@@ -162,6 +171,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Tractor_Work_Report",
     "report": "All_Tractor_Work_Reports",
     "fields": [
@@ -175,6 +185,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Employee_Issuing_Details",
     "report": "All_Employee_Issuing_Details",
     "fields": [
@@ -188,6 +199,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Truck_Movement_Voucher",
     "report": "All_Truck_Movement_Vouchers",
     "fields": [
@@ -201,6 +213,7 @@
     ]
   },
   {
+    "section": "Payment_Management",
     "form": "Payment_Receipt_Voucher",
     "report": "All_Payment_Receipt_Vouchers",
     "fields": [
@@ -214,6 +227,7 @@
     ]
   },
   {
+    "section": "Payment_Management",
     "form": "Payment_Receipt_Details",
     "report": "All_Payment_Receipt_Details",
     "fields": [
@@ -227,6 +241,7 @@
     ]
   },
   {
+    "section": "Payment_Management",
     "form": "Payment_Made_Voucher",
     "report": "All_Payment_Made_Vouchers",
     "fields": [
@@ -239,6 +254,7 @@
     ]
   },
   {
+    "section": "Payment_Management",
     "form": "Payment_Made_Details",
     "report": "All_Payment_Made_Details",
     "fields": [
@@ -252,6 +268,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Employee_Receiving_Details",
     "report": "All_Employee_Receiving_Details",
     "fields": [
@@ -265,6 +282,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Voucher_Issuing_Details",
     "report": "All_Voucher_Issuing_Details",
     "fields": [
@@ -278,6 +296,7 @@
     ]
   },
   {
+    "section": "Payment_Management",
     "form": "Payment_Charges",
     "report": "All_Payment_Charges",
     "fields": [
@@ -291,6 +310,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Voucher_Issuing_Details",
     "report": "All_Voucher_Receiving_Details",
     "fields": [
@@ -304,6 +324,7 @@
     ]
   },
   {
+    "section": "Bill_Section",
     "form": "Service",
     "report": "All_Services",
     "fields": [
@@ -317,6 +338,7 @@
     ]
   },
   {
+    "section": "Bill_Section",
     "form": "Service_Details",
     "report": "All_Service_Details",
     "fields": [
@@ -330,6 +352,7 @@
     ]
   },
   {
+    "section": "Bill_Section",
     "form": "Bill",
     "report": "All_Bills",
     "fields": [
@@ -342,6 +365,7 @@
     ]
   },
   {
+    "section": "Customer_Section",
     "form": "Customer_Register",
     "report": "All_Customers",
     "fields": [
@@ -355,6 +379,7 @@
     ]
   },
   {
+    "section": "Bill_Section",
     "form": "Bill_Details",
     "report": "All_Bill_Details",
     "fields": [
@@ -368,6 +393,7 @@
     ]
   },
   {
+    "section": "Stock_Receiving_Section",
     "form": "Stock_Receiving_Voucher",
     "report": "All_Stock_Receiving_Vouchers",
     "fields": [
@@ -381,6 +407,7 @@
     ]
   },
   {
+    "section": "Stock_Receiving_Section",
     "form": "Stock_Receiving_Details",
     "report": "All_Stock_Receiving_Details",
     "fields": [
@@ -394,6 +421,7 @@
     ]
   },
   {
+    "section": "Customer_Section",
     "form": "Customer_Purchase_Order",
     "report": "All_Customer_Purchase_Orders",
     "fields": [
@@ -407,6 +435,7 @@
     ]
   },
   {
+    "section": "Customer_Section",
     "form": "Customer_Purchase_Order_Details",
     "report": "All_Customer_Purchase_Order_Details",
     "fields": [
@@ -420,6 +449,7 @@
     ]
   },
   {
+    "section": "Customer_Section",
     "form": "Credit_Note",
     "report": "All_Credit_Notes",
     "fields": [
@@ -433,6 +463,7 @@
     ]
   },
   {
+    "section": "Customer_Section",
     "form": "Customer_Deposit_Details",
     "report": "All_Customer_Deposit_Details",
     "fields": [
@@ -446,6 +477,7 @@
     ]
   },
   {
+    "section": "Purchase_Order_Section",
     "form": "Purchase_Order",
     "report": "All_Purchase_Orders",
     "fields": [
@@ -457,6 +489,7 @@
     ]
   },
   {
+    "section": "Purchase_Order_Section",
     "form": "Purchase_Order_Details",
     "report": "All_Purchase_Order_Details",
     "fields": [
@@ -470,6 +503,7 @@
     ]
   },
   {
+    "section": "Item_Issuing_Section",
     "form": "Item_Issuing_Voucher",
     "report": "All_Item_Issuing_Vouchers",
     "fields": [
@@ -483,6 +517,7 @@
     ]
   },
   {
+    "section": "Item_Issuing_Section",
     "form": "Item_Issuing_Details",
     "report": "All_Item_Issuing_Details",
     "fields": [
@@ -496,6 +531,7 @@
     ]
   },
   {
+    "section": "Sales_Management",
     "form": "Invoice_Details",
     "report": "All_Invoice_Details",
     "fields": [
@@ -509,6 +545,7 @@
     ]
   },
   {
+    "section": "Sales_Management",
     "form": "Invoice",
     "report": "All_Invoices",
     "fields": [
@@ -521,6 +558,7 @@
     ]
   },
   {
+    "section": "Sales_Management",
     "form": "Sales_Voucher_Details",
     "report": "All_Sales_Voucher_Details",
     "fields": [
@@ -534,6 +572,7 @@
     ]
   },
   {
+    "section": "Sales_Management",
     "form": "Sales_Voucher",
     "report": "All_Sales_Vouchers",
     "fields": [
@@ -547,6 +586,7 @@
     ]
   },
   {
+    "section": "Support_Form_Section",
     "form": "Sequences",
     "report": "All_Sequences",
     "fields": [
@@ -560,6 +600,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Occurency_Report_Details",
     "report": "All_Occurency_Report_Details",
     "fields": [
@@ -573,6 +614,7 @@
     ]
   },
   {
+    "section": "Product_Price_Register",
     "form": "Product_Price_Register",
     "report": "All_Product_Prices",
     "fields": [
@@ -586,6 +628,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Meter_Reading",
     "report": "All_Meter_Readings",
     "fields": [
@@ -599,6 +642,7 @@
     ]
   },
   {
+    "section": "Voucher_Details",
     "form": "Special_Tasks_Details",
     "report": "All_Special_Tasks_Details",
     "fields": [
@@ -612,6 +656,7 @@
     ]
   },
   {
+    "section": "Item_Issuing_Section",
     "form": "Material_Request_Voucher",
     "report": "All_Material_Request_Vouchers",
     "fields": [
@@ -625,6 +670,7 @@
     ]
   },
   {
+    "section": "Item_Issuing_Section",
     "form": "Material_Request_Details",
     "report": "All_Material_Request_Details",
     "fields": [
@@ -638,6 +684,7 @@
     ]
   },
   {
+    "section": "Sales_Management",
     "form": "Sales_Return",
     "report": "All_Sales_Returns",
     "fields": [
@@ -651,6 +698,7 @@
     ]
   },
   {
+    "section": "Sales_Management",
     "form": "Sales_Return_Details",
     "report": "All_Sales_Return_Details",
     "fields": [
@@ -664,6 +712,7 @@
     ]
   },
   {
+    "section": "Bill_Section",
     "form": "Vendor_Register",
     "report": "All_Vendors",
     "fields": [
@@ -677,6 +726,7 @@
     ]
   },
   {
+    "section": "Lease_Management",
     "form": "Permitted_Use",
     "report": "Permitted_Use_Report",
     "fields": [
@@ -685,6 +735,7 @@
     ]
   },
   {
+    "section": "Lease_Management",
     "form": "Lease_Register",
     "report": "Lease_Register_Report",
     "fields": [
@@ -698,6 +749,7 @@
     ]
   },
   {
+    "section": "Lease_Management",
     "form": "Shop_Handover_Details",
     "report": "Shop_Handover_Details_Report",
     "fields": [
@@ -711,6 +763,7 @@
     ]
   },
   {
+    "section": "Lease_Management",
     "form": "Shop_Take_Back_Details",
     "report": "Shop_Take_Back_Details_Report",
     "fields": [
@@ -724,6 +777,7 @@
     ]
   },
   {
+    "section": "Lease_Management",
     "form": "Application_Register",
     "report": "Application_Register_Report",
     "fields": [
@@ -737,6 +791,7 @@
     ]
   },
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "Voucher_Status_Report",
     "fields": [
@@ -755,6 +810,7 @@
     ]
   },
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "All_Employee_Vouchers",
     "fields": [
@@ -773,6 +829,7 @@
     ]
   },
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "Issued_Vouchers",
     "fields": [
@@ -791,6 +848,7 @@
     ]
   },
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "Returned_Vouchers",
     "fields": [
@@ -809,6 +867,7 @@
     ]
   },
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "All_Supervisor_Vouchers",
     "fields": [
@@ -827,6 +886,7 @@
     ]
   },
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "Issued_Supervisor_Vouchers",
     "fields": [
@@ -845,6 +905,7 @@
     ]
   },
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "Closed_Supervisor_Vouchers",
     "fields": [
@@ -863,6 +924,7 @@
     ]
   },
   {
+    "section": "Voucher_Section",
     "form": "Voucher_Register",
     "report": "Available_Workers_Crown_Plaza",
     "fields": [
@@ -881,6 +943,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Fuel_Receiving_Voucher",
     "report": "Open_Asset_Issues",
     "fields": [
@@ -894,6 +957,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Fuel_Receiving_Voucher",
     "report": "No_Work_Order_Asset_Issues",
     "fields": [
@@ -907,6 +971,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Fuel_Receiving_Voucher",
     "report": "Pending_Work_Order_Tasks",
     "fields": [
@@ -920,6 +985,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Fuel_Receiving_Voucher",
     "report": "Open_Work_Orders",
     "fields": [
@@ -933,6 +999,7 @@
     ]
   },
   {
+    "section": "Asset_Management",
     "form": "Fuel_Receiving_Voucher",
     "report": "Open_Work_Order_Tasks",
     "fields": [
@@ -946,6 +1013,7 @@
     ]
   },
   {
+    "section": "Payment_Management",
     "form": "Payment_Charges",
     "report": "Payment_Receipt_Vouchers",
     "fields": [
@@ -959,6 +1027,7 @@
     ]
   },
   {
+    "section": "Payment_Management",
     "form": "Payment_Charges",
     "report": "Payment_Made_Vouchers",
     "fields": [
@@ -971,6 +1040,7 @@
     ]
   },
   {
+    "section": "Customer_Section",
     "form": "Customer_Locations",
     "report": "All_Customer_Locations",
     "fields": [
@@ -984,6 +1054,7 @@
     ]
   },
   {
+    "section": "Support_Form_Section",
     "form": "Site_Locations",
     "report": "All_Site_Locations",
     "fields": [
