@@ -3,53 +3,63 @@ import re
 import sys
 
 
-def find_matching(text, open_idx, open_ch, close_ch):
+def find_matching(text, start, opening, closing):
     depth = 0
-    i = open_idx
 
-    while i < len(text):
-        if text[i] == open_ch:
+    for i in range(start, len(text)):
+        if text[i] == opening:
             depth += 1
-        elif text[i] == close_ch:
+
+        elif text[i] == closing:
             depth -= 1
+
             if depth == 0:
                 return i
-        i += 1
 
     return -1
 
 
-def extract_block(text, start_from, keyword, open_ch, close_ch):
+def get_block(text, start, keyword, opening, closing):
     pattern = (
-        r'\b' + re.escape(keyword) +
-        r'\s*' + re.escape(open_ch)
+        r'\b' +
+        re.escape(keyword) +
+        r'\s*' +
+        re.escape(opening)
     )
 
-    match = re.search(pattern, text[start_from:])
+    match = re.search(
+        pattern,
+        text[start:],
+        re.IGNORECASE
+    )
 
     if not match:
         return None
 
-    open_idx = start_from + match.end() - 1
+    open_pos = start + match.end() - 1
 
-    close_idx = find_matching(
+    close_pos = find_matching(
         text,
-        open_idx,
-        open_ch,
-        close_ch
+        open_pos,
+        opening,
+        closing
     )
 
-    if close_idx == -1:
+    if close_pos == -1:
         return None
 
-    return text[open_idx + 1:close_idx]
+    return text[
+        open_pos + 1:
+        close_pos
+    ]
 
 
-def parse_fields_block(fields_text):
+def extract_fields(fields_text):
     fields = []
 
-    for line in fields_text.splitlines():
-        line = line.strip()
+    for raw_line in fields_text.splitlines():
+
+        line = raw_line.strip()
 
         if not line:
             continue
@@ -58,109 +68,20 @@ def parse_fields_block(fields_text):
             r'^([A-Za-z_][A-Za-z0-9_]*)'
             r'(?:\s+as\s+"(?:[^"\\]|\\.)*")?'
             r'\s*$',
-            line
+            line,
+            re.IGNORECASE
         )
 
         if match:
-            fields.append(match.group(1))
+            fields.append(
+                match.group(1)
+            )
 
     return fields
 
 
-def get_reports_section(text):
-    match = re.search(
-        r'^\s*reports\s*$',
-        text,
-        re.MULTILINE
-    )
-
-    if not match:
-        return None
-
-    brace = re.search(
-        r'\{',
-        text[match.end():]
-    )
-
-    if not brace:
-        return None
-
-    open_idx = match.end() + brace.start()
-
-    close_idx = find_matching(
-        text,
-        open_idx,
-        '{',
-        '}'
-    )
-
-    if close_idx == -1:
-        return None
-
-    return text[open_idx + 1:close_idx]
-
-
-def get_report_form_map(text):
-    mapping = {}
-
-    forms_section = extract_block(
-        text,
-        0,
-        "forms",
-        "{",
-        "}"
-    )
-
-    if forms_section is None:
-        return mapping
-
-    return mapping
-
-
-def get_report_form_from_list(reports_text):
-    mapping = {}
-
-    pattern = re.compile(
-        r'\b(?:default\s+list|list)\s+'
-        r'([A-Za-z_][A-Za-z0-9_]*)\s*\{',
-        re.MULTILINE
-    )
-
-    for match in pattern.finditer(reports_text):
-
-        report_name = match.group(1)
-
-        open_idx = match.end() - 1
-
-        close_idx = find_matching(
-            reports_text,
-            open_idx,
-            '{',
-            '}'
-        )
-
-        if close_idx == -1:
-            continue
-
-        body = reports_text[
-            open_idx + 1:close_idx
-        ]
-
-        form_match = re.search(
-            r'\bshow\s+all\s+rows\s+from\s+'
-            r'([A-Za-z_][A-Za-z0-9_]*)',
-            body,
-            re.IGNORECASE
-        )
-
-        if form_match:
-            mapping[report_name] = form_match.group(1)
-
-    return mapping
-
-
 def get_quickview_fields(report_body):
-    quickview = extract_block(
+    quickview = get_block(
         report_body,
         0,
         "quickview",
@@ -171,7 +92,7 @@ def get_quickview_fields(report_body):
     if quickview is None:
         return []
 
-    layout = extract_block(
+    layout = get_block(
         quickview,
         0,
         "layout",
@@ -185,108 +106,147 @@ def get_quickview_fields(report_body):
     fields = []
     seen = set()
 
-    search_from = 0
+    position = 0
 
     while True:
 
         match = re.search(
             r'\bfields\s*\(',
-            layout[search_from:],
+            layout[position:],
             re.IGNORECASE
         )
 
         if not match:
             break
 
-        open_idx = (
-            search_from +
+        open_pos = (
+            position +
             match.end() -
             1
         )
 
-        close_idx = find_matching(
+        close_pos = find_matching(
             layout,
-            open_idx,
+            open_pos,
             "(",
             ")"
         )
 
-        if close_idx == -1:
+        if close_pos == -1:
             break
 
         fields_body = layout[
-            open_idx + 1:
-            close_idx
+            open_pos + 1:
+            close_pos
         ]
 
-        extracted = parse_fields_block(
+        extracted = extract_fields(
             fields_body
         )
 
         for field in extracted:
+
             if field not in seen:
                 seen.add(field)
                 fields.append(field)
 
-        search_from = close_idx + 1
+        position = close_pos + 1
 
     return fields
 
 
-def get_reports(text):
-    reports_text = get_reports_section(text)
+def get_report_forms(text):
+    result = {}
 
-    if reports_text is None:
-        return []
-
-    report_to_form = get_report_form_from_list(
-        reports_text
+    pattern = re.compile(
+        r'\b(?:default\s+list|list)\s+'
+        r'([A-Za-z_][A-Za-z0-9_]*)\s*\{',
+        re.IGNORECASE
     )
+
+    for match in pattern.finditer(text):
+
+        report_name = match.group(1)
+
+        open_pos = match.end() - 1
+
+        close_pos = find_matching(
+            text,
+            open_pos,
+            "{",
+            "}"
+        )
+
+        if close_pos == -1:
+            continue
+
+        body = text[
+            open_pos + 1:
+            close_pos
+        ]
+
+        form_match = re.search(
+            r'\bshow\s+all\s+rows\s+from\s+'
+            r'([A-Za-z_][A-Za-z0-9_]*)',
+            body,
+            re.IGNORECASE
+        )
+
+        if form_match:
+            result[report_name] = (
+                form_match.group(1)
+            )
+
+    return result
+
+
+def get_reports(text):
+    report_forms = get_report_forms(text)
 
     results = []
 
     pattern = re.compile(
         r'\breport\s+'
         r'([A-Za-z_][A-Za-z0-9_]*)\s*\{',
-        re.MULTILINE
+        re.IGNORECASE
     )
 
-    seen_reports = set()
+    seen = set()
 
-    for match in pattern.finditer(reports_text):
+    for match in pattern.finditer(text):
 
         report_name = match.group(1)
 
-        if report_name in seen_reports:
+        if report_name in seen:
             continue
 
-        seen_reports.add(report_name)
+        open_pos = match.end() - 1
 
-        open_idx = match.end() - 1
-
-        close_idx = find_matching(
-            reports_text,
-            open_idx,
+        close_pos = find_matching(
+            text,
+            open_pos,
             "{",
             "}"
         )
 
-        if close_idx == -1:
+        if close_pos == -1:
             continue
 
-        report_body = reports_text[
-            open_idx + 1:
-            close_idx
+        report_body = text[
+            open_pos + 1:
+            close_pos
         ]
 
         fields = get_quickview_fields(
             report_body
         )
 
+        seen.add(report_name)
+
         results.append(
             {
                 "report": report_name,
-                "form": report_to_form.get(
+                "form": report_forms.get(
                     report_name
                 ),
                 "fields": fields
@@ -298,20 +258,20 @@ def get_reports(text):
 
 def main():
 
-    input_path = (
+    input_file = (
         sys.argv[1]
         if len(sys.argv) > 1
         else "fields.ds"
     )
 
-    output_path = (
+    output_file = (
         sys.argv[2]
         if len(sys.argv) > 2
         else "reports.json"
     )
 
     with open(
-        input_path,
+        input_file,
         "r",
         encoding="utf-8",
         errors="replace"
@@ -321,7 +281,7 @@ def main():
     results = get_reports(text)
 
     with open(
-        output_path,
+        output_file,
         "w",
         encoding="utf-8"
     ) as file:
@@ -333,21 +293,29 @@ def main():
         )
 
     total_fields = sum(
-        len(report["fields"])
-        for report in results
+        len(item["fields"])
+        for item in results
     )
 
-    reports_without_fields = sum(
+    no_fields = sum(
         1
-        for report in results
-        if not report["fields"]
+        for item in results
+        if not item["fields"]
     )
 
     print(
-        f"Extracted {len(results)} report(s), "
-        f"{total_fields} quickview field(s) total, "
-        f"{reports_without_fields} report(s) without "
-        f"quickview fields -> {output_path}"
+        "Extracted "
+        + str(len(results))
+        + " report(s), "
+        + str(total_fields)
+        + " quickview field(s). "
+        + str(no_fields)
+        + " report(s) had no quickview fields."
+    )
+
+    print(
+        "Output: "
+        + output_file
     )
 
 
