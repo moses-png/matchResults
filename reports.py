@@ -1,306 +1,262 @@
-import json
+#!/usr/bin/env python3
+"""
+Parser for fields.ds file - Extracts report names and their fields.
+Outputs JSON format like:
+{
+    "report": "All_Customer_Deposit_Details",
+    "fields": ["Customer_Deposit_Number", "Customer_Deposit_Date", ...]
+}
+"""
+
 import re
+import json
 import sys
+from pathlib import Path
 
 
-def find_matching(text, start, opening, closing):
+def read_file(filepath: str) -> str:
+    """Read the fields.ds file and return its content."""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return f.read()
+
+
+def remove_comments(content: str) -> str:
+    """Remove single-line and block comments from the content."""
+    # Remove block comments /* ... */
+    content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
+    # Remove single-line comments //
+    content = re.sub(r'//.*?$', '', content, flags=re.MULTILINE)
+    return content
+
+
+def find_matching_brace(content: str, start_pos: int) -> int:
+    """
+    Given a position of an opening brace '{', find the position of the
+    matching closing brace, accounting for nested braces and strings.
+    """
     depth = 0
+    i = start_pos
+    n = len(content)
     in_string = False
-    escaped = False
+    string_char = None
 
-    for i in range(start, len(text)):
-        ch = text[i]
+    while i < n:
+        ch = content[i]
 
+        # Handle string literals
         if in_string:
-            if escaped:
-                escaped = False
-            elif ch == "\\":
-                escaped = True
-            elif ch == '"':
+            if ch == '\\':
+                i += 2
+                continue
+            if ch == string_char:
                 in_string = False
+            i += 1
             continue
 
-        if ch == '"':
+        if ch in ('"', "'"):
             in_string = True
+            string_char = ch
+            i += 1
+            continue
 
-        elif ch == opening:
+        if ch == '{':
             depth += 1
-
-        elif ch == closing:
+        elif ch == '}':
             depth -= 1
-
             if depth == 0:
                 return i
+        i += 1
 
     return -1
 
 
-def get_reports_section(text):
+def find_matching_paren(content: str, start_pos: int) -> int:
+    """Given a position of an opening '(', find matching ')'."""
+    depth = 0
+    i = start_pos
+    n = len(content)
+    in_string = False
+    string_char = None
 
-    match = re.search(
-        r'(?m)^[ \t]*reports[ \t]*\{',
-        text,
-        re.IGNORECASE
-    )
+    while i < n:
+        ch = content[i]
 
-    if not match:
-        return None
+        if in_string:
+            if ch == '\\':
+                i += 2
+                continue
+            if ch == string_char:
+                in_string = False
+            i += 1
+            continue
 
-    open_pos = text.find(
-        "{",
-        match.start(),
-        match.end()
-    )
+        if ch in ('"', "'"):
+            in_string = True
+            string_char = ch
+            i += 1
+            continue
 
-    close_pos = find_matching(
-        text,
-        open_pos,
-        "{",
-        "}"
-    )
+        if ch == '(':
+            depth += 1
+        elif ch == ')':
+            depth -= 1
+            if depth == 0:
+                return i
+        i += 1
 
-    if close_pos == -1:
-        return None
-
-    return text[
-        open_pos + 1:
-        close_pos
-    ]
-
-
-def get_quickview(report_body):
-
-    match = re.search(
-        r'\bquickview\s*\(',
-        report_body,
-        re.IGNORECASE
-    )
-
-    if not match:
-        return None
-
-    open_pos = match.end() - 1
-
-    close_pos = find_matching(
-        report_body,
-        open_pos,
-        "(",
-        ")"
-    )
-
-    if close_pos == -1:
-        return None
-
-    return report_body[
-        open_pos + 1:
-        close_pos
-    ]
+    return -1
 
 
-def get_fields_from_quickview(quickview):
-
-    if quickview is None:
-        return []
-
-    layout_match = re.search(
-        r'\blayout\s*\(',
-        quickview,
-        re.IGNORECASE
-    )
-
-    if not layout_match:
-        return []
-
-    layout_open = layout_match.end() - 1
-
-    layout_close = find_matching(
-        quickview,
-        layout_open,
-        "(",
-        ")"
-    )
-
-    if layout_close == -1:
-        return []
-
-    layout = quickview[
-        layout_open + 1:
-        layout_close
-    ]
-
-    fields_match = re.search(
-        r'\bfields\s*\(',
-        layout,
-        re.IGNORECASE
-    )
-
-    if not fields_match:
-        return []
-
-    fields_open = fields_match.end() - 1
-
-    fields_close = find_matching(
-        layout,
-        fields_open,
-        "(",
-        ")"
-    )
-
-    if fields_close == -1:
-        return []
-
-    fields_body = layout[
-        fields_open + 1:
-        fields_close
-    ]
-
+def extract_fields_block(report_body: str) -> list:
+    """
+    Extract field names from the `fields ( ... )` block inside a report body.
+    Fields look like: `Customer_Deposit_Number as "Customer Deposit Number"`
+    or just `Customer`. Nested blocks like `(...)` with displayformat
+    should be ignored.
+    """
     fields = []
 
-    for line in fields_body.splitlines():
+    # Find the `fields` keyword followed by '('
+    fields_match = re.search(r'\bfields\s*\(', report_body)
+    if not fields_match:
+        return fields
 
-        line = line.strip()
+    open_paren = fields_match.end() - 1
+    close_paren = find_matching_paren(report_body, open_paren)
+    if close_paren == -1:
+        return fields
 
+    fields_content = report_body[open_paren + 1:close_paren]
+
+    # Walk through the content, skipping over any nested parenthesized blocks
+    i = 0
+    n = len(fields_content)
+    current_line_start = 0
+
+    while i < n:
+        ch = fields_content[i]
+        if ch == '(':
+            # Skip the entire nested block
+            close = find_matching_paren(fields_content, i)
+            if close == -1:
+                break
+            i = close + 1
+            continue
+        i += 1
+
+    # Remove nested paren blocks so we can safely parse field names
+    cleaned = []
+    i = 0
+    while i < n:
+        ch = fields_content[i]
+        if ch == '(':
+            close = find_matching_paren(fields_content, i)
+            if close == -1:
+                break
+            i = close + 1
+            continue
+        cleaned.append(ch)
+        i += 1
+    cleaned = ''.join(cleaned)
+
+    # Now split into tokens by whitespace, then find identifiers that
+    # precede `as "..."` or are just standalone identifiers.
+    # We'll process line by line for clarity.
+    for raw_line in cleaned.splitlines():
+        line = raw_line.strip()
         if not line:
             continue
 
-        match = re.match(
-            r'^([A-Za-z_][A-Za-z0-9_]*)'
-            r'(?:\s+as\s+"[^"]*")?$',
-            line,
-            re.IGNORECASE
-        )
-
-        if match:
-            fields.append(
-                match.group(1)
-            )
+        # Match patterns:
+        #   FieldName as "Display Name"
+        #   FieldName
+        m = re.match(r'^([A-Za-z_][A-Za-z0-9_]*)\b(?:\s+as\s+".*?")?\s*$', line)
+        if m:
+            field_name = m.group(1)
+            # Skip reserved keywords
+            if field_name.lower() in ('fields', 'as'):
+                continue
+            fields.append(field_name)
 
     return fields
 
 
-def extract_reports(text):
-
-    reports_section = get_reports_section(text)
-
-    if reports_section is None:
-        print("ERROR: reports section not found")
-        return []
-
+def extract_reports(content: str) -> list:
+    """
+    Extract all reports from the `reports { ... }` block.
+    Returns a list of dicts: {"report": name, "fields": [field names]}
+    """
     results = []
 
-    pattern = re.compile(
-        r'(?m)^[ \t]*report[ \t]+'
-        r'([A-Za-z_][A-Za-z0-9_]*)'
-        r'[ \t]*\{'
+    # Find the `reports {` block
+    reports_match = re.search(r'\breports\s*\{', content)
+    if not reports_match:
+        return results
+
+    reports_open = reports_match.end() - 1
+    reports_close = find_matching_brace(content, reports_open)
+    if reports_close == -1:
+        return results
+
+    reports_content = content[reports_open + 1:reports_close]
+
+    # Find all `report ReportName { ... }` declarations
+    # Supports `default list ReportName {` and `list ReportName {` and `report ReportName {`
+    report_pattern = re.compile(
+        r'\b(?:default\s+list|list|report)\s+([A-Za-z_][A-Za-z0-9_]*)\s*\{'
     )
 
-    for match in pattern.finditer(
-        reports_section
-    ):
+    pos = 0
+    while True:
+        m = report_pattern.search(reports_content, pos)
+        if not m:
+            break
 
-        report_name = match.group(1)
+        report_name = m.group(1)
+        body_open = m.end() - 1
+        body_close = find_matching_brace(reports_content, body_open)
+        if body_close == -1:
+            break
 
-        open_pos = match.end() - 1
+        report_body = reports_content[body_open + 1:body_close]
+        fields = extract_fields_block(report_body)
 
-        close_pos = find_matching(
-            reports_section,
-            open_pos,
-            "{",
-            "}"
-        )
+        results.append({
+            "report": report_name,
+            "fields": fields
+        })
 
-        if close_pos == -1:
-            print(
-                "WARNING: Could not close report:",
-                report_name
-            )
-            continue
-
-        report_body = reports_section[
-            open_pos + 1:
-            close_pos
-        ]
-
-        quickview = get_quickview(
-            report_body
-        )
-
-        fields = get_fields_from_quickview(
-            quickview
-        )
-
-        results.append(
-            {
-                "report": report_name,
-                "fields": fields
-            }
-        )
+        pos = body_close + 1
 
     return results
 
 
 def main():
+    # Determine input file
+    if len(sys.argv) > 1:
+        input_path = Path(sys.argv[1])
+    else:
+        input_path = Path("fields.ds")
 
-    input_file = (
-        sys.argv[1]
-        if len(sys.argv) > 1
-        else "fields.ds"
-    )
+    if not input_path.exists():
+        print(f"Error: File not found: {input_path}", file=sys.stderr)
+        sys.exit(1)
 
-    output_file = (
-        sys.argv[2]
-        if len(sys.argv) > 2
-        else "reports.json"
-    )
+    # Read and clean content
+    content = read_file(str(input_path))
+    content = remove_comments(content)
 
-    with open(
-        input_file,
-        "r",
-        encoding="utf-8",
-        errors="replace"
-    ) as file:
+    # Extract reports
+    reports = extract_reports(content)
 
-        text = file.read()
-
-    results = extract_reports(text)
-
-    with open(
-        output_file,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            results,
-            file,
-            indent=2,
-            ensure_ascii=False
-        )
-
-    print(
-        "Extracted:",
-        len(results),
-        "reports"
-    )
-
-    print(
-        "Output:",
-        output_file
-    )
-
-    for item in results:
-
-        if item["report"] in [
-            "All_Payment_Receipt_Vouchers",
-            "Payment_Receipt_Vouchers"
-        ]:
-
-            print(
-                item["report"],
-                "=>",
-                len(item["fields"]),
-                "fields"
-            )
+    # Output
+    if len(sys.argv) > 2 and sys.argv[2] == "--json-pretty":
+        print(json.dumps(reports, indent=4))
+    elif len(sys.argv) > 2 and sys.argv[2] == "--json":
+        print(json.dumps(reports))
+    else:
+        # Default: pretty JSON
+        print(json.dumps(reports, indent=4))
 
 
 if __name__ == "__main__":
