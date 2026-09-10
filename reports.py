@@ -1,473 +1,197 @@
-import re
+
+
 import json
+import re
+import sys
 
-INPUT_FILE = "fields.ds"
-OUTPUT_FILE = "reports.json"
 
-
-def find_matching_delimiter(text, start, opening, closing):
+def find_matching(text, open_idx, open_ch, close_ch):
+    """Given the index of an opening bracket in text, return the index of
+    its matching closing bracket, respecting nesting. Returns -1 if not found."""
     depth = 0
-    in_string = False
-    escaped = False
-
-    for i in range(start, len(text)):
-        char = text[i]
-
-        if in_string:
-            if escaped:
-                escaped = False
-            elif char == "\\":
-                escaped = True
-            elif char == '"':
-                in_string = False
-            continue
-
-        if char == '"':
-            in_string = True
-
-        elif char == opening:
+    i = open_idx
+    n = len(text)
+    while i < n:
+        ch = text[i]
+        if ch == open_ch:
             depth += 1
-
-        elif char == closing:
+        elif ch == close_ch:
             depth -= 1
-
             if depth == 0:
                 return i
-
+        i += 1
     return -1
 
 
-def get_brace_block(text, start):
-    open_pos = text.find("{", start)
-
-    if open_pos == -1:
-        return None
-
-    close_pos = find_matching_delimiter(
-        text,
-        open_pos,
-        "{",
-        "}"
-    )
-
-    if close_pos == -1:
-        return None
-
-    return text[open_pos + 1:close_pos]
+def extract_block(text, start_from, keyword_pattern, open_ch, close_ch):
+    """Find `keyword_pattern` followed by `open_ch` at/after start_from, and
+    return (block_inner_text, match_object) or (None, None)."""
+    m = re.search(keyword_pattern + r'\s*' + re.escape(open_ch), text[start_from:])
+    if not m:
+        return None, None
+    open_idx = start_from + m.end() - 1
+    close_idx = find_matching(text, open_idx, open_ch, close_ch)
+    if close_idx == -1:
+        return None, None
+    return text[open_idx + 1:close_idx], m
 
 
-def get_parenthesis_block(text, start):
-    open_pos = text.find("(", start)
+def get_top_level_sections(text):
+    """Return {section_name: section_body} for every section indented with
+    exactly one tab (optionally one leading space), e.g. forms, reports,
+    web, phone, tablet, translation. Excludes deeper-nested blocks that
+    happen to share the same keyword (e.g. a "reports" block nested
+    inside "web")."""
+    sections = {}
+    for m in re.finditer(r'^ ?\t([A-Za-z_]+)[ \t]*$', text, re.MULTILINE):
+        name = m.group(1)
+        brace_search = re.search(r'\{', text[m.end():])
+        if not brace_search:
+            continue
+        open_idx = m.end() + brace_search.start()
+        close_idx = find_matching(text, open_idx, '{', '}')
+        if close_idx == -1:
+            continue
+        # Keep the first occurrence of each name (there's normally only one
+        # top-level section per name anyway).
+        sections.setdefault(name, text[open_idx + 1:close_idx])
+    return sections
 
-    if open_pos == -1:
-        return None
 
-    close_pos = find_matching_delimiter(
-        text,
-        open_pos,
-        "(",
-        ")"
-    )
-
-    if close_pos == -1:
-        return None
-
-    return text[open_pos + 1:close_pos]
-
-
-def extract_fields_from_report(report_block):
-
-    quickview_match = re.search(
-        r'\bquickview\s*\(',
-        report_block,
-        re.IGNORECASE
-    )
-
-    if not quickview_match:
-        return []
-
-    quickview_block = get_parenthesis_block(
-        report_block,
-        quickview_match.start()
-    )
-
-    if quickview_block is None:
-        return []
-
-    layout_match = re.search(
-        r'\blayout\s*\(',
-        quickview_block,
-        re.IGNORECASE
-    )
-
-    if not layout_match:
-        return []
-
-    layout_block = get_parenthesis_block(
-        quickview_block,
-        layout_match.start()
-    )
-
-    if layout_block is None:
-        return []
-
-    datablock_match = re.search(
-        r'\bdatablock\d*\s*\(',
-        layout_block,
-        re.IGNORECASE
-    )
-
-    if not datablock_match:
-        return []
-
-    datablock_block = get_parenthesis_block(
-        layout_block,
-        datablock_match.start()
-    )
-
-    if datablock_block is None:
-        return []
-
-    fields_match = re.search(
-        r'\bfields\s*\(',
-        datablock_block,
-        re.IGNORECASE
-    )
-
-    if not fields_match:
-        return []
-
-    fields_block = get_parenthesis_block(
-        datablock_block,
-        fields_match.start()
-    )
-
-    if fields_block is None:
-        return []
-
+def parse_fields_block(fields_text):
+    """Parse the raw contents of a `fields ( ... )` block into a list of
+    {"name": ..., "displayname": ...} dicts. Handles both:
+        Field_Name
+        Field_Name as "Display Name"
+    """
     fields = []
-
-    for line in fields_block.splitlines():
-
-        line = line.strip()
-
+    for raw_line in fields_text.splitlines():
+        line = raw_line.strip()
         if not line:
             continue
-
-        match = re.match(
-            r'^([A-Za-z_][A-Za-z0-9_]*)'
-            r'(?:\s+as\s+"[^"]*")?'
-            r'\s*$',
-            line,
-            re.IGNORECASE
-        )
-
-        if match:
-
-            field_name = match.group(1)
-
-            if field_name not in fields:
-                fields.append(field_name)
-
+        m = re.match(r'^([A-Za-z_][A-Za-z0-9_]*)\s*(?:as\s+"((?:[^"\\]|\\.)*)")?\s*$', line)
+        if m:
+            name = m.group(1)
+            display = m.group(2).replace('\\"', '"') if m.group(2) else name
+            fields.append({"name": name, "displayname": display})
     return fields
 
 
-def extract_report_definitions(text):
+def get_report_form_map(reports_section_body):
+    """Parse the top-level `reports { ... }` section to map
+    report_name -> form_name, using the `show all rows from FORM` line."""
+    mapping = {}
+    for entry_match in re.finditer(r'\b(?:default list|list)\s+(\w+)\s*\{', reports_section_body):
+        report_name = entry_match.group(1)
+        open_idx = entry_match.end() - 1
+        close_idx = find_matching(reports_section_body, open_idx, '{', '}')
+        if close_idx == -1:
+            continue
+        report_body = reports_section_body[open_idx + 1:close_idx]
+        form_match = re.search(r'show all rows from\s+(\w+)', report_body)
+        if form_match:
+            mapping[report_name] = form_match.group(1)
+    return mapping
 
-    reports = {}
 
-    reports_matches = list(
-        re.finditer(
-            r'\breports\s*\{',
-            text,
-            re.IGNORECASE
-        )
-    )
+def get_report_fields_map(device_section_body):
+    """Parse a device-view section's nested `reports { report NAME { ...
+    detailview(layout(datablock1(fields(...)))) ... } }` structure to map
+    report_name -> list of field dicts."""
+    mapping = {}
+    reports_body, _ = extract_block(device_section_body, 0, r'\breports\b', '{', '}')
+    if reports_body is None:
+        return mapping
 
-    if not reports_matches:
-        return reports
+    for entry_match in re.finditer(r'\breport\s+(\w+)\s*\{', reports_body):
+        report_name = entry_match.group(1)
+        open_idx = entry_match.end() - 1
+        close_idx = find_matching(reports_body, open_idx, '{', '}')
+        if close_idx == -1:
+            continue
+        report_body = reports_body[open_idx + 1:close_idx]
 
-    report_section = None
-
-    for match in reports_matches:
-
-        block = get_brace_block(
-            text,
-            match.start()
-        )
-
-        if block is None:
+        dv_body, _ = extract_block(report_body, 0, r'\bdetailview\b', '(', ')')
+        if dv_body is None:
+            continue
+        layout_body, _ = extract_block(dv_body, 0, r'\blayout\b', '(', ')')
+        if layout_body is None:
             continue
 
-        if re.search(
-            r'\breport\s+[A-Za-z_][A-Za-z0-9_]*\s*\{',
-            block,
-            re.IGNORECASE
-        ):
-            report_section = block
+        # The layout normally holds a single "datablock1 ( fields ( ... ) )",
+        # but some reports split their detail view across several data
+        # blocks (datablock1, datablock2, ...). Collect fields from every
+        # `fields ( ... )` block under this layout, in order, deduplicating
+        # by field name (a field can be repeated across panels).
+        fields = []
+        seen = set()
+        search_from = 0
+        while True:
+            fm = re.search(r'\bfields\s*\(', layout_body[search_from:])
+            if not fm:
+                break
+            open_idx = search_from + fm.end() - 1
+            close_idx = find_matching(layout_body, open_idx, '(', ')')
+            if close_idx == -1:
+                break
+            fields_body = layout_body[open_idx + 1:close_idx]
+            for field in parse_fields_block(fields_body):
+                if field["name"] not in seen:
+                    seen.add(field["name"])
+                    fields.append(field)
+            search_from = close_idx + 1
 
-    if report_section is None:
-        return reports
+        if fields:
+            mapping[report_name] = fields
+    return mapping
 
-    report_pattern = re.compile(
-        r'\breport\s+'
-        r'([A-Za-z_][A-Za-z0-9_]*)'
-        r'\s*\{',
-        re.IGNORECASE
-    )
 
-    for match in report_pattern.finditer(report_section):
+def extract_reports(text):
+    sections = get_top_level_sections(text)
 
-        report_name = match.group(1)
+    report_to_form = {}
+    if 'reports' in sections:
+        report_to_form = get_report_form_map(sections['reports'])
 
-        report_block = get_brace_block(
-            report_section,
-            match.start()
-        )
-
-        if report_block is None:
+    # Prefer "web" view fields, then fall back to phone/tablet if a report's
+    # detailview fields weren't found there.
+    report_to_fields = {}
+    for device in ('web', 'phone', 'tablet'):
+        if device not in sections:
             continue
+        device_fields = get_report_fields_map(sections[device])
+        for report_name, fields in device_fields.items():
+            report_to_fields.setdefault(report_name, fields)
 
-        fields = extract_fields_from_report(
-            report_block
-        )
+    all_report_names = set(report_to_form) | set(report_to_fields)
 
-        if not fields:
-            continue
-
-        reports[report_name] = {
+    results = []
+    for report_name in sorted(all_report_names):
+        results.append({
             "report": report_name,
-            "fields": fields
-        }
-
-    return reports
-
-
-def extract_menu_structure(text):
-
-    mappings = {}
-
-    menu_match = re.search(
-        r'\bmenu\s*\{',
-        text,
-        re.IGNORECASE
-    )
-
-    if not menu_match:
-        return mappings
-
-    menu_block = get_brace_block(
-        text,
-        menu_match.start()
-    )
-
-    if menu_block is None:
-        return mappings
-
-    section_pattern = re.compile(
-        r'\bsection\s+'
-        r'([A-Za-z_][A-Za-z0-9_]*)'
-        r'\s*\{',
-        re.IGNORECASE
-    )
-
-    section_matches = list(
-        section_pattern.finditer(menu_block)
-    )
-
-    for section_match in section_matches:
-
-        section_name = section_match.group(1)
-
-        section_block = get_brace_block(
-            menu_block,
-            section_match.start()
-        )
-
-        if section_block is None:
-            continue
-
-        form_pattern = re.compile(
-            r'\bform\s+'
-            r'([A-Za-z_][A-Za-z0-9_]*)'
-            r'\s*\{',
-            re.IGNORECASE
-        )
-
-        report_pattern = re.compile(
-            r'\breport\s+'
-            r'([A-Za-z_][A-Za-z0-9_]*)'
-            r'\s*\{',
-            re.IGNORECASE
-        )
-
-        elements = []
-
-        for match in form_pattern.finditer(
-            section_block
-        ):
-            elements.append(
-                (
-                    match.start(),
-                    "form",
-                    match.group(1)
-                )
-            )
-
-        for match in report_pattern.finditer(
-            section_block
-        ):
-            elements.append(
-                (
-                    match.start(),
-                    "report",
-                    match.group(1)
-                )
-            )
-
-        elements.sort(
-            key=lambda x: x[0]
-        )
-
-        current_form = ""
-
-        for _, element_type, name in elements:
-
-            if element_type == "form":
-
-                current_form = name
-
-            elif element_type == "report":
-
-                mappings[name] = {
-                    "section": section_name,
-                    "form": current_form
-                }
-
-    return mappings
+            "form": report_to_form.get(report_name),
+            "fields": report_to_fields.get(report_name, []),
+        })
+    return results
 
 
 def main():
+    input_path = sys.argv[1] if len(sys.argv) > 1 else 'fields.ds'
+    output_path = sys.argv[2] if len(sys.argv) > 2 else 'reports.json'
 
-    print("Reading:", INPUT_FILE)
+    with open(input_path, 'r', encoding='utf-8', errors='replace') as f:
+        text = f.read()
 
-    with open(
-        INPUT_FILE,
-        "r",
-        encoding="utf-8"
-    ) as file:
-        text = file.read()
+    results = extract_reports(text)
 
-    print(
-        "File size:",
-        len(text),
-        "characters"
-    )
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
 
-    report_definitions = extract_report_definitions(
-        text
-    )
-
-    print(
-        "Reports with quickview fields:",
-        len(report_definitions)
-    )
-
-    menu_mappings = extract_menu_structure(
-        text
-    )
-
-    print(
-        "Reports found in menu:",
-        len(menu_mappings)
-    )
-
-    output = []
-
-    for report_name, report_data in report_definitions.items():
-
-        section = ""
-        form = ""
-
-        if report_name in menu_mappings:
-
-            section = menu_mappings[
-                report_name
-            ]["section"]
-
-            form = menu_mappings[
-                report_name
-            ]["form"]
-
-        output.append({
-            "section": section,
-            "form": form,
-            "report": report_name,
-            "fields": report_data["fields"]
-        })
-
-    with open(
-        OUTPUT_FILE,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            output,
-            file,
-            indent=2,
-            ensure_ascii=False
-        )
-
-    missing_section = [
-        item["report"]
-        for item in output
-        if not item["section"]
-    ]
-
-    missing_form = [
-        item["report"]
-        for item in output
-        if not item["form"]
-    ]
-
-    print()
-    print("====================================")
-    print("EXTRACTION COMPLETE")
-    print("====================================")
-    print(
-        "Reports:",
-        len(output)
-    )
-    print(
-        "Missing sections:",
-        len(missing_section)
-    )
-    print(
-        "Missing forms:",
-        len(missing_form)
-    )
-    print(
-        "Output:",
-        OUTPUT_FILE
-    )
-
-    if missing_section:
-
-        print()
-        print("Reports missing sections:")
-
-        for report in missing_section:
-            print(" -", report)
-
-    if missing_form:
-
-        print()
-        print("Reports missing forms:")
-
-        for report in missing_form:
-            print(" -", report)
+    total_fields = sum(len(r["fields"]) for r in results)
+    missing_fields = sum(1 for r in results if not r["fields"])
+    print(f"Extracted {len(results)} report(s), {total_fields} field entries total "
+          f"({missing_fields} report(s) had no detailview fields found) -> {output_path}")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
