@@ -254,7 +254,7 @@ def main():
     input_file = (
         sys.argv[1]
         if len(sys.argv) > 1
-        else "fields(3).ds"
+        else "fields.ds"
     )
 
     output_file = (
