@@ -2,339 +2,368 @@ import json
 import re
 import sys
 
-
 def find_matching(text, start, opening, closing):
-    depth = 0
+depth = 0
+in_string = False
+escaped = False
 
-    for i in range(start, len(text)):
-        if text[i] == opening:
-            depth += 1
-        elif text[i] == closing:
-            depth -= 1
+```
+for i in range(start, len(text)):
+    ch = text[i]
 
-            if depth == 0:
-                return i
+    if in_string:
+        if escaped:
+            escaped = False
+        elif ch == "\\":
+            escaped = True
+        elif ch == '"':
+            in_string = False
+        continue
 
-    return -1
+    if ch == '"':
+        in_string = True
+    elif ch == opening:
+        depth += 1
+    elif ch == closing:
+        depth -= 1
 
+        if depth == 0:
+            return i
 
-def get_reports_sections(text):
-    sections = []
+return -1
+```
 
-    pattern = re.compile(
-        r'\breports\s*\{',
-        re.IGNORECASE
+def get_reports_section(text):
+match = re.search(
+r'(?m)^[ \t]*reports[ \t]*{',
+text,
+re.IGNORECASE
+)
+
+```
+if not match:
+    return None
+
+open_pos = text.find(
+    "{",
+    match.start(),
+    match.end()
+)
+
+close_pos = find_matching(
+    text,
+    open_pos,
+    "{",
+    "}"
+)
+
+if close_pos == -1:
+    return None
+
+return text[
+    open_pos + 1:
+    close_pos
+]
+```
+
+def get_report_forms(text):
+
+```
+forms = {}
+
+pattern = re.compile(
+    r'\b(?:default\s+list|list)\s+'
+    r'([A-Za-z_][A-Za-z0-9_]*)'
+    r'\s*\{',
+    re.IGNORECASE
+)
+
+for match in pattern.finditer(text):
+
+    report_name = match.group(1)
+
+    open_pos = match.end() - 1
+
+    close_pos = find_matching(
+        text,
+        open_pos,
+        "{",
+        "}"
     )
 
-    for match in pattern.finditer(text):
+    if close_pos == -1:
+        continue
 
-        open_pos = match.end() - 1
-
-        close_pos = find_matching(
-            text,
-            open_pos,
-            "{",
-            "}"
-        )
-
-        if close_pos == -1:
-            continue
-
-        sections.append(
-            text[
-                open_pos + 1:
-                close_pos
-            ]
-        )
-
-    return sections
-
-
-def get_report_forms(reports_section):
-    result = {}
-
-    pattern = re.compile(
-        r'\b(?:default\s+list|list)\s+'
-        r'([A-Za-z_][A-Za-z0-9_]*)\s*\{',
-        re.IGNORECASE
-    )
-
-    for match in pattern.finditer(reports_section):
-
-        report_name = match.group(1)
-
-        open_pos = match.end() - 1
-
-        close_pos = find_matching(
-            reports_section,
-            open_pos,
-            "{",
-            "}"
-        )
-
-        if close_pos == -1:
-            continue
-
-        body = reports_section[
-            open_pos + 1:
-            close_pos
-        ]
-
-        form_match = re.search(
-            r'\bshow\s+all\s+rows\s+from\s+'
-            r'([A-Za-z_][A-Za-z0-9_]*)',
-            body,
-            re.IGNORECASE
-        )
-
-        if form_match:
-            result[report_name] = form_match.group(1)
-
-    return result
-
-
-def extract_fields(fields_body):
-    fields = []
-
-    for raw_line in fields_body.splitlines():
-
-        line = raw_line.strip()
-
-        if not line:
-            continue
-
-        match = re.match(
-            r'^([A-Za-z_][A-Za-z0-9_]*)'
-            r'(?:\s+as\s+'
-            r'"(?:[^"\\]|\\.)*"'
-            r')?\s*$',
-            line,
-            re.IGNORECASE
-        )
-
-        if match:
-            fields.append(
-                match.group(1)
-            )
-
-    return fields
-
-
-def get_quickview_fields(report_body):
-
-    quickview_match = re.search(
-        r'\bquickview\s*\(',
-        report_body,
-        re.IGNORECASE
-    )
-
-    if not quickview_match:
-        return []
-
-    quickview_open = (
-        quickview_match.end() - 1
-    )
-
-    quickview_close = find_matching(
-        report_body,
-        quickview_open,
-        "(",
-        ")"
-    )
-
-    if quickview_close == -1:
-        return []
-
-    quickview_body = report_body[
-        quickview_open + 1:
-        quickview_close
+    body = text[
+        open_pos + 1:
+        close_pos
     ]
 
-    layout_match = re.search(
-        r'\blayout\s*\(',
-        quickview_body,
+    form_match = re.search(
+        r'\bshow\s+all\s+rows\s+from\s+'
+        r'([A-Za-z_][A-Za-z0-9_]*)',
+        body,
         re.IGNORECASE
     )
 
-    if not layout_match:
-        return []
+    if form_match:
+        forms[report_name] = (
+            form_match.group(1)
+        )
 
-    layout_open = (
-        layout_match.end() - 1
+return forms
+```
+
+def get_quickview(report_body):
+
+```
+match = re.search(
+    r'\bquickview\s*\(',
+    report_body,
+    re.IGNORECASE
+)
+
+if not match:
+    return None
+
+open_pos = match.end() - 1
+
+close_pos = find_matching(
+    report_body,
+    open_pos,
+    "(",
+    ")"
+)
+
+if close_pos == -1:
+    return None
+
+return report_body[
+    open_pos + 1:
+    close_pos
+]
+```
+
+def get_fields_from_quickview(quickview):
+
+```
+if quickview is None:
+    return []
+
+layout_match = re.search(
+    r'\blayout\s*\(',
+    quickview,
+    re.IGNORECASE
+)
+
+if not layout_match:
+    return []
+
+layout_open = layout_match.end() - 1
+
+layout_close = find_matching(
+    quickview,
+    layout_open,
+    "(",
+    ")"
+)
+
+if layout_close == -1:
+    return []
+
+layout = quickview[
+    layout_open + 1:
+    layout_close
+]
+
+fields_match = re.search(
+    r'\bfields\s*\(',
+    layout,
+    re.IGNORECASE
+)
+
+if not fields_match:
+    return []
+
+fields_open = fields_match.end() - 1
+
+fields_close = find_matching(
+    layout,
+    fields_open,
+    "(",
+    ")"
+)
+
+if fields_close == -1:
+    return []
+
+fields_body = layout[
+    fields_open + 1:
+    fields_close
+]
+
+fields = []
+
+for line in fields_body.splitlines():
+
+    line = line.strip()
+
+    if not line:
+        continue
+
+    match = re.match(
+        r'^([A-Za-z_][A-Za-z0-9_]*)'
+        r'(?:\s+as\s+"[^"]*")?$',
+        line,
+        re.IGNORECASE
     )
 
-    layout_close = find_matching(
-        quickview_body,
-        layout_open,
-        "(",
-        ")"
+    if match:
+        fields.append(
+            match.group(1)
+        )
+
+return fields
+```
+
+def extract_reports(text):
+
+```
+reports_section = get_reports_section(text)
+
+if reports_section is None:
+    print("ERROR: reports section not found")
+    return []
+
+report_forms = get_report_forms(text)
+
+results = []
+
+pattern = re.compile(
+    r'(?m)^[ \t]*report[ \t]+'
+    r'([A-Za-z_][A-Za-z0-9_]*)'
+    r'[ \t]*\{'
+)
+
+for match in pattern.finditer(
+    reports_section
+):
+
+    report_name = match.group(1)
+
+    open_pos = (
+        match.end() - 1
     )
 
-    if layout_close == -1:
-        return []
+    close_pos = find_matching(
+        reports_section,
+        open_pos,
+        "{",
+        "}"
+    )
 
-    layout_body = quickview_body[
-        layout_open + 1:
-        layout_close
+    if close_pos == -1:
+        print(
+            "WARNING: Could not close report:",
+            report_name
+        )
+        continue
+
+    report_body = reports_section[
+        open_pos + 1:
+        close_pos
     ]
 
-    fields_match = re.search(
-        r'\bfields\s*\(',
-        layout_body,
-        re.IGNORECASE
+    quickview = get_quickview(
+        report_body
     )
 
-    if not fields_match:
-        return []
-
-    fields_open = (
-        fields_match.end() - 1
+    fields = get_fields_from_quickview(
+        quickview
     )
 
-    fields_close = find_matching(
-        layout_body,
-        fields_open,
-        "(",
-        ")"
+    form = report_forms.get(
+        report_name,
+        ""
     )
 
-    if fields_close == -1:
-        return []
-
-    fields_body = layout_body[
-        fields_open + 1:
-        fields_close
-    ]
-
-    return extract_fields(
-        fields_body
+    results.append(
+        {
+            "report": report_name,
+            "form": form,
+            "fields": fields
+        }
     )
 
-
-def get_reports(text):
-
-    reports_sections = get_reports_sections(
-        text
-    )
-
-    if len(reports_sections) < 2:
-        return []
-
-    form_section = reports_sections[0]
-
-    report_section = reports_sections[1]
-
-    report_forms = get_report_forms(
-        form_section
-    )
-
-    results = []
-
-    pattern = re.compile(
-        r'\breport\s+'
-        r'([A-Za-z_][A-Za-z0-9_]*)\s*\{',
-        re.IGNORECASE
-    )
-
-    for match in pattern.finditer(
-        report_section
-    ):
-
-        report_name = match.group(1)
-
-        open_pos = match.end() - 1
-
-        close_pos = find_matching(
-            report_section,
-            open_pos,
-            "{",
-            "}"
-        )
-
-        if close_pos == -1:
-            continue
-
-        report_body = report_section[
-            open_pos + 1:
-            close_pos
-        ]
-
-        fields = get_quickview_fields(
-            report_body
-        )
-
-        results.append(
-            {
-                "report": report_name,
-                "form": report_forms.get(
-                    report_name,
-                    ""
-                ),
-                "fields": fields
-            }
-        )
-
-    return results
-
+return results
+```
 
 def main():
 
-    input_file = (
-        sys.argv[1]
-        if len(sys.argv) > 1
-        else "fields.ds"
+```
+input_file = (
+    sys.argv[1]
+    if len(sys.argv) > 1
+    else "fields(3).ds"
+)
+
+output_file = (
+    sys.argv[2]
+    if len(sys.argv) > 2
+    else "reports.json"
+)
+
+with open(
+    input_file,
+    "r",
+    encoding="utf-8",
+    errors="replace"
+) as file:
+
+    text = file.read()
+
+results = extract_reports(
+    text
+)
+
+with open(
+    output_file,
+    "w",
+    encoding="utf-8"
+) as file:
+
+    json.dump(
+        results,
+        file,
+        indent=2,
+        ensure_ascii=False
     )
 
-    output_file = (
-        sys.argv[2]
-        if len(sys.argv) > 2
-        else "reports.json"
-    )
+print(
+    "Extracted:",
+    len(results),
+    "reports"
+)
 
-    with open(
-        input_file,
-        "r",
-        encoding="utf-8",
-        errors="replace"
-    ) as file:
+print(
+    "Output:",
+    output_file
+)
 
-        text = file.read()
+for item in results:
 
-    results = get_reports(
-        text
-    )
+    if item["report"] in [
+        "All_Payment_Receipt_Vouchers",
+        "Payment_Receipt_Vouchers"
+    ]:
 
-    with open(
-        output_file,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            results,
-            file,
-            indent=2,
-            ensure_ascii=False
+        print(
+            item["report"],
+            "=>",
+            len(item["fields"]),
+            "fields"
         )
+```
 
-    total_fields = sum(
-        len(item["fields"])
-        for item in results
-    )
-
-    print(
-        "Extracted "
-        + str(len(results))
-        + " report(s), "
-        + str(total_fields)
-        + " quickview field(s)."
-    )
-
-    print(
-        "Output: "
-        + output_file
-    )
-
-
-if __name__ == "__main__":
-    main()
+if **name** == "**main**":
+main()
