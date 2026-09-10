@@ -1,5 +1,3 @@
-
-
 import json
 import re
 import sys
@@ -60,7 +58,8 @@ def get_top_level_sections(text):
 
 def parse_fields_block(fields_text):
     """Parse the raw contents of a `fields ( ... )` block into a list of
-    {"name": ..., "displayname": ...} dicts. Handles both:
+    field names only (the `as "Display Name"` part, if present, is
+    discarded). Handles both:
         Field_Name
         Field_Name as "Display Name"
     """
@@ -69,11 +68,9 @@ def parse_fields_block(fields_text):
         line = raw_line.strip()
         if not line:
             continue
-        m = re.match(r'^([A-Za-z_][A-Za-z0-9_]*)\s*(?:as\s+"((?:[^"\\]|\\.)*)")?\s*$', line)
+        m = re.match(r'^([A-Za-z_][A-Za-z0-9_]*)\s*(?:as\s+"(?:[^"\\]|\\.)*")?\s*$', line)
         if m:
-            name = m.group(1)
-            display = m.group(2).replace('\\"', '"') if m.group(2) else name
-            fields.append({"name": name, "displayname": display})
+            fields.append(m.group(1))
     return fields
 
 
@@ -97,7 +94,7 @@ def get_report_form_map(reports_section_body):
 def get_report_fields_map(device_section_body):
     """Parse a device-view section's nested `reports { report NAME { ...
     detailview(layout(datablock1(fields(...)))) ... } }` structure to map
-    report_name -> list of field dicts."""
+    report_name -> list of field names."""
     mapping = {}
     reports_body, _ = extract_block(device_section_body, 0, r'\breports\b', '{', '}')
     if reports_body is None:
@@ -135,10 +132,10 @@ def get_report_fields_map(device_section_body):
             if close_idx == -1:
                 break
             fields_body = layout_body[open_idx + 1:close_idx]
-            for field in parse_fields_block(fields_body):
-                if field["name"] not in seen:
-                    seen.add(field["name"])
-                    fields.append(field)
+            for name in parse_fields_block(fields_body):
+                if name not in seen:
+                    seen.add(name)
+                    fields.append(name)
             search_from = close_idx + 1
 
         if fields:
