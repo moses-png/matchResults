@@ -7,7 +7,6 @@ depth = 0
 in_string = False
 escaped = False
 
-```
 for i in range(start, len(text)):
     ch = text[i]
 
@@ -33,11 +32,9 @@ for i in range(start, len(text)):
             return i
 
 return -1
-```
 
 def get_reports_section(text):
 
-```
 match = re.search(
     r'(?m)^[ \t]*reports[ \t]*\{',
     text,
@@ -67,11 +64,11 @@ return text[
     open_pos + 1:
     close_pos
 ]
-```
+
 
 def get_quickview(report_body):
 
-```
+
 match = re.search(
     r'\bquickview\s*\(',
     report_body,
@@ -97,11 +94,11 @@ return report_body[
     open_pos + 1:
     close_pos
 ]
-```
+
 
 def get_fields_from_quickview(quickview):
 
-```
+
 if quickview is None:
     return []
 
@@ -179,11 +176,11 @@ for line in fields_body.splitlines():
         )
 
 return fields
-```
+
 
 def extract_reports(text):
 
-```
+
 reports_section = get_reports_section(text)
 
 if reports_section is None:
@@ -241,15 +238,15 @@ for match in pattern.finditer(
     )
 
 return results
-```
+
 
 def main():
 
-```
+
 input_file = (
     sys.argv[1]
     if len(sys.argv) > 1
-    else "fields(3).ds"
+    else "fields.ds"
 )
 
 output_file = (
@@ -306,7 +303,7 @@ for item in results:
             len(item["fields"]),
             "fields"
         )
-```
+
 
 if **name** == "**main**":
 main()
