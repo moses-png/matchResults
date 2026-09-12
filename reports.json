@@ -466,7 +466,7 @@
       "Site",
       "Display_Name_Asset",
       "Severity",
-      "attachments",
+      "Attachments",
       "Labour_Total",
       "Parts_Total",
       "Resolve_Issue",
@@ -1129,7 +1129,7 @@
       "Number_Of_Work_Order_Tasks",
       "Severity",
       "Issue_Status",
-      "attachments",
+      "Attachments",
       "Labour_Total",
       "Parts_Total",
       "Total_Service_Task_Cost"
