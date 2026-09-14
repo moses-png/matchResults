@@ -7,27 +7,47 @@
       "Display_Name_Voucher_Type",
       "Voucher_Number",
       "Employee",
-      "Date_Time_In",
+      "Display_Name_Employee",
       "Issued_By",
       "Display_Name_Issued_By",
+      "Date_Time_In",
       "Site",
       "Display_Name_Site",
+      "Received_By",
+      "Display_Name_Received_By",
       "Date_Time_Out",
       "Hours_Worked",
       "Shift",
       "Voucher_Status",
+      "Not_Created",
+      "Reason_Why_Not_Created",
+      "Opening_Vouchers",
+      "Vouchers_Issued",
+      "Vouchers_Returned",
+      "Outstanding_Vouchers",
       "Management_Location",
-      "Machine_Start_of_Day",
+      "Asset",
       "Start_Time",
       "Odometer_Start",
       "Fuel_Start_Level",
       "Item",
       "Display_Name_Item",
       "Quantity_To_Be_Created",
+      "Employee_Cost",
       "Voucher_Cost",
       "End_Time",
+      "Quantity_Created",
+      "Odometer_End",
+      "Fuel_End_Level",
+      "Allow_Excess_Material_Issued",
+      "Reason_Why_Material_Issued_Exceeded_Formula",
       "Manager_Time",
       "Cancel_Voucher",
+      "Cancellation_Reason",
+      "Employee_Taking_To_Head_Office",
+      "How_to_Take_to_Head_Office",
+      "Case_Number",
+      "Time_Sent_to_Head_Office",
       "Seen",
       "Reason_for_not_Seen",
       "Time_Checked",
@@ -40,7 +60,8 @@
       "Created_By_Time",
       "Updated_By_Name",
       "Updated_By_Email",
-      "Updated_By_Time"
+      "Updated_By_Time",
+      "Added_User"
     ]
   },
   {
@@ -48,13 +69,38 @@
     "fields": [
       "Customer_Name",
       "Customer_Type",
+      "Customer",
+      "Display_Name_Customer",
       "Customer_Status",
-      "Total_Sales_Orders",
+      "Credit_Allowed",
       "Credit_Limit",
+      "Customer_Code",
+      "Phone_Number",
+      "Email",
+      "Credit_Days_Allowed",
+      "Current_Outstanding_Balance",
+      "Available_Credit",
+      "Credit_Status",
+      "Delivery_Note_Required",
+      "Special_Pricing_Allowed",
+      "Purchase_Order_Required",
+      "Tax_Invoice_Required",
+      "TIN_Number",
+      "Total_Quotations",
+      "Total_Sales_Orders",
       "Total_Revenue",
       "Total_Paid",
       "Outstanding_Balance",
-      "Last_Purchase_Date"
+      "Last_Purchase_Date",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
@@ -71,6 +117,7 @@
       "Sales_Type",
       "Card_Number",
       "Delivery_Note",
+      "Display_Name_Delivery_Note",
       "Item",
       "Display_Name_Item",
       "Unit_Of_Measure",
@@ -81,6 +128,7 @@
       "Quantity_Available",
       "Number_Plate",
       "Display_Name_Number_Plate",
+      "Truck_Movement_Voucher_Status",
       "Truck_Type",
       "Truck_Measurement",
       "Truck_Size_1",
@@ -109,7 +157,10 @@
       "Created_By_Time",
       "Updated_By_Name",
       "Updated_By_Email",
-      "Updated_By_Time"
+      "Updated_By_Time",
+      "ID",
+      "Gate_Pass_Card",
+      "Tractor_Work_Status"
     ]
   },
   {
@@ -136,7 +187,16 @@
       "Tax_Type",
       "Tax_Amount",
       "Line_Total",
-      "Issue_Status"
+      "Issue_Status",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
@@ -156,32 +216,54 @@
       "Balance_Due",
       "Send_Invoice",
       "Invoice_Status",
-      "Payment_Status"
+      "Payment_Status",
+      "Display_Name_Company",
+      "Display_Name_Customer",
+      "Fiscal_Document_Number",
+      "Date_Sent",
+      "Cancel_Invoice",
+      "Reason_Why_Cancelled",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
     "report": "All_Invoice_Details",
     "fields": [
       "Details_Date",
-      "Display_Name_Voucher",
       "Invoice",
-      "Display_Name_Invoice",
       "Line_Number",
       "Item",
+      "Display_Name_Voucher",
       "Details",
       "Quantity",
       "Rate",
       "Line_Total",
-      "Tax_Amount",
-      "Tax_Type",
       "Site",
       "Account",
       "Group",
-      "Display_Name_Group",
       "Source_Record_ID",
       "Source_Form",
+      "Invoice_Details_Status",
+      "Employee_Voucher",
+      "Display_Name_Employee_Voucher",
+      "Truck_Movement_Voucher",
+      "Display_Name_Invoice",
+      "Sales_Voucher",
+      "Note_Image",
+      "Tax_Type",
+      "Tax_Amount",
       "Last_Synced_Group_Amount",
+      "Display_Name_Group",
       "Last_Synced_Group_ID",
+      "Notes",
       "User_Name",
       "User_Email",
       "User_Role",
@@ -218,23 +300,25 @@
   {
     "report": "All_Document_Keys",
     "fields": [
+      "Document_Key_ID",
       "Voucher_Type",
       "Prefix",
       "Next_Number",
       "Document_Key_Status",
       "Notes",
-      "User_Name",
-      "User_Email"
+      "Max_Number"
     ]
   },
   {
     "report": "All_Stock_Bundling_Notes",
     "fields": [
-      "Voucher",
+      "Display_Name_Voucher",
       "Line_Number",
       "Item",
+      "Display_Name_Item",
       "Quantity_To_Be_Created",
       "Quantity_Created",
+      "Voucher",
       "Asset",
       "Stock_Receiving_Detail",
       "Stock_Status"
@@ -252,6 +336,7 @@
       "Store_Available_Stock",
       "Quantity",
       "Unit_Of_Measure",
+      "Quantity_in_Base_Unit_Of_Measure",
       "Line_Total",
       "Taken_By",
       "Status"
@@ -260,46 +345,35 @@
   {
     "report": "All_Employee_Issuing_Details",
     "fields": [
+      "Voucher",
       "Display_Name_Voucher",
       "Line_Number",
       "Display_Name_Item",
       "Quantity",
       "Cost",
       "Line_Total",
-      "Voucher"
+      "Item_Issuing_Detail",
+      "Source_Record_ID",
+      "Source_Form"
     ]
   },
   {
     "report": "All_Occurency_Reports",
     "fields": [
+      "Voucher",
       "Time",
       "Incident_Type",
-      "Incident",
-      "Voucher",
-      "User_Name",
-      "User_Email",
-      "User_Role"
+      "Incident"
     ]
   },
   {
     "report": "All_Item_Issuing_Vouchers",
     "fields": [
-      "Item_Issuing_Date",
-      "Display_Name_Item_Issuing_Voucher",
       "Store",
-      "Display_Name_Store",
-      "Current_Site",
-      "Issued_By",
       "Item_Issuing_Voucher",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_By_Name",
-      "Updated_By_Email",
-      "Updated_By_Time"
+      "Item_Issuing_Date",
+      "Current_Site",
+      "Issued_By"
     ]
   },
   {
@@ -315,28 +389,53 @@
     "report": "All_Service_Details",
     "fields": [
       "Bill",
+      "Display_Name_Bill",
       "Service",
+      "Display_Name_Service",
+      "Invoice",
+      "Truck_Movement_Voucher",
+      "Display_Name_Voucher",
       "Description",
       "Quantity",
       "Rate",
       "Line_Total",
-      "Last_Synced_Group_Amount"
+      "Last_Synced_Group_Amount",
+      "Last_Synced_Group_ID",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
     "report": "All_Bills",
     "fields": [
-      "Bill_Type",
+      "Company",
+      "Display_Name_Company",
       "Bill_Date",
+      "Bill_Type",
+      "Vendor",
+      "Employee_Vendor",
+      "Sales_Voucher",
+      "Invoice",
+      "Customer",
+      "Display_Name_Vendor",
       "Bill_Name",
       "Bill_Number",
       "Bill_Total",
       "Services_Total",
       "Total_Amount",
-      "Balance_Due",
       "Tax_Amount",
+      "Discount_Amount",
       "Amount_Due",
       "Amount_Paid",
+      "Balance_Due",
+      "Billed",
       "Bill_Status",
       "Payment_Status"
     ]
@@ -344,10 +443,11 @@
   {
     "report": "All_Bill_Details",
     "fields": [
-      "Stock_Receiving_Details",
+      "Reference",
       "Details_Date",
       "Line_Number",
       "Display_Name_Item",
+      "Expense_Type",
       "Quantity",
       "Unit_Of_Measure",
       "Rate",
@@ -358,20 +458,26 @@
       "Current_Site",
       "Source_Form",
       "Source_Record_ID",
-      "Bill_Details_Status"
-    ]
-  },
-  {
-    "report": "All_Stock_Receiving_Vouchers",
-    "fields": [
-      "Stock_Receiving_Book",
-      "Display_Name_Stock_Receiving_Book",
-      "Received_By",
-      "Store",
-      "Display_Name_Store",
-      "Stock_Receiving_Date",
-      "Business_Site",
+      "Bill_Details_Status",
+      "Stock_Receiving_Details",
+      "Bill",
+      "Display_Name_Bill",
+      "Source",
+      "Parts_Consumables",
+      "Item",
+      "Display_Name_Unit_Of_Measure",
+      "Base_Unit_Of_Measure",
+      "Quantity_In_Base_Unit",
+      "Quantity_Billable",
+      "Rate_In_Base_Unit",
+      "Previous_Bill",
+      "Display_Name_Group",
+      "Business_Division_Details",
+      "Display_Name_Division",
       "Display_Name_Business_Site",
+      "Business_Division",
+      "Display_Name_Business_Division",
+      "Last_Synced_Group_Amount",
       "User_Name",
       "User_Email",
       "User_Role",
@@ -381,6 +487,15 @@
       "Updated_By_Name",
       "Updated_By_Email",
       "Updated_By_Time"
+    ]
+  },
+  {
+    "report": "All_Stock_Receiving_Vouchers",
+    "fields": [
+      "Stock_Receiving_Book",
+      "Stock_Receiving_Date",
+      "Received_By",
+      "Store"
     ]
   },
   {
@@ -406,19 +521,19 @@
       "Display_Name_Purchase_Order",
       "Purchase_Order_Number",
       "Purchase_Order_Details_Number",
-      "Item",
       "Display_Name_Item",
-      "Unit_Cost",
       "Stock_Condition",
       "Quantity_Ordered",
-      "Quantity_in_Base_Unit_Of_Measure",
       "Unit_Of_Measure",
-      "Display_Name_Unit_Of_Measure",
-      "Quantity_Remaining",
-      "Quantity_Received",
-      "Line_Total",
-      "Receiving_Status",
       "Purchase_Order",
+      "Item",
+      "Display_Name_Unit_Of_Measure",
+      "Quantity_in_Base_Unit_Of_Measure",
+      "Unit_Cost",
+      "Line_Total",
+      "Quantity_Received",
+      "Quantity_Remaining",
+      "Receiving_Status",
       "Quantity_Billable",
       "Quantity_Billed",
       "Quantity_Unbilled",
@@ -449,77 +564,40 @@
   {
     "report": "All_Asset_Issues",
     "fields": [
-      "Issue_Number",
       "Asset",
+      "Reported_Date",
+      "Issue_Number",
+      "Issue_Description",
       "Current_Site",
       "Current_Custodian",
-      "Employee_Voucher",
-      "Odometer_Reading",
-      "Reported_Date",
-      "Issue_Description",
+      "Reported_By",
+      "Site",
       "Issue",
       "Issue_Status",
       "Number_Of_Work_Order_Tasks",
       "Total_Service_Task_Cost",
+      "Employee_Voucher",
       "Voucher",
-      "Reported_By",
-      "Site",
       "Display_Name_Asset",
       "Severity",
       "Attachments",
-      "Labour_Total",
-      "Parts_Total",
-      "Resolve_Issue",
-      "Reason_Why_Resolved",
-      "Work_Order_Number",
-      "Work_Order_Date",
-      "Work_Order_Odometer_Reading",
-      "Work_Order_in_Charge_Of",
-      "Display_Name_Work_Order_in_Charge_Of",
-      "Work_Order_Status",
-      "Cancel_Work_Order",
-      "Reason_Why_Cancelled",
-      "Overall_Start_Date",
-      "Odometer_Reading_Started",
-      "Overall_End_Date",
-      "Odometer_Reading_Ended",
       "Source_Form",
-      "Source_Record_ID",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_By_Name",
-      "Updated_By_Email",
-      "Updated_By_Time"
+      "Source_Record_ID"
     ]
   },
   {
     "report": "All_Purchase_Orders",
     "fields": [
       "PO_Type",
-      "Display_Name_Company",
-      "Company",
       "PO_Number",
       "PO_Date",
       "Receive_Status",
-      "PO_Status",
       "PO_Total",
+      "PO_Status",
       "PO_Billed_Total",
       "Bill_Status",
       "PO_Total_Paid",
-      "Payment_Status",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_By_Name",
-      "Updated_By_Email",
-      "Updated_By_Time"
+      "Payment_Status"
     ]
   },
   {
@@ -536,9 +614,7 @@
       "Date_Time_Approved",
       "Approved_By_Email",
       "Date_Time_Work_Completed",
-      "Odometer_Reading_Completed",
       "Completed_By_Email",
-      "Odometer_Reading_Checked",
       "Service_Task_Checkbox",
       "Checked_By_Email"
     ]
@@ -558,17 +634,13 @@
   {
     "report": "All_Parts___Consumables",
     "fields": [
-      "Work_Order_Task_Number",
+      "Display_Name_Work_Order_Task_Number",
       "Line_Number",
       "Display_Name_Item_Labour",
       "Description",
       "Quantity",
-      "Unit_Of_Measure",
-      "Unit_Cost",
-      "Line_Total",
-      "Source_Record_ID",
-      "Source_Form",
-      "Item_Status"
+      "Quantity_In_Base_Unit",
+      "Unit_Of_Measure"
     ]
   },
   {
@@ -577,48 +649,82 @@
       "Sequence_Key",
       "Next_Number",
       "Max_Number",
-      "Is_Active",
       "User_Name",
       "User_Email",
-      "User_Role"
+      "User_Role",
+      "Status"
     ]
   },
   {
     "report": "All_Labour",
     "fields": [
-      "Labour_Name",
       "Labour_ID",
-      "Status",
+      "Labour_Name",
       "Notes",
-      "User_Name",
-      "User_Email",
-      "User_Role"
+      "Status"
     ]
   },
   {
     "report": "All_Payment_Receipt_Vouchers",
     "fields": [
+      "Receiving_Account",
+      "Display_Name_Receiving_Account",
       "Payment_Receipt_Number",
       "Payment_Receipt_Date",
+      "Cashier_Envelope",
+      "Display_Name_Cashier_Envelope",
+      "Cash_Envelope",
+      "Display_Name_Cash_Envelope",
       "Customer",
       "Display_Name_Customer",
       "Total_Amount_Received",
       "Total_Charges",
-      "Total_Amount_Allocated"
+      "Total_Amount_Allocated",
+      "Total_Amount_Not_Allocated",
+      "Payment_Receipt_Voucher_Status",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time",
+      "Payment_Voucher"
     ]
   },
   {
     "report": "All_Payment_Receipt_Details",
     "fields": [
-      "Payment_Document",
+      "Payment_Type",
+      "Credit_Note_Voucher",
+      "Payment_Receipt_Voucher",
+      "Customer_Deposit_Voucher",
       "Display_Name_Voucher",
       "Line_Number",
+      "Payment_Document",
+      "Sales_Voucher",
+      "Invoice",
+      "Customer_Deposit_Number",
       "Display_Name_Invoice_Voucher",
+      "Customer",
+      "Delivery_Note",
       "Amount_Due",
       "Amount_Not_Allocated",
       "Amount_Allocated",
       "Amount_Credited",
-      "Balance_Due"
+      "Balance_Due",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time",
+      "Added_Time"
     ]
   },
   {
@@ -640,21 +746,44 @@
       "Credit_Note_Date",
       "Sales_Voucher",
       "Display_Name_Sales_Voucher",
+      "Amount_Due",
+      "Credit_Limit",
+      "Customer",
       "Display_Name_Customer",
+      "Current_Outstanding_Balance",
+      "Available_Credit",
       "Credit_Amount",
-      "Customer"
+      "Credit_Days_Allowed",
+      "Due_Date",
+      "Balance_Due",
+      "Cancel_Credit_Note_Voucher",
+      "Reason_why_Cancelled",
+      "Credit_Note_Status",
+      "Notes",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
-    "report": "All_Item_Issuing_Details1",
+    "report": "All_Voucher_Issuing_Details",
     "fields": [
-      "Display_Name_Voucher",
       "Voucher",
+      "Display_Name_Voucher",
       "Line_Number",
       "Display_Name_Item",
       "Quantity",
       "Cost",
-      "Line_Total"
+      "Line_Total",
+      "Item_Issuing_Detail",
+      "Source_Form",
+      "Source_Record_ID"
     ]
   },
   {
@@ -665,8 +794,8 @@
       "Line_Number",
       "Display_Name_Item",
       "Quantity_Received",
-      "Source_Record_ID",
-      "Source_Form"
+      "Source_Form",
+      "Source_Record_ID"
     ]
   },
   {
@@ -691,8 +820,9 @@
       "Line_Number",
       "Display_Name_Vendor",
       "Payment_Document",
-      "Display_Name_Bill",
+      "Bill",
       "Amount_Due",
+      "Amount_Not_Allocated",
       "Amount_Allocated",
       "Amount_Paid",
       "Balance_Due"
@@ -755,18 +885,52 @@
     "report": "All_Truck_Measurements",
     "fields": [
       "Site",
+      "Display_Name_Site",
       "Voucher",
+      "Display_Name_Voucher",
       "Receipt_Officer",
+      "Phone_Used_Site",
       "Line_Number",
       "Number_Plate",
+      "Display_Name_Number_Plate",
       "Truck_Type",
+      "Number_of_Tyres",
+      "Front_Image",
+      "Front_Side_Image",
+      "Bed_Length",
+      "Bed_Width",
+      "Bed_Height",
+      "Bed_Height_2",
       "Truck_Size_1",
       "Truck_Size_2",
+      "Time_Measured",
+      "Bed_Length_Confirmed",
+      "Bed_Width_Confirmed",
+      "Bed_Height_Confirmed",
+      "Bed_Height_2_Confirmed",
       "Truck_Size_1_Confirmed",
       "Truck_Size_2_Confirmed",
+      "Time_Confirmed",
+      "Bed_Length_Difference",
+      "Bed_Height_Difference",
+      "Bed_Width_Difference",
+      "Bed_Height_2_Difference",
       "Truck_Size_1_Difference",
       "Truck_Size_2_Difference",
-      "Document_Stage"
+      "Measurement_Status",
+      "Document_Stage",
+      "Measurement_Checkbox",
+      "Time_Checked",
+      "Head_Office_Supervisor",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
@@ -796,13 +960,41 @@
   {
     "report": "All_Delivery_Notes",
     "fields": [
+      "Receipt_Officer_Daily_Voucher",
+      "Display_Name_Receipt_Officer_Daily_Voucher",
       "Site",
       "Display_Name_Site",
-      "Receipt_Officer_Daily_Voucher",
       "Delivery_Note_Date",
       "Delivery_Note_Number",
       "Customer",
-      "Display_Name_Customer"
+      "Display_Name_Customer",
+      "Customer_Location",
+      "Purchase_Order",
+      "Display_Name_Purchase_Order",
+      "Purchase_Order_Details",
+      "Received_By",
+      "Number_Plate",
+      "Truck_Type",
+      "TSF_Number",
+      "Driver_Name",
+      "Turn_Boy_Name",
+      "Prepared_By",
+      "Display_Name_Prepared_By",
+      "Sales_Voucher",
+      "Payment_Receipt",
+      "Cancel_Voucher",
+      "Reason_Why_Cancelled",
+      "Delivery_Note_Status",
+      "Notes",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
@@ -954,6 +1146,8 @@
     "fields": [
       "Site",
       "Voucher",
+      "Receipt_Officer",
+      "Phone_Used_Site",
       "Line_Number",
       "Number_Plate",
       "Truck_Type",
@@ -980,103 +1174,334 @@
     ]
   },
   {
-    "report": "All_Sales_Returns",
+    "report": "All_Fuel_Receiving_Vouchers",
     "fields": [
-      "Sales_Return_Number",
-      "Sales_Return_Date",
-      "Sales_Voucher",
-      "Customer",
-      "Sales_Type",
-      "Return_Type",
-      "Sub_Total",
-      "Grand_Total",
-      "Amount_Paid",
-      "Sales_Return_Status"
+      "Fuel_Receiving_Voucher",
+      "Fuel_Issuing_Time",
+      "Issued_By",
+      "Supplied_By",
+      "Quantity",
+      "Rate",
+      "Total",
+      "Voucher",
+      "Asset",
+      "Fuel_Level_Before",
+      "Fuel_Level_After",
+      "Status"
     ]
   },
   {
-    "report": "All_Sales_Return_Details",
+    "report": "All_Machine_Start_Of_Day",
     "fields": [
-      "Sales_Return_Number",
-      "Customer",
-      "Sales_Voucher_Detail",
-      "Line_Number",
-      "Sales_Return_Detail_Number",
-      "Item",
-      "Quantity_Sold",
-      "Unit_Of_Measure",
-      "Quantity_To_Be_Returned",
-      "Unit_Price",
-      "Quantity_Remaining",
-      "Status",
-      "Line_Total"
-    ]
-  },
-  {
-    "report": "Uninvoiced_Details",
-    "fields": [
-      "Invoice",
-      "Details_Date",
       "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Voucher_Type",
+      "Display_Name_Site",
+      "Display_Name_Asset_Type",
+      "Asset",
+      "Display_Name_Asset",
+      "Voucher",
+      "Odometer_Start",
+      "Fuel_Start_Level",
+      "Odometer_Start_Image",
+      "Time_Started",
+      "Odometer_End",
+      "Fuel_End_Level",
+      "Odometer_End_Image",
+      "Time_Ended",
+      "Voucher_Status",
+      "Notes",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
+    ]
+  },
+  {
+    "report": "All_Machine_Jobs",
+    "fields": [
+      "Job_ID",
+      "Job_No",
+      "Job_Name",
+      "Machine_Job_Status",
+      "Notes"
+    ]
+  },
+  {
+    "report": "All_Tractor_Work_Reports",
+    "fields": [
+      "Voucher",
+      "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Site",
+      "Display_Name_Asset",
       "Line_Number",
-      "Item",
-      "Details",
-      "Quantity",
-      "Rate",
+      "Location"
+    ]
+  },
+  {
+    "report": "All_Truck_Movement_Vouchers",
+    "fields": [
+      "Machine_Start_Of_Day",
+      "Voucher",
+      "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Site",
+      "Display_Name_Asset",
+      "Number_Plate_Truck_Register",
+      "Line_Number",
+      "Job",
+      "Display_Name_Job",
+      "Card",
+      "Display_Name_Card",
+      "Work_Order_Task",
+      "Task_Location",
+      "Small_Notes",
+      "Truck_Movement_Voucher",
+      "Work_Done",
+      "Tractor_Work_Report",
+      "Batch_Number_From",
+      "Party_From",
+      "Display_Name_Party_From",
+      "Party_Location_From",
+      "Site_From",
+      "Display_Name_Site_From",
+      "Site_Location_From",
+      "Pick_Up_From",
+      "Pick_Up_Image",
+      "Odometer_Start",
+      "Time_Start",
+      "Delivery_Location",
+      "Batch_Number_To",
+      "Party_To",
+      "Display_Name_Party_To",
+      "Party_Location_To",
+      "Site_To",
+      "Display_Name_Site_To",
+      "Site_Location_To",
+      "Delivery_To",
+      "Odometer_End",
+      "Time_End",
+      "Delivery_To_Image",
+      "Cancel_Voucher",
+      "Reason_Why_Cancelled",
+      "Truck_Movement_Voucher_Status",
+      "Notes",
+      "Invoice_Details",
+      "Material_Cost",
+      "Service_Cost",
+      "Fuel_Cost",
+      "Labour_Cost",
       "Line_Total",
-      "Tax_Type",
-      "Tax_Amount",
+      "Cost_Per_Odometer",
+      "Line_Duration_Minutes",
+      "Line_Distance_Travelled",
+      "User_Name",
+      "User_Role",
+      "User_Email",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
+    ]
+  },
+  {
+    "report": "All_Drager_Work_Reports",
+    "fields": [
+      "Voucher",
+      "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Site",
+      "Display_Name_Asset",
+      "Line_Number",
+      "Location"
+    ]
+  },
+  {
+    "report": "All_Card_Sequences",
+    "fields": [
       "Site",
-      "Account",
-      "Group",
-      "Source_Record_ID",
-      "Source_Form",
-      "Last_Synced_Group_Amount",
-      "Last_Synced_Group_ID"
+      "Prefix",
+      "Next_Number",
+      "Rate_per_CBM",
+      "Card_Status",
+      "Notes"
     ]
   },
   {
-    "report": "UnBilled_Details",
+    "report": "All_Stock_Productions",
     "fields": [
-      "Bill",
-      "Reference",
+      "Time_Started",
+      "Materials_Produced",
+      "Site",
+      "Display_Name_Site",
+      "Batch_Number",
+      "Display_Name_Site_Location",
+      "Site_Location"
+    ]
+  },
+  {
+    "report": "All_Batch_Stocks",
+    "fields": [
+      "Batch_Number",
+      "Display_Name_Batch_Number",
       "Line_Number",
-      "Details_Date",
-      "Display_Name_Item",
-      "Quantity",
-      "Unit_Of_Measure",
-      "Rate",
-      "Line_Total",
-      "Details",
-      "Account",
-      "Group",
-      "Current_Site",
-      "Source_Form",
-      "Source_Record_ID",
-      "Bill_Details_Status"
+      "Batch_Time",
+      "Batch_Type",
+      "Reference",
+      "Quantity"
     ]
   },
   {
-    "report": "Available_Workers_Concrete_Products",
+    "report": "All_Cash_Envelopes",
     "fields": [
+      "Site",
+      "Display_Name_Site",
+      "Cashier_Envelope",
+      "Display_Name_Cashier_Envelope",
+      "Cash_Envelope_Date",
+      "Cash_Envelope_Number",
+      "Cash_Envelope_Total",
+      "Cash_Envelope_Status",
+      "Notes",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
+    ]
+  },
+  {
+    "report": "All_Kitchen_Voucher_Details",
+    "fields": [
+      "Voucher",
+      "Line_Number",
+      "Display_Name_Voucher",
+      "Employee"
+    ]
+  },
+  {
+    "report": "All_Customer_Locations",
+    "fields": [
+      "Customer_Location_ID",
+      "Customer",
+      "Location_Name",
+      "Notes",
+      "Status"
+    ]
+  },
+  {
+    "report": "Returned_Vouchers_Gomba_Site",
+    "fields": [
+      "Voucher_Number",
       "Document_Type",
       "Voucher_Type",
-      "Voucher_Number",
       "Employee",
       "Issued_By",
-      "Date_Time_In"
+      "Date_Time_In",
+      "Received_By",
+      "Date_Time_Out",
+      "Hours_Worked",
+      "Voucher_Status",
+      "Manager_Time",
+      "Cancel_Voucher",
+      "Cancellation_Reason"
     ]
   },
   {
-    "report": "Open_Purchase_Orders",
+    "report": "Available_Workers_Gomba_Site",
+    "fields": [
+      "Voucher_Number",
+      "Document_Type",
+      "Voucher_Type",
+      "Employee",
+      "Issued_By",
+      "Date_Time_In",
+      "Received_By",
+      "Date_Time_Out",
+      "Hours_Worked",
+      "Voucher_Status",
+      "Manager_Time",
+      "Cancel_Voucher",
+      "Cancellation_Reason"
+    ]
+  },
+  {
+    "report": "Open_Asset_Issues_Gomba_Site",
+    "fields": [
+      "Issue_Number",
+      "Asset",
+      "Current_Site",
+      "Current_Custodian",
+      "Employee_Voucher",
+      "Odometer_Reading",
+      "Reported_Date",
+      "Issue_Description",
+      "Issue",
+      "Issue_Status",
+      "Number_Of_Work_Order_Tasks",
+      "Total_Service_Task_Cost"
+    ]
+  },
+  {
+    "report": "No_Work_Order_Asset_Issues_Gomba_Site",
+    "fields": [
+      "Issue_Number",
+      "Asset",
+      "Current_Site",
+      "Current_Custodian",
+      "Employee_Voucher",
+      "Odometer_Reading",
+      "Reported_Date",
+      "Issue_Description",
+      "Issue",
+      "Issue_Status",
+      "Number_Of_Work_Order_Tasks",
+      "Total_Service_Task_Cost"
+    ]
+  },
+  {
+    "report": "Sales_Voucher_Cancellation_List_Report",
+    "fields": [
+      "Sales_Voucher_Number",
+      "Processed",
+      "Sales_Voucher",
+      "Status_Message",
+      "User_Name",
+      "User_Email",
+      "User_Role"
+    ]
+  },
+  {
+    "report": "Purchase_Order_Status",
     "fields": [
       "PO_Type",
-      "Company",
       "PO_Number",
       "PO_Date",
       "Receive_Status",
-      "PO_Status",
+      "PO_Status"
+    ]
+  },
+  {
+    "report": "Draft_Purchase_Orders",
+    "fields": [
+      "PO_Type",
+      "PO_Number",
+      "PO_Date",
+      "Receive_Status",
       "PO_Total",
+      "PO_Status",
       "Bill_Status",
       "PO_Billed_Total",
       "Payment_Status",
@@ -1084,67 +1509,278 @@
     ]
   },
   {
-    "report": "Draft_Purchase_Orders",
+    "report": "Machine_End_of_Day",
     "fields": [
-      "PO_Date",
-      "PO_Type",
-      "Company",
-      "PO_Number",
-      "Receive_Status",
-      "PO_Total",
-      "PO_Status",
-      "PO_Billed_Total",
-      "Bill_Status",
-      "PO_Total_Paid",
-      "Payment_Status"
+      "Voucher",
+      "Asset",
+      "Time_Started",
+      "Odometer_Start",
+      "Time_Ended",
+      "Odometer_End",
+      "Voucher_Status"
     ]
   },
   {
-    "report": "Closed_Purchase_Orders",
+    "report": "Truck_Movement_Completed",
     "fields": [
-      "PO_Date",
-      "PO_Type",
-      "Company",
-      "PO_Number",
-      "Receive_Status",
-      "PO_Total",
-      "PO_Status",
-      "PO_Billed_Total",
-      "Bill_Status",
-      "PO_Total_Paid",
-      "Payment_Status"
+      "Voucher",
+      "Line_Number",
+      "Time_Start",
+      "Odometer_Start",
+      "Pick_Up_From",
+      "Delivery_To",
+      "Time_End",
+      "Odometer_End",
+      "Truck_Movement_Voucher_Status"
     ]
   },
   {
-    "report": "Open_Asset_Issues_Concrete_Products",
+    "report": "Unbilled_Details",
+    "fields": [
+      "Reference",
+      "Details_Date",
+      "Line_Number",
+      "Display_Name_Item",
+      "Details",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Rate",
+      "Line_Total",
+      "Account",
+      "Group",
+      "Current_Site",
+      "Source_Form",
+      "Source_Record_ID",
+      "Bill_Details_Status",
+      "Expense_Type"
+    ]
+  },
+  {
+    "report": "Uninvoiced_Details",
+    "fields": [
+      "Details_Date",
+      "Invoice",
+      "Line_Number",
+      "Item",
+      "Display_Name_Voucher",
+      "Details",
+      "Quantity",
+      "Rate",
+      "Line_Total",
+      "Site",
+      "Account",
+      "Group",
+      "Source_Record_ID",
+      "Source_Form",
+      "Invoice_Details_Status"
+    ]
+  },
+  {
+    "report": "All_Site_Locations",
+    "fields": [
+      "Site_Location_ID",
+      "Site",
+      "Site_Location_Name",
+      "Status",
+      "Notes"
+    ]
+  },
+  {
+    "report": "Work_Order_Tasks_Report",
+    "fields": [
+      "Work_Order_Task_Number",
+      "Asset",
+      "Odometer_Reading_Requested",
+      "Odometer_Reading_Completed",
+      "Work_Order",
+      "Vendor_Service_Type",
+      "Labour_Total",
+      "Parts_Total",
+      "Grand_Total",
+      "Work_Order_Task_Status"
+    ]
+  },
+  {
+    "report": "No_Work_Order_Asset_Issues___Masaka_Sites",
     "fields": [
       "Issue_Number",
       "Asset",
-      "Current_Site",
-      "Current_Custodian",
+      "Voucher",
+      "Reported_By",
+      "Site",
       "Odometer_Reading",
       "Reported_Date",
       "Issue",
       "Issue_Description",
-      "Number_Of_Work_Order_Tasks",
-      "Severity",
       "Issue_Status",
-      "Attachments",
-      "Labour_Total",
-      "Parts_Total",
+      "Number_Of_Work_Order_Tasks",
       "Total_Service_Task_Cost"
     ]
   },
   {
-    "report": "No_Work_Order_Asset_Issues_Concrete_Products",
+    "report": "Open_Asset_Issues___Masaka_Sites",
     "fields": [
-      "Employee_Voucher",
-      "Voucher",
-      "Reported_By",
-      "Site",
-      "Issue_Number",
       "Asset",
-      "Display_Name_Asset"
+      "Reported_Date",
+      "Issue_Number",
+      "Issue",
+      "Issue_Description",
+      "Reported_By",
+      "Odometer_Reading",
+      "Issue_Status"
+    ]
+  },
+  {
+    "report": "Masaka_Work_Order_Tasks",
+    "fields": [
+      "Work_Order_Task_Number",
+      "Asset",
+      "Odometer_Reading_Requested",
+      "Work_Order",
+      "Vendor_Service_Type",
+      "Labour_Total",
+      "Parts_Total",
+      "Grand_Total",
+      "Work_Order_Task_Status"
+    ]
+  },
+  {
+    "report": "Gomba_Work_Order_Tasks",
+    "fields": [
+      "Work_Order_Task_Number",
+      "Asset",
+      "Odometer_Reading_Requested",
+      "Work_Order",
+      "Vendor_Service_Type",
+      "Labour_Total",
+      "Parts_Total",
+      "Grand_Total",
+      "Work_Order_Task_Status"
+    ]
+  },
+  {
+    "report": "Delivered_Truck_Movement_Vouchers",
+    "fields": [
+      "Voucher",
+      "Display_Name_Site",
+      "Number_Plate_Truck_Register",
+      "Line_Number",
+      "Job",
+      "Work_Done",
+      "Odometer_Start",
+      "Time_Start",
+      "Pick_Up_From",
+      "Odometer_End",
+      "Time_End",
+      "Delivery_To",
+      "Truck_Movement_Voucher_Status"
+    ]
+  },
+  {
+    "report": "Salaries",
+    "fields": [
+      "Reference",
+      "Bill",
+      "Details_Date",
+      "Line_Number",
+      "Details",
+      "Expense_Type",
+      "Rate",
+      "Quantity",
+      "Line_Total",
+      "Bill_Details_Status",
+      "Account",
+      "Current_Site",
+      "Group",
+      "Source_Form",
+      "Source_Record_ID"
+    ]
+  },
+  {
+    "report": "Available_Workers_China_Site",
+    "fields": [
+      "Voucher_Number",
+      "Document_Type",
+      "Voucher_Type",
+      "Employee",
+      "Issued_By",
+      "Date_Time_In",
+      "Received_By",
+      "Date_Time_Out",
+      "Hours_Worked",
+      "Voucher_Status",
+      "Manager_Time",
+      "Cancel_Voucher",
+      "Cancellation_Reason"
+    ]
+  },
+  {
+    "report": "Draft_Item_Issuing_Details",
+    "fields": [
+      "Issuing_Voucher",
+      "Item_Issuing_Number",
+      "Request_Voucher_Type",
+      "Request_Voucher",
+      "Display_Name_Item",
+      "Stock_Condition",
+      "Store_Available_Stock",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Quantity_in_Base_Unit_Of_Measure",
+      "Line_Total",
+      "Taken_By",
+      "Status"
+    ]
+  },
+  {
+    "report": "Approved_Item_Issuing_Details",
+    "fields": [
+      "Issuing_Voucher",
+      "Item_Issuing_Number",
+      "Request_Voucher_Type",
+      "Request_Voucher",
+      "Display_Name_Item",
+      "Stock_Condition",
+      "Store_Available_Stock",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Quantity_in_Base_Unit_Of_Measure",
+      "Line_Total",
+      "Taken_By",
+      "Status"
+    ]
+  },
+  {
+    "report": "Daily_Machine_Operations_Report",
+    "fields": [
+      "Voucher",
+      "Asset",
+      "Display_Name_Site",
+      "Display_Name_Employee",
+      "Display_Name_Voucher_Type",
+      "Display_Name_Asset_Type",
+      "Time_Started",
+      "Odometer_Start",
+      "Fuel_Start_Level",
+      "Time_Ended",
+      "Odometer_End",
+      "Fuel_End_Level",
+      "Voucher_Status",
+      "Notes"
+    ]
+  },
+  {
+    "report": "Mechanic_Task_Report",
+    "fields": [
+      "Work_Order_Task_Number",
+      "Asset",
+      "Vendor_Service_Type",
+      "Issue",
+      "Labour_Total",
+      "Parts_Total",
+      "Grand_Total",
+      "Task_Description",
+      "Date_Time_Approved"
     ]
   },
   {
@@ -1163,6 +1799,51 @@
       "Display_Name_Voucher_Type",
       "Employee",
       "Issued_By"
+    ]
+  },
+  {
+    "report": "Returned_Vouchers_Gomba_Site",
+    "fields": [
+      "Voucher_Number",
+      "Display_Name_Voucher_Type",
+      "Employee",
+      "Issued_By"
+    ]
+  },
+  {
+    "report": "Available_Workers_Gomba_Site",
+    "fields": [
+      "Voucher_Number",
+      "Display_Name_Voucher_Type",
+      "Employee",
+      "Issued_By"
+    ]
+  },
+  {
+    "report": "Delivered_Truck_Movement_Vouchers",
+    "fields": [
+      "Display_Name_Asset",
+      "Display_Name_Voucher",
+      "Line_Number",
+      "Work_Done"
+    ]
+  },
+  {
+    "report": "Available_Workers_China_Site",
+    "fields": [
+      "Voucher_Number",
+      "Display_Name_Voucher_Type",
+      "Employee",
+      "Issued_By"
+    ]
+  },
+  {
+    "report": "Mechanic_Task_Report",
+    "fields": [
+      "Asset",
+      "Work_Order_Task_Number",
+      "Task_Description",
+      "Issue"
     ]
   }
 ]
