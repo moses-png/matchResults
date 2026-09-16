@@ -1,449 +1,650 @@
 [
   {
-    "report": "Application_Register_Report",
+    "report": "All_Voucher_Register_Report",
     "fields": [
-      "Application_ID",
-      "Application_Name",
-      "Application_Code",
-      "Purpose",
-      "Department_Owner",
-      "Application_Status"
+      "Document_Type",
+      "Voucher_Type",
+      "Display_Name_Voucher_Type",
+      "Voucher_Number",
+      "Employee",
+      "Display_Name_Employee",
+      "Issued_By"
     ]
   },
   {
-    "report": "Form_Register_Report",
+    "report": "All_Asset_Issues",
     "fields": [
-      "Application",
+      "Employee_Voucher",
+      "Voucher",
+      "Reported_By",
+      "Site",
+      "Issue_Number",
+      "Asset",
+      "Display_Name_Asset"
+    ]
+  },
+  {
+    "report": "All_Work_Order_Tasks",
+    "fields": [
+      "Work_Order_Task_Number",
+      "Asset",
+      "Display_Name_Asset",
+      "Odometer_Reading_Requested",
+      "Work_Order",
+      "Display_Name_Work_Order",
+      "Issue"
+    ]
+  },
+  {
+    "report": "All_Parts___Consumables",
+    "fields": [
+      "Work_Order_Task_Number",
+      "Display_Name_Work_Order_Task_Number",
       "Line_Number",
-      "Form_Name",
-      "Form_Link_Name",
-      "Form_Type",
-      "Purpose",
+      "Item",
+      "Display_Name_Item_Labour",
+      "Description",
+      "Quantity"
+    ]
+  },
+  {
+    "report": "All_Document_Keys",
+    "fields": [
+      "Voucher_Type",
+      "Prefix",
+      "Next_Number",
+      "Document_Key_ID",
+      "Document_Key_Status",
+      "Notes",
+      "Max_Number"
+    ]
+  },
+  {
+    "report": "All_Labour",
+    "fields": [
+      "Labour_ID",
+      "Labour_Name",
       "Status",
       "Notes",
-      "Total_Fields",
-      "Total_Required_Fields",
-      "Total_Workflows",
-      "Completion_Percentage"
-    ]
-  },
-  {
-    "report": "Field_Register_Report",
-    "fields": [
-      "Application",
-      "Form",
-      "Line_Number",
-      "Field_Name",
-      "Field_Link_Name",
-      "Form_Field_Type"
-    ]
-  },
-  {
-    "report": "Section_Report",
-    "fields": [
-      "Section_Name",
-      "User_Name",
-      "User_Email",
       "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time"
-    ]
-  },
-  {
-    "report": "Workflow_Register_Report",
-    "fields": [
-      "Order",
-      "Form",
-      "Application",
-      "Workflow_Name",
-      "Record_Event",
-      "Form_Event",
-      "Display_Name_Field_SubForm",
-      "Status"
-    ]
-  },
-  {
-    "report": "Record_Event_Report",
-    "fields": [
-      "Record_Event_Name",
       "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time"
+      "User_Email"
     ]
   },
   {
-    "report": "Form_Event_Report",
+    "report": "All_Fuel_Receiving_Vouchers",
     "fields": [
-      "Display_Name_Record_Event",
-      "Form_Event_Name",
-      "Record_Event",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name"
+      "Fuel_Receiving_Voucher",
+      "Fuel_Issuing_Time",
+      "Issued_By",
+      "Quantity",
+      "Rate",
+      "Total",
+      "Vendor"
     ]
   },
   {
-    "report": "Function_Register_Report",
+    "report": "All_Machine_Start_Of_Day",
     "fields": [
-      "Function_ID",
-      "Application",
-      "Function_Name",
-      "Function_Namespace",
-      "Return_Type",
-      "Arguments"
+      "Voucher",
+      "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Voucher_Type",
+      "Display_Name_Site",
+      "Display_Name_Asset_Type",
+      "Asset"
     ]
   },
   {
-    "report": "Function_Namespace_Report",
+    "report": "All_Machine_Jobs",
     "fields": [
-      "Namespace",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time"
-    ]
-  },
-  {
-    "report": "Return_Type_Report",
-    "fields": [
-      "Return_Type_Name",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time"
-    ]
-  },
-  {
-    "report": "Application_Registers_Export",
-    "fields": [
-      "Application_ID",
-      "Application_Name",
-      "Application_Code",
-      "Purpose",
-      "Application_Status",
+      "Job_ID",
+      "Job_No",
+      "Job_Name",
+      "Machine_Job_Status",
       "Notes",
-      "Main_Owner",
-      "Department_Owner",
-      "Start_Date",
-      "Target_Go_Live_Date",
-      "Actual_Go_Live_Date",
-      "Completion_Percentage",
-      "Total_Forms",
-      "Total_Fields",
-      "Total_Workflows",
-      "Total_Functions",
-      "Total_Errors",
-      "Total_APIs",
-      "Total_Reports",
-      "User_Name",
-      "User_Email",
       "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_By_Name",
-      "Updated_By_Email",
-      "Updated_By_Time"
-    ]
-  },
-  {
-    "report": "Form_Register_Export",
-    "fields": [
-      "Form_ID",
-      "Application",
-      "Page_Section",
-      "Line_Number",
-      "Form_Name",
-      "Form_Link_Name",
-      "Form_Type",
-      "Purpose",
-      "Status",
-      "Notes",
-      "Total_Fields",
-      "Total_Required_Fields",
-      "Total_Workflows",
-      "Completion_Percentage",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_By_Name",
-      "Updated_By_Email",
-      "Updated_By_Time",
-      "Display_Name_Application"
-    ]
-  },
-  {
-    "report": "Field_Register_Export",
-    "fields": [
-      "Application",
-      "Form",
-      "Section",
-      "Line_Number",
-      "Form_Field_Type",
-      "Field_Name",
-      "Field_Link_Name",
-      "Formula",
-      "Lookup_Field",
-      "Lookup_Display_Format",
-      "SubForm",
-      "Set_Filter",
-      "Details",
-      "Notes",
-      "Start_index",
-      "Starts_From",
-      "Mandatory",
-      "No_duplicate_values",
-      "Decision_box_Initial_value",
-      "Display_format",
-      "Max_Digits",
-      "Decimal_Points",
-      "Initial_value",
-      "Character_maximum",
-      "Choices",
-      "Allow_new_entries",
-      "Link_Name",
-      "Set_value_while_adding_new_entries",
-      "Alphabetical_Order",
-      "Allow_Other_Choice",
-      "Advanced_Field_Search",
-      "Data_Security",
-      "Address_Options",
-      "Allowed_Days",
-      "Aspect_ratio",
-      "Browse_Options",
-      "View_Type",
-      "Field_width_customization",
-      "Enable_Sorting",
-      "Compression_image",
-      "From",
-      "To",
-      "Enable",
-      "Contains_personal_data_PII",
-      "Show_field_to",
-      "Default_camera",
-      "Allow_to_switch_camera",
-      "Enable_photo_gallery",
-      "Show_preview_screen",
-      "Submit_form_after_capturing",
-      "Annotation",
-      "Enable_timer",
-      "Get_input_before_the_form_is_displayed",
-      "Field_type",
-      "Field_layout",
-      "Field_size",
-      "Country_code_options",
-      "Default_country_code",
-      "Height",
-      "Target",
-      "Url_options",
-      "Image_options",
-      "Set_default_entries",
-      "Limit_maximum_entries",
-      "Minutes_Interval",
-      "Show_seconds",
-      "Show",
-      "Description_text",
-      "Toolbar_options",
-      "Upload_Type",
-      "File_Upload_Type",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_By_Name",
-      "Updated_By_Email",
-      "Updated_By_Time",
-      "Display_Name_Application",
-      "Display_Name_Section",
-      "Display_Name_Form",
-      "Related_Field",
-      "Bidirectional_Relation1",
-      "Set_Filter_Details"
-    ]
-  },
-  {
-    "report": "Workflow_Register_Export",
-    "fields": [
-      "Workflow_ID",
-      "Application",
-      "Form",
-      "Record_Event",
-      "Form_Event",
-      "Choose_Field",
-      "Choose_SubForm",
-      "Run_this_action",
-      "Action_type_Drop_Down",
-      "Notification",
-      "Data_access",
-      "Integrations",
-      "Workflow_Name",
-      "Script_Code",
-      "Status",
-      "Notes",
-      "Priority",
-      "Tested",
-      "Last_Tested_Date",
-      "Has_Error",
-      "Error_Count",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_By_Name",
-      "Updated_By_Email",
-      "Updated_By_Time",
-      "Order",
-      "Display_Name_Form_Event",
-      "SubForm",
-      "Display_Name_Application",
-      "Display_Name_Form",
-      "Display_Name_Record_Event",
-      "SubForm_Field",
-      "Display_Name_Field_SubForm"
-    ]
-  },
-  {
-    "report": "Function_Register_Export",
-    "fields": [
-      "Function_ID",
-      "Application",
-      "Function_Namespace",
-      "Function_Name",
-      "Return_Type",
-      "Arguments",
-      "Script_Code",
-      "Status",
-      "Last_Tested_Date",
-      "Notes",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_By_Name",
-      "Updated_By_Email",
-      "Updated_By_Time"
-    ]
-  },
-  {
-    "report": "Report_Register_Report",
-    "fields": [
-      "Application",
-      "Display_Name_Application",
-      "Display_Name_Form",
-      "Report_Name",
-      "Report_Link_Name",
-      "Report_Type",
-      "Form",
-      "Page_Section",
-      "Report_Purpose",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_by_Name",
-      "Updated_By_Email",
-      "Updated_By_Time"
-    ]
-  },
-  {
-    "report": "Report_Display_Fields_Report",
-    "fields": [
-      "Report",
-      "Display_Name_Report",
-      "Display_Name_Form",
-      "Form_Field",
-      "Display_Name_Field",
-      "Line_Number",
       "User_Name"
     ]
   },
   {
-    "report": "Report_Filter_Criteria_Report",
+    "report": "All_Tractor_Work_Reports",
     "fields": [
-      "Report",
-      "Display_Name_Report",
-      "Form",
-      "Form_Field",
-      "Display_Name_Field",
-      "Filter_Criteria",
+      "Voucher",
+      "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Site",
+      "Display_Name_Asset",
+      "Line_Number",
+      "Job"
+    ]
+  },
+  {
+    "report": "All_Employee_Issuing_Details",
+    "fields": [
+      "Voucher",
+      "Display_Name_Voucher",
+      "Line_Number",
+      "Quantity",
+      "Display_Name_Item",
+      "Cost",
+      "Line_Total"
+    ]
+  },
+  {
+    "report": "All_Truck_Movement_Vouchers",
+    "fields": [
+      "Voucher",
+      "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Site",
+      "Display_Name_Asset",
+      "Number_Plate_Truck_Register",
       "Line_Number"
     ]
   },
   {
-    "report": "Report_Grouping_Report",
+    "report": "All_Payment_Receipt_Vouchers",
     "fields": [
-      "Report",
-      "Display_Name_Report",
-      "Form",
-      "Form_Field",
-      "Display_Name_Field",
-      "Line_Number",
-      "Line_Number1"
+      "Receiving_Account",
+      "Display_Name_Receiving_Account",
+      "Payment_Receipt_Number",
+      "Payment_Receipt_Date",
+      "Display_Name_Customer",
+      "Total_Amount_Received",
+      "Total_Charges"
     ]
   },
   {
-    "report": "Page_Builder_Report",
+    "report": "All_Payment_Receipt_Details",
     "fields": [
-      "Application",
+      "Payment_Type",
+      "Payment_Receipt_Voucher",
+      "Display_Name_Voucher",
       "Line_Number",
-      "Page_Section_Name",
+      "Payment_Document",
+      "Display_Name_Invoice_Voucher",
+      "Customer"
+    ]
+  },
+  {
+    "report": "All_Payment_Made_Vouchers",
+    "fields": [
+      "Payment_Account",
+      "Display_Name_Payment_Account",
+      "Payment_Made_Number",
+      "Payment_Made_Date",
+      "Vendor_Type",
+      "Vendor",
+      "Employee_Vendor"
+    ]
+  },
+  {
+    "report": "All_Payment_Made_Details",
+    "fields": [
+      "Payment_Type",
+      "Display_Name_Payment_Made_Voucher",
+      "Display_Name_Vendor",
+      "Line_Number",
+      "Payment_Made_Voucher",
+      "Payment_Document",
+      "Display_Name_Bill"
+    ]
+  },
+  {
+    "report": "All_Employee_Receiving_Details",
+    "fields": [
+      "Voucher",
+      "Display_Name_Voucher",
+      "Line_Number",
+      "Display_Name_Item",
+      "Quantity",
+      "Cost",
+      "Line_Total"
+    ]
+  },
+  {
+    "report": "All_Voucher_Issuing_Details",
+    "fields": [
+      "Voucher",
+      "Display_Name_Voucher",
+      "Line_Number",
+      "Display_Name_Item",
+      "Quantity",
+      "Cost",
+      "Formula"
+    ]
+  },
+  {
+    "report": "All_Payment_Charges",
+    "fields": [
+      "Transaction_Type",
+      "Payment_Made_Voucher",
+      "Payment_Receipt_Voucher",
+      "Display_Name_Payment_Voucher",
+      "Line_Number",
+      "Charge_Type",
+      "Charge_Description"
+    ]
+  },
+  {
+    "report": "All_Voucher_Receiving_Details",
+    "fields": [
+      "Voucher",
+      "Display_Name_Voucher",
+      "Line_Number",
+      "Display_Name_Item",
+      "Quantity_Received",
+      "Stock_Receiving_Detail",
+      "Source_Record_ID"
+    ]
+  },
+  {
+    "report": "All_Services",
+    "fields": [
+      "Service_Name_ID",
+      "Service_Name",
+      "Status",
+      "Description",
+      "User_Role",
+      "User_Name",
+      "User_Email"
+    ]
+  },
+  {
+    "report": "All_Service_Details",
+    "fields": [
+      "Service",
+      "Display_Name_Service",
+      "Display_Name_Bill",
+      "Display_Name_Invoice",
+      "Description",
+      "Quantity",
+      "Rate"
+    ]
+  },
+  {
+    "report": "All_Bills",
+    "fields": [
+      "Bill_Date",
+      "Bill_Type",
+      "Vendor",
+      "Employee_Vendor",
+      "Display_Name_Vendor",
+      "Bill_Name",
+      "Bill_Number"
+    ]
+  },
+  {
+    "report": "All_Customers",
+    "fields": [
+      "Customer_Type",
+      "Customer_Name",
+      "Customer_Code",
+      "Customer",
+      "Display_Name_Customer",
+      "Customer_Status",
+      "Phone_Number"
+    ]
+  },
+  {
+    "report": "All_Bill_Details",
+    "fields": [
+      "Bill",
+      "Display_Name_Bill",
+      "Details_Date",
+      "Line_Number",
+      "Reference",
+      "Source",
+      "Display_Name_Item"
+    ]
+  },
+  {
+    "report": "All_Stock_Receiving_Vouchers",
+    "fields": [
+      "Stock_Receiving_Book",
+      "Display_Name_Stock_Receiving_Book",
+      "Received_By",
+      "Stock_Receiving_Date",
+      "Store",
+      "Display_Name_Store",
+      "User_Role"
+    ]
+  },
+  {
+    "report": "All_Stock_Receiving_Details",
+    "fields": [
+      "Stock_Receiving_Voucher",
+      "Display_Name_Stock_Receiving_Voucher",
+      "Store",
+      "Stock_Receiving_Voucher_Number",
+      "Stock_Receiving_Voucher_and_Number",
+      "Display_Name_Received_By",
+      "Receiving_Type"
+    ]
+  },
+  {
+    "report": "All_Customer_Purchase_Orders",
+    "fields": [
+      "Customer",
+      "Display_Name_Customer",
+      "Purchase_Order_Number",
+      "Purchase_Order_Date",
       "User_Name",
       "User_Email",
+      "User_Role"
+    ]
+  },
+  {
+    "report": "All_Customer_Purchase_Order_Details",
+    "fields": [
+      "Display_Name_Customer",
+      "Customer_Purchase_Order",
+      "Display_Name_Purchase_Order",
+      "Line_Number",
+      "Item",
+      "Display_Name_Item",
+      "Quantity_Ordered"
+    ]
+  },
+  {
+    "report": "All_Credit_Notes",
+    "fields": [
+      "Credit_Note_Number",
+      "Credit_Note_Date",
+      "Display_Name_Sales_Voucher",
+      "Amount_Due",
+      "Customer",
+      "Display_Name_Customer",
+      "Credit_Limit"
+    ]
+  },
+  {
+    "report": "All_Customer_Deposit_Details",
+    "fields": [
+      "Customer_Deposit_Number",
+      "Customer_Deposit_Date",
+      "Customer",
+      "Display_Name_Customer",
+      "Total_Amount_Received",
+      "Total_Charges",
+      "Total_Amount_Allocated"
+    ]
+  },
+  {
+    "report": "All_Purchase_Orders",
+    "fields": [
+      "PO_Type",
+      "Company",
+      "Display_Name_Company",
+      "PO_Number",
+      "PO_Date",
+      "Receive_Status",
+      "PO_Status"
+    ]
+  },
+  {
+    "report": "All_Purchase_Order_Details",
+    "fields": [
+      "Display_Name_Purchase_Order",
+      "Purchase_Order_Number",
+      "Purchase_Order_Details_Number",
+      "Item",
+      "Display_Name_Item",
+      "Stock_Condition",
+      "Quantity_Ordered"
+    ]
+  },
+  {
+    "report": "All_Item_Issuing_Vouchers",
+    "fields": [
+      "Item_Issuing_Voucher",
+      "Display_Name_Item_Issuing_Voucher",
+      "Item_Issuing_Date",
+      "Store",
+      "Display_Name_Store",
+      "Current_Site",
+      "Issued_By"
+    ]
+  },
+  {
+    "report": "All_Item_Issuing_Details",
+    "fields": [
+      "Display_Name_Issued_By",
+      "Display_Name_Issuing_Voucher",
+      "Store",
+      "Line_Number",
+      "Item_Issuing_Number",
+      "Issuing_Voucher",
+      "Request_Voucher_Type"
+    ]
+  },
+  {
+    "report": "All_Invoice_Details",
+    "fields": [
+      "Sales_Voucher",
+      "Display_Name_Invoice",
+      "Line_Number",
+      "Item",
+      "Details",
+      "Quantity",
+      "Rate"
+    ]
+  },
+  {
+    "report": "All_Invoices",
+    "fields": [
+      "Company",
+      "Display_Name_Company",
+      "Invoice_Date",
+      "Invoice_Number",
+      "Customer",
+      "Display_Name_Customer",
+      "Sub_Total"
+    ]
+  },
+  {
+    "report": "All_Sales_Voucher_Details",
+    "fields": [
+      "Display_Name_Sales_Voucher",
+      "Line_Number",
+      "Item",
+      "Display_Name_Item",
+      "Store_Item_Stock",
+      "Store",
+      "Display_Name_Store"
+    ]
+  },
+  {
+    "report": "All_Sales_Vouchers",
+    "fields": [
+      "Voucher",
+      "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Site",
+      "Sales_Voucher_Number",
+      "Sales_Voucher_Date",
+      "Customer"
+    ]
+  },
+  {
+    "report": "All_Sequences",
+    "fields": [
+      "Sequence_Key",
+      "Next_Number",
+      "Max_Number",
+      "Is_Active",
+      "User_Name",
+      "User_Email",
+      "User_Role"
+    ]
+  },
+  {
+    "report": "All_Occurency_Report_Details",
+    "fields": [
+      "Time",
+      "Incident_Type",
+      "Incident",
       "User_Role",
+      "User_Name",
+      "User_Email",
       "Created_By_Name"
     ]
   },
   {
-    "report": "Report_Register_Export",
+    "report": "All_Product_Prices",
     "fields": [
-      "Application",
-      "Form",
-      "Page_Section",
-      "Report_Name",
-      "Report_Link_Name",
-      "Report_Purpose",
-      "Report_Type",
-      "User_Name",
-      "User_Email",
-      "User_Role",
-      "Created_By_Name",
-      "Created_By_Email",
-      "Created_By_Time",
-      "Updated_by_Name",
-      "Updated_By_Email",
-      "Updated_By_Time"
+      "Item",
+      "Display_Name_Item",
+      "Unit_Of_Measure",
+      "Display_Name_Unit_Of_Measure",
+      "Unit_Price",
+      "Price_Type",
+      "User_Name"
     ]
   },
   {
-    "report": "Report_Sorting_Report",
+    "report": "All_Meter_Readings",
     "fields": [
-      "Display_Name_Report",
-      "Form",
-      "Form_Field",
-      "Display_Name_Field",
+      "Display_Name_Voucher",
+      "Display_Name_Employee",
+      "Display_Name_Site",
+      "Meter_Type",
+      "Meter",
+      "Unit_Of_Measure",
+      "Previous_Reading_Date"
+    ]
+  },
+  {
+    "report": "All_Special_Tasks_Details",
+    "fields": [
+      "Site",
+      "Display_Name_Site",
+      "Management_Location",
+      "Display_Name_Management_Location",
+      "Task_Name",
+      "Display_Name_Task_Name",
+      "Description"
+    ]
+  },
+  {
+    "report": "All_Material_Request_Vouchers",
+    "fields": [
+      "Material_Request_Number",
+      "Request_Date",
+      "Document_Status",
+      "Works_Coordinator",
+      "Display_Name_Works_Coordinator",
+      "User",
+      "Display_Name_User"
+    ]
+  },
+  {
+    "report": "All_Material_Request_Details",
+    "fields": [
       "Line_Number",
-      "Sort_Order",
-      "Report"
+      "Item",
+      "Display_Name_Item",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Display_Name_Unit_Of_Measure",
+      "Quantity_in_Base_Unit_Of_Measure"
+    ]
+  },
+  {
+    "report": "All_Sales_Returns",
+    "fields": [
+      "Sales_Return_Number",
+      "Sales_Return_Date",
+      "Display_Name_Sales_Voucher",
+      "Customer",
+      "Sales_Type",
+      "Return_Type",
+      "Reason_Why_Returned"
+    ]
+  },
+  {
+    "report": "All_Sales_Return_Details",
+    "fields": [
+      "Display_Name_Sales_Return_Number",
+      "Line_Number",
+      "Sales_Return_Detail_Number",
+      "Customer",
+      "Sales_Voucher_Detail",
+      "Display_Name_Sales_Voucher_Detail",
+      "Item"
+    ]
+  },
+  {
+    "report": "All_Vendors",
+    "fields": [
+      "Vendor_Type",
+      "Vendor_Name",
+      "Vendor_Code",
+      "Vendor",
+      "Display_Name_Vendor",
+      "Vendor_Status",
+      "Phone_Number"
+    ]
+  },
+  {
+    "report": "Permitted_Use_Report",
+    "fields": [
+      "Permitted_Use_Code",
+      "Permitted_Use_Name",
+      "Default_Billing_Frequency",
+      "Security_Deposit_Required",
+      "Approval_Required",
+      "Increment_Allowed",
+      "Utilities_Charged"
+    ]
+  },
+  {
+    "report": "Lease_Register_Report",
+    "fields": [
+      "Lease_Number",
+      "Customer",
+      "Display_Name_Customer",
+      "Permitted_Use",
+      "Display_Name_Permitted_Use",
+      "Asset",
+      "Display_Name_Asset"
+    ]
+  },
+  {
+    "report": "Shop_Handover_Details_Report",
+    "fields": [
+      "Handover_Number",
+      "Lease",
+      "Display_Name_Lease",
+      "Shop_Name",
+      "Asset",
+      "Tenant",
+      "Handover_Date"
+    ]
+  },
+  {
+    "report": "Shop_Take_Back_Details_Report",
+    "fields": [
+      "Take_Back_Number",
+      "Lease",
+      "Display_Name_Lease",
+      "Asset",
+      "Shop_Name",
+      "Tenant",
+      "Shop_Images"
+    ]
+  },
+  {
+    "report": "Application_Register_Report",
+    "fields": [
+      "Application_Number",
+      "Application_Date",
+      "Application_Type",
+      "Full_Name_Company_Name",
+      "Tenant_Type",
+      "Applicant_Name",
+      "National_ID_Passport"
     ]
   }
 ]
