@@ -646,5 +646,29 @@
       "Applicant_Name",
       "National_ID_Passport"
     ]
+  },
+  {
+    "report": "Halls_Register_Report",
+    "fields": [
+      "Asset",
+      "Display_Name_Asset",
+      "Hall_Name",
+      "Status",
+      "Capacity",
+      "Has_Ac",
+      "Has_Generator_Backup"
+    ]
+  },
+  {
+    "report": "Booking_Report",
+    "fields": [
+      "Booking_ID",
+      "Booking_Date",
+      "Client",
+      "Display_Name_Client",
+      "Event_Type",
+      "Event_Name",
+      "Expected_Guests"
+    ]
   }
 ]
