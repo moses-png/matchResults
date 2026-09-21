@@ -1,242 +1,355 @@
 [
   {
-    "report": "All_Voucher_Register_Report",
+    "report": "All_Items",
     "fields": [
-      "Document_Type",
-      "Voucher_Type",
-      "Display_Name_Voucher_Type",
-      "Voucher_Number",
-      "Employee",
-      "Display_Name_Employee",
-      "Issued_By"
+      "Item_Name",
+      "SKU",
+      "Image",
+      "Item_Category",
+      "Base_Unit_Of_Measure",
+      "Default_Cost",
+      "Average_Cost",
+      "Stock_Value",
+      "Stock_On_Hand",
+      "Stock_On_Hand_New",
+      "Stock_In_Service",
+      "Stock_On_Hand_Used",
+      "Reorder_Level",
+      "Item_Status",
+      "Is_Tool"
     ]
   },
   {
-    "report": "All_Asset_Issues",
+    "report": "Unit_Of_Measure_Report",
     "fields": [
-      "Employee_Voucher",
-      "Voucher",
-      "Reported_By",
-      "Site",
-      "Issue_Number",
-      "Asset",
-      "Display_Name_Asset"
+      "Unit_Of_Measure_Name",
+      "Symbol",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
-    "report": "All_Work_Order_Tasks",
+    "report": "All_Item_Categories",
     "fields": [
-      "Work_Order_Task_Number",
-      "Asset",
-      "Display_Name_Asset",
-      "Odometer_Reading_Requested",
-      "Work_Order",
-      "Display_Name_Work_Order",
-      "Issue"
-    ]
-  },
-  {
-    "report": "All_Parts___Consumables",
-    "fields": [
-      "Work_Order_Task_Number",
-      "Display_Name_Work_Order_Task_Number",
-      "Line_Number",
-      "Item",
-      "Display_Name_Item_Labour",
+      "Category_Name",
       "Description",
-      "Quantity"
-    ]
-  },
-  {
-    "report": "All_Document_Keys",
-    "fields": [
-      "Voucher_Type",
-      "Prefix",
+      "Category_Code",
       "Next_Number",
-      "Document_Key_ID",
-      "Document_Key_Status",
-      "Notes",
-      "Max_Number"
+      "Division",
+      "Display_Name_Division",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
-    "report": "All_Labour",
+    "report": "All_Purchase_Order_Details",
     "fields": [
-      "Labour_ID",
-      "Labour_Name",
+      "Purchase_Order",
+      "Item",
+      "Unit_Cost",
+      "Quantity_Ordered",
+      "Quantity_Received",
+      "Quantity_Remaining",
+      "Unit_Of_Measure",
+      "Quantity_in_Base_Unit_Of_Measure",
+      "Line_Total",
+      "Receiving_Status",
+      "Purchase_Order_Number",
+      "Purchase_Order_Details_Number",
+      "Billing_Status",
+      "Display_Name_Purchase_Order",
+      "Display_Name_Item",
+      "Stock_Condition",
+      "Display_Name_Unit_Of_Measure",
+      "Quantity_Billable",
+      "Quantity_Billed",
+      "Quantity_Unbilled",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Email",
+      "Created_By_Name",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
+    ]
+  },
+  {
+    "report": "All_Stock_Receiving_Details",
+    "fields": [
+      "Stock_Receiving_Voucher",
+      "Stock_Receiving_Voucher_and_Number",
+      "Receiving_Type",
+      "Display_Name_Voucher",
+      "Display_Name_Item",
+      "Stock_Condition",
+      "Quantity_to_Receive",
+      "Rate",
+      "Quantity_Received",
+      "Line_Total",
+      "Quantity_in_Base_Unit_Of_Measure_Received",
+      "Unit_Of_Measure_Received",
+      "Stock_Receiving_Details_Status"
+    ]
+  },
+  {
+    "report": "Unit_Of_Measure_Conversion_Report",
+    "fields": [
+      "Item",
+      "Display_Name_Item",
+      "Base_Unit_Of_Measure",
+      "Is_Base_Conversion",
+      "Alternate_Unit_Of_Measure",
+      "Conversion_Factor"
+    ]
+  },
+  {
+    "report": "All_Item_Issuing_Vouchers",
+    "fields": [
+      "Item_Issuing_Date",
+      "Item_Issuing_Voucher",
+      "Display_Name_Item_Issuing_Voucher",
+      "Issued_By",
+      "Store",
+      "Display_Name_Store",
+      "Current_Site",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
+    ]
+  },
+  {
+    "report": "All_Item_Issuing_Details_Report",
+    "fields": [
+      "Issuing_Voucher",
+      "Display_Name_Issued_By",
+      "Display_Name_Issuing_Voucher",
+      "Store",
+      "Line_Number",
+      "Item_Issuing_Number",
+      "Request_Voucher_Type",
+      "Work_Order_Task",
+      "Employee_Voucher",
+      "Sand_Sales",
+      "Stock_Sales",
+      "Stock_Bundling_Note",
+      "Request_Voucher",
+      "Item",
+      "Display_Name_Item",
+      "Expected_Return_Date",
+      "Cost",
+      "Stock_Condition",
+      "Store_Available_Stock",
+      "Global_Available_Stock",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Display_Name_Unit_Of_Measure",
+      "Quantity_in_Base_Unit_Of_Measure",
+      "Quantity_Returned",
+      "Quantity_Returned_in_Base_Unit_Of_Measure",
+      "Line_Total",
+      "Taken_By",
+      "Display_Name_Taken_By",
+      "Didn_t_Come_Back",
+      "Why",
+      "Reason_Why_Didn_t_Come_Back",
       "Status",
       "Notes",
-      "User_Role",
+      "Cancel_This_Line_Item",
+      "Reason_Why_Cancelled",
       "User_Name",
-      "User_Email"
-    ]
-  },
-  {
-    "report": "All_Fuel_Receiving_Vouchers",
-    "fields": [
-      "Fuel_Receiving_Voucher",
-      "Fuel_Issuing_Time",
-      "Issued_By",
-      "Quantity",
-      "Rate",
-      "Total",
-      "Vendor"
-    ]
-  },
-  {
-    "report": "All_Machine_Start_Of_Day",
-    "fields": [
-      "Voucher",
-      "Display_Name_Voucher",
-      "Display_Name_Employee",
-      "Display_Name_Voucher_Type",
-      "Display_Name_Site",
-      "Display_Name_Asset_Type",
-      "Asset"
-    ]
-  },
-  {
-    "report": "All_Machine_Jobs",
-    "fields": [
-      "Job_ID",
-      "Job_No",
-      "Job_Name",
-      "Machine_Job_Status",
-      "Notes",
+      "User_Email",
       "User_Role",
-      "User_Name"
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
     ]
   },
   {
-    "report": "All_Tractor_Work_Reports",
+    "report": "All_Stock_Transactions",
     "fields": [
-      "Voucher",
-      "Display_Name_Voucher",
-      "Display_Name_Employee",
-      "Display_Name_Site",
-      "Display_Name_Asset",
-      "Line_Number",
-      "Job"
-    ]
-  },
-  {
-    "report": "All_Employee_Issuing_Details",
-    "fields": [
-      "Voucher",
-      "Display_Name_Voucher",
-      "Line_Number",
-      "Quantity",
+      "Transaction_Date",
+      "Item",
       "Display_Name_Item",
-      "Cost",
-      "Line_Total"
-    ]
-  },
-  {
-    "report": "All_Truck_Movement_Vouchers",
-    "fields": [
-      "Voucher",
-      "Display_Name_Voucher",
-      "Display_Name_Employee",
-      "Display_Name_Site",
-      "Display_Name_Asset",
-      "Number_Plate_Truck_Register",
-      "Line_Number"
-    ]
-  },
-  {
-    "report": "All_Payment_Receipt_Vouchers",
-    "fields": [
-      "Receiving_Account",
-      "Display_Name_Receiving_Account",
-      "Payment_Receipt_Number",
-      "Payment_Receipt_Date",
-      "Display_Name_Customer",
-      "Total_Amount_Received",
-      "Total_Charges"
-    ]
-  },
-  {
-    "report": "All_Payment_Receipt_Details",
-    "fields": [
-      "Payment_Type",
-      "Payment_Receipt_Voucher",
-      "Display_Name_Voucher",
-      "Line_Number",
-      "Payment_Document",
-      "Display_Name_Invoice_Voucher",
-      "Customer"
-    ]
-  },
-  {
-    "report": "All_Payment_Made_Vouchers",
-    "fields": [
-      "Payment_Account",
-      "Display_Name_Payment_Account",
-      "Payment_Made_Number",
-      "Payment_Made_Date",
-      "Vendor_Type",
-      "Vendor",
-      "Employee_Vendor"
-    ]
-  },
-  {
-    "report": "All_Payment_Made_Details",
-    "fields": [
-      "Payment_Type",
-      "Display_Name_Payment_Made_Voucher",
-      "Display_Name_Vendor",
-      "Line_Number",
-      "Payment_Made_Voucher",
-      "Payment_Document",
-      "Display_Name_Bill"
-    ]
-  },
-  {
-    "report": "All_Employee_Receiving_Details",
-    "fields": [
-      "Voucher",
-      "Display_Name_Voucher",
-      "Line_Number",
-      "Display_Name_Item",
-      "Quantity",
-      "Cost",
-      "Line_Total"
-    ]
-  },
-  {
-    "report": "All_Voucher_Issuing_Details",
-    "fields": [
-      "Voucher",
-      "Display_Name_Voucher",
-      "Line_Number",
-      "Display_Name_Item",
-      "Quantity",
-      "Cost",
-      "Formula"
-    ]
-  },
-  {
-    "report": "All_Payment_Charges",
-    "fields": [
       "Transaction_Type",
-      "Payment_Made_Voucher",
-      "Payment_Receipt_Voucher",
-      "Display_Name_Payment_Voucher",
-      "Line_Number",
-      "Charge_Type",
-      "Charge_Description"
+      "Stock_Before",
+      "Stock_After",
+      "Display_Name_Store",
+      "Reference_Type",
+      "Quantity",
+      "Base_Unit_Of_Measure",
+      "Reference_Number",
+      "Created_By",
+      "Created_Time",
+      "Created_By_Name",
+      "Created_By_Email"
     ]
   },
   {
-    "report": "All_Voucher_Receiving_Details",
+    "report": "All_Stock_Opening_Vouchers",
     "fields": [
-      "Voucher",
-      "Display_Name_Voucher",
-      "Line_Number",
-      "Display_Name_Item",
-      "Quantity_Received",
-      "Stock_Receiving_Detail",
-      "Source_Record_ID"
+      "Display_Name_Opening_Stock_Voucher",
+      "Store",
+      "Voucher_Date",
+      "Opening_Stock_Voucher"
+    ]
+  },
+  {
+    "report": "All_Stock_Opening_Details",
+    "fields": [
+      "Opening_Stock_Voucher",
+      "Store",
+      "Item",
+      "Stock_Condition",
+      "Quantity",
+      "Unit_Cost",
+      "Unit_Of_Measure",
+      "Line_Total"
+    ]
+  },
+  {
+    "report": "All_Store_Item_Stocks",
+    "fields": [
+      "Item",
+      "Qty_On_Hand",
+      "Stock_Condition",
+      "Default_Cost",
+      "Stock_Value",
+      "Average_Cost",
+      "Store",
+      "Last_Updated"
+    ]
+  },
+  {
+    "report": "All_Document_Series",
+    "fields": [
+      "Document_Type",
+      "Company",
+      "Display_Name_Company",
+      "Prefix",
+      "Company_Pad",
+      "Next_Number",
+      "Status"
+    ]
+  },
+  {
+    "report": "Item_List",
+    "fields": [
+      "Item_Name",
+      "Item_Category",
+      "SKU",
+      "Default_Cost",
+      "Stock_On_Hand",
+      "Base_Unit_Of_Measure"
+    ]
+  },
+  {
+    "report": "All_Store_Receiving_Vouchers",
+    "fields": [
+      "Display_Name_Stock_Receiving_Book",
+      "Received_By",
+      "Stock_Receiving_Date",
+      "Stock_Receiving_Book",
+      "Store"
+    ]
+  },
+  {
+    "report": "All_Bills",
+    "fields": [
+      "Vendor",
+      "Bill_Date",
+      "Bill_Name",
+      "Bill_Number",
+      "Bill_Total",
+      "Total_Amount",
+      "Amount_Paid"
+    ]
+  },
+  {
+    "report": "All_Bill_Details",
+    "fields": [
+      "Stock_Receiving_Details",
+      "Item",
+      "Quantity_Billable",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Rate",
+      "Line_Total",
+      "Account",
+      "Current_Site",
+      "Bill"
+    ]
+  },
+  {
+    "report": "All_Purchase_Orders",
+    "fields": [
+      "PO_Number",
+      "PO_Type",
+      "Company",
+      "PO_Date",
+      "PO_Status",
+      "PO_Total",
+      "Display_Name_Company",
+      "Receive_Status",
+      "Bill_Status",
+      "PO_Billed_Total",
+      "Cancel_This_Purchase_Order",
+      "Reason_Why_Cancelled",
+      "Approval_Date",
+      "Approved_By_Email",
+      "Payment_Status",
+      "PO_Total_Paid",
+      "Close_This_Purchase_Order",
+      "Reason_Why_Closed",
+      "Source_Form",
+      "Source_Record_ID",
+      "User_Name",
+      "User_Email",
+      "User_Role",
+      "Created_By_Name",
+      "Created_By_Email",
+      "Created_By_Time",
+      "Updated_By_Name",
+      "Updated_By_Email",
+      "Updated_By_Time"
+    ]
+  },
+  {
+    "report": "Purchase_Orders",
+    "fields": [
+      "PO_Date",
+      "PO_Number",
+      "Site",
+      "PO_Type",
+      "Receive_Status",
+      "PO_Status",
+      "PO_Total",
+      "Bill_Status",
+      "Payment_Status"
     ]
   },
   {
@@ -245,370 +358,146 @@
       "Service_Name_ID",
       "Service_Name",
       "Status",
-      "Description",
-      "User_Role",
-      "User_Name",
-      "User_Email"
-    ]
-  },
-  {
-    "report": "All_Service_Details",
-    "fields": [
-      "Service",
-      "Display_Name_Service",
-      "Display_Name_Bill",
-      "Display_Name_Invoice",
-      "Description",
-      "Quantity",
-      "Rate"
-    ]
-  },
-  {
-    "report": "All_Bills",
-    "fields": [
-      "Bill_Date",
-      "Bill_Type",
-      "Vendor",
-      "Employee_Vendor",
-      "Display_Name_Vendor",
-      "Bill_Name",
-      "Bill_Number"
-    ]
-  },
-  {
-    "report": "All_Customers",
-    "fields": [
-      "Customer_Type",
-      "Customer_Name",
-      "Customer_Code",
-      "Customer",
-      "Display_Name_Customer",
-      "Customer_Status",
-      "Phone_Number"
-    ]
-  },
-  {
-    "report": "All_Bill_Details",
-    "fields": [
-      "Bill",
-      "Display_Name_Bill",
-      "Details_Date",
-      "Line_Number",
-      "Reference",
-      "Source",
-      "Display_Name_Item"
-    ]
-  },
-  {
-    "report": "All_Stock_Receiving_Vouchers",
-    "fields": [
-      "Stock_Receiving_Book",
-      "Display_Name_Stock_Receiving_Book",
-      "Received_By",
-      "Stock_Receiving_Date",
-      "Store",
-      "Display_Name_Store",
-      "User_Role"
-    ]
-  },
-  {
-    "report": "All_Stock_Receiving_Details",
-    "fields": [
-      "Stock_Receiving_Voucher",
-      "Display_Name_Stock_Receiving_Voucher",
-      "Store",
-      "Stock_Receiving_Voucher_Number",
-      "Stock_Receiving_Voucher_and_Number",
-      "Display_Name_Received_By",
-      "Receiving_Type"
-    ]
-  },
-  {
-    "report": "All_Customer_Purchase_Orders",
-    "fields": [
-      "Customer",
-      "Display_Name_Customer",
-      "Purchase_Order_Number",
-      "Purchase_Order_Date",
-      "User_Name",
-      "User_Email",
-      "User_Role"
-    ]
-  },
-  {
-    "report": "All_Customer_Purchase_Order_Details",
-    "fields": [
-      "Display_Name_Customer",
-      "Customer_Purchase_Order",
-      "Display_Name_Purchase_Order",
-      "Line_Number",
-      "Item",
-      "Display_Name_Item",
-      "Quantity_Ordered"
-    ]
-  },
-  {
-    "report": "All_Credit_Notes",
-    "fields": [
-      "Credit_Note_Number",
-      "Credit_Note_Date",
-      "Display_Name_Sales_Voucher",
-      "Amount_Due",
-      "Customer",
-      "Display_Name_Customer",
-      "Credit_Limit"
-    ]
-  },
-  {
-    "report": "All_Customer_Deposit_Details",
-    "fields": [
-      "Customer_Deposit_Number",
-      "Customer_Deposit_Date",
-      "Customer",
-      "Display_Name_Customer",
-      "Total_Amount_Received",
-      "Total_Charges",
-      "Total_Amount_Allocated"
-    ]
-  },
-  {
-    "report": "All_Purchase_Orders",
-    "fields": [
-      "PO_Type",
-      "Company",
-      "Display_Name_Company",
-      "PO_Number",
-      "PO_Date",
-      "Receive_Status",
-      "PO_Status"
-    ]
-  },
-  {
-    "report": "All_Purchase_Order_Details",
-    "fields": [
-      "Display_Name_Purchase_Order",
-      "Purchase_Order_Number",
-      "Purchase_Order_Details_Number",
-      "Item",
-      "Display_Name_Item",
-      "Stock_Condition",
-      "Quantity_Ordered"
-    ]
-  },
-  {
-    "report": "All_Item_Issuing_Vouchers",
-    "fields": [
-      "Item_Issuing_Voucher",
-      "Display_Name_Item_Issuing_Voucher",
-      "Item_Issuing_Date",
-      "Store",
-      "Display_Name_Store",
-      "Current_Site",
-      "Issued_By"
-    ]
-  },
-  {
-    "report": "All_Item_Issuing_Details",
-    "fields": [
-      "Display_Name_Issued_By",
-      "Display_Name_Issuing_Voucher",
-      "Store",
-      "Line_Number",
-      "Item_Issuing_Number",
-      "Issuing_Voucher",
-      "Request_Voucher_Type"
-    ]
-  },
-  {
-    "report": "All_Invoice_Details",
-    "fields": [
-      "Sales_Voucher",
-      "Display_Name_Invoice",
-      "Line_Number",
-      "Item",
-      "Details",
-      "Quantity",
-      "Rate"
-    ]
-  },
-  {
-    "report": "All_Invoices",
-    "fields": [
-      "Company",
-      "Display_Name_Company",
-      "Invoice_Date",
-      "Invoice_Number",
-      "Customer",
-      "Display_Name_Customer",
-      "Sub_Total"
-    ]
-  },
-  {
-    "report": "All_Sales_Voucher_Details",
-    "fields": [
-      "Display_Name_Sales_Voucher",
-      "Line_Number",
-      "Item",
-      "Display_Name_Item",
-      "Store_Item_Stock",
-      "Store",
-      "Display_Name_Store"
-    ]
-  },
-  {
-    "report": "All_Sales_Vouchers",
-    "fields": [
-      "Voucher",
-      "Display_Name_Voucher",
-      "Display_Name_Employee",
-      "Display_Name_Site",
-      "Sales_Voucher_Number",
-      "Sales_Voucher_Date",
-      "Customer"
-    ]
-  },
-  {
-    "report": "All_Sequences",
-    "fields": [
-      "Sequence_Key",
-      "Next_Number",
-      "Max_Number",
-      "Is_Active",
-      "User_Name",
-      "User_Email",
-      "User_Role"
-    ]
-  },
-  {
-    "report": "All_Occurency_Report_Details",
-    "fields": [
-      "Time",
-      "Incident_Type",
-      "Incident",
-      "User_Role",
-      "User_Name",
-      "User_Email",
-      "Created_By_Name"
-    ]
-  },
-  {
-    "report": "All_Product_Prices",
-    "fields": [
-      "Item",
-      "Display_Name_Item",
-      "Unit_Of_Measure",
-      "Display_Name_Unit_Of_Measure",
-      "Unit_Price",
-      "Price_Type",
-      "User_Name"
-    ]
-  },
-  {
-    "report": "All_Meter_Readings",
-    "fields": [
-      "Display_Name_Voucher",
-      "Display_Name_Employee",
-      "Display_Name_Site",
-      "Meter_Type",
-      "Meter",
-      "Unit_Of_Measure",
-      "Previous_Reading_Date"
-    ]
-  },
-  {
-    "report": "All_Special_Tasks_Details",
-    "fields": [
-      "Site",
-      "Display_Name_Site",
-      "Management_Location",
-      "Display_Name_Management_Location",
-      "Task_Name",
-      "Display_Name_Task_Name",
       "Description"
     ]
   },
   {
-    "report": "All_Material_Request_Vouchers",
+    "report": "All_Services_Details",
     "fields": [
-      "Material_Request_Number",
-      "Request_Date",
-      "Document_Status",
-      "Works_Coordinator",
-      "Display_Name_Works_Coordinator",
-      "User",
-      "Display_Name_User"
+      "Service",
+      "Bill",
+      "Description",
+      "Quantity",
+      "Rate",
+      "Line_Total",
+      "Last_Synced_Group_ID",
+      "Last_Synced_Group_Amount"
     ]
   },
   {
-    "report": "All_Material_Request_Details",
+    "report": "Stock_Taking_Voucher_Report",
     "fields": [
+      "Display_Name_Voucher",
+      "Stock_Taking_Date",
+      "Store",
+      "Taken_By",
+      "Stock_Taking_Voucher"
+    ]
+  },
+  {
+    "report": "Stock_Taking_Details_Report",
+    "fields": [
+      "Stock_Taking_Voucher",
+      "Stock_Taking_Voucher_Number",
       "Line_Number",
+      "Store",
       "Item",
+      "Cost",
+      "Stock_Condition",
+      "Image",
+      "Store_Available_Stock",
+      "Counted_Stock",
+      "Stock_Difference",
+      "Unit_Of_Measure",
+      "Line_Total",
+      "Status"
+    ]
+  },
+  {
+    "report": "Draft_Item_Issuing_Details_CP",
+    "fields": [
+      "Store",
+      "Item_Issuing_Number",
+      "Request_Voucher_Type",
+      "Request_Voucher",
       "Display_Name_Item",
+      "Stock_Condition",
+      "Store_Available_Stock",
+      "Global_Available_Stock",
       "Quantity",
       "Unit_Of_Measure",
-      "Display_Name_Unit_Of_Measure",
-      "Quantity_in_Base_Unit_Of_Measure"
+      "Cost",
+      "Line_Total"
     ]
   },
   {
-    "report": "All_Sales_Returns",
+    "report": "Approved_Item_Issuing_Details",
     "fields": [
-      "Sales_Return_Number",
-      "Sales_Return_Date",
-      "Display_Name_Sales_Voucher",
-      "Customer",
-      "Sales_Type",
-      "Return_Type",
-      "Reason_Why_Returned"
+      "Store",
+      "Item_Issuing_Number",
+      "Request_Voucher_Type",
+      "Request_Voucher",
+      "Display_Name_Item",
+      "Stock_Condition",
+      "Store_Available_Stock",
+      "Global_Available_Stock",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Cost",
+      "Line_Total"
     ]
   },
   {
-    "report": "All_Sales_Return_Details",
+    "report": "Draft_Item_Issuing_Details_MS",
     "fields": [
-      "Display_Name_Sales_Return_Number",
-      "Line_Number",
-      "Sales_Return_Detail_Number",
-      "Customer",
-      "Sales_Voucher_Detail",
-      "Display_Name_Sales_Voucher_Detail",
-      "Item"
+      "Store",
+      "Item_Issuing_Number",
+      "Request_Voucher_Type",
+      "Request_Voucher",
+      "Display_Name_Item",
+      "Stock_Condition",
+      "Store_Available_Stock",
+      "Global_Available_Stock",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Cost",
+      "Line_Total"
     ]
   },
   {
-    "report": "All_Vendors",
+    "report": "Draft_Item_Issuing_Details_FC",
     "fields": [
-      "Vendor_Type",
-      "Vendor_Name",
-      "Vendor_Code",
-      "Vendor",
-      "Display_Name_Vendor",
-      "Vendor_Status",
-      "Phone_Number"
+      "Store",
+      "Item_Issuing_Number",
+      "Request_Voucher_Type",
+      "Request_Voucher",
+      "Display_Name_Item",
+      "Stock_Condition",
+      "Store_Available_Stock",
+      "Global_Available_Stock",
+      "Quantity",
+      "Unit_Of_Measure",
+      "Cost",
+      "Line_Total"
     ]
   },
   {
-    "report": "Room_Register_Report",
+    "report": "All_Stock_Transfers",
     "fields": [
-      "Room_ID",
-      "Room_Name",
-      "Display_Name_Room_Name",
-      "Description",
-      "Location",
-      "Total_Bookings",
-      "Standard_Price"
-    ]
-  },
-  {
-    "report": "Booking_Register_Report",
-    "fields": [
-      "Booking_Date",
-      "Booking_Number",
-      "Booking_ID",
-      "Room_Name",
-      "Display_Name_Room_Name",
-      "Display_Name_Sales_Voucher",
-      "Sales_Voucher"
+      "Transfer_Number",
+      "Transfer_Date",
+      "Issuing_Store",
+      "Item",
+      "Quantity",
+      "Quantity_in_Base_Unit_Of_Measure",
+      "Stock_Condition",
+      "Unit_Cost",
+      "Unit_Of_Measure",
+      "Issued_By",
+      "Application",
+      "Source_Form",
+      "Source_Record_ID",
+      "Receiving_Number",
+      "Receive_Date",
+      "Receiving_Store",
+      "Quantity_Received",
+      "Unit_Of_Measure_Received",
+      "Quantity_Received_in_Base_Unit_Of_Measure",
+      "Received_By",
+      "Receiving_Status",
+      "Receive_Application",
+      "Receive_Source_Form",
+      "Receive_Source_Record_ID"
     ]
   }
 ]
