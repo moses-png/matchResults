@@ -141,6 +141,7 @@
             "Rate",
             "Rate_In_Base_Unit",
             "Line_Total",
+            "Formula_Properties",
             "Tax_Type",
             "Tax_Amount",
             "Previous_Bill",
@@ -600,6 +601,7 @@
             "Quantity",
             "Cost",
             "Line_Total",
+            "Formula_Properties",
             "Item_Issuing_Detail",
             "Source_Record_ID",
             "Source_Form",
@@ -625,6 +627,7 @@
             "Quantity",
             "Cost",
             "Line_Total",
+            "Formula_Properties",
             "Stock_Receiving_Detail",
             "Source_Record_ID",
             "Source_Form",
@@ -637,6 +640,22 @@
             "Updated_By_Name",
             "Updated_By_Email",
             "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
+        "form": "Financial_Transaction_Register",
+        "fields": [
+            "Summary_Date",
+            "Site",
+            "Display_Name_Site",
+            "Reference_Number",
+            "Transaction_Type",
+            "Financial_Group",
+            "Amount",
+            "Description",
+            "Source_Form",
+            "Source_Record_ID",
             "submit"
         ]
     },
@@ -735,6 +754,7 @@
             "Quantity",
             "Rate",
             "Line_Total",
+            "Formula_Properties",
             "Tax_Type",
             "Tax_Amount",
             "Site",
@@ -773,6 +793,7 @@
             "Work_Order_Task",
             "Sales_Voucher",
             "Request_Voucher",
+            "Gate_Pass_Reference",
             "Gate_Pass_Card",
             "Item",
             "Item_Taken",
@@ -916,6 +937,9 @@
             "Time_Ended",
             "Manager_Voucher",
             "Display_Name_Manager_Voucher",
+            "Total_Income",
+            "Total_Expenses",
+            "Total_Profit",
             "Other_Machines",
             "Truck_Movement_Voucher",
             "Source_Form",
@@ -987,6 +1011,9 @@
             "Line_Duration_Minutes",
             "Line_Hours_Worked",
             "Services",
+            "Line_Income",
+            "Income_Per_Odometer",
+            "Line_Profit",
             "Source_Form",
             "Source_Record_ID",
             "User_Name",
@@ -1408,6 +1435,7 @@
             "Card_Number",
             "Delivery_Note",
             "Display_Name_Delivery_Note",
+            "Sales_Voucher_Status",
             "Item",
             "Display_Name_Item",
             "Display_Name_Unit_Of_Measure",
@@ -1447,6 +1475,7 @@
             "Credit_Note",
             "Invoice_Details",
             "Business_Division_Details",
+            "Sales_Voucher_Summary",
             "Services",
             "Item_Issuing_Details",
             "Payment_Receipt_Details",
@@ -1523,6 +1552,44 @@
         ]
     },
     {
+        "form": "Security_Voucher_Details",
+        "fields": [
+            "Employee_Voucher",
+            "Display_Name_Voucher",
+            "Display_Name_Site",
+            "Display_Name_Employee",
+            "Line_Number",
+            "Entry_Type",
+            "Receiving_Type",
+            "Purchase_Order",
+            "Asset_Transfer_Voucher_In",
+            "Work_Order_Task",
+            "Card_Number",
+            "Item_Transfer_Number",
+            "Display_Name_Entry_Record",
+            "Item_Received",
+            "Time_In",
+            "Time_Out",
+            "Asset_Transfer_Voucher_Out",
+            "Exit_Employee",
+            "Display_Name_Exit_Employee",
+            "Transfer_Items",
+            "Security_Voucher_Status",
+            "Cancel_Voucher",
+            "Reason_Why_Cancelled",
+            "User_Name",
+            "User_Email",
+            "User_Role",
+            "Created_By_Name",
+            "Created_By_Email",
+            "Created_By_Time",
+            "Updated_By_Name",
+            "Updated_By_Email",
+            "Updated_By_Time",
+            "submit"
+        ]
+    },
+    {
         "form": "Sequences",
         "fields": [
             "Site",
@@ -1567,18 +1634,21 @@
     {
         "form": "Service_Details",
         "fields": [
+            "Details_Date",
             "Service",
             "Display_Name_Service",
             "Bill",
             "Display_Name_Bill",
             "Invoice",
             "Truck_Movement_Voucher",
+            "Tractor_Work_Report",
             "Other_Machines",
             "Display_Name_Voucher",
             "Description",
             "Quantity",
             "Rate",
             "Line_Total",
+            "Formula_Properties",
             "Last_Synced_Group_ID",
             "Last_Synced_Group_Amount",
             "User_Name",
@@ -1791,6 +1861,7 @@
             "Location",
             "Job",
             "Display_Name_Job",
+            "Services",
             "Card",
             "Display_Name_Card",
             "Work_Order_Task",
@@ -1813,6 +1884,9 @@
             "Line_Total",
             "Line_Duration_Minutes",
             "Line_Hours_Worked",
+            "Line_Income",
+            "Income_Per_Odometer",
+            "Line_Profit",
             "Source_Form",
             "Source_Record_ID",
             "User_Name",
@@ -1938,6 +2012,9 @@
             "Cost_Per_Odometer",
             "Line_Duration_Minutes",
             "Line_Distance_Travelled",
+            "Line_Income",
+            "Income_Per_Odometer",
+            "Line_Profit",
             "Source_Form",
             "Source_Record_ID",
             "User_Name",
@@ -2004,6 +2081,7 @@
             "Quantity",
             "Cost",
             "Line_Total",
+            "Formula_Properties",
             "Request_Voucher",
             "Item_Issuing_Detail",
             "Source_Record_ID",
@@ -2081,6 +2159,7 @@
             "Kitchen_Voucher_Details",
             "Stock_Production",
             "Other_Machine_Details",
+            "Security_Voucher_Details",
             "Not_Created",
             "Reason_Why_Not_Created",
             "Opening_Vouchers",
@@ -2261,6 +2340,10 @@
         "fields": []
     },
     {
+        "form": "Financial_Transaction_Register",
+        "fields": []
+    },
+    {
         "form": "Fuel_Receiving_Voucher",
         "fields": []
     },
@@ -2366,6 +2449,10 @@
     },
     {
         "form": "Sales_Voucher_Details",
+        "fields": []
+    },
+    {
+        "form": "Security_Voucher_Details",
         "fields": []
     },
     {
@@ -2701,6 +2788,14 @@
         "fields": []
     },
     {
+        "form": "Financial_Transaction_Register",
+        "fields": []
+    },
+    {
+        "form": "Security_Voucher_Details",
+        "fields": []
+    },
+    {
         "form": "Asset_Issues",
         "fields": []
     },
@@ -2778,6 +2873,10 @@
     },
     {
         "form": "Employee_Receiving_Details",
+        "fields": []
+    },
+    {
+        "form": "Financial_Transaction_Register",
         "fields": []
     },
     {
@@ -2886,6 +2985,10 @@
     },
     {
         "form": "Sales_Voucher_Details",
+        "fields": []
+    },
+    {
+        "form": "Security_Voucher_Details",
         "fields": []
     },
     {
@@ -3221,6 +3324,14 @@
         "fields": []
     },
     {
+        "form": "Financial_Transaction_Register",
+        "fields": []
+    },
+    {
+        "form": "Security_Voucher_Details",
+        "fields": []
+    },
+    {
         "form": "Asset_Issues",
         "fields": []
     },
@@ -3298,6 +3409,10 @@
     },
     {
         "form": "Employee_Receiving_Details",
+        "fields": []
+    },
+    {
+        "form": "Financial_Transaction_Register",
         "fields": []
     },
     {
@@ -3406,6 +3521,10 @@
     },
     {
         "form": "Sales_Voucher_Details",
+        "fields": []
+    },
+    {
+        "form": "Security_Voucher_Details",
         "fields": []
     },
     {
