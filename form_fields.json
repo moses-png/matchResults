@@ -1329,7 +1329,8 @@
           "subform": {
             "form": "Asset_Transfer_Request_Expense",
             "displayname": "Asset Transfer Request Expense"
-          }
+          },
+          "direction": "Asset Transfer Request Expense → Asset Transfer Request"
         }
       ]
     },
@@ -1350,7 +1351,8 @@
             "app": "same",
             "form": "Asset_Transfer_Request",
             "display": "Request_Number"
-          }
+          },
+          "direction": "Asset Transfer Request → Expense Details"
         },
         {
           "name": "Display_Name_Asset_Transfer_Request",
@@ -1466,7 +1468,7 @@
         },
         {
           "name": "Updated_By_Email",
-          "displayname": "Created By Email",
+          "displayname": "Updated By Email",
           "type": "email",
           "section": "Back End"
         },
